@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt-BR">
              <head>
                  <title>Emotional</title>
                   <meta name="google-signin-scope" content="profile email">
