@@ -60,7 +60,8 @@ public class ControleCadastro extends HttpServlet{
 	} catch (Exception e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
-		return; 
+		request.setAttribute("msg", 
+		        "Cadastro não Efetuado!"); 
 	}
 	
 	out.println("Contato " + usuario.getNome() +

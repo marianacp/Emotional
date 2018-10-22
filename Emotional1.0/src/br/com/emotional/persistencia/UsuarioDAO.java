@@ -45,7 +45,7 @@ public class UsuarioDAO extends Dao {
 				 }
 				 
 				 if(conn != null){
-				 conn.close();
+				 con.close();
 				 }
 				 
 				 }catch(Exception e){
@@ -55,4 +55,34 @@ public class UsuarioDAO extends Dao {
 		
 	}
 }
+	
+	/*public boolean atualizarUsuario(Usuario usuario) {
+		
+		
+		
+	} */
+	
+	public int getIdPorEmail(String email) throws Exception {
+		open(); 
+		
+		String sql = "SELECT US_ID FROM USUARIO WHERE EMAIL = ?"; 
+		
+		PreparedStatement pstm = null;
+		
+		try {
+			pstm = con.prepareStatement(sql);
+			pstm.setString(1, email);
+			
+			ResultSet rs = pstm.executeQuery(); 
+		}
+
+	catch(Exception e){
+   e.printStackTrace();
+   
+}
+		pstm.close();
+        con.close();
+		int codigo = rs.getInt("us_id"); 
+		return codigo; 
+	}
 }
