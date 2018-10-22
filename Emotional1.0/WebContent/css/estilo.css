@@ -1,84 +1,235 @@
-* {
-    margin: 0;
-    padding: 0;
+/* CSS reset */
+*, *:before, *:after { 
+  margin:0;
+  padding:0;
+  font-family: Arial,sans-serif;
+}
+ 
+/* remove a linha dos links */
+a{
+  text-decoration: none;
+}
+ 
+/* esconde as ancoras da tela */
+a.links{
+  display: none;
 }
 
-fieldset {
-    border: 0;
+.content{
+  width: 500px;
+  min-height: 560px;    
+  margin: 0px auto;
+  position: relative;   
 }
 
-body, input, select, textarea, button {
-    font-family: sans-serif;
-    font-size: 1em;
+h1{
+  font-size: 48px;
+  color: #066a75;
+  padding: 2px 0 10px 0;
+  font-family: Arial,sans-serif;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 30px;
 }
 
-.grupo:before, .grupo:after {
-    content: " ";
-    display: table;
+h1:after{
+  content: ' ';
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin-top: 10px;
+  background: -webkit-linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%); 
+  background: linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%); 
 }
 
-.grupo:after {
-    clear: both;
+p{
+  margin-bottom:15px;
+}
+ 
+.content p:first-child{
+  margin: 0px;
+}
+ 
+label{
+  color: #405c60;
+  position: relative;
 }
 
-.campo {
-    margin-bottom: 1em;
+/* placeholder */
+::-webkit-input-placeholder  {
+  color: #bebcbc; 
+  font-style: italic;
+}
+ 
+input:-moz-placeholder,
+textarea:-moz-placeholder{
+  color: #bebcbc;
+  font-style: italic;
 }
 
-.campo label {
-    margin-bottom: 0.2em;
-    color: #666;
-    display: block;
+input {
+  outline: none;
+}
+ 
+/*estilo dos input,  menos o checkbox */
+input:not([type="checkbox"]){
+  width: 95%;
+  margin-top: 4px;
+  padding: 10px;    
+  border: 1px solid #b2b2b2;
+ 
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+ 
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+  box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+ 
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+ 
+/*estilo do botão submit */
+input[type="submit"]{
+  width: 100%!important;
+  cursor: pointer;  
+  background: rgb(61, 157, 179);
+  padding: 8px 5px;
+  color: #fff;
+  font-size: 20px;  
+  border: 1px solid #fff;   
+  margin-bottom: 10px;  
+  text-shadow: 0 1px 1px #333;
+ 
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+ 
+  transition: all 0.2s linear;
+}
+ 
+/*estilo do botão submit no hover */
+input[type="submit"]:hover{
+  background: #4ab3c6;
 }
 
-fieldset.grupo .campo {
-    float:  left;
-    margin-right: 1em;
+.link{
+  position: absolute;
+  background: #e1eaeb;
+  color: #7f7c7c;
+  left: 0px;
+  height: 20px;
+  width: 440px;
+  padding: 17px 30px 20px 30px;
+  font-size: 16px;
+  text-align: right;
+  border-top: 1px solid #dbe5e8;
+ 
+  -webkit-border-radius: 0 0  5px 5px;
+  border-radius: 0 0  5px 5px;
+}
+ 
+.link a {
+  font-weight: bold;
+  background: #f7f8f1;
+  padding: 6px;
+  color: rgb(29, 162, 193);
+  margin-left: 10px;
+  border: 1px solid #cbd518;
+ 
+  -webkit-border-radius: 4px;
+  border-radius: 4px;  
+ 
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s  linear;
+}
+ 
+.link a:hover {
+  color: #39bfd7;
+  background: #f7f7f7;
+  border: 1px solid #4ab3c6;
 }
 
-.campo input[type="text"],
-.campo input[type="email"],
-.campo input[type="url"],
-.campo input[type="tel"],
-.campo select,
-.campo textarea {
-    padding: 0.2em;
-    border: 1px solid #CCC;
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
-    display: block;
+#cadastro, 
+#login{
+  position: absolute;
+  top: 0px;
+  width: 88%;   
+  padding: 18px 6% 60px 6%;
+  margin: 0 0 35px 0;
+  background: #f7f7f7;
+  border: 1px solid rgba(147, 184, 189,0.8);
+   
+  -webkit-box-shadow: 5px;
+  border-radius: 5px;
+   
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+ 
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
 }
 
-.campo select option {
-    padding-right: 1em;
+/* Efeito ao clicar no botão ( Ir para Login ) */
+#paracadastro:target ~ .content #cadastro,
+#paralogin:target ~ .content #login{
+  z-index: 2;
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+ 
+  -webkit-animation-delay: .1s;
+  animation-delay: .1s;
+}
+ 
+/* Efeito ao clicar no botão ( Cadastre-se ) */
+#registro:target ~ .content #login,
+#paralogin:target ~ .content #cadastro{
+  -webkit-animation-name: fadeOutLeft;
+  animation-name: fadeOutLeft;
 }
 
-.campo input:focus, .campo select:focus, .campo textarea:focus {
-    background: #FFC;
+/*fadeInLeft*/
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
 }
-
-.campo label.checkbox {
-    color: #000;
-    display: inline-block;
-    margin-right: 1em;
+ 
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
-
-.botao {
-    font-size: 1.5em;
-    background: #F90;
-    border: 0;
-    margin-bottom: 1em;
-    color: #FFF;
-    padding: 0.2em 0.6em;
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+ 
+/*fadeOutLeft*/
+@-webkit-keyframes fadeOutLeft {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+  }
 }
-
-.botao:hover {
-    background: #FB0;
-    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
-    text-shadow: none;
-}
-
-.botao, select, label.checkbox {
-    cursor: pointer;
+ 
+@keyframes fadeOutLeft {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
 }
