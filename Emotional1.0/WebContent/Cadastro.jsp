@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <meta name="google-signin-scope" content="profile email">
   <meta name="google-signin-client_id" content="900025801880-uodctlul1qu1m0qh28a8uov9k4pcmj6n.apps.googleusercontent.com">
-  <link rel="stylesheet" type="text/css" href="estilo.css" />
+  <link rel="stylesheet" type="text/css" href="css/estilo.css" />
   <script src="https://apis.google.com/js/platform.js" async defer></script>
 </head>
 <body>
@@ -55,7 +55,7 @@
            
           <p class="link">  
             Já tem conta?
-            <a href=Login.html> Ir para Login </a>
+            <a href=Login.jsp> Ir para Login </a>
           </p>
         </form>
       </div>
