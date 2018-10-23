@@ -8,7 +8,7 @@
      <link rel="stylesheet" type="text/css" href="css/estilo.css">
   </head>
   <body>
-<form name="formCad" action="teste1.jsp" method="get" enctype="text/plain" autocomplete="off">
+<form name="formCad" action="cadastroUsuario" method="get" enctype="text/plain" autocomplete="off">
    <fieldset>
     <legend>Formulário</legend>
         <label>Nome:</label>

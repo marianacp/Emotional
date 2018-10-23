@@ -7,9 +7,9 @@
     <script src="https://apis.google.com/js/platform.js" async defer></script>
              </head>
              <body>
-                 <h1>Descubra a sua emoÃ§Ã£o!</h1>
+                 <h1>Descubra a sua emoção!</h1>
                  
-                   <p><a href=â€Cadastro.jspâ€>Clique aqui</a> para Cadastro.</p>
+                   <p><a href=Cadastro.jsp€>Clique aqui</a> para Cadastro.</p>
                  
                   <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
     <script>

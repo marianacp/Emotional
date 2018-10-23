@@ -77,5 +77,9 @@ public class Usuario {
 		this.apelido = apelido;
 	}
 	
-	
+	@Override
+	public String toString() {
+		String saida = us_id + " " + nome; 
+		return saida;
+	}
 }

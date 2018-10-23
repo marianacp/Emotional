@@ -16,7 +16,7 @@ public class UsuarioDAO extends Dao {
 		String sql = "INSERT INTO Usuario (nome, apelido, email, senha, foto, data_nasc, isPremium, ativo)" +
 				 " VALUES(?, ?, ?, ?, ?, ?, ?, ?)";
 		
-		Connection conn = null; 
+		//Connection conn = null; 
 		PreparedStatement pstm = null;
 		
 		try {
@@ -44,7 +44,7 @@ public class UsuarioDAO extends Dao {
 				 pstm.close();
 				 }
 				 
-				 if(conn != null){
+				 if(con != null){
 				 con.close();
 				 }
 				 
@@ -56,12 +56,122 @@ public class UsuarioDAO extends Dao {
 	}
 }
 	
-	/*public boolean atualizarUsuario(Usuario usuario) {
+	public void atualizarUsuario(Usuario usuario) throws Exception {
+		open(); 
 		
+		String sql = "UPDATE USUARIO SET NOME = ?, APELIDO = ?, EMAIL = ?,"
+				+ " SENHA = ?, FOTO = ?, DATA_NASC = ? , ISPREMIUM = ?, ATIVO = ? WHERE US_ID = ?";
+				
+				
+		PreparedStatement pstm = null;
 		
+		try {
+			pstm = con.prepareStatement(sql);
+			
+			pstm.setString(1, usuario.getNome());
+			pstm.setString(2, usuario.getApelido());
+			pstm.setString(3, usuario.getEmail());
+			pstm.setString(4, usuario.getSenha());
+			pstm.setString(5, usuario.getImagem());
+			pstm.setDate(6, new java.sql.Date(
+                    Calendar.getInstance().getTimeInMillis()));
+			pstm.setBoolean(7, usuario.isPremium());
+			pstm.setBoolean(8, usuario.isAtivo());
+			pstm.setInt(9, usuario.getUs_id());
+			
+			pstm.executeUpdate(); 
+		}
+		catch(Exception e) {
+			 e.printStackTrace();			
+		}
+		finally{
+			 try{
+				 if(pstm != null){
+				 
+				 pstm.close();
+				 }
+				 
+				 if(con != null){
+				 con.close();
+				 }
+				 
+				 }catch(Exception e){
+				 
+				 e.printStackTrace();
+				 }
 		
-	} */
+	}
+		
+	} 
 	
+
+	
+	public void excluirUsuario(Usuario usuario) throws Exception {
+		open(); 
+		
+		String sql = "DELETE FROM USUARIO WHERE US_ID = ?"; 
+		
+		PreparedStatement pstm = null;
+		
+		try {
+			pstm = con.prepareStatement(sql);
+			
+			pstm.setInt(1, usuario.getUs_id());
+			
+			pstm.execute(); 
+		}
+		catch(Exception e) {
+			 e.printStackTrace();			
+		}
+		finally{
+			 try{
+				 if(pstm != null){
+				 
+				 pstm.close();
+				 }
+				 
+				 if(con != null){
+				 con.close();
+				 }
+				 
+				 }catch(Exception e){
+				 
+				 e.printStackTrace();
+				 }
+		
+	}
+		
+	}
+	public Usuario buscaPorCodigo(Usuario usuario) throws Exception {
+		open(); 
+		
+		String sql = "SELECT * FROM USUARIO WHERE US_ID = ?"; 
+		
+		PreparedStatement pstm = null;
+		
+		
+			pstm = con.prepareStatement(sql);
+			
+			pstm.setInt(1, usuario.getUs_id());
+			
+			ResultSet rs =  pstm.executeQuery(); 
+		
+			Usuario us = null; 
+			if(rs.next()) {
+				us = new Usuario(); 
+				us.setApelido(rs.getString("APELIDO"));
+				us.setAtivo(rs.getBoolean("ATIVO"));
+				//us.setData_nasc(rs.getDate("DATA_NASC");
+				us.setEmail(rs.getString("EMAIL"));
+				us.setEmo_id(rs.getInt("EMO_ID"));
+				us.setImagem(rs.getString("FOTO"));
+				us.setNome(rs.getString("NOME"));
+				us.setPremium(rs.getBoolean("ISPREMIUM"));
+				us.setUs_id(rs.getInt("US_ID"));
+			}
+			return us; 
+				
+	}
 	public int getIdPorEmail(String email) throws Exception {
 		open(); 
 		
@@ -84,5 +194,22 @@ public class UsuarioDAO extends Dao {
         con.close();
 		int codigo = rs.getInt("us_id"); 
 		return codigo; 
+	}
+	
+	public static void main(String[] args) {
+		Usuario us = new Usuario(); 
+		us.setUs_id(1);
+		
+		UsuarioDAO ud = new UsuarioDAO();
+		
+		try {
+			Usuario us2 = ud.buscaPorCodigo(us);
+			System.out.println(us2);
+		} catch (Exception e) {
+			System.out.println("Ocorreu um erro");
+			e.printStackTrace();
+		} 
+		
+		
 	}
 }
