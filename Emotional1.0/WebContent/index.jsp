@@ -46,22 +46,25 @@
                <div id="headslide" class="carousel slide" data-ride="carousel">
                   <div class="carousel-inner" role="listbox">
                      <div class="item active">
-                        <img src="img/download4.jpg" alt="Slide">
+                        <img src="img/download1.jpg" alt="Slide">
                      </div>
 					 <div class="item">
-                        <img src="img/download5.jpg" alt="Slide">
+                        <img src="img/download6.jpg" alt="Slide">
+                     </div>
+					  <div class="item">
+                        <img src="img/download2.jpg" alt="Slide">
                      </div>
                      <div class="item">
                         <img src="img/download3.jpg" alt="Slide">
                      </div>
                      <div class="item">
-                        <img src="img/download.jpg" alt="Slide">
+                        <img src="img/download4.jpg" alt="Slide">
                      </div>
                      <div class="item">
-                        <img src="img/download1.jpg" alt="Slide">
+                        <img src="img/download5.jpg" alt="Slide">
 					 </div>
                      <div class="item">
-                        <img src="img/download2.jpg" alt="Slide">
+                        <img src="img/download6.jpg" alt="Slide">
                      </div>
                   </div>
                </div>
