@@ -57,7 +57,7 @@
           </p>
            
           <p class="link">
-            Ainda não tem conta?
+            Ainda n&atilde;o tem conta?
             <a href="Cadastro.jsp">Cadastre-se</a>
           </p>
     </form>
