@@ -104,7 +104,7 @@ public class UsuarioDAO extends Dao {
 		
 	} 
 	
-
+	
 	
 	public void excluirUsuario(Usuario usuario) throws Exception {
 		open(); 
@@ -142,6 +142,8 @@ public class UsuarioDAO extends Dao {
 	}
 		
 	}
+	
+	//Buscar o Usuário pelo ID 
 	public Usuario buscaPorCodigo(Usuario usuario) throws Exception {
 		open(); 
 		
@@ -172,6 +174,8 @@ public class UsuarioDAO extends Dao {
 			return us; 
 				
 	}
+	
+	//Trazer o email do usuário buscando pelo ID
 	public int getIdPorEmail(String email) throws Exception {
 		open(); 
 		
@@ -196,20 +200,84 @@ public class UsuarioDAO extends Dao {
 		return codigo; 
 	}
 	
+	public void bloquearDesbloquearUsuario(Usuario usuario) throws Exception {
+		open(); 
+		
+		//Se está Ativo, bloqueia o usuário
+		if(usuario.isAtivo()) {
+			String sql = "UPDATE USUARIO SET ATIVO = FALSE WHERE US_ID = ?";	
+			
+			PreparedStatement pstm = null;
+			try {
+			pstm = con.prepareStatement(sql);
+			
+			pstm.setInt(1, usuario.getUs_id());
+			
+			pstm.executeUpdate(); 
+			}
+			catch(Exception e) {
+				 e.printStackTrace();			
+			}
+			finally{
+				 try{
+					 if(pstm != null){
+					 
+					 pstm.close();
+					 }
+					 
+					 if(con != null){
+					 con.close();
+					 }
+					 
+					 }catch(Exception e){
+					 
+					 e.printStackTrace();
+					 }
+			
+		}
+			
+		}
+		
+		//Se está inativo, desbloqueia
+		else {
+			String sql = "UPDATE USUARIO SET ATIVO = TRUE WHERE US_ID = ?";	
+			
+			PreparedStatement pstm = null;
+			
+			try {
+			pstm = con.prepareStatement(sql);
+			
+			pstm.setInt(1, usuario.getUs_id());
+			
+			pstm.executeUpdate(); 
+			}
+			catch(Exception e) {
+				 e.printStackTrace();			
+			}
+			finally{
+				 try{
+					 if(pstm != null){
+					 
+					 pstm.close();
+					 }
+					 
+					 if(con != null){
+					 con.close();
+					 }
+					 
+					 }catch(Exception e){
+					 
+					 e.printStackTrace();
+					 }
+			
+		}
+		}
+		
+	}
+	
 	public static void main(String[] args) {
-		Usuario us = new Usuario(); 
-		us.setUs_id(1);
-		
-		UsuarioDAO ud = new UsuarioDAO();
-		
-		try {
-			Usuario us2 = ud.buscaPorCodigo(us);
-			System.out.println(us2);
-		} catch (Exception e) {
-			System.out.println("Ocorreu um erro");
-			e.printStackTrace();
-		} 
 		
 		
 	}
+	
 }

@@ -67,4 +67,6 @@ public class ControleCadastro extends HttpServlet{
 	out.println("Contato " + usuario.getNome() +
             " adicionado com sucesso");
 	}
+	
+	
 }

@@ -53,7 +53,7 @@
           </p>
            
           <p> 
-            <input type="submit" value="Logar" /> 
+            <input type="submit" name="bOK" value="Logar" /> 
           </p>
            
           <p class="link">
