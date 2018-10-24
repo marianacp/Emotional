@@ -7,12 +7,12 @@
   <link rel="stylesheet" type="text/css" href="css/estilo.css" />
 </head>
 <body>
-  <div class="container" >
+<div class="container" >
   <div class="content"> 
-      <!--FORMULÁRIO DE CADASTRO-->
-      <div id="cadastro">
-        <form name="formCad" action="cadastroUsuario" method="get" enctype="text/plain" autocomplete="off"> 
-          <h1>Cadastro</h1> 
+      <!--FORMULÃRIO PARA ENVIO DE AJUDA-->
+      <div id="suporte">
+        <form name="formSup" action="teste1.jsp" method="get" enctype="text/plain" autocomplete="off"> 
+          <h1>Suporte ao usuário</h1> 
            
           <p> 
             <label for="nome">Nome</label>
@@ -32,7 +32,7 @@
            
           <p> 
             <label for="senha_cad">Senha</label>
-            <input id="senha" name="senha" required="required" type="password" placeholder="ex. 1234"/>
+            <input id="senha" name="txtSenha" required="required" type="password" placeholder="ex. 1234"/>
           </p>
 		  
 		   <p> 
@@ -42,7 +42,7 @@
 		  
 		   <p> 
             <label for="dataNascimento">Data de Nascimento</label>
-            <input id="dataNascimento" name="dataNascimento" required="required" type="text" />
+            <input id="dataNascimento" name="dataNascimento" required="required" type="date" />
           </p>
 		  
            
@@ -51,7 +51,7 @@
           </p>
            
           <p class="link">  
-            Já tem conta?
+            JÃ¡ tem conta?
             <a href=Login.jsp> Ir para Login </a>
           </p>
         </form>

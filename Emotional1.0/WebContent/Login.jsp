@@ -12,7 +12,7 @@
 <body>
   <div class="container" >    
     <div class="content">      
-      <!--FORMUL√ÅRIO DE LOGIN-->
+      <!--FORMUL¡ÅRIO DE LOGIN-->
       <div id="login">
         <form method="post" action="index.jsp"> 
           <h1>Login</h1> 
@@ -34,7 +34,7 @@
 		  
 		  <p> 
             	
-<div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+<div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark" position="center"></div>
     <script>
       function onSignIn(googleUser) {
         // Useful data for your client-side scripts:
@@ -57,7 +57,7 @@
           </p>
            
           <p class="link">
-            Ainda n√£o tem conta?
+            Ainda n„o tem conta?
             <a href="Cadastro.jsp">Cadastre-se</a>
           </p>
     </form>
