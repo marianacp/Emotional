@@ -1,38 +1,4 @@
 <!DOCTYPE html>
-<<<<<<< HEAD:Emotional1.0/WebContent/Index.jsp
-<html lang="pt-BR">
-             <head>
-                 <title>Emotional</title>
-                  <meta name="google-signin-scope" content="profile email">
-    <meta name="google-signin-client_id" content="900025801880-uodctlul1qu1m0qh28a8uov9k4pcmj6n.apps.googleusercontent.com">
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-             </head>
-             <body>
-                 <h1>Descubra a sua emoï¿½ï¿½o!</h1>
-                 
-                   <p><a href=Cadastro.jspï¿½ï¿½>Clique aqui</a> para Cadastro.</p>
-                 
-                  <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
-    <script>
-      function onSignIn(googleUser) {
-        // Useful data for your client-side scripts:
-        var profile = googleUser.getBasicProfile();
-        console.log("ID: " + profile.getId()); // Don't send this directly to your server!
-        console.log('Full Name: ' + profile.getName());
-        console.log('Given Name: ' + profile.getGivenName());
-        console.log('Family Name: ' + profile.getFamilyName());
-        console.log("Image URL: " + profile.getImageUrl());
-        console.log("Email: " + profile.getEmail());
-
-        // The ID token you need to pass to your backend:
-        var id_token = googleUser.getAuthResponse().id_token;
-        console.log("ID Token: " + id_token);
-      };
-    </script>
-    
-             </body>
-         </html>
-=======
 <html lang="pt">
    <head>
       <meta charset="utf-8">
@@ -41,7 +7,7 @@
       <meta name="description" content="">
       <meta name="author" content="">
 	  <link rel="icon" href="img/logo1.png" type="image/x-icon" />
-      <title>Música para todos - EMOTIONAL</title>
+      <title>Mï¿½sica para todos - EMOTIONAL</title>
       <!-- Css -->
       <link href="css/bootstrap.css" rel="stylesheet">
       <link href="css/style.css" rel="stylesheet">
@@ -73,7 +39,7 @@
       <!-- Header -->
       <div class="span12">
          <div class="col-md-6 no-gutter text-center fill">
-            <h2 class="vcenter">Sentimentos para a sua música</h2>
+            <h2 class="vcenter">Sentimentos para a sua mï¿½sica</h2>
          </div>
          <div class="col-md-6 no-gutter text-center">
             <div id="header" data-speed="2" data-type="background">
@@ -111,4 +77,3 @@
       <script src="js/script.js"></script>
    </body>
 </html>
->>>>>>> 935b9949e4224afc27a2342d307499cac48b4a6f:Emotional1.0/WebContent/index.jsp
