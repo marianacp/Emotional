@@ -14,7 +14,7 @@
     <div class="content">      
       <!--FORMULÁRIO DE LOGIN-->
       <div id="login">
-        <form method="post" action="Login"> 
+        <form method="post" action="index.jsp"> 
           <h1>Login</h1> 
           <p> 
             <label for="email">E-mail</label>

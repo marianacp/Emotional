@@ -10,12 +10,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-@WebServlet({"/Menu"})
+@WebServlet(name = "Menu", urlPatterns = {"/logado/menu.jsp"})
 public class menu extends HttpServlet{
 	  protected void processRequest(HttpServletRequest request, HttpServletResponse response)
 	            throws ServletException, IOException {
 	        RequestDispatcher rd = request.getRequestDispatcher(
-	                "/WebContent/menu.jsp");
+	                "/Menu.jsp");
 	        rd.forward(request, response);
 	    }
 	  
