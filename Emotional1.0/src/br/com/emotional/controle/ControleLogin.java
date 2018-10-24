@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
   
 
-@WebServlet({"/Login"})
+@WebServlet(name = "Login", urlPatterns = {"/index.jsp", "/logout.jsp"})
 public class ControleLogin extends HttpServlet {
 	protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -39,7 +39,7 @@ public class ControleLogin extends HttpServlet {
                 if (user != null) {
                     if (user.getSenha().equalsIgnoreCase(senha)) {
                         request.getSession().setAttribute("usuarioLogado", user);
-                        response.sendRedirect("logado/menu.jsp");
+                        response.sendRedirect("Menu.jsp");
                         return;
                     } else {
                         erros.add("Senha inválida!");

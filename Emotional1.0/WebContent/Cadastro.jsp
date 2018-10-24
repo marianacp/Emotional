@@ -9,7 +9,7 @@
 <body>
   <div class="container" >
   <div class="content"> 
-      <!--FORMULÃRIO DE CADASTRO-->
+      <!--FORMULÁRIO DE CADASTRO-->
       <div id="cadastro">
         <form name="formCad" action="cadastroUsuario" method="get" enctype="text/plain" autocomplete="off"> 
           <h1>Cadastro</h1> 
@@ -51,7 +51,7 @@
           </p>
            
           <p class="link">  
-            JÃ¡ tem conta?
+            Já tem conta?
             <a href=Login.jsp> Ir para Login </a>
           </p>
         </form>

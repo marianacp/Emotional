@@ -276,8 +276,17 @@ public class UsuarioDAO extends Dao {
 	}
 	
 	public static void main(String[] args) {
+		Usuario us = new Usuario(); 
+		us.setUs_id(1);
 		
-		
+		UsuarioDAO ud = new UsuarioDAO(); 
+		try {
+			ud.buscaPorCodigo(us);
+			System.out.println(us.toString());
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} 
 	}
 	
 }
