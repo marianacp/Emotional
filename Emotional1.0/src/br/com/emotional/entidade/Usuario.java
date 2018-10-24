@@ -3,6 +3,7 @@ package br.com.emotional.entidade;
 import java.util.Calendar;
 //import java.io.FileInputStream;
 import java.util.Date;
+import java.util.Objects;
 
 public class Usuario {
 	private int us_id; 
@@ -82,4 +83,11 @@ public class Usuario {
 		String saida = us_id + " " + nome; 
 		return saida;
 	}
+	
+	 @Override
+	    public int hashCode() {
+	        int hash = 7;
+	        hash = 89 * hash + Objects.hashCode(this.us_id);
+	        return hash;
+	    }
 }
