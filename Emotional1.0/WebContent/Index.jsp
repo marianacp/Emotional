@@ -7,7 +7,7 @@
       <meta name="description" content="">
       <meta name="author" content="">
 	  <link rel="icon" href="img/logo1.png" type="image/x-icon" />
-      <title>M�sica para todos - EMOTIONAL</title>
+      <title>M&uacute;sica para todos - EMOTIONAL</title>
       <!-- Css -->
       <link href="css/bootstrap.css" rel="stylesheet">
       <link href="css/style.css" rel="stylesheet">
@@ -30,8 +30,8 @@
                <ul class="nav-list vcenter">
                   <li class="nav-item"><a class="item-anchor" href="Login.jsp">Entrar</a></li>
                   <li class="nav-item"><a class="item-anchor" href="Cadastro.jsp">Inscrever-se</a></li>
-                  <li class="nav-item"><a class="item-anchor" href="portfolio.html">Ajuda</a></li>
-                  <li class="nav-item"><a class="item-anchor" href="contact.html">Contato</a></li>
+                  <li class="nav-item"><a class="item-anchor" href="PerguntasFrequentes.jsp">Ajuda</a></li>
+                  <li class="nav-item"><a class="item-anchor" href="FaleConosco.jsp">Contato</a></li>
                </ul>
             </div>
          </div>
@@ -39,7 +39,7 @@
       <!-- Header -->
       <div class="span12">
          <div class="col-md-6 no-gutter text-center fill">
-            <h2 class="vcenter">Sentimentos para a sua m�sica</h2>
+            <h2 class="vcenter">Sentimentos para a sua  m&uacute;sica</h2>
          </div>
          <div class="col-md-6 no-gutter text-center">
             <div id="header" data-speed="2" data-type="background">
