@@ -11,7 +11,7 @@
   <div class="content"> 
       <!--FORMULÃRIO PARA ENVIO DE AJUDA-->
       <div id="suporte">
-        <form name="formSup" action="teste1.jsp" method="get" enctype="text/plain" autocomplete="off"> 
+        <form name="formSup" action="faleConosco" method="get" enctype="text/plain" autocomplete="off"> 
           <h1>Suporte ao usuário</h1> 
            
           <p> 

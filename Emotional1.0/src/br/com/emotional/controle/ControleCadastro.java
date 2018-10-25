@@ -59,15 +59,15 @@ public class ControleCadastro extends HttpServlet{
 	UsuarioDAO usuariodao = new UsuarioDAO();
 	try {
 		usuariodao.salvarUsuario(usuario);
+		out.println("Contato " + usuario.getNome() +
+	            " adicionado com sucesso");
 	} catch (Exception e) {
-		// TODO Auto-generated catch block
 		e.printStackTrace();
 		request.setAttribute("msg", 
 		        "Cadastro não Efetuado!"); 
 	}
 	
-	out.println("Contato " + usuario.getNome() +
-            " adicionado com sucesso");
+	
 	}
 	
 	
