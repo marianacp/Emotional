@@ -18,7 +18,7 @@
           <h1>Login</h1> 
           <p> 
             <label for="email">E-mail</label>
-            <input id="email" name="email" required="required" type="text" placeholder="ex. contato@htmlecsspro.com"/>
+            <input id="email" name="email" required="required" type="text" placeholder="ex. contato@email.com"/>
           </p>
            
           <p> 
