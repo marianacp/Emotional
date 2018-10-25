@@ -12,14 +12,14 @@ public class AmigoUsuarioDAO extends Dao{
 	public void salvarSolicAmizade(AmigoUsuario amigo) throws Exception {
 		open(); 
 		
-		String sql = "INSERT INTO USUARIO_AMIGO (CONFIRMACAO, ID_SOLICITADO, ID_SOLICITANTE)"
+		String sql = "INSERT INTO lista_amigos (CONFIRMACAO, ID_SOLICITADO, ID_SOLICITANTE)"
 				+ "VALUES(?, ?, ?) "; 
 		PreparedStatement pstm = null;
 		
 		try {
 			pstm = con.prepareStatement(sql);
 			
-			pstm.setBoolean(1, amigo.isConfirmado());
+			pstm.setBoolean(1, amigo.isConfirmacao());
 			pstm.setInt(2, amigo.getid_solicitado());
 			pstm.setInt(3, amigo.getid_solicitante());
 			
@@ -51,7 +51,7 @@ public class AmigoUsuarioDAO extends Dao{
 	public void confirmarSolicAmizade(AmigoUsuario amigo) throws Exception {
 		open(); 
 		//quando formos implementar o controle, lembrar que ao aceitar uma amizade, a pessoa que aceita é o solicitado
-		String sql = "UPDATE USUARIO_AMIGO SET CONFIRMACAO = ?  WHERE ID_SOLICITANTE = ? AND ID_SOLICITADO = ?"; 
+		String sql = "UPDATE lista_amigos SET CONFIRMACAO = ?  WHERE ID_SOLICITANTE = ? AND ID_SOLICITADO = ?"; 
 		
 		PreparedStatement pstm = null;
 		
@@ -92,7 +92,7 @@ public class AmigoUsuarioDAO extends Dao{
 		
 		open(); 
 		
-		String sql = "SELECT * FROM USUARIO_AMIGO WHERE ID_SOLICITANTE = ?"; 
+		String sql = "SELECT * FROM lista_amigos WHERE ID_SOLICITANTE = ?"; 
 		
 		PreparedStatement pstm = null;
 		
@@ -112,7 +112,7 @@ public class AmigoUsuarioDAO extends Dao{
 				AmigoUsuario amigo = new AmigoUsuario(); 
 				amigo.setid_solicitado(rs.getInt("ID_SOLICITADO"));
 				amigo.setid_solicitante(rs.getInt("ID_SOLICITANTE"));
-				amigo.setConfirmado(rs.getBoolean("CONFIRMACAO"));
+				amigo.setConfirmacao(rs.getBoolean("CONFIRMACAO"));
 				
 				lista.add(amigo); 
 			}
@@ -125,12 +125,13 @@ public class AmigoUsuarioDAO extends Dao{
 		AmigoUsuarioDAO ad = new AmigoUsuarioDAO(); 
 		
 		
-		Usuario us = new Usuario(); 
-		us.setid_usu(1);
+		AmigoUsuario am = new AmigoUsuario(); 
+		am.setid_solicitado(1);
+		am.setid_solicitante(2);
 		
 		try {
-			ad.listarAmigos(us); 
-			System.out.println(us);
+			ad.salvarSolicAmizade(am);; 
+			System.out.println("Adicionado");
 		} catch (Exception e) {
 			System.out.println("Erro");
 			e.printStackTrace();

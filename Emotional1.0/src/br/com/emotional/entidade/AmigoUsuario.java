@@ -1,14 +1,15 @@
 package br.com.emotional.entidade;
 
 public class AmigoUsuario {
-	private boolean confirmado; 
+	private boolean confirmacao; 
 	private int id_solicitante;
 	private int id_solicitado;
-	public boolean isConfirmado() {
-		return confirmado;
+	
+	public boolean isConfirmacao() {
+		return confirmacao;
 	}
-	public void setConfirmado(boolean confirmado) {
-		this.confirmado = confirmado;
+	public void setConfirmacao(boolean confirmacao) {
+		this.confirmacao = confirmacao;
 	}
 	public int getid_solicitante() {
 		return id_solicitante;
@@ -25,7 +26,7 @@ public class AmigoUsuario {
 	
 	@Override
 	public String toString() {
-		String saida = "Amigo: " + id_solicitante + "Confirmado: " + confirmado; 
+		String saida = "Amigo: " + id_solicitante + "confirmacao: " + confirmacao; 
 		return saida;
 	}
 }
