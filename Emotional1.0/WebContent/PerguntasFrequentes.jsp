@@ -13,25 +13,27 @@
    <h1>Perguntas Frequentes</h1> 
 <div class='question'>
   <input type='checkbox' id='question-1'>
-  <label for='question-1'>pergunta 1</label>
+  <label for='question-1'>Qual a diferença entre o perfil verificado de um artista e qualquer outro perfil?</label>
   <div class='answer'>
-    resposta 1
+  O perfil verificado de um artista leva para sua página de discografia.
+  <p></p>
+  Outros perfis não terão outras páginas.
   </div>
 </div>
 
 <div class='question'>
   <input type='checkbox' id='question-2'>
-  <label for='question-2'>Segunda pergunta?</label>
+  <label for='question-2'>O que é uma página de discografia?</label>
   <div class='answer'>
-    Segunda resposta.
+    É a página onde as músicas de um artista ficam dentro do Emotional.
   </div>
 </div>
 
 <div class='question'>
   <input type='checkbox' id='question-3'>
-  <label for='question-3'>pergunta 3</label>
+  <label for='question-3'>Como faço para colocar minha música no Emotional?</label>
   <div class='answer'>
-   resposta 3
+   Basta ter um perfil de artista verificado. 
   </div>
 </div>
 
@@ -51,7 +53,7 @@
 °Insira todos os endereços de e-mail que você usa no nosso formulário de redefinição de senha. Se houver alguma conta associada ao endereço de e-mail, vamos te avisar. Então, você poderá redefinir sua senha para fazer login.
 	<p></p>
 	<p></p>
-ºVerifique se há e-mails do Spotify nas suas caixas de entrada (incluindo pastas de spam e lixo eletrônico). Se houver algum, então é provável que você tenha uma conta do Spotify associada a esse e-mail.
+ºVerifique se há e-mails do Emotional nas suas caixas de entrada (incluindo pastas de spam e lixo eletrônico). Se houver algum, então é provável que você tenha uma conta do Emotional associada a esse e-mail.
   </div>
 </div>
 
