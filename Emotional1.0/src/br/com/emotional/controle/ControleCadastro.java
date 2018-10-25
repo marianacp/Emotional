@@ -26,10 +26,11 @@ public class ControleCadastro extends HttpServlet{
 		PrintWriter out = response.getWriter();
 		
 	String nome = request.getParameter("nome"); 
-	String apelido = request.getParameter("apelido");
+	String Login = request.getParameter("apelido");
 	String email = request.getParameter("email");
 	String senha = request.getParameter("senha");
 	String dataEmTexto = request.getParameter("dataNascimento");
+	String cpf = request.getParameter("cpf");
 	String imagem = request.getParameter("imagem"); 
 	Calendar dataNascimento = null;
 
@@ -48,11 +49,12 @@ public class ControleCadastro extends HttpServlet{
 	Usuario usuario = new Usuario(); 
 	
 	usuario.setNome(nome);
-	usuario.setApelido(apelido);
+	usuario.setLogin(Login);
+	usuario.setCpf(cpf);
 	usuario.setEmail(email);
 	usuario.setSenha(senha);
 	usuario.setImagem(imagem);
-	usuario.setData_nasc(dataNascimento); 
+	usuario.setdata_nascimento(dataNascimento); 
 	
 	UsuarioDAO usuariodao = new UsuarioDAO();
 	try {

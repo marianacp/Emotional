@@ -32,7 +32,11 @@
             <input id="apelido" name="apelido" required="required" type="text" placeholder="apelido" />
           </p>
 		  
-           
+            <p> 
+            <label for="cpf">CPF</label>
+            <input id="cpf" name="cpf" required="required" type="text" placeholder="Insira somente números"/> 
+          </p>
+          
           <p> 
             <label for="email">E-mail</label>
             <input id="email" name="email" required="required" type="email" placeholder="seunome@exemplo.com"/> 

@@ -17,7 +17,7 @@ public class LoginDAO  extends Dao implements iDAO<Usuario>{
         PreparedStatement ps = null;
         ResultSet rs = null;
 
-        	String sql = "select us_id, nome, email, apelido, senha, emo_id, ispremium, foto, ativo from usuario where email = ?";
+        	String sql = "select id_usu, nome, email, Login, senha, id_emocao, Premium, foto, ativo, cpf from usuario where email = ?";
         	ps = con.prepareStatement(sql); 
         	
             ps.setString(1, email);
@@ -25,16 +25,17 @@ public class LoginDAO  extends Dao implements iDAO<Usuario>{
             if (rs.next()) {
                Usuario us = new Usuario(); 
                us = new Usuario(); 
-				us.setApelido(rs.getString("APELIDO"));
+				us.setLogin(rs.getString("Login"));
 				us.setAtivo(rs.getBoolean("ATIVO"));
-				//us.setData_nasc(rs.getDate("DATA_NASC");
+				//us.setdata_nascimento(rs.getDate("data_nascimento");
 				us.setEmail(rs.getString("EMAIL"));
 				us.setSenha(rs.getString("SENHA"));
-				us.setEmo_id(rs.getInt("EMO_ID"));
+				us.setid_emocao(rs.getInt("id_emocao"));
 				us.setImagem(rs.getString("FOTO"));
 				us.setNome(rs.getString("NOME"));
-				us.setPremium(rs.getBoolean("ISPREMIUM"));
-				us.setUs_id(rs.getInt("US_ID"));
+				us.setPremium(rs.getBoolean("Premium"));
+				us.setid_usu(rs.getInt("id_usu"));
+				us.setCpf(rs.getString("CPF"));
 				
 				return us;
             }
@@ -48,22 +49,23 @@ public class LoginDAO  extends Dao implements iDAO<Usuario>{
                 PreparedStatement ps = null;
                 ResultSet rs = null;
                 try {
-                    ps = con.prepareStatement("select us_id, nome, email, apelido, senha, emo_id, ispremium, foto, ativo from usuario where email = ?");
+                    ps = con.prepareStatement("select id_usu, nome, email, Login, senha, id_emocao, Premium, foto, ativo, cpf from usuario where email = ?");
                     ps.setInt(1, (Integer) chave[0]);
                     rs = ps.executeQuery();
                     if (rs.next()) {
                     	 Usuario us = new Usuario(); 
                          us = new Usuario(); 
-          				us.setApelido(rs.getString("APELIDO"));
+          				us.setLogin(rs.getString("Login"));
           				us.setAtivo(rs.getBoolean("ATIVO"));
-          				//us.setData_nasc(rs.getDate("DATA_NASC");
+          				//us.setdata_nascimento(rs.getDate("data_nascimento");
           				us.setEmail(rs.getString("EMAIL"));
           				us.setSenha(rs.getString("SENHA"));
-          				us.setEmo_id(rs.getInt("EMO_ID"));
+          				us.setid_emocao(rs.getInt("id_emocao"));
           				us.setImagem(rs.getString("FOTO"));
           				us.setNome(rs.getString("NOME"));
-          				us.setPremium(rs.getBoolean("ISPREMIUM"));
-          				us.setUs_id(rs.getInt("US_ID"));
+          				us.setPremium(rs.getBoolean("Premium"));
+          				us.setid_usu(rs.getInt("id_usu"));
+          				us.setCpf(rs.getString("CPF"));
           				
           				return us;
                     }
@@ -95,21 +97,22 @@ public class LoginDAO  extends Dao implements iDAO<Usuario>{
             ResultSet rs = null;
             try {
                 ps = con.createStatement();
-                rs = ps.executeQuery("select us_id, nome, email, apelido, senha, emo_id, ispremium, foto, ativo from usuario where email = ?");
+                rs = ps.executeQuery("select id_usu, nome, email, Login, senha, id_emocao, Premium, foto, ativo, cpf from usuario where email = ?");
                 lista = new ArrayList<>();
                 while (rs.next()) {
                 	 Usuario us = new Usuario(); 
                      us = new Usuario(); 
-      				us.setApelido(rs.getString("APELIDO"));
+      				us.setLogin(rs.getString("Login"));
       				us.setAtivo(rs.getBoolean("ATIVO"));
-      				//us.setData_nasc(rs.getDate("DATA_NASC");
+      				//us.setdata_nascimento(rs.getDate("data_nascimento");
       				us.setEmail(rs.getString("EMAIL"));
       				us.setSenha(rs.getString("SENHA"));
-      				us.setEmo_id(rs.getInt("EMO_ID"));
+      				us.setid_emocao(rs.getInt("id_emocao"));
       				us.setImagem(rs.getString("FOTO"));
       				us.setNome(rs.getString("NOME"));
-      				us.setPremium(rs.getBoolean("ISPREMIUM"));
-      				us.setUs_id(rs.getInt("US_ID"));
+      				us.setPremium(rs.getBoolean("Premium"));
+      				us.setid_usu(rs.getInt("id_usu"));
+      				us.setCpf(rs.getString("CPF"));
       				
       				lista.add(us);
                 }

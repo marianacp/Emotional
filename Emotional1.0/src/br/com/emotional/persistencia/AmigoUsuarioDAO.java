@@ -20,8 +20,8 @@ public class AmigoUsuarioDAO extends Dao{
 			pstm = con.prepareStatement(sql);
 			
 			pstm.setBoolean(1, amigo.isConfirmado());
-			pstm.setInt(2, amigo.getCd_solicitado());
-			pstm.setInt(3, amigo.getCd_solicitante());
+			pstm.setInt(2, amigo.getid_solicitado());
+			pstm.setInt(3, amigo.getid_solicitante());
 			
 			pstm.execute(); 
 		}
@@ -59,8 +59,8 @@ public class AmigoUsuarioDAO extends Dao{
 			pstm = con.prepareStatement(sql);
 			
 			pstm.setBoolean(1, true);
-			pstm.setInt(2, amigo.getCd_solicitante());
-			pstm.setInt(3, amigo.getCd_solicitado());
+			pstm.setInt(2, amigo.getid_solicitante());
+			pstm.setInt(3, amigo.getid_solicitado());
 
 			
 			pstm.executeUpdate(); 
@@ -99,7 +99,7 @@ public class AmigoUsuarioDAO extends Dao{
 		
 			pstm = con.prepareStatement(sql);
 			
-			pstm.setInt(1, usuario.getUs_id());
+			pstm.setInt(1, usuario.getid_usu());
 
 
 			
@@ -110,8 +110,8 @@ public class AmigoUsuarioDAO extends Dao{
 			while(rs.next()) {
 				
 				AmigoUsuario amigo = new AmigoUsuario(); 
-				amigo.setCd_solicitado(rs.getInt("ID_SOLICITADO"));
-				amigo.setCd_solicitante(rs.getInt("ID_SOLICITANTE"));
+				amigo.setid_solicitado(rs.getInt("ID_SOLICITADO"));
+				amigo.setid_solicitante(rs.getInt("ID_SOLICITANTE"));
 				amigo.setConfirmado(rs.getBoolean("CONFIRMACAO"));
 				
 				lista.add(amigo); 
@@ -126,7 +126,7 @@ public class AmigoUsuarioDAO extends Dao{
 		
 		
 		Usuario us = new Usuario(); 
-		us.setUs_id(1);
+		us.setid_usu(1);
 		
 		try {
 			ad.listarAmigos(us); 

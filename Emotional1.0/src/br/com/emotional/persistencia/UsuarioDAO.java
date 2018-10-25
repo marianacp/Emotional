@@ -13,8 +13,8 @@ public class UsuarioDAO extends Dao {
 	public void salvarUsuario(Usuario usuario) throws Exception {
 		open(); 
 		
-		String sql = "INSERT INTO Usuario (nome, apelido, email, senha, foto, data_nasc, isPremium, ativo)" +
-				 " VALUES(?, ?, ?, ?, ?, ?, ?, ?)";
+		String sql = "INSERT INTO Usuario (nome, login, email, senha, foto, data_nascimento, Premium, ativo, cpf)" +
+				 " VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?)";
 		
 		//Connection conn = null; 
 		PreparedStatement pstm = null;
@@ -23,14 +23,15 @@ public class UsuarioDAO extends Dao {
 			pstm = con.prepareStatement(sql);
 			
 			pstm.setString(1, usuario.getNome());
-			pstm.setString(2, usuario.getApelido());
+			pstm.setString(2, usuario.getLogin());
 			pstm.setString(3, usuario.getEmail());
 			pstm.setString(4, usuario.getSenha());
 			pstm.setString(5, usuario.getImagem());
 			pstm.setDate(6, new java.sql.Date(
                     Calendar.getInstance().getTimeInMillis()));
-			pstm.setBoolean(7, usuario.isPremium());
+			pstm.setBoolean(7, usuario.Premium());
 			pstm.setBoolean(8, true);
+			pstm.setString(9, usuario.getCpf());
 			
 			pstm.execute(); 
 		}
@@ -59,8 +60,8 @@ public class UsuarioDAO extends Dao {
 	public void atualizarUsuario(Usuario usuario) throws Exception {
 		open(); 
 		
-		String sql = "UPDATE USUARIO SET NOME = ?, APELIDO = ?, EMAIL = ?,"
-				+ " SENHA = ?, FOTO = ?, DATA_NASC = ? , ISPREMIUM = ?, ATIVO = ? WHERE US_ID = ?";
+		String sql = "UPDATE USUARIO SET NOME = ?, login = ?, EMAIL = ?,"
+				+ " SENHA = ?, FOTO = ?, data_nascimento = ? , Premium = ?, ATIVO = ?, cpf = ? WHERE id_usu = ?";
 				
 				
 		PreparedStatement pstm = null;
@@ -69,15 +70,16 @@ public class UsuarioDAO extends Dao {
 			pstm = con.prepareStatement(sql);
 			
 			pstm.setString(1, usuario.getNome());
-			pstm.setString(2, usuario.getApelido());
+			pstm.setString(2, usuario.getLogin());
 			pstm.setString(3, usuario.getEmail());
 			pstm.setString(4, usuario.getSenha());
 			pstm.setString(5, usuario.getImagem());
 			pstm.setDate(6, new java.sql.Date(
                     Calendar.getInstance().getTimeInMillis()));
-			pstm.setBoolean(7, usuario.isPremium());
+			pstm.setBoolean(7, usuario.Premium());
 			pstm.setBoolean(8, usuario.isAtivo());
-			pstm.setInt(9, usuario.getUs_id());
+			pstm.setInt(9, usuario.getid_usu());
+			pstm.setString(10, usuario.getCpf());
 			
 			pstm.executeUpdate(); 
 		}
@@ -109,14 +111,14 @@ public class UsuarioDAO extends Dao {
 	public void excluirUsuario(Usuario usuario) throws Exception {
 		open(); 
 		
-		String sql = "DELETE FROM USUARIO WHERE US_ID = ?"; 
+		String sql = "DELETE FROM USUARIO WHERE id_usu = ?"; 
 		
 		PreparedStatement pstm = null;
 		
 		try {
 			pstm = con.prepareStatement(sql);
 			
-			pstm.setInt(1, usuario.getUs_id());
+			pstm.setInt(1, usuario.getid_usu());
 			
 			pstm.execute(); 
 		}
@@ -147,29 +149,30 @@ public class UsuarioDAO extends Dao {
 	public Usuario buscaPorCodigo(Usuario usuario) throws Exception {
 		open(); 
 		
-		String sql = "SELECT * FROM USUARIO WHERE US_ID = ?"; 
+		String sql = "SELECT * FROM USUARIO WHERE id_usu = ?"; 
 		
 		PreparedStatement pstm = null;
 		
 		
 			pstm = con.prepareStatement(sql);
 			
-			pstm.setInt(1, usuario.getUs_id());
+			pstm.setInt(1, usuario.getid_usu());
 			
 			ResultSet rs =  pstm.executeQuery(); 
 		
 			Usuario us = null; 
 			if(rs.next()) {
 				us = new Usuario(); 
-				us.setApelido(rs.getString("APELIDO"));
+				us.setLogin(rs.getString("login"));
 				us.setAtivo(rs.getBoolean("ATIVO"));
-				//us.setData_nasc(rs.getDate("DATA_NASC");
+				//us.setdata_nascimento(rs.getDate("data_nascimento");
 				us.setEmail(rs.getString("EMAIL"));
-				us.setEmo_id(rs.getInt("EMO_ID"));
+				us.setid_emocao(rs.getInt("id_emocao"));
 				us.setImagem(rs.getString("FOTO"));
 				us.setNome(rs.getString("NOME"));
-				us.setPremium(rs.getBoolean("ISPREMIUM"));
-				us.setUs_id(rs.getInt("US_ID"));
+				us.setPremium(rs.getBoolean("Premium"));
+				us.setid_usu(rs.getInt("id_usu"));
+				us.setCpf(rs.getString("CPF"));
 			}
 			return us; 
 				
@@ -179,7 +182,7 @@ public class UsuarioDAO extends Dao {
 	public int getIdPorEmail(String email) throws Exception {
 		open(); 
 		
-		String sql = "SELECT US_ID FROM USUARIO WHERE EMAIL = ?"; 
+		String sql = "SELECT id_usu FROM USUARIO WHERE EMAIL = ?"; 
 		
 		PreparedStatement pstm = null;
 		
@@ -196,7 +199,7 @@ public class UsuarioDAO extends Dao {
 }
 		pstm.close();
         con.close();
-		int codigo = rs.getInt("us_id"); 
+		int codigo = rs.getInt("id_usu"); 
 		return codigo; 
 	}
 	
@@ -205,13 +208,13 @@ public class UsuarioDAO extends Dao {
 		
 		//Se está Ativo, bloqueia o usuário
 		if(usuario.isAtivo()) {
-			String sql = "UPDATE USUARIO SET ATIVO = FALSE WHERE US_ID = ?";	
+			String sql = "UPDATE USUARIO SET ATIVO = FALSE WHERE id_usu = ?";	
 			
 			PreparedStatement pstm = null;
 			try {
 			pstm = con.prepareStatement(sql);
 			
-			pstm.setInt(1, usuario.getUs_id());
+			pstm.setInt(1, usuario.getid_usu());
 			
 			pstm.executeUpdate(); 
 			}
@@ -240,14 +243,14 @@ public class UsuarioDAO extends Dao {
 		
 		//Se está inativo, desbloqueia
 		else {
-			String sql = "UPDATE USUARIO SET ATIVO = TRUE WHERE US_ID = ?";	
+			String sql = "UPDATE USUARIO SET ATIVO = TRUE WHERE id_usu = ?";	
 			
 			PreparedStatement pstm = null;
 			
 			try {
 			pstm = con.prepareStatement(sql);
 			
-			pstm.setInt(1, usuario.getUs_id());
+			pstm.setInt(1, usuario.getid_usu());
 			
 			pstm.executeUpdate(); 
 			}
@@ -276,17 +279,6 @@ public class UsuarioDAO extends Dao {
 	}
 	
 	public static void main(String[] args) {
-		Usuario us = new Usuario(); 
-		us.setUs_id(1);
 		
-		UsuarioDAO ud = new UsuarioDAO(); 
-		try {
-			ud.buscaPorCodigo(us);
-			System.out.println(us.toString());
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} 
 	}
-	
 }

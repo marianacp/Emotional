@@ -2,30 +2,30 @@ package br.com.emotional.entidade;
 
 public class AmigoUsuario {
 	private boolean confirmado; 
-	private int cd_solicitante;
-	private int cd_solicitado;
+	private int id_solicitante;
+	private int id_solicitado;
 	public boolean isConfirmado() {
 		return confirmado;
 	}
 	public void setConfirmado(boolean confirmado) {
 		this.confirmado = confirmado;
 	}
-	public int getCd_solicitante() {
-		return cd_solicitante;
+	public int getid_solicitante() {
+		return id_solicitante;
 	}
-	public void setCd_solicitante(int cd_solicitante) {
-		this.cd_solicitante = cd_solicitante;
+	public void setid_solicitante(int id_solicitante) {
+		this.id_solicitante = id_solicitante;
 	}
-	public int getCd_solicitado() {
-		return cd_solicitado;
+	public int getid_solicitado() {
+		return id_solicitado;
 	}
-	public void setCd_solicitado(int cd_solicitado) {
-		this.cd_solicitado = cd_solicitado;
+	public void setid_solicitado(int id_solicitado) {
+		this.id_solicitado = id_solicitado;
 	} 
 	
 	@Override
 	public String toString() {
-		String saida = "Amigo: " + cd_solicitante + "Confirmado: " + confirmado; 
+		String saida = "Amigo: " + id_solicitante + "Confirmado: " + confirmado; 
 		return saida;
 	}
 }

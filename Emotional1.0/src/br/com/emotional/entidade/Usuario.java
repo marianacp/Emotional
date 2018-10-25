@@ -6,22 +6,23 @@ import java.util.Date;
 import java.util.Objects;
 
 public class Usuario {
-	private int us_id; 
+	private int id_usu; 
 	private String nome;
-	private String apelido; 
+	private String login; 
 	private String email; 
 	private String senha; 
 	private String imagem; 
-	
-	private int emo_id; 
-	private Calendar data_nasc; 
-	private boolean isPremium;
+	private String cpf; 
+	private int id_emocao; 
+	private Calendar data_nascimento; 
+	private boolean Premium;
 	private boolean ativo;
-	public int getUs_id() {
-		return us_id;
+	
+	public int getid_usu() {
+		return id_usu;
 	}
-	public void setUs_id(int us_id) {
-		this.us_id = us_id;
+	public void setid_usu(int id_usu) {
+		this.id_usu = id_usu;
 	}
 	public String getNome() {
 		return nome;
@@ -47,23 +48,30 @@ public class Usuario {
 	public void setImagem(String imagem) {
 		this.imagem = imagem;
 	}
-	public int getEmo_id() {
-		return emo_id;
+	public int getid_emocao() {
+		return id_emocao;
 	}
-	public void setEmo_id(int emo_id) {
-		this.emo_id = emo_id;
+	public void setid_emocao(int id_emocao) {
+		this.id_emocao = id_emocao;
 	}
-	public Calendar getData_nasc() {
-		return data_nasc;
+	public String getCpf() {
+		return cpf;
 	}
-	public void setData_nasc(Calendar data_nasc) {
-		this.data_nasc = data_nasc;
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
 	}
-	public boolean isPremium() {
-		return isPremium;
+
+	public Calendar getdata_nascimento () {
+		return data_nascimento ;
 	}
-	public void setPremium(boolean isPremium) {
-		this.isPremium = isPremium;
+	public void setdata_nascimento(Calendar data_nascimento ) {
+		this.data_nascimento  = data_nascimento;
+	}
+	public boolean Premium() {
+		return Premium;
+	}
+	public void setPremium(boolean Premium) {
+		this.Premium = Premium;
 	}
 	public boolean isAtivo() {
 		return ativo;
@@ -71,23 +79,23 @@ public class Usuario {
 	public void setAtivo(boolean ativo) {
 		this.ativo = ativo;
 	}
-	public String getApelido() {
-		return apelido;
+	public String getLogin() {
+		return login;
 	}
-	public void setApelido(String apelido) {
-		this.apelido = apelido;
+	public void setLogin(String login) {
+		this.login = login;
 	}
 	
 	@Override
 	public String toString() {
-		String saida = us_id + " " + nome; 
+		String saida = id_usu + " " + nome; 
 		return saida;
 	}
 	
 	 @Override
 	    public int hashCode() {
 	        int hash = 7;
-	        hash = 89 * hash + Objects.hashCode(this.us_id);
+	        hash = 89 * hash + Objects.hashCode(this.id_usu);
 	        return hash;
 	    }
 }

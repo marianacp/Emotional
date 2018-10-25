@@ -12,7 +12,7 @@ public class Dao {
 	ResultSet rs;
 	
 	
-	private final String URL = "jdbc:mysql://localhost:3306/emotional?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC&autoReconnect=true&useSSL=false";
+	private final String URL = "jdbc:mysql://localhost:3306/Emotional_BD?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC&autoReconnect=true&useSSL=false";
 	private final String USER = "root";
 	private final String PASS = "admin";
 	
