@@ -26,7 +26,7 @@ public class ControleCadastro extends HttpServlet{
 		PrintWriter out = response.getWriter();
 		
 	String nome = request.getParameter("nome"); 
-	String Login = request.getParameter("apelido");
+	String Login = request.getParameter("username");
 	String email = request.getParameter("email");
 	String senha = request.getParameter("senha");
 	String dataEmTexto = request.getParameter("dataNascimento");
