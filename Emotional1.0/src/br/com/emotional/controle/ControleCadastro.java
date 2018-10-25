@@ -26,7 +26,7 @@ public class ControleCadastro extends HttpServlet{
 		PrintWriter out = response.getWriter();
 		
 	String nome = request.getParameter("nome"); 
-	String Login = request.getParameter("apelido");
+	String Login = request.getParameter("username");
 	String email = request.getParameter("email");
 	String senha = request.getParameter("senha");
 	String dataEmTexto = request.getParameter("dataNascimento");
@@ -59,15 +59,15 @@ public class ControleCadastro extends HttpServlet{
 	UsuarioDAO usuariodao = new UsuarioDAO();
 	try {
 		usuariodao.salvarUsuario(usuario);
+		out.println("Contato " + usuario.getNome() +
+	            " adicionado com sucesso");
 	} catch (Exception e) {
-		// TODO Auto-generated catch block
 		e.printStackTrace();
 		request.setAttribute("msg", 
 		        "Cadastro não Efetuado!"); 
 	}
 	
-	out.println("Contato " + usuario.getNome() +
-            " adicionado com sucesso");
+	
 	}
 	
 	

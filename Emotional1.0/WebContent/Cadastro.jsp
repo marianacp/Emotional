@@ -28,8 +28,8 @@
           </p>
 		  
 		  <p> 
-            <label for="apelido">Apelido</label>
-            <input id="apelido" name="apelido" required="required" type="text" placeholder="apelido" />
+            <label for="username">Username</label>
+            <input id="username" name="username" required="required" type="text" placeholder="apelido" />
           </p>
 		  
             <p> 
@@ -54,7 +54,7 @@
 		  
 		   <p> 
             <label for="dataNascimento">Data de Nascimento</label>
-            <input id="dataNascimento" name="dataNascimento" required="required" type="text" />
+            <input id="dataNascimento" name="dataNascimento" required="required" type="text" placeholder="dd/mm/aaaa"/>
           </p>
 		  
            
