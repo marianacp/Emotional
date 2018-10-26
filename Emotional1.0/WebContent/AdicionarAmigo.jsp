@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <title>Emotional</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+  <link rel="stylesheet" type="text/css" href="estilo.css" />
   <link rel="shortcut icon" type="image/png" href="img/123.png"/>
 
 </head>
@@ -26,13 +26,17 @@
           <p><a href="#">4 amigos em comum</a></p>
         </div>
         <div class="col-sm-2">
-          <img src="http://www.fdm.co.in/wannahelp/assets/uploads_category/52743.svg" alt="group" width="40px" />
+           <!-- <img src="" alt="group" width="40px" /> -->
           <br>
-          <a href="#">Enviar Solicitação</a>
+          
+            <p class="linked">
+			<a href="#">Enviar Solicitação</a>
+			</p>
         </div>
       </div>
       <div class="clearfix"></div>
       <hr />
+	  <br> 
       <div class="col-sm-12">
         <div class="col-sm-2">
           <img src="https://www.infrascan.net/demo/assets/img/avatar5.png" class="img-circle" width="60px">
@@ -42,13 +46,16 @@
           <p><a href="#">24 amigos em comum</a></p>
         </div>
         <div class="col-sm-2">
-          <img src="http://www.fdm.co.in/wannahelp/assets/uploads_category/52743.svg" alt="group" width="40px" />
+         <!-- <img src="" alt="group" width="40px" /> -->
           <br>
-          <a href="#">Enviar Solicitação</a>
+         <p class="linked">  
+            <a href="#">Enviar Solicitação</a>
+			</p>
         </div>
       </div>
       <div class="clearfix"></div>
       <hr />
+	  <br> 
       <div class="col-sm-12">
         <div class="col-sm-2">
           <img src="https://www.infrascan.net/demo/assets/img/avatar5.png" class="img-circle" width="60px">
@@ -58,13 +65,16 @@
           <p><a href="#">29 amigos em comum</a></p>
         </div>
         <div class="col-sm-2">
-          <img src="http://www.fdm.co.in/wannahelp/assets/uploads_category/52743.svg" alt="group" width="40px" />
+          <!-- <img src="" alt="group" width="40px" /> -->
           <br>
-          <a href="#">Enviar Solicitação</a>
+          <p class="linked">  
+            <a href="#">Enviar Solicitação</a>
+			</p>
         </div>
       </div>
       <div class="clearfix"></div>
       <hr />
+	  <br> 
       <div class="col-sm-12">
         <div class="col-sm-2">
           <img src="https://www.infrascan.net/demo/assets/img/avatar5.png" class="img-circle" width="60px">
@@ -74,9 +84,11 @@
           <p><a href="#">2 amigos em comum</a></p>
         </div>
         <div class="col-sm-2">
-          <img src="http://www.fdm.co.in/wannahelp/assets/uploads_category/52743.svg" alt="group" width="40px" />
+         <!-- <img src="" alt="group" width="40px" /> -->
           <br>
-          <a href="#">Enviar Solicitação</a>
+          <p class="linked">  
+            <a href="#">Enviar Solicitação</a>
+			</p>
         </div>
         <div class="clearfix"></div>
     </div>
