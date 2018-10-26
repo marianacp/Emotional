@@ -107,7 +107,7 @@ input:not([type="checkbox"]){
   transition: all 0.2s linear;
 }
  
-/*estilo do botão submit */
+/*estilo do botÃ£o submit */
 input[type="submit"]{
   width: 100%!important;
   cursor: pointer;  
@@ -125,7 +125,7 @@ input[type="submit"]{
   transition: all 0.2s linear;
 }
  
-/*estilo do bot�o submit no hover */
+/*estilo do botão submit no hover */
 input[type="submit"]:hover{
   background: #4ab3c6;
 }
@@ -167,6 +167,43 @@ input[type="submit"]:hover{
   border: 1px solid #4ab3c6;
 }
 
+.linked{
+  position: absolute;
+  background: rgba(10,23,55,0.0);
+  color: #7f7c7c;
+  left: 0px;
+  height: 20px;
+  width: 440px;
+  padding: 17px 30px 20px 30px;
+  font-size: 16px;
+  text-align: right;
+  border-top: 1px solid #dbe5e8;
+ 
+  -webkit-border-radius: 0 0  5px 5px;
+  border-radius: 0 0  5px 5px;
+}
+ 
+.linked a {
+  font-weight: bold;
+  background: #f7f8f1;
+  padding: 6px;
+  color: rgb(29, 162, 193);
+  margin-left: 10px;
+  border: 1px solid #cbd518;
+ 
+  -webkit-border-radius: 4px;
+  border-radius: 4px;  
+ 
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s  linear;
+}
+ 
+.linked a:hover {
+  color: #39bfd7;
+  background: #f7f7f7;
+  border: 1px solid #4ab3c6;
+}
+
 #cadastro, 
 #login,
 #perguntasfreq,
@@ -192,7 +229,7 @@ input[type="submit"]:hover{
   animation-fill-mode: both;
 }
 
-/* Efeito ao clicar no botão ( Ir para Login ) */
+/* Efeito ao clicar no botÃ£o ( Ir para Login ) */
 #paracadastro:target ~ .content #cadastro,
 #paralogin:target ~ .content #login{
   z-index: 2;
@@ -203,7 +240,7 @@ input[type="submit"]:hover{
   animation-delay: .1s;
 }
  
-/* Efeito ao clicar no botão ( Cadastre-se ) */
+/* Efeito ao clicar no botÃ£o ( Cadastre-se ) */
 #registro:target ~ .content #login,
 #paralogin:target ~ .content #cadastro{
   -webkit-animation-name: fadeOutLeft;
@@ -254,4 +291,8 @@ input[type="submit"]:hover{
     opacity: 0;
     transform: translateX(-20px);
   }
+}
+
+.col-sm-2{
+position: right;
 }
