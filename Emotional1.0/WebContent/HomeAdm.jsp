@@ -32,6 +32,9 @@
 
     <!-- Main CSS-->
     <link href="css/theme.css" rel="stylesheet" media="all">
+    
+    <!-- FavIcon-->
+    <link rel="shortcut icon" type="image/png" href="img/123.png"/>
 
 </head>
 
@@ -58,10 +61,10 @@
                     <ul class="navbar-mobile__list list-unstyled">
                         <li class="has-sub">
                             <a class="js-arrow" href="#">
-                                <i class="fas fa-tachometer-alt"></i>Músicas</a>
+                                <i class="fas fa-tachometer-alt"></i>MÃºsicas</a>
                             <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
                                 <li>
-                                    <a href="index.html">Músicas</a>
+                                    <a href="index.html">MÃºsicas</a>
                                 </li>
                                 <li>
                                     <a href="index2.html">Dashboard 2</a>
@@ -166,7 +169,7 @@
                     <ul class="list-unstyled navbar__list">
                         <li class="has-sub">
                             <a class="js-arrow" href="#">
-                                <i class="fas fa-tachometer-alt" > </i>Músicas</a>
+                                <i class="fas fa-tachometer-alt" > </i>MÃºsicas</a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
                                 <li>
                                     <a href="index.html">Dashboard 1</a>
@@ -233,7 +236,7 @@
                                                 </div>
                                                 <div class="account-dropdown__item">
                                                     <a href="#">
-                                                        <i class="zmdi zmdi-settings"></i>Configuração</a>
+                                                        <i class="zmdi zmdi-settings"></i>ConfiguraÃ§Ã£o</a>
                                                 </div>
                                             </div>
                                             <div class="account-dropdown__footer">
@@ -257,7 +260,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <!-- DATA TABLE -->
-                                <h3 class="title-5 m-b-35">Bloquear / Desbloquear usuário</h3>
+                                <h3 class="title-5 m-b-35">Bloquear / Desbloquear usuÃ¡rio</h3>
                                 <div class="table-data__tool">
                                    
                                 </div>
