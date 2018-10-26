@@ -22,12 +22,12 @@
         </div>
         <div class="col-sm-8">
           <h4><a href="#">Rahul Jain</a></h4>
-          <p><a href="#">4 mutual friends</a></p>
+          <p><a href="#">4 amigos em comum</a></p>
         </div>
         <div class="col-sm-2">
           <img src="http://www.fdm.co.in/wannahelp/assets/uploads_category/52743.svg" alt="group" width="40px" />
           <br>
-          <a href="#">Send Request</a>
+          <a href="#">Enviar Solicitação</a>
         </div>
       </div>
       <div class="clearfix"></div>
@@ -38,12 +38,12 @@
         </div>
         <div class="col-sm-8">
           <h4><a href="#">Ram Ranga Swami</a></h4>
-          <p><a href="#">4 mutual friends</a></p>
+          <p><a href="#">24 amigos em comum</a></p>
         </div>
         <div class="col-sm-2">
           <img src="http://www.fdm.co.in/wannahelp/assets/uploads_category/52743.svg" alt="group" width="40px" />
           <br>
-          <a href="#">Send Request</a>
+          <a href="#">Enviar Solicitação</a>
         </div>
       </div>
       <div class="clearfix"></div>
@@ -54,12 +54,12 @@
         </div>
         <div class="col-sm-8">
           <h4><a href="#">Ram Ranga Swami</a></h4>
-          <p><a href="#">4 mutual friends</a></p>
+          <p><a href="#">29 amigos em comum</a></p>
         </div>
         <div class="col-sm-2">
           <img src="http://www.fdm.co.in/wannahelp/assets/uploads_category/52743.svg" alt="group" width="40px" />
           <br>
-          <a href="#">Send Request</a>
+          <a href="#">Enviar Solicitação</a>
         </div>
       </div>
       <div class="clearfix"></div>
@@ -70,18 +70,18 @@
         </div>
         <div class="col-sm-8">
           <h4><a href="#">Ram Ranga Swami</a></h4>
-          <p><a href="#">4 mutual friends</a></p>
+          <p><a href="#">2 amigos em comum</a></p>
         </div>
         <div class="col-sm-2">
           <img src="http://www.fdm.co.in/wannahelp/assets/uploads_category/52743.svg" alt="group" width="40px" />
           <br>
-          <a href="#">Send Request</a>
+          <a href="#">Enviar Solicitação</a>
         </div>
         <div class="clearfix"></div>
     </div>
   </div>
 </div>
-<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script><script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src='js/bootstrap.min.js'></script><script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
       </div> 
   </div>
 </div>
