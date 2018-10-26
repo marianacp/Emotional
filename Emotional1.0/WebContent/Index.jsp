@@ -24,7 +24,7 @@
                </button>
             </div>
             <a class="navbar-brand" href="index.html">
-            <img class="logo" src="img/Capturar.PNG" alt="logo">
+            <img class="logo" src="img/logo1.png" alt="logo">
             </a>
             <div class="nav-content hideNav hidden">
                <ul class="nav-list vcenter">
