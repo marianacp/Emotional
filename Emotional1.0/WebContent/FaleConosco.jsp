@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <title>Emotional</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+  <link rel="stylesheet" type="text/css" href="css/estilo.css" /> 
+  <link rel="shortcut icon" type="image/png" href="img/123.png"/>	
 </head>
 <body>
 <div class="container" >
@@ -13,7 +14,7 @@
       <div id="suporte">
 
         <form name="formSup" action="faleConosco" method="get" enctype="text/plain" autocomplete="off"> 
-          <h1>Deixe sua dúvida</h1> 
+          <h1>Deixe sua dÃºvida</h1> 
 
 
            
