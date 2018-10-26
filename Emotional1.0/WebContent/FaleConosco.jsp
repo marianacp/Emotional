@@ -11,13 +11,13 @@
   <div class="content"> 
       <!--FORMULÃRIO PARA ENVIO DE AJUDA-->
       <div id="suporte">
-<<<<<<< HEAD
+
         <form name="formSup" action="faleConosco" method="get" enctype="text/plain" autocomplete="off"> 
           <h1>Suporte ao usuário</h1> 
-=======
+
         <form name="formSup" action="teste1.jsp" method="get" enctype="text/plain" autocomplete="off"> 
           <h1>Entre em contato conosco</h1> 
->>>>>>> 94d6214034a1979f9e4c9abb0a19815d8e23a091
+
            
           <p> 
             <label for="nome">Nome</label>

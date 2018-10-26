@@ -14,7 +14,7 @@
     <div class="content">      
       <!--FORMULÁRIO DE LOGIN-->
       <div id="login">
-        <form method="post" action="index.jsp"> 
+        <form method="post" action="loginUsuario" method="get" enctype="text/plain" autocomplete="off"> 
           <h1>Login</h1> 
           <p> 
             <label for="email">E-mail</label>

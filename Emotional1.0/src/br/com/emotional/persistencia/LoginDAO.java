@@ -6,9 +6,12 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
+import java.io.PrintWriter;
+
+import javax.servlet.annotation.WebServlet;
 
 import br.com.emotional.entidade.Usuario;
-
+@WebServlet({"/loginUsario"})
 public class LoginDAO  extends Dao implements iDAO<Usuario>{
 	public Usuario getSingle(String email) throws Exception {
 		open(); 
@@ -42,6 +45,8 @@ public class LoginDAO  extends Dao implements iDAO<Usuario>{
             return null;
     }
 	
+	
+	
         @Override
         public Usuario getSingle(Object... chave) {
             if (chave[0] instanceof Integer) {
@@ -53,8 +58,8 @@ public class LoginDAO  extends Dao implements iDAO<Usuario>{
                     ps.setInt(1, (Integer) chave[0]);
                     rs = ps.executeQuery();
                     if (rs.next()) {
-                    	 Usuario us = new Usuario(); 
-                         us = new Usuario(); 
+                    	Usuario us = new Usuario();
+                        us = new Usuario();                    	  
           				us.setLogin(rs.getString("Login"));
           				us.setAtivo(rs.getBoolean("ATIVO"));
           				//us.setdata_nascimento(rs.getDate("data_nascimento");
@@ -72,7 +77,7 @@ public class LoginDAO  extends Dao implements iDAO<Usuario>{
                 } catch (SQLException ex) {
                 } finally {
                     try {
-						con.close();
+                    	con.close();
 					} catch (SQLException e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
