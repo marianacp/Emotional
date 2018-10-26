@@ -170,7 +170,8 @@ input[type="submit"]:hover{
 #cadastro, 
 #login,
 #perguntasfreq,
-#suporte{
+#suporte,
+#adicionarAmigo{
   position: absolute;
   top: 0px;
   width: 88%;   
