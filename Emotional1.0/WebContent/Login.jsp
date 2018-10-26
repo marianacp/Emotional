@@ -7,12 +7,13 @@
   <meta name="google-signin-scope" content="profile email">
   <meta name="google-signin-client_id" content="900025801880-uodctlul1qu1m0qh28a8uov9k4pcmj6n.apps.googleusercontent.com">
   <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+  <link rel="shortcut icon" type="image/png" href="img/123.png"/>	
   <script src="https://apis.google.com/js/platform.js" async defer></script>
 </head>
 <body>
   <div class="container" >    
     <div class="content">      
-      <!--FORMULÁRIO DE LOGIN-->
+      <!--FORMULï¿½ï¿½RIO DE LOGIN-->
       <div id="login">
         <form method="post" action="loginUsuario" method="get" enctype="text/plain" autocomplete="off"> 
           <h1>Login</h1> 
