@@ -10,7 +10,7 @@
     <meta name="keywords" content="au theme template">
 
     <!-- Title Page-->
-    <title>Administrador</title>
+    <title>Dashboard</title>
 
     <!-- Fontfaces CSS-->
     <link href="css/font-face.css" rel="stylesheet" media="all">
@@ -43,7 +43,7 @@
                 <div class="container-fluid">
                     <div class="header-mobile-inner">
                         <a class="logo" href="index.html">
-                            <img src="images/icon/logo1.png" alt="CoolAdmin" />
+                            <img src="images/icon/logo.png" alt="CoolAdmin" />
                         </a>
                         <button class="hamburger hamburger--slider" type="button">
                             <span class="hamburger-box">
@@ -58,10 +58,10 @@
                     <ul class="navbar-mobile__list list-unstyled">
                         <li class="has-sub">
                             <a class="js-arrow" href="#">
-                                <i class="fas fa-tachometer-alt"></i>Músicas</a>
+                                <i class="fas fa-tachometer-alt"></i>Dashboard</a>
                             <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
                                 <li>
-                                    <a href="index.html">Músicas</a>
+                                    <a href="index.html">Dashboard 1</a>
                                 </li>
                                 <li>
                                     <a href="index2.html">Dashboard 2</a>
@@ -164,9 +164,9 @@
             <div class="menu-sidebar__content js-scrollbar1">
                 <nav class="navbar-sidebar">
                     <ul class="list-unstyled navbar__list">
-                        <li class="has-sub">
+                        <li class="active has-sub">
                             <a class="js-arrow" href="#">
-                                <i class="fas fa-tachometer-alt" > </i>Músicas</a>
+                                <i class="fas fa-tachometer-alt"></i>Dashboard</a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
                                 <li>
                                     <a href="index.html">Dashboard 1</a>
@@ -183,11 +183,10 @@
                             </ul>
                         </li>
                         
-                        <li class="active">
+                        <li>
                             <a href="table.html">
                                 <i class="fas fa-table"></i>Bloquear / Desbloquear</a>
                         </li>
-                        
                         
                         
                     </ul>
@@ -199,7 +198,7 @@
         <!-- PAGE CONTAINER-->
         <div class="page-container">
             <!-- HEADER DESKTOP-->
-          <header class="header-desktop">
+            <header class="header-desktop">
                 <div class="section__content section__content--p30">
                     <div class="container-fluid">
                         <div class="header-wrap">                            
@@ -248,128 +247,90 @@
                     </div>
                 </div>
             </header>
-            <!-- END HEADER DESKTOP-->
+		
+            <!-- HEADER DESKTOP-->
 
             <!-- MAIN CONTENT-->
             <div class="main-content">
                 <div class="section__content section__content--p30">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <!-- DATA TABLE -->
-                                <h3 class="title-5 m-b-35">Bloquear / Desbloquear usuário</h3>
-                                <div class="table-data__tool">
-                                   
-                                </div>
-                                <div class="table-responsive table-responsive-data2">
-                                    <table class="table table-data2">
+                                <h2 class="title-1 m-b-25">Músicas adicionadas</h2>
+                                <div class="table-responsive table--no-card m-b-40">
+                                    <table class="table table-borderless table-striped table-earning">
                                         <thead>
                                             <tr>
-                                                
+                                                <th>ID</th>
                                                 <th>Nome</th>
-                                                <th>email</th>                                             
-                                                <th>status</th>                                                
-                                                <th></th>
+                                                <th class="text-right">Autor</th>
+                                                <th class="text-right">Emoção</th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr class="tr-shadow">
-                                                <td>Lori Lynch</td>
-                                                <td>
-                                                    <span class="block-email">lori@example.com</span>
-                                                </td>
-                                                
-                                                <td>
-                                                    <span class="status--process">Processed</span>
-                                                </td>
-                                                
-                                                <td>
-                                                    <div class="table-data-feature">
-                                                        <button class="item" data-toggle="tooltip" data-placement="top" title="Send">
-                                                            <i class="zmdi zmdi-mail-send"></i>
-                                                        </button>                                                        
-                                                        <button type="button" class="btn btn-danger">Bloquear</button>
-                                                    </div>
-                                                </td>
+                                            <tr>
+                                                <td>100398</td>
+                                                <td>Breathing</td>
+                                                <td class="text-right">Ariana Grande</td>
+                                                <td class="text-right">Felicidade</td>
                                             </tr>
-                                            <tr class="spacer"></tr>
-                                           <tr class="tr-shadow">
-                                                <td>Lori Lynch</td>
-                                                <td>
-                                                    <span class="block-email">lori@example.com</span>
-                                                </td>
-                                                
-                                                <td>
-                                                    <span class="status--process">Processed</span>
-                                                </td>
-                                                
-                                                <td>
-                                                    <div class="table-data-feature">
-                                                        <button class="item" data-toggle="tooltip" data-placement="top" title="Send">
-                                                            <i class="zmdi zmdi-mail-send"></i>
-                                                        </button>                                                        
-                                                        <button type="button" class="btn btn-danger">Bloquear</button>
-                                                    </div>
-                                                </td>
+                                            <tr>
+                                                <td>100397</td>
+                                                <td>BumBum de Ouro</td>
+                                                <td class="text-right">Gloria Groove</td>
+                                                <td class="text-right">Felicidade</td>
                                             </tr>
-                                            <tr class="spacer"></tr>
-                                            <tr class="tr-shadow">
-                                                <td>Lori Lynch</td>
-                                                <td>
-                                                    <span class="block-email">lori@example.com</span>
-                                                </td>
-                                                
-                                                <td>
-                                                    <span class="status--process">Processed</span>
-                                                </td>
-                                                
-                                                <td>
-                                                    <div class="table-data-feature">
-                                                        <button class="item" data-toggle="tooltip" data-placement="top" title="Send">
-                                                            <i class="zmdi zmdi-mail-send"></i>
-                                                        </button>                                                        
-                                                        <button type="button" class="btn btn-danger">Bloquear</button>
-                                                    </div>
-                                                </td>
+                                            <tr>
+                                                <td>100396</td>
+                                                <<td>Dark Horse</td>
+                                                <td class="text-right">Katy Perry</td>
+                                                <td class="text-right">Felicidade</td>
                                             </tr>
-                                            <tr class="spacer"></tr>
-                                            <tr class="tr-shadow">
-                                                <td>Lori Lynch</td>
-                                                <td>
-                                                    <span class="block-email">lori@example.com</span>
-                                                </td>
-                                                
-                                                <td>
-                                                    <span class="status--process">Processed</span>
-                                                </td>
-                                                
-                                                <td>
-                                                    <div class="table-data-feature">
-                                                        <button class="item" data-toggle="tooltip" data-placement="top" title="Send">
-                                                            <i class="zmdi zmdi-mail-send"></i>
-                                                        </button>                                                        
-                                                        <button type="button" class="btn btn-danger">Bloquear</button>
-                                                    </div>
-                                                </td>
+                                            <tr>
+                                                <td>100395</td>
+                                                <td>Born To Die</td>
+                                                <td class="text-right">Lana Del Rey</td>
+                                                <td class="text-right">Tristeza</td>
                                             </tr>
+                                            <tr>
+                                                <td>100393</td>
+                                                <td>Dona de Mim</td>
+                                                <td class="text-right">Iza</td>
+                                                <td class="text-right">Felicidade</td>
+                                            </tr>
+                                            <tr>
+                                                <td>100392</td>
+                                                <td>I Like It</td>
+                                                <td class="text-right">Card B</td>
+                                                <td class="text-right">Felicidade</td>
+                                            </tr>
+                                            <tr>
+                                                <td>100391</td>
+                                                <td>Venice Bitch</td>
+                                                <td class="text-right">Lana Del Rey</td>
+                                                <td class="text-right">Indiferença</td>
+                                            </tr>
+                                            <tr>
+                                                <td>100393</td>
+                                                <td>Problema Seu</td>
+                                                <td class="text-right">Pabllo Vittar</td>
+                                                <td class="text-right">Felicidade</td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div>
-                                <!-- END DATA TABLE -->
-                            </div>
-                        </div>
-                        
+                           
+                            
+                       
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="copyright">
-                                   
+                                    
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- END MAIN CONTENT-->
+            <!-- END PAGE CONTAINER-->
         </div>
 
     </div>
