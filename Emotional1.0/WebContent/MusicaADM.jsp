@@ -32,6 +32,8 @@
 
     <!-- Main CSS-->
     <link href="css/theme.css" rel="stylesheet" media="all">
+	
+    <link rel="shortcut icon" type="image/png" href="img/123.png"/>	
 
 </head>
 
@@ -232,7 +234,7 @@
                                                 </div>
                                                 <div class="account-dropdown__item">
                                                     <a href="#">
-                                                        <i class="zmdi zmdi-settings"></i>Configuração</a>
+                                                        <i class="zmdi zmdi-settings"></i>ConfiguraÃ§Ã£o</a>
                                                 </div>
                                             </div>
                                             <div class="account-dropdown__footer">
@@ -253,7 +255,7 @@
             <!-- MAIN CONTENT-->
             <div class="main-content">
                 <div class="section__content section__content--p30">
-                                <h2 class="title-1 m-b-25">Músicas adicionadas</h2>
+                                <h2 class="title-1 m-b-25">MÃºsicas adicionadas</h2>
                                 <div class="table-responsive table--no-card m-b-40">
                                     <table class="table table-borderless table-striped table-earning">
                                         <thead>
@@ -261,7 +263,7 @@
                                                 <th>ID</th>
                                                 <th>Nome</th>
                                                 <th class="text-right">Autor</th>
-                                                <th class="text-right">Emoção</th>
+                                                <th class="text-right">EmoÃ§Ã£o</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -305,7 +307,7 @@
                                                 <td>100391</td>
                                                 <td>Venice Bitch</td>
                                                 <td class="text-right">Lana Del Rey</td>
-                                                <td class="text-right">Indiferença</td>
+                                                <td class="text-right">IndiferenÃ§a</td>
                                             </tr>
                                             <tr>
                                                 <td>100393</td>
