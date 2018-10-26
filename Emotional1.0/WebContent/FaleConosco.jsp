@@ -13,10 +13,8 @@
       <div id="suporte">
 
         <form name="formSup" action="faleConosco" method="get" enctype="text/plain" autocomplete="off"> 
-          <h1>Suporte ao usuário</h1> 
+          <h1>Deixe sua dúvida</h1> 
 
-        <form name="formSup" action="teste1.jsp" method="get" enctype="text/plain" autocomplete="off"> 
-          <h1>Entre em contato conosco</h1> 
 
            
           <p> 

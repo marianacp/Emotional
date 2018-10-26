@@ -80,7 +80,7 @@
                         </li>
                         <li>
                             <a href="table.html">
-                                <i class="fas fa-table"></i>Tables</a>
+                                <i class="fas fa-table"></i>Aprovações</a>
                         </li>
                         <li>
                             <a href="form.html">
