@@ -59,8 +59,8 @@ public class ControleCadastro extends HttpServlet{
 	UsuarioDAO usuariodao = new UsuarioDAO();
 	try {
 		usuariodao.salvarUsuario(usuario);
-		out.println("Contato " + usuario.getNome() +
-	            " adicionado com sucesso");
+		out.println("Cadastro " + usuario.getNome() +
+	            " efetuado com sucesso");
 	} catch (Exception e) {
 		e.printStackTrace();
 		request.setAttribute("msg", 

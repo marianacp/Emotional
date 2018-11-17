@@ -19,5 +19,13 @@
 	<classpathentry kind="lib" path="C:/Users/USER/Downloads/httpcore-4.4.10.jar"/>
 	<classpathentry kind="lib" path="C:/Users/USER/Documents/Trabalhos - Vinicius/PCS/commons-logging-1.2/commons-logging-1.2.jar"/>
 	<classpathentry kind="lib" path="C:/Users/USER/Documents/Trabalhos - Vinicius/PCS/commons-logging-1.2/commons-logging-1.2-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/USER/Documents/Trabalhos - Vinicius/google-api-java-client/libs/google-api-client-1.24.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/USER/Documents/Trabalhos - Vinicius/google-api-java-client/libs/google-http-client-1.24.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/USER/Documents/Trabalhos - Vinicius/google-api-java-client/libs/google-http-client-jackson-1.24.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/USER/Documents/Trabalhos - Vinicius/google-api-java-client/libs/google-oauth-client-1.24.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/USER/Documents/Trabalhos - Vinicius/google-api-java-client/libs/google-oauth-client-servlet-1.24.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/USER/Documents/Trabalhos - Vinicius/google-api-java-client/libs/jackson-core-2.9.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/USER/Documents/Trabalhos - Vinicius/google-api-java-client/libs/jackson-core-asl-1.9.11.jar"/>
+	<classpathentry kind="lib" path="C:/Users/USER/Documents/Trabalhos - Vinicius/google-api-java-client/libs/google-http-client-jackson2-1.24.1.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

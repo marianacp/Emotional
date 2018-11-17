@@ -37,12 +37,15 @@ public class ControleLogin extends HttpServlet {
 					e.printStackTrace();
 				}
                 if (user != null) {
-                    if (user.getSenha().equalsIgnoreCase(senha)) {
+                    if (user.getSenha().equalsIgnoreCase(senha) && user.isAtivo()) {
                         request.getSession().setAttribute("usuarioLogado", user);
                         response.sendRedirect("Menu.jsp");
                         return;
-                    } else {
+                    } else if (!user.getSenha().equalsIgnoreCase(senha)){
                         erros.add("Senha inválida!");
+                    }
+                    else {
+                    	erros.add("O Usuário encontra-se bloqueado, favor entrar em contato com o Suporte.");
                     }
                 } else {
                     erros.add("Usuário não encontrado!");
