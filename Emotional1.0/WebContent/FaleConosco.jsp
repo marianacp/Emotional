@@ -14,7 +14,11 @@
       <div id="suporte">
 
         <form name="formSup" action="faleConosco" method="get" enctype="text/plain" autocomplete="off"> 
-          <h1>Deixe sua dúvida</h1> 
+
+          <h1>Suporte ao usu�rio</h1> 
+
+        <form name="formSup" action="teste1.jsp" method="get" enctype="text/plain" autocomplete="off"> 
+          <h1>Entre em contato conosco</h1> 
 
 
            
@@ -30,7 +34,7 @@
           </p>
            
 		   <p> 
-            <label for="duvida">Deixe aqui sua d&uacute;vida</label>
+            <label for="duvida">Deixe aqui sua duvida</label>
             <input id="duvida" name="duvida" required="required" type="textarea"/>
           </p>
 		  

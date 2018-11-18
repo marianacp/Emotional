@@ -7,15 +7,22 @@
   <meta name="google-signin-scope" content="profile email">
   <meta name="google-signin-client_id" content="900025801880-uodctlul1qu1m0qh28a8uov9k4pcmj6n.apps.googleusercontent.com">
   <link rel="stylesheet" type="text/css" href="css/estilo.css" />
-  <link rel="shortcut icon" type="image/png" href="img/123.png"/>	
-  <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+
 </head>
 <body>
   <div class="container" >    
     <div class="content">      
       <!--FORMUL��RIO DE LOGIN-->
       <div id="login">
-        <form method="post" action="loginUsuario" method="get" enctype="text/plain" autocomplete="off"> 
+
+
+		<p>${mensagens.erros}</p>
+		
+        <form method="post" action="index.jsp"> 
+
           <h1>Login</h1> 
           <p> 
             <label for="email">E-mail</label>
@@ -35,21 +42,29 @@
 		  
 		  <p> 
             	
-<div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark" position="center"></div>
+<div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
     <script>
-      function onSignIn(googleUser) {
-        // Useful data for your client-side scripts:
-        var profile = googleUser.getBasicProfile();
-        console.log("ID: " + profile.getId()); // Don't send this directly to your server!
-        console.log('Full Name: ' + profile.getName());
-        console.log('Given Name: ' + profile.getGivenName());
-        console.log('Family Name: ' + profile.getFamilyName());
-        console.log("Image URL: " + profile.getImageUrl());
-        console.log("Email: " + profile.getEmail());
-        // The ID token you need to pass to your backend:
-        var id_token = googleUser.getAuthResponse().id_token;
-        console.log("ID Token: " + id_token);
-      };
+    function onSignIn(googleUser) {
+//         var profile = googleUser.getBasicProfile();
+//         console.log('ID: ' + profile.getId());
+//         console.log('Name: ' + profile.getName());
+//         console.log('Image URL: ' + profile.getImageUrl());
+//         console.log('Email: ' + profile.getEmail());
+//         console.log('id_token: ' + googleUser.getAuthResponse().id_token);
+
+//         //do not post all above info to the server because that is not secure.
+//         //just send the id_token
+
+//         var redirectUrl = 'login';
+
+//         //using jquery to post data dynamically
+//         var form = $('<form action="' + redirectUrl + '" method="post">' +
+//                          '<input type="text" name="id_token" value="' +
+//                           googleUser.getAuthResponse().id_token + '" />' +
+//                                                                '</form>');
+//         $('body').append(form);
+//         form.submit();
+     }
     </script>
           </p>
            

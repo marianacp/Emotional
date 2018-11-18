@@ -17,7 +17,7 @@ import org.json.JSONObject;
 
 public class APIFace {
 	
-	private static final String subscriptionKey = "a92115ebad51441fa123aa5be4725fc7";
+	private static final String subscriptionKey = "8e860f62a1cc40ed8bc41dcc4c63db39";
 
     // NOTE: You must use the same region in your REST call as you used to
     // obtain your subscription keys. For example, if you obtained your
@@ -30,7 +30,7 @@ public class APIFace {
         "https://brazilsouth.api.cognitive.microsoft.com/face/v1.0/detect";
 
     private static final String imageWithFaces =
-        "{\"url\":\"https://s2.glbimg.com/1N-JWXZCXyeIK3v8RX6hqqXXCzQ=/top/i.glbimg.com/og/ig/infoglobo1/f/original/2018/09/20/78940963_the_candidate_for_governor_of_rio_de_janeiro_for_the_democratic_party_dem_former_rio_de_jan.jpg\"}";
+        "{\"url\":\"http://midias.gazetaonline.com.br/_midias/jpg/2018/09/12/henry-5777958.jpg\"}";
 
     private static final String faceAttributes =
         "age,gender,headPose,smile,facialHair,glasses,emotion,hair,makeup,occlusion,accessories,blur,exposure,noise";
