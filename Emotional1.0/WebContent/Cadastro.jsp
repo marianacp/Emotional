@@ -61,11 +61,10 @@
 		  
 		  <p>
 		  <label for="tipoUsuario">Você se considera um Artista ou um Ouvinte?</label>
-           <form action="">
+
   	<input type="radio" name="tipoUsuario" value="artista"> Artista<br>
   	<input type="radio" name="tipoUsuario" value="ouvinte"> Ouvinte<br>
 
-</form>
          </p>
           
           <p> 

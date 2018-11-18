@@ -17,6 +17,7 @@ public class Usuario {
 	private Calendar data_nascimento; 
 	private boolean Premium;
 	private boolean ativo;
+	private String tipoUsuario; 
 	
 	public int getid_usu() {
 		return id_usu;
@@ -98,4 +99,10 @@ public class Usuario {
 	        hash = 89 * hash + Objects.hashCode(this.id_usu);
 	        return hash;
 	    }
+	public String getTipoUsuario() {
+		return tipoUsuario;
+	}
+	public void setTipoUsuario(String tipoUsuario) {
+		this.tipoUsuario = tipoUsuario;
+	}
 }

@@ -12,8 +12,8 @@ public class UsuarioDAO extends Dao {
 	public void salvarUsuario(Usuario usuario) throws Exception {
 		open(); 
 		
-		String sql = "INSERT INTO Usuario (nome, login, email, senha, foto, data_nascimento, Premium, ativo, cpf)" +
-				 " VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?)";
+		String sql = "INSERT INTO Usuario (nome, login, email, senha, foto, data_nascimento, Premium, ativo, cpf, tipoUsuario)" +
+				 " VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 		
 		//Connection conn = null; 
 		PreparedStatement pstm = null;
@@ -31,6 +31,7 @@ public class UsuarioDAO extends Dao {
 			pstm.setBoolean(7, usuario.Premium());
 			pstm.setBoolean(8, true);
 			pstm.setString(9, usuario.getCpf());
+			pstm.setString(10, usuario.getTipoUsuario()); 
 			
 			pstm.execute(); 
 		}
@@ -60,7 +61,7 @@ public class UsuarioDAO extends Dao {
 		open(); 
 		
 		String sql = "UPDATE USUARIO SET NOME = ?, login = ?, EMAIL = ?,"
-				+ " SENHA = ?, FOTO = ?, data_nascimento = ? , Premium = ?, ATIVO = ?, cpf = ? WHERE id_usu = ?";
+				+ " SENHA = ?, FOTO = ?, data_nascimento = ? , Premium = ?, ATIVO = ?, cpf = ?, tipoUsuario = ? WHERE id_usu = ?";
 				
 				
 		PreparedStatement pstm = null;
@@ -77,8 +78,10 @@ public class UsuarioDAO extends Dao {
                     Calendar.getInstance().getTimeInMillis()));
 			pstm.setBoolean(7, usuario.Premium());
 			pstm.setBoolean(8, usuario.isAtivo());
-			pstm.setInt(9, usuario.getid_usu());
-			pstm.setString(10, usuario.getCpf());
+			pstm.setString(9, usuario.getCpf());
+			pstm.setString(10, usuario.getTipoUsuario());
+			pstm.setInt(11, usuario.getid_usu());
+
 			
 			pstm.executeUpdate(); 
 		}
@@ -172,6 +175,8 @@ public class UsuarioDAO extends Dao {
 				us.setPremium(rs.getBoolean("Premium"));
 				us.setid_usu(rs.getInt("id_usu"));
 				us.setCpf(rs.getString("CPF"));
+				us.setCpf(rs.getString("CPF"));
+				us.setTipoUsuario(rs.getString("tipoUsuario"));
 			}
 			return us; 
 				
