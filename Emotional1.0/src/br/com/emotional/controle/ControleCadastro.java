@@ -31,7 +31,8 @@ public class ControleCadastro extends HttpServlet{
 	String senha = request.getParameter("senha");
 	String dataEmTexto = request.getParameter("dataNascimento");
 	String cpf = request.getParameter("cpf");
-	String imagem = request.getParameter("imagem"); 
+	String imagem = request.getParameter("imagem");
+	String tipoUsuario = request.getParameter("tipoUsuario");
 	Calendar dataNascimento = null;
 
     // fazendo a conversão da data
@@ -55,6 +56,13 @@ public class ControleCadastro extends HttpServlet{
 	usuario.setSenha(senha);
 	usuario.setImagem(imagem);
 	usuario.setdata_nascimento(dataNascimento); 
+	//Aqui ele verifica se o usuário é artista, caso seja, recebe M de músico, se não, O de ouvinte
+	if(tipoUsuario.equals("artista")) {
+		usuario.setTipoUsuario("M");
+	}
+	else {
+		usuario.setTipoUsuario("O");
+	}
 	
 	UsuarioDAO usuariodao = new UsuarioDAO();
 	try {

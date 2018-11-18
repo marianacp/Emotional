@@ -58,7 +58,15 @@
             <input id="dataNascimento" name="dataNascimento" required="required" type="text" placeholder="dd/mm/aaaa"/>
           </p>
 		  
-           
+		  
+		  <p>
+		  <label for="tipoUsuario">Você se considera um Artista ou um Ouvinte?</label>
+
+  	<input type="radio" name="tipoUsuario" value="artista"> Artista<br>
+  	<input type="radio" name="tipoUsuario" value="ouvinte"> Ouvinte<br>
+
+         </p>
+          
           <p> 
             <input type="submit" value="Cadastrar" name="Cadastrar"/> 
           </p>
