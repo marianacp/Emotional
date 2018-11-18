@@ -3,6 +3,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+         <link rel="shortcut icon" type="image/png" href="img/123.png"/>
         <title>Menu do Sistema</title>
     </head>
     <body>

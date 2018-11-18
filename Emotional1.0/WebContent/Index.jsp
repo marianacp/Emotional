@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="description" content="">
       <meta name="author" content="">
-	  <link rel="icon" href="img/logo1.png" type="image/x-icon" />
+	<link rel="shortcut icon" type="image/png" href="img/123.png"/>
       <title>M&uacute;sica para todos - EMOTIONAL</title>
       <!-- Css -->
       <link href="css/bootstrap.css" rel="stylesheet">
