@@ -7,19 +7,22 @@
   <meta name="google-signin-scope" content="profile email">
   <meta name="google-signin-client_id" content="900025801880-uodctlul1qu1m0qh28a8uov9k4pcmj6n.apps.googleusercontent.com">
   <link rel="stylesheet" type="text/css" href="css/estilo.css" />
-  
+
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="https://apis.google.com/js/platform.js" async defer></script>
+
 </head>
 <body>
   <div class="container" >    
     <div class="content">      
-      <!--FORMULÁRIO DE LOGIN-->
+      <!--FORMULï¿½ï¿½RIO DE LOGIN-->
       <div id="login">
+
 
 		<p>${mensagens.erros}</p>
 		
         <form method="post" action="index.jsp"> 
+
           <h1>Login</h1> 
           <p> 
             <label for="email">E-mail</label>

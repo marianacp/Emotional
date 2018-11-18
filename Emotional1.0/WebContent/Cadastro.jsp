@@ -5,6 +5,7 @@
   <title>Emotional</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+  <link rel="shortcut icon" type="image/png" href="img/123.png"/>
 </head>
 <body>
             <div class="nav-content hideNav hidden">
@@ -17,7 +18,7 @@
             </div>
   <div class="container" >
   <div class="content"> 
-      <!--FORMULÁRIO DE CADASTRO-->
+      <!--FORMULÃRIO DE CADASTRO-->
       <div id="cadastro">
         <form name="formCad" action="cadastroUsuario" method="get" enctype="text/plain" autocomplete="off"> 
           <h1>Cadastro</h1> 
@@ -34,7 +35,7 @@
 		  
             <p> 
             <label for="cpf">CPF</label>
-            <input id="cpf" name="cpf" required="required" type="text" placeholder="Insira somente números"/> 
+            <input id="cpf" name="cpf" required="required" type="text" placeholder="Insira somente nÃºmeros"/> 
           </p>
           
           <p> 
