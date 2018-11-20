@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Emotional | Fale Conosco</title>
+<title>Emotional | Playlists</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Mosaic Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -73,8 +73,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 		</div>
 		<!-- left side end-->
-		 	 <!-- /w3layouts-agile -->
-				<!-- app-->
+					<!-- app-->
 			<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 				<div class="modal-dialog facebook" role="document">
 					<div class="modal-content">
@@ -131,7 +130,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											<input type="text" value="Email id" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email id';}" required="">	
 											<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">	
 											
-											<input type="submit" value="CREATE ACCOUNT">
+											<input type="submit" value="CREATE ACCOUNT" >
 										</form>
 									</div>
 									<div class="clearfix"></div>								
@@ -143,7 +142,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 			</div>
 			<!-- //signup -->
- 	 <!-- /w3l-agile -->
+ 	 <!-- /agileits -->
 		<!-- main content start-->
 		<div class="main-content">
 			<!-- header-starts -->
@@ -156,7 +155,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="profile_details">		
 						  <div class="col-md-4 serch-part">
 								<div id="sb-search" class="sb-search">
-									<form action="#" method="post">
+									<form>
 										<input class="sb-search-input" placeholder="Search" type="search" name="search" id="search">
 										<input class="sb-search-submit" type="submit" value="">
 										<span class="sb-icon-search"> </span>
@@ -196,7 +195,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 													<link rel="stylesheet" type="text/css" media="all" href="css/audio.css">
 													<script type="text/javascript" src="js/mediaelement-and-player.min.js"></script>
 													<!---->
- 	 <!-- /w3l-agile -->
+ 	 <!-- /agileits -->
 
 												<!--//-->
 												<ul class="next-top">
@@ -207,8 +206,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											</div>
 											<div class="col-md-4 login-pop">
 												<div id="loginpop"><a href="#" id="loginButton"><span>Login <i class="arrow glyphicon glyphicon-chevron-right"></i></span></a><a class="top-sign" href="#" data-toggle="modal" data-target="#myModal5"><i class="fa fa-sign-in"></i></a>
-														<div id="loginBox"> 
-													<form action="#" method="post" id="loginForm">													
+														<div id="loginBox">                
+														<form action="#" method="post" id="loginForm">
 																	<fieldset id="body">
 																		<fieldset>
 																			  <label for="email">Email Address</label>
@@ -230,84 +229,290 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<div class="clearfix"> </div>
 								</div>
 							<!-------->
-							 	 <!-- /w3l-agile -->
 						</div>
 					<div class="clearfix"></div>
 				</div>
-				<!--notification menu end -->
-				<!-- //header-ends -->
-				
-							<div id="page-wrapper">
-							
-								<div class="inner-content">
-								<div class="tittle-head">
-											<h3 class="tittle">Find Us </h3>
-											<div class="clearfix"> </div>
-										</div>
-									<!-- /contact-->
-									<div class="contact">
-									 <div class="contact-left">
-										<iframe src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Purwokerto,+Central+Java,+Indonesia&amp;aq=0&amp;oq=purwo&amp;sll=37.0625,-95.677068&amp;sspn=50.291089,104.238281&amp;ie=UTF8&amp;hq=&amp;hnear=Purwokerto,+Banyumas,+Central+Java,+Indonesia&amp;ll=-7.431391,109.24783&amp;spn=0.031022,0.050898&amp;t=m&amp;z=14&amp;output=embed"></iframe>
-
-									</div>
-									<div class="contact-right">
-										<p class="phn">+9100 2481 5842</p>
-										<p class="phn-bottom">4578 Marmora
-												<span>Road, Glasgow D04 89GR</span></p>
-										<p class="lom">Nullam ac urna velit. Pellentesque in arcu tortor. 
-											Pellentesque nec est et elit varius pulvinar eget vitae sapien. 
-											Aenean vehicula accumsan gravida.</p>
-									</div>
+			<!--notification menu end -->
+			<!-- //header-ends -->
+ 	 <!-- /agileinfo -->
+		<!-- //header-ends -->
+			<div id="page-wrapper">
+				<div class="inner-content">
+				      <div class="music-browse">
+					<!--albums-->
+					<!-- pop-up-box --> 
+							<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all">
+							<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+							 <script>
+									$(document).ready(function() {
+									$('.popup-with-zoom-anim').magnificPopup({
+										type: 'inline',
+										fixedContentPos: false,
+										fixedBgPos: true,
+										overflowY: 'auto',
+										closeBtnInside: true,
+										preloader: false,
+										midClick: true,
+										removalDelay: 300,
+										mainClass: 'my-mfp-zoom-in'
+									});
+									});
+							</script>		
+					<!--//pop-up-box -->
+					
+						<div class="browse">
+								<div class="tittle-head two">
+									<h3 class="tittle">New Releses <span class="new">New</span></h3>
+									<a href="browse.html"><h4 class="tittle third">See all</h4></a>
 									<div class="clearfix"> </div>
-									<div class="contact-left1">
-										<h3>Contact Us With <span>Any questions</span></h3>
-										<div class="in-left">
-										<form action="#" method="post">
-												<p class="your-para">Your Name :</p>
-														<input type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required="">
-											
-														<p class="your-para">Your Mail :</p>
-														<input type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required="">
-														<p class="your-para">Phone Number:</p>
-														<input type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required="">
+								</div>
 
-											</form>
-										</div>
-										<div class="in-right">
-											<form>
-												<textarea placeholder="" onfocus="this.value='';" onblur="if (this.value == '') {this.value = '';}" required=""></textarea>
-												<input type="submit" value="Submit">
-											</form>
-										</div>
-										<div class="clearfix"> </div>
+								<div class="col-md-3 browse-grid">
+									<a  href="single.html"><img src="images/v11.jpg" title="allbum-name"></a>
+									 <a href="single.html"><i class="glyphicon glyphicon-play-circle"></i></a>
+									<a class="sing" href="single.html">Lootera</a>
+								</div>
+							<div class="col-md-3 browse-grid">
+									<a  href="single.html"><img src="images/v22.jpg" title="allbum-name"></a>
+									 <a href="single.html"><i class="glyphicon glyphicon-play-circle"></i></a>
+										<a class="sing" href="single.html">Jaremy Cam</a>
+								</div>
+							<div class="col-md-3 browse-grid">
+								<a  href="single.html"><img src="images/v33.jpg" title="allbum-name"></a>
+								 <a href="single.html"><i class="glyphicon glyphicon-play-circle"></i></a>
+										<a class="sing" href="single.html">Selah</a>
+								</div>
+							<div class="col-md-3 browse-grid">
+									<a  href="single.html"><img src="images/v44.jpg" title="allbum-name"></a>
+									 <a href="single.html"><i class="glyphicon glyphicon-play-circle"></i></a>
+										<a class="sing" href="single.html">Jim Brickman</a>
+								</div>
+							<div class="col-md-3 browse-grid">
+									<a  href="single.html"><img src="images/v1.jpg" title="allbum-name"></a>
+									 <a href="single.html"><i class="glyphicon glyphicon-play-circle"></i></a>
+										<a class="sing" href="single.html">Adele21</a>
+								</div>
+							<div class="col-md-3 browse-grid">
+									<a  href="single.html"><img src="images/v55.jpg" title="allbum-name"></a>
+									 <a href="single.html"><i class="glyphicon glyphicon-play-circle"></i></a>
+										<a class="sing" href="single.html">Party Night</a>
+								</div>
+							<div class="col-md-3 browse-grid">
+									<a  href="single.html"><img src="images/v6.jpg" title="allbum-name"></a>
+									 <a href="single.html"><i class="glyphicon glyphicon-play-circle"></i></a>
+										<a class="sing" href="single.html">Ellie Goluding</a>
+								</div>
+							<div class="col-md-3 browse-grid">
+									<a  href="single.html"><img src="images/v66.jpg" title="allbum-name"></a>
+									 <a href="single.html"><i class="glyphicon glyphicon-play-circle"></i></a>
+									<a class="sing" href="single.html">Diana</a>
+								</div>
+							<div class="col-md-3 browse-grid">
+									<a  href="single.html"><img src="images/v6.jpeg" title="allbum-name"></a>
+									 <a href="single.html"><i class="glyphicon glyphicon-play-circle"></i></a>
+										<a class="sing" href="single.html">Fifty Shades</a>
+								</div>
+							<div class="col-md-3 browse-grid">
+									<a  href="single.html"><img src="images/v2.jpg" title="allbum-name"></a>
+									 <a href="single.html"><i class="glyphicon glyphicon-play-circle"></i></a>
+										<a class="sing" href="single.html">Shomlock</a>
+								</div>
+								<div class="col-md-3 browse-grid">
+									<a  href="single.html"><img src="images/v3.jpg" title="allbum-name"></a>
+									 <a href="single.html"><i class="glyphicon glyphicon-play-circle"></i></a>
+										<a class="sing" href="single.html">Lootera</a>
+								</div>
+								<div class="col-md-3 browse-grid">
+									<a  href="single.html"><img src="images/v4.jpg" title="allbum-name"></a>
+									 <a href="single.html"><i class="glyphicon glyphicon-play-circle"></i></a>
+										<a class="sing" href="single.html">Stuck on a feeling</a>
+								</div>
+											<div class="clearfix"> </div>
 									</div>
-													<div class="contact-right1">
-														<h3><span>Social Websites</span></h3>
-														<h4>Nullam ac urna velit pellentesque in <label>arcu tortor 
-															Pellentesque nec</label></h4>
-														<p>Nullam ac urna velit. Pellentesque in arcu tortor. 
-															Pellentesque nec est et elit varius pulvinar eget vitae sapien. 
-															Aenean vehicula accumsan gravida. Cum sociis natoque penatibus
-															et magnis dis parturient montes, nascetur ridiculus mus. Phasellus 
-															et lectus in urna consequat consectetur ut eget risus.</p>
-															 <ul class=" side-icons con">
-																		<li><a class="fb" href="#"></a></li>
-																		<li><a class="twitt" href="#"></a></li>
-																		<li><a class="goog" href="#"></a></li>
-																		<li><a class="drib" href="#"></a></li>
-																   </ul>
-													</div>
-													<div class="clearfix"> </div>
-											<!-- //contact -->
-											 	 <!-- /wthree-agile -->
-														</div>
+					<!--//End-albums-->
+					
+					<div class="browse">
+								<div class="col-md-3 browse-grid">
+									<a  href="single.html"><img src="images/v10.jpg" title="allbum-name"></a>
+									 <a href="single.html"><i class="glyphicon glyphicon-play-circle"></i></a>
+									<a class="sing" href="single.html">Fifty Shades</a>
+								</div>
+							<div class="col-md-3 browse-grid">
+									<a  href="single.html"><img src="images/v9.jpg" title="allbum-name"></a>
+									 <a href="single.html"><i class="glyphicon glyphicon-play-circle"></i></a>
+										<a class="sing" href="single.html">Alan Jackson</a>
+								</div>
+							<div class="col-md-3 browse-grid">
+								<a  href="single.html"><img src="images/v77.jpg" title="allbum-name"></a>
+								 <a href="single.html"><i class="glyphicon glyphicon-play-circle"></i></a>
+										<a class="sing" href="single.html">Cheristina aguilera</a>
+								</div>
+							<div class="col-md-3 browse-grid">
+									<a  href="single.html"><img src="images/v88.jpg" title="allbum-name"></a>
+									 <a href="single.html"><i class="glyphicon glyphicon-play-circle"></i></a>
+										<a class="sing" href="single.html">Samsmith</a>
+								</div>
+							<div class="col-md-3 browse-grid">
+									<a  href="single.html"><img src="images/v1.jpg" title="allbum-name"></a>
+									 <a href="single.html"><i class="glyphicon glyphicon-play-circle"></i></a>
+										<a class="sing" href="single.html">Adele21</a>
+								</div>
+							<div class="col-md-3 browse-grid">
+									<a  href="single.html"><img src="images/v99.jpg" title="allbum-name"></a>
+									 <a href="single.html"><i class="glyphicon glyphicon-play-circle"></i></a>
+										<a class="sing" href="single.html">Big Duty</a>
+								</div>
+							<div class="col-md-3 browse-grid">
+									<a  href="single.html"><img src="images/v6.jpg" title="allbum-name"></a>
+									 <a href="single.html"><i class="glyphicon glyphicon-play-circle"></i></a>
+										<a class="sing" href="single.html">Ellie Goluding</a>
+								</div>
+							<div class="col-md-3 browse-grid">
+									<a  href="single.html"><img src="images/v66.jpg" title="allbum-name"></a>
+									 <a href="single.html"><i class="glyphicon glyphicon-play-circle"></i></a>
+									<a class="sing" href="single.html">Diana</a>
+								</div>
+							<div class="col-md-3 browse-grid">
+									<a  href="single.html"><img src="images/v6.jpeg" title="allbum-name"></a>
+									 <a href="single.html"><i class="glyphicon glyphicon-play-circle"></i></a>
+										<a class="sing" href="single.html">Fifty Shades</a>
+								</div>
+							<div class="col-md-3 browse-grid">
+									<a  href="single.html"><img src="images/v21.jpg" title="allbum-name"></a>
+									 <a href="single.html"><i class="glyphicon glyphicon-play-circle"></i></a>
+										<a class="sing" href="single.html">Joe</a>
+								</div>
+								<div class="col-md-3 browse-grid">
+									<a  href="single.html"><img src="images/v3.jpg" title="allbum-name"></a>
+									 <a href="single.html"><i class="glyphicon glyphicon-play-circle"></i></a>
+										<a class="sing" href="single.html">Lootera</a>
+								</div>
+								<div class="col-md-3 browse-grid">
+									<a  href="single.html"><img src="images/v4.jpg" title="allbum-name"></a>
+									 <a href="single.html"><i class="glyphicon glyphicon-play-circle"></i></a>
+										<a class="sing" href="single.html">Stuck on a feeling</a>
+								</div>
+											<div class="clearfix"> </div>
+									</div>
+					<!--//End-albums-->
+						<!--//discover-view-->
+							<!--//music-left-->
+							</div>
+							
+						<!--body wrapper start-->
+						<div class="review-slider">
+								<div class="tittle-head">
+									<h3 class="tittle">Featured Albums <span class="new"> New</span></h3>
+									<div class="clearfix"> </div>
+								</div>
+								 <ul id="flexiselDemo1">
+								<li>
+									<a href="single.html"><img src="images/v1.jpg" alt=""/></a>
+									<div class="slide-title"><h4>Adele21 </div>
+									<div class="date-city">
+										<h5>Jan-02-16</h5>
+										<div class="buy-tickets">
+											<a href="single.html">READ MORE</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<a href="single.html"><img src="images/v2.jpg" alt=""/></a>
+									<div class="slide-title"><h4>Adele21</h4></div>
+									<div class="date-city">
+										<h5>Jan-02-16</h5>
+										<div class="buy-tickets">
+											<a href="single.html">READ MORE</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<a href="single.html"><img src="images/v21.jpg" alt=""/></a>
+									<div class="slide-title"><h4>Joe</h4></div>
+									<div class="date-city">
+										<h5>Jan-02-16</h5>
+										<div class="buy-tickets">
+											<a href="single.html">READ MORE</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<a href="single.html"><img src="images/v4.jpg" alt=""/></a>
+									<div class="slide-title"><h4>Stuck on a feeling</h4></div>
+									<div class="date-city">
+										<h5>Jan-02-16</h5>
+										<div class="buy-tickets">
+											<a href="single.html">READ MORE</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<a href="single.html"><img src="images/v5.jpg" alt=""/></a>
+									<div class="slide-title"><h4>Ricky Martine </h4></div>
+									<div class="date-city">
+										<h5>Jan-02-16</h5>
+										<div class="buy-tickets">
+											<a href="single.html">READ MORE</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<a href="single.html"><img src="images/v6.jpg" alt=""/></a>
+									<div class="slide-title"><h4>Ellie Goluding</h4></div>
+									<div class="date-city">
+										<h5>Jan-02-16</h5>
+										<div class="buy-tickets">
+											<a href="single.html">READ MORE</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<a href="single.html"><img src="images/v6.jpeg" alt=""/></a>
+									<div class="slide-title"><h4>Fifty Shades </h4></div>
+									<div class="date-city">
+										<h5>Jan-02-16</h5>
+										<div class="buy-tickets">
+											<a href="single.html">READ MORE</a>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<script type="text/javascript">
+						$(window).load(function() {
+							
+						  $("#flexiselDemo1").flexisel({
+								visibleItems: 5,
+								animationSpeed: 1000,
+								autoPlay: true,
+								autoPlaySpeed: 3000,    		
+								pauseOnHover: false,
+								enableResponsiveBreakpoints: true,
+								responsiveBreakpoints: { 
+									portrait: { 
+										changePoint:480,
+										visibleItems: 2
+									}, 
+									landscape: { 
+										changePoint:640,
+										visibleItems: 3
+									},
+									tablet: { 
+										changePoint:800,
+										visibleItems: 4
+									}
+								}
+							});
+							});
+						</script>
+						<script type="text/javascript" src="js/jquery.flexisel.js"></script>	
+						</div>
 								</div>
 							<div class="clearfix"></div>
 						<!--body wrapper end-->
-
+ 	 <!-- /w3l-agile-info -->
 					</div>
 			  <!--body wrapper end-->
-   <div class="footer two">
+			     <div class="footer two">
 				<div class="footer-grid">
 					<h3>Navigation</h3>
 					<ul class="list1">
@@ -362,7 +567,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					 <div class="clearfix"> </div>
 				</div>
 			</div>
-			 	 <!-- /wthree-agile -->
         <!--footer section start-->
 			<footer>
 			   <p>&copy 2016 Mosaic. All Rights Reserved | Design by <a href="https://w3layouts.com/" target="_blank">w3layouts.</a></p>
@@ -371,7 +575,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
  	 <!-- /wthree-agile -->
       <!-- main content end-->
    </section>
-  
+   	 <!-- /wthree-agile -->
 <script src="js/jquery.nicescroll.js"></script>
 <script src="js/scripts.js"></script>
 <!-- Bootstrap Core JavaScript -->

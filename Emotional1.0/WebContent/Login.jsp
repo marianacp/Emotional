@@ -13,7 +13,7 @@
 <body>
   <div class="container" >    
     <div class="content">      
-      <!--FORMULï¿½ï¿½RIO DE LOGIN-->
+      <!--FORMULÁRIO DE LOGIN-->
       <div id="login">
         <form method="post" action="loginUsuario" method="get" enctype="text/plain" autocomplete="off"> 
           <h1>Login</h1> 

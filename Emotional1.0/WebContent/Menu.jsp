@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Emotional</title>
+<title>Emotional | Home </title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Mosaic Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -16,7 +16,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- jQuery -->
 <!-- lined-icons -->
 <link rel="stylesheet" href="css/icon-font.css" type='text/css' />
-<!-- //lined-icons -->
+<!-- //lined-favicon -->
+<link rel="shortcut icon" type="image/png" href="img/123.png"/>	
  <!-- Meters graphs -->
 <script src="js/jquery-2.1.4.js"></script>
 
@@ -42,27 +43,29 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<!--sidebar nav start-->
 					<ul class="nav nav-pills nav-stacked custom-nav">
 						<li class="active"><a href="Menu.jsp"><i class="lnr lnr-home"></i><span>Inicial</span></a></li>
-						<li><a href="radio.html"><i class="camera"></i> <span>UmDia</span></a></li>
-						<li><a href="radio.html"><i class="lnr lnr-users"></i> <span>Artistas</span></a></li> 
-						<li><a href="browse.html"><i class="lnr lnr-music-note"></i> <span>Músicas</span></a></li>						
-						<li class="menu-list"><a href="browse.html"><i class="lnr lnr-indent-increase"></i> <span>Playlists</span></a>  
+						<li><a href="Playlist24H"><i class="camera"></i> <span>UmDia</span></a></li>
+						<li><a href="Artista.jsp"><i class="lnr lnr-users"></i> <span>Artistas</span></a></li> 
+						<li><a href="Musica.jsp"><i class="lnr lnr-music-note"></i> <span>Músicas</span></a></li>						
+						<li class="menu-list"><a href="#"><i class="lnr lnr-indent-increase"></i> <span>Playlists</span></a>  
 							<ul class="sub-menu-list">
-							    <li><a href="browse.html">Todas</a> </li>
-								<li><a href="browse.html">Felicidade</a> </li>
-								<li><a href="browse.html">Tristeza</a> </li>
-								<li><a href="browse.html">Raiva</a> </li>
-								<li><a href="browse.html">Neutralidade</a> </li>
-								<li><a href="browse.html">Surpresa</a> </li>
+							    <li><a href="Playlist.jsp">Todas</a> </li>
+								<li><a href="Playlist.jsp">Felicidade</a> </li>
+								<li><a href="Playlist.jsp">Tristeza</a> </li>
+								<li><a href="Playlist.jsp">Raiva</a> </li>
+								<li><a href="Playlist.jsp">Neutralidade</a> </li>
+								<li><a href="Playlist.jsp">Surpresa</a> </li>
 							</ul>
 						</li>
 						<li class="menu-list"><a href="#"><i class="lnr lnr-heart"></i>  <span>Meus Favoritos</span></a> 
 							<ul class="sub-menu-list">
-								<li><a href="radio.html">Playlists</a></li>
+								<li><a href="MeusFavoritos.jsp">Playlists</a></li>
 							</ul>
 						</li>
-						<li class="menu-list"><a href="contact.html"><i class="fa fa-thumb-tack"></i><span>Contato</span></a>
+						<li class="menu-list"><a href="#"><i class="fa fa-thumb-tack"></i><span>Contato</span></a>
 							<ul class="sub-menu-list">
-								<li><a href="contact.html">Suporte</a> </li>
+							    <li><a href="FaleConosco.jsp">Fale Conosco</a> </li>
+							    <li><a href="PerguntasFrequentes.jsp">Perguntas Frequentes</a> </li>
+								<li><a href="Suporte.jsp">Suporte</a> </li>
 							</ul>
 						</li>     
 					</ul>
