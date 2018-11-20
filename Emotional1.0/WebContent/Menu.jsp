@@ -8,17 +8,17 @@
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
  <!-- Bootstrap Core CSS -->
-<link href="css/tpt/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 <!-- Custom CSS -->
-<link href="css/tpt/style.css" rel='stylesheet' type='text/css' />
+<link href="css/style2.css" rel='stylesheet' type='text/css' />
 <!-- Graph CSS -->
-<link href="css/tpt/font-awesome.css" rel="stylesheet"> 
+<link href="css/font-awesome.css" rel="stylesheet"> 
 <!-- jQuery -->
 <!-- lined-icons -->
-<link rel="stylesheet" href="css/tpt/icon-font.css" type='text/css' />
+<link rel="stylesheet" href="css/icon-font.css" type='text/css' />
 <!-- //lined-icons -->
  <!-- Meters graphs -->
-<script src="js/tpt/jquery-2.1.4.js"></script>
+<script src="js/jquery-2.1.4.js"></script>
 
 
 </head> 
@@ -42,103 +42,33 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<!--sidebar nav start-->
 					<ul class="nav nav-pills nav-stacked custom-nav">
 						<li class="active"><a href="Menu.jsp"><i class="lnr lnr-home"></i><span>Inicial</span></a></li>
-						<li><a href="radio.html"><i class="camera"></i> <span>Radio</span></a></li>
-						<li><a href="#" data-toggle="modal" data-target="#myModal1"><i class="fa fa-th"></i><span>Apps</span></a></li>
+						<li><a href="radio.html"><i class="camera"></i> <span>UmDia</span></a></li>
 						<li><a href="radio.html"><i class="lnr lnr-users"></i> <span>Artistas</span></a></li> 
-						<li><a href="browse.html"><i class="lnr lnr-music-note"></i> <span>Albums</span></a></li>						
-						<li class="menu-list"><a href="browse.html"><i class="lnr lnr-indent-increase"></i> <span>Browser</span></a>  
+						<li><a href="browse.html"><i class="lnr lnr-music-note"></i> <span>Músicas</span></a></li>						
+						<li class="menu-list"><a href="browse.html"><i class="lnr lnr-indent-increase"></i> <span>Playlists</span></a>  
 							<ul class="sub-menu-list">
-								<li><a href="browse.html">Artists</a> </li>
-								<li><a href="404.html">Services</a> </li>
+							    <li><a href="browse.html">Todas</a> </li>
+								<li><a href="browse.html">Felicidade</a> </li>
+								<li><a href="browse.html">Tristeza</a> </li>
+								<li><a href="browse.html">Raiva</a> </li>
+								<li><a href="browse.html">Neutralidade</a> </li>
+								<li><a href="browse.html">Surpresa</a> </li>
 							</ul>
 						</li>
-						<li><a href="blog.html"><i class="lnr lnr-book"></i><span>Blog</span></a></li>
-						<li><a href="typography.html"><i class="lnr lnr-pencil"></i> <span>Typography</span></a></li>
-						<li class="menu-list"><a href="#"><i class="lnr lnr-heart"></i>  <span>My Favourities</span></a> 
+						<li class="menu-list"><a href="#"><i class="lnr lnr-heart"></i>  <span>Meus Favoritos</span></a> 
 							<ul class="sub-menu-list">
-								<li><a href="radio.html">All Songs</a></li>
+								<li><a href="radio.html">Playlists</a></li>
 							</ul>
 						</li>
-						<li class="menu-list"><a href="contact.html"><i class="fa fa-thumb-tack"></i><span>Contact</span></a>
+						<li class="menu-list"><a href="contact.html"><i class="fa fa-thumb-tack"></i><span>Contato</span></a>
 							<ul class="sub-menu-list">
-								<li><a href="contact.html">Location</a> </li>
+								<li><a href="contact.html">Suporte</a> </li>
 							</ul>
 						</li>     
 					</ul>
 				<!--sidebar nav end-->
 			</div>
 		</div>
-		 	 <!-- /w3layouts-agile -->
-					<!-- app-->
-			<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-				<div class="modal-dialog facebook" role="document">
-					<div class="modal-content">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
-						</div>
-						<div class="modal-body">
-							<div class="app-grids">
-								<div class="app">
-						<div class="col-md-5 app-left mpl">
-							<h3>Mosaic mobile app on your smartphone!</h3>
-							<p>Download and Avail Special Songs Videos and Audios.</p>
-							<div class="app-devices">
-								<h5>Gets the app from</h5>
-								<a href="#"><img src="images/1.png" alt=""></a>
-								<a href="#"><img src="images/2.png" alt=""></a>
-								<div class="clearfix"> </div>
-							</div>
-						</div>
-						<div class="col-md-7 app-image">
-							<img src="images/apps.png" alt="">
-						</div>
-						<div class="clearfix"></div>
-					</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- //app-->
- 	 <!-- /w3l-agile -->
-		<!-- signup -->
-			<div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-				<div class="modal-dialog" role="document">
-					<div class="modal-content modal-info">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
-						</div>
-						<div class="modal-body modal-spa">
-							<div class="sign-grids">
-								<div class="sign">
-									<div class="sign-left">
-										<ul>
-											<li><a class="fb" href="#"><i></i>Sign in with Facebook</a></li>
-											<li><a class="goog" href="#"><i></i>Sign in with Google</a></li>
-											<li><a class="linkin" href="#"><i></i>Sign in with Linkedin</a></li>
-										</ul>
-									</div>
-									<div class="sign-right">
-										<form action="#" method="post">
-
-											<h3>Create your account </h3>
-											<input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
-											<input type="text" value="Mobile number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mobile number';}" required="">
-											<input type="text" value="Email id" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email id';}" required="">	
-											<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">	
-											
-											<input type="submit" value="CREATE ACCOUNT" >
-										</form>
-									</div>
-									<div class="clearfix"></div>								
-								</div>
-								<p>By logging in you agree to our <span>Terms and Conditions</span> and <span>Privacy Policy</span></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- //signup -->
  	 <!-- /w3l-agile -->
 		<!-- left side end-->
 		<!-- main content start-->
@@ -162,8 +92,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 							</div>
 							  <!-- search-scripts -->
-									<script src="js/tpt/classie.js"></script>
-									<script src="js/tpt/uisearch.js"></script>
+									<script src="js/classie.js"></script>
+									<script src="js/uisearch.js"></script>
 										<script>
 											new UISearch( document.getElementById( 'sb-search' ) );
 										</script>
@@ -191,8 +121,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												 });
 												</script>
 												<!--audio-->
-													<link rel="stylesheet" type="text/css" media="all" href="css/tpt/audio.css">
-													<script type="text/javascript" src="js/tpt/mediaelement-and-player.min.js"></script>
+													<link rel="stylesheet" type="text/css" media="all" href="css/audio.css">
+													<script type="text/javascript" src="js/mediaelement-and-player.min.js"></script>
 													<!---->
 
 
@@ -282,7 +212,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											</ul>
 										</div>
 										<!--banner-->
-									<script src="js/tpt/responsiveslides.min.js"></script>
+									<script src="js/responsiveslides.min.js"></script>
 								 <script>
 									// You can also use "$(window).load(function() {"
 									$(function () {
@@ -309,8 +239,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<!--//End-banner-->
 					<!--albums-->
 					<!-- pop-up-box --> 
-							<link href="css/tpt/popuo-box.css" rel="stylesheet" type="text/css" media="all">
-							<script src="js/tpt/jquery.magnific-popup.js" type="text/javascript"></script>
+							<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all">
+							<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
 							 <script>
 									$(document).ready(function() {
 									$('.popup-with-zoom-anim').magnificPopup({
@@ -481,9 +411,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</div>
 								</div>
 								<!-- script for play-list -->
-				<link href="css/tpt/jplayer.blue.monday.min.css" rel="stylesheet" type="text/css">
-				<script type="text/javascript" src="js/tpt/jquery.jplayer.min.js"></script>
-				<script type="text/javascript" src="js/tpt/jplayer.playlist.min.js"></script>
+				<link href="css/jplayer.blue.monday.min.css" rel="stylesheet" type="text/css">
+				<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+				<script type="text/javascript" src="js/jplayer.playlist.min.js"></script>
 				<script type="text/javascript">
 				//<![CDATA[
 				$(document).ready(function(){
@@ -725,7 +655,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							});
 							});
 						</script>
-						<script type="text/javascript" src="js/tpt/jquery.flexisel.js"></script>	
+						<script type="text/javascript" src="js/jquery.flexisel.js"></script>	
 						</div>
 								</div>
 							<div class="clearfix"></div>
@@ -797,9 +727,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       <!-- main content end-->
    </section>
   
-<script src="js/tpt/jquery.nicescroll.js"></script>
-<script src="js/tpt/scripts.js"></script>
+<script src="js/jquery.nicescroll.js"></script>
+<script src="js/scripts.js"></script>
 <!-- Bootstrap Core JavaScript -->
-<script src="js/tpt/bootstrap.js"></script>
+<script src="js/bootstrap.js"></script>
 </body>
 </html>
