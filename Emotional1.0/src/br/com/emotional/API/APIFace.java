@@ -1,16 +1,21 @@
 package br.com.emotional.API;
 
+import java.io.File;
 import java.net.URI;
+import java.nio.file.Files;
+
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpPost;
+import org.apache.http.entity.ByteArrayEntity;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.client.utils.URIBuilder;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.util.EntityUtils;
 import org.json.JSONArray;
 import org.json.JSONObject;
+
 
 
 
@@ -29,13 +34,18 @@ public class APIFace {
     private static final String uriBase =
         "https://brazilsouth.api.cognitive.microsoft.com/face/v1.0/detect";
 
-    private static final String imageWithFaces =
-        "{\"url\":\"http://midias.gazetaonline.com.br/_midias/jpg/2018/09/12/henry-5777958.jpg\"}";
+    private static String imageWithFaces =
+        "{\"url\":\"http://i0.statig.com.br/esporte/futebol/4116_1338519249655.jpg\"}";
 
     private static final String faceAttributes =
-        "age,gender,headPose,smile,facialHair,glasses,emotion,hair,makeup,occlusion,accessories,blur,exposure,noise";
+        "emotion";
 
-    public static void main(String[] args)
+    public void insereImagem(String imagem) {
+    	
+    	APIFace.imageWithFaces = imagem; 
+    }
+    
+    public void detectar()
     {
         HttpClient httpclient = new DefaultHttpClient();
 
@@ -44,7 +54,7 @@ public class APIFace {
             URIBuilder builder = new URIBuilder(uriBase);
 
             // Request parameters. All of them are optional.
-            builder.setParameter("returnFaceId", "true");
+            builder.setParameter("returnFaceId", "false");
             builder.setParameter("returnFaceLandmarks", "false");
             builder.setParameter("returnFaceAttributes", faceAttributes);
 
@@ -53,11 +63,16 @@ public class APIFace {
             HttpPost request = new HttpPost(uri);
 
             // Request headers.
-            request.setHeader("Content-Type", "application/json");
+            request.setHeader("Content-Type", "application/octet-stream");
             request.setHeader("Ocp-Apim-Subscription-Key", subscriptionKey);
-
+            
+            
+            File fi = new File(imageWithFaces);
+            byte[] fileContent = Files.readAllBytes(fi.toPath());
+            
             // Request body.
-            StringEntity reqEntity = new StringEntity(imageWithFaces);
+            ByteArrayEntity reqEntity = new ByteArrayEntity(fileContent); 
+            //StringEntity reqEntity = new StringEntity(fileContent);
             request.setEntity(reqEntity);
 
             // Execute the REST API call and get the response entity.

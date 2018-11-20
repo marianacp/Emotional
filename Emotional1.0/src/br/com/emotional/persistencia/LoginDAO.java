@@ -20,7 +20,7 @@ public class LoginDAO  extends Dao implements iDAO<Usuario>{
         PreparedStatement ps = null;
         ResultSet rs = null;
 
-        	String sql = "select id_usu, nome, email, Login, senha, id_emocao, Premium, foto, ativo, cpf from usuario where email = ?";
+        	String sql = "select id_usu, nome, email, Login, senha, id_emocao, Premium, foto, ativo, cpf, tipoUsuario from usuario where email = ?";
         	ps = con.prepareStatement(sql); 
         	
             ps.setString(1, email);
@@ -39,6 +39,7 @@ public class LoginDAO  extends Dao implements iDAO<Usuario>{
 				us.setPremium(rs.getBoolean("Premium"));
 				us.setid_usu(rs.getInt("id_usu"));
 				us.setCpf(rs.getString("CPF"));
+				us.setTipoUsuario(rs.getString("tipoUsuario"));
 				
 				return us;
             }
@@ -54,7 +55,7 @@ public class LoginDAO  extends Dao implements iDAO<Usuario>{
                 PreparedStatement ps = null;
                 ResultSet rs = null;
                 try {
-                    ps = con.prepareStatement("select id_usu, nome, email, Login, senha, id_emocao, Premium, foto, ativo, cpf from usuario where email = ?");
+                    ps = con.prepareStatement("select id_usu, nome, email, Login, senha, id_emocao, Premium, foto, ativo, cpf, tipoUsuario from usuario where email = ?");
                     ps.setInt(1, (Integer) chave[0]);
                     rs = ps.executeQuery();
                     if (rs.next()) {
@@ -71,6 +72,7 @@ public class LoginDAO  extends Dao implements iDAO<Usuario>{
           				us.setPremium(rs.getBoolean("Premium"));
           				us.setid_usu(rs.getInt("id_usu"));
           				us.setCpf(rs.getString("CPF"));
+          				us.setTipoUsuario(rs.getString("tipoUsuario"));
           				
           				return us;
                     }
@@ -102,7 +104,7 @@ public class LoginDAO  extends Dao implements iDAO<Usuario>{
             ResultSet rs = null;
             try {
                 ps = con.createStatement();
-                rs = ps.executeQuery("select id_usu, nome, email, Login, senha, id_emocao, Premium, foto, ativo, cpf from usuario where email = ?");
+                rs = ps.executeQuery("select id_usu, nome, email, Login, senha, id_emocao, Premium, foto, ativo, cpf, tipoUsuario from usuario where email = ?");
                 lista = new ArrayList<>();
                 while (rs.next()) {
                 	 Usuario us = new Usuario(); 
@@ -118,6 +120,7 @@ public class LoginDAO  extends Dao implements iDAO<Usuario>{
       				us.setPremium(rs.getBoolean("Premium"));
       				us.setid_usu(rs.getInt("id_usu"));
       				us.setCpf(rs.getString("CPF"));
+      				us.setTipoUsuario(rs.getString("tipoUsuario"));
       				
       				lista.add(us);
                 }

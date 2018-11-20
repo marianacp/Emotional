@@ -11,8 +11,17 @@
         <p>Olá ${sessionScope.usuarioLogado.nome}</p>
         <ul>
             <li>
-                <a href="${pageContext.request.contextPath}/logout.jsp">Sair</a>
+                <a href="${pageContext.request.contextPath}/logout.jsp">Sair</a>               
             </li>
+            <li> 
+            <a href="${pageContext.request.contextPath}/DetectarEmocao.jsp">Detectar Emoção</a>
+            </li>
+            <c:set var = "tipo" scope = "session" value = "${sessionScope.usuarioLogado.tipoUsuario}"/>
+            <c:if test = "${tipo = 'M'}">
+             <li>
+            	<a href="${pageContext.request.contextPath}/EnviarMusica.jsp">Enviar Música</a>
+            	</li>
+            </c:if>
         </ul>
     </body>
 </html>
