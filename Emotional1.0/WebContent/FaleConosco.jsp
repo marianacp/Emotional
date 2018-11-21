@@ -73,77 +73,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 		</div>
 		<!-- left side end-->
-		 	 <!-- /w3layouts-agile -->
-				<!-- app-->
-			<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-				<div class="modal-dialog facebook" role="document">
-					<div class="modal-content">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
-						</div>
-						<div class="modal-body">
-							<div class="app-grids">
-								<div class="app">
-						<div class="col-md-5 app-left mpl">
-							<h3>Mosaic mobile app on your smartphone!</h3>
-							<p>Download and Avail Special Songs Videos and Audios.</p>
-							<div class="app-devices">
-								<h5>Gets the app from</h5>
-								<a href="#"><img src="images/1.png" alt=""></a>
-								<a href="#"><img src="images/2.png" alt=""></a>
-								<div class="clearfix"> </div>
-							</div>
-						</div>
-						<div class="col-md-7 app-image">
-							<img src="images/apps.png" alt="">
-						</div>
-						<div class="clearfix"></div>
-					</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- //app-->
-			 	 <!-- /w3l-agile -->
-		<!-- signup -->
-			<div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-				<div class="modal-dialog" role="document">
-					<div class="modal-content modal-info">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
-						</div>
-						<div class="modal-body modal-spa">
-							<div class="sign-grids">
-								<div class="sign">
-									<div class="sign-left">
-										<ul>
-											<li><a class="fb" href="#"><i></i>Sign in with Facebook</a></li>
-											<li><a class="goog" href="#"><i></i>Sign in with Google</a></li>
-											<li><a class="linkin" href="#"><i></i>Sign in with Linkedin</a></li>
-										</ul>
-									</div>
-									<div class="sign-right">
-										<form action="#" method="post">
-											<h3>Create your account </h3>
-											<input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
-											<input type="text" value="Mobile number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mobile number';}" required="">
-											<input type="text" value="Email id" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email id';}" required="">	
-											<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">	
-											
-											<input type="submit" value="CREATE ACCOUNT">
-										</form>
-									</div>
-									<div class="clearfix"></div>								
-								</div>
-								<p>By logging in you agree to our <span>Terms and Conditions</span> and <span>Privacy Policy</span></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- //signup -->
- 	 <!-- /w3l-agile -->
+		 	 <!-- /w3l-agile -->
+		<!-- left side end-->
 		<!-- main content start-->
 		<div class="main-content">
 			<!-- header-starts -->
@@ -157,6 +88,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						  <div class="col-md-4 serch-part">
 								<div id="sb-search" class="sb-search">
 									<form action="#" method="post">
+
 										<input class="sb-search-input" placeholder="Search" type="search" name="search" id="search">
 										<input class="sb-search-submit" type="submit" value="">
 										<span class="sb-icon-search"> </span>
@@ -196,7 +128,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 													<link rel="stylesheet" type="text/css" media="all" href="css/audio.css">
 													<script type="text/javascript" src="js/mediaelement-and-player.min.js"></script>
 													<!---->
- 	 <!-- /w3l-agile -->
+
 
 												<!--//-->
 												<ul class="next-top">
@@ -206,83 +138,64 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											 </ul>	
 											</div>
 											<div class="col-md-4 login-pop">
-												<div id="loginpop"><a href="#" id="loginButton"><span>Login <i class="arrow glyphicon glyphicon-chevron-right"></i></span></a><a class="top-sign" href="#" data-toggle="modal" data-target="#myModal5"><i class="fa fa-sign-in"></i></a>
-														<div id="loginBox"> 
-													<form action="#" method="post" id="loginForm">													
-																	<fieldset id="body">
-																		<fieldset>
-																			  <label for="email">Email Address</label>
-																			  <input type="text" name="email" id="email">
-																		</fieldset>
-																		<fieldset>
-																				<label for="password">Password</label>
-																				<input type="password" name="password" id="password">
-																		 </fieldset>
-																		<input type="submit" id="login" value="Sign in">
-																		<label for="checkbox"><input type="checkbox" id="checkbox"> <i>Remember me</i></label>
-																	</fieldset>
-																<span><a href="#">Forgot your password?</a></span>
-														 </form>
-													</div>
+												<div id="loginpop"> <a id="loginButton"><span>Olá ${sessionScope.usuarioLogado.nome} <i class="arrow glyphicon glyphicon-chevron-right"></i></span></a><a class="top-sign" href="${pageContext.request.contextPath}/logout.jsp"><i class="fa fa-sign-in"></i></a>
 												</div>
 
 											</div>
 										<div class="clearfix"> </div>
 								</div>
 							<!-------->
-							 	 <!-- /w3l-agile -->
 						</div>
 					<div class="clearfix"></div>
 				</div>
-				<!--notification menu end -->
-				<!-- //header-ends -->
+			<!--notification menu end -->
+			<!-- //header-ends -->
+ 	 <!-- /w3l-agileits -->
+		<!-- //header-ends -->
 				
 							<div id="page-wrapper">
 							
 								<div class="inner-content">
 								<div class="tittle-head">
-											<h3 class="tittle">Find Us </h3>
+											<h3 class="tittle">Onde Estamos </h3>
 											<div class="clearfix"> </div>
 										</div>
 									<!-- /contact-->
 									<div class="contact">
 									 <div class="contact-left">
-										<iframe src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Purwokerto,+Central+Java,+Indonesia&amp;aq=0&amp;oq=purwo&amp;sll=37.0625,-95.677068&amp;sspn=50.291089,104.238281&amp;ie=UTF8&amp;hq=&amp;hnear=Purwokerto,+Banyumas,+Central+Java,+Indonesia&amp;ll=-7.431391,109.24783&amp;spn=0.031022,0.050898&amp;t=m&amp;z=14&amp;output=embed"></iframe>
-
+									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.869897741387!2d-43.17081508572018!3d-22.955018084987262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x99801b0b2c6eab%3A0xe94128f9ab152b4d!2sUNIRIO+-+CCET+-+Centro+de+Ci%C3%AAncias+Exatas+e+de+Tecnologia!5e0!3m2!1spt-BR!2sbr!4v1542763972139"></iframe>
 									</div>
 									<div class="contact-right">
-										<p class="phn">+9100 2481 5842</p>
-										<p class="phn-bottom">4578 Marmora
-												<span>Road, Glasgow D04 89GR</span></p>
-										<p class="lom">Nullam ac urna velit. Pellentesque in arcu tortor. 
-											Pellentesque nec est et elit varius pulvinar eget vitae sapien. 
-											Aenean vehicula accumsan gravida.</p>
+										<p class="phn">+ 55 21 3843-4015</p>
+										<p class="phn-bottom">Botafogo, Rio de Janeiro
+												<span>Av. Pasteur, 458</span></p>
+										<p class="lom">UNIRIO - CCET - Centro de Ciências Exatas e de Tecnologia</p>
 									</div>
 									<div class="clearfix"> </div>
 									<div class="contact-left1">
-										<h3>Contact Us With <span>Any questions</span></h3>
+										<h3>Entre em contato conosco <span>Deixe sua dúvida</span></h3>
 										<div class="in-left">
-										<form action="#" method="post">
-												<p class="your-para">Your Name :</p>
-														<input type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required="">
-											
-														<p class="your-para">Your Mail :</p>
-														<input type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required="">
-														<p class="your-para">Phone Number:</p>
-														<input type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required="">
+										<form name="formSup" action="faleConosco" method="get" enctype="text/plain" autocomplete="off">
+														<p class="your-para">Seu Nome :</p>
+														<input id="nome" name="nome" required="required" type="text" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
+								
+														<p class="your-para">Seu e-mail :</p>
+														<input id="email" name="email" required="required" type="text" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" >
+														
+													
 
 											</form>
 										</div>
 										<div class="in-right">
 											<form>
 												<textarea placeholder="" onfocus="this.value='';" onblur="if (this.value == '') {this.value = '';}" required=""></textarea>
-												<input type="submit" value="Submit">
+												<input type="submit" value="Enviar" name="Enviar">
 											</form>
 										</div>
 										<div class="clearfix"> </div>
 									</div>
 													<div class="contact-right1">
-														<h3><span>Social Websites</span></h3>
+														<h3><span>Mídias Sociais</span></h3>
 														<h4>Nullam ac urna velit pellentesque in <label>arcu tortor 
 															Pellentesque nec</label></h4>
 														<p>Nullam ac urna velit. Pellentesque in arcu tortor. 

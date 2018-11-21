@@ -1685,7 +1685,7 @@ img.media-object {
     font-weight: 600;
     margin-bottom: 1.5em;
 }
-.coment-form input[type="text"],.coment-form input[type="email"] {
+.coment-form input[type="text"] {
   display: block;
   background: none;
   color: #999;
@@ -1701,6 +1701,25 @@ img.media-object {
 		-moz-border-radius:4px;
 		-webkit-border-radius:4px;
 }
+
+.coment-form input[type="email"] {
+  display: block;
+  background: none;
+  color: #999;
+  border:1px solid #ddd;
+  margin-bottom: 5px;
+  outline: none;
+  font-size: 15px;
+  padding: 13px 15px;
+      font-family: 'Lato-Regular';
+  width:50%;
+  border-radius:4px;
+		-o-border-radius:4px;
+		-moz-border-radius:4px;
+		-webkit-border-radius:4px;
+	
+}
+
 .coment-form textarea {
 	background: none;
   color: #999;
@@ -1709,7 +1728,7 @@ img.media-object {
 	display: block;
 	height: 150px;
 	outline: none;
-	font-size:15px;
+	/font-size:15px;
 	resize: none;
 	padding: 13px 15px;
 	    font-family: 'Lato-Regular';
@@ -2842,16 +2861,16 @@ ul.side-icons li a:hover{
  opacity:0.4;
 }
 ul.side-icons li a.fb{
- background:url('../images/icons.png') no-repeat 0px 0px;
+ background:url('images/icons.png') no-repeat 0px 0px;
 }
 ul.side-icons li a.twitt{
- background:url('../images/icons.png') no-repeat -26px 0px;
+ background:url('images/icons.png') no-repeat -26px 0px;
 }
 ul.side-icons li a.goog{
- background:url('../images/icons.png') no-repeat -52px 0px;
+ background:url('images/icons.png') no-repeat -52px 0px;
 }
 ul.side-icons li a.drib{
- background:url('../images/icons.png') no-repeat -78px 0px;
+ background:url('images/icons.png') no-repeat -78px 0px;
 }
 /*-- w3l-agile --*/
 /*-- agileits --*/
