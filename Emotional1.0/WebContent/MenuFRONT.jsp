@@ -43,7 +43,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<!--sidebar nav start-->
 					<ul class="nav nav-pills nav-stacked custom-nav">
 						<li class="active"><a href="Menu.jsp"><i class="lnr lnr-home"></i><span>Inicial</span></a></li>
-						<li><a href="Playlist24H"><i class="camera"></i> <span>UmDia</span></a></li>
+						<li><a href="Playlist24H.jsp"><i class="camera"></i> <span>UmDia</span></a></li>
 						<li><a href="${pageContext.request.contextPath}/AdicionarAmigo.jsp"><i class="lnr lnr-users"></i> <span>Adicionar Amigo</span></a></li> 
 						<li><a href="${pageContext.request.contextPath}/EnviarMusica.jsp" data-toggle="modal"><i class="fa fa-th"></i><span>Enviar Música</span></a></li>
 						<li><a href="Musica.jsp"><i class="lnr lnr-music-note"></i> <span>Músicas</span></a></li>						
