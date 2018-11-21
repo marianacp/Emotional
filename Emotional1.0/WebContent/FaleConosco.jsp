@@ -219,9 +219,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="footer-grid">
 					<h3>Navegação</h3>
 					<ul class="list1">
-					  <li><a href="Menu.jsp">Inicial</a></li>
+					 <li><a href="Menu.jsp">Inicial</a></li>
 					  <li><a href="Playlist24H.jsp">UmDia</a></li>
-					  <li><a href="Artista.jsp">Artistas</a></li>
+					  <li><a href="${pageContext.request.contextPath}/AdicionarAmigo.jsp">Adicionar Amigo</a></li>
 					  <li><a href="Musica.jsp">Músicas</a></li>
 					  <li><a href="Playlist.jsp">Playlists</a></li>
 					  <li><a href="MeusFavoritos.jsp">Meus Favoritos</a></li>

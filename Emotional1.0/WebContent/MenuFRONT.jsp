@@ -44,7 +44,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<ul class="nav nav-pills nav-stacked custom-nav">
 						<li class="active"><a href="Menu.jsp"><i class="lnr lnr-home"></i><span>Inicial</span></a></li>
 						<li><a href="Playlist24H"><i class="camera"></i> <span>UmDia</span></a></li>
-						<li><a href="Artista.jsp"><i class="lnr lnr-users"></i> <span>Artistas</span></a></li> 
+						<li><a href="${pageContext.request.contextPath}/AdicionarAmigo.jsp"><i class="lnr lnr-users"></i> <span>Adicionar Amigo</span></a></li> 
+						<li><a href="${pageContext.request.contextPath}/EnviarMusica.jsp" data-toggle="modal"><i class="fa fa-th"></i><span>Enviar Música</span></a></li>
 						<li><a href="Musica.jsp"><i class="lnr lnr-music-note"></i> <span>Músicas</span></a></li>						
 						<li class="menu-list"><a href="#"><i class="lnr lnr-indent-increase"></i> <span>Playlists</span></a>  
 							<ul class="sub-menu-list">
@@ -536,7 +537,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						
 						<div class="review-slider">
 								<div class="tittle-head">
-									<h3 class="tittle">Álbuns em destaque <span class="new">Novo</span></h3>
+									<h3 class="tittle">Álbuns em destaque <span class="new">Novos</span></h3>
 									<div class="clearfix"> </div>
 								</div>
 								 <ul id="flexiselDemo1">
@@ -652,7 +653,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<ul class="list1">
 					  <li><a href="Menu.jsp">Inicial</a></li>
 					  <li><a href="Playlist24H.jsp">UmDia</a></li>
-					  <li><a href="Artista.jsp">Artistas</a></li>
+					  <li><a href="${pageContext.request.contextPath}/AdicionarAmigo.jsp">Adicionar Amigo</a></li>
+					  <li><a href="${pageContext.request.contextPath}/EnviarMusica.jsp">Enviar Música</a></li>
 					  <li><a href="Musica.jsp">Músicas</a></li>
 					  <li><a href="Playlist.jsp">Playlists</a></li>
 					  <li><a href="MeusFavoritos.jsp">Meus Favoritos</a></li>
