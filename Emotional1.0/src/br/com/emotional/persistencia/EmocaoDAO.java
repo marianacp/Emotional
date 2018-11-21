@@ -55,7 +55,13 @@ public class EmocaoDAO extends Dao{
 			
 			ResultSet rs =  pstm.executeQuery();
 			
-			return rs.getInt(0); 
+			int emo_id = 0; 
+			
+			if(rs.next()) {
+				emo_id = rs.getInt("ID_EMOCAO");
+			}
+			
+			return emo_id; 
 		}
 	}
 

@@ -22,6 +22,10 @@
             	<a href="${pageContext.request.contextPath}/EnviarMusica.jsp">Enviar Música</a>
             	</li>
             </c:if>
+            <li>
+                <a href="${pageContext.request.contextPath}/AdicionarAmigo.jsp">Adicionar Amigo</a>               
+            </li>
+            
         </ul>
     </body>
 </html>

@@ -38,7 +38,7 @@ public class ControleCadastro extends HttpServlet{
     // fazendo a conversão da data
     try {
         Date date =
-                new SimpleDateFormat("dd/MM/yyyy")
+                new SimpleDateFormat("dd/mm/yyyy")
                 .parse(dataEmTexto);
         dataNascimento = Calendar.getInstance();
         dataNascimento.setTime(date);
