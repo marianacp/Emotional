@@ -165,8 +165,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 															 <img src="images/11.jpg" class="img-responsive" alt="">
 														 </div>
 														<div class="banner-info">
-														              <a class="trend" href="single.html">TRENDING</a>
-																	  <h3>Let Your Home</h3>
+																	  <h3>Sinta o Som</h3>
 																	  <p>Album by <span>Rock star</span></p>
 														 </div>
 
@@ -176,7 +175,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 															 <img src="images/22.jpg" class="img-responsive" alt="">
 														 </div>
 														<div class="banner-info">
-																	  <a class="trend" href="single.html">TRENDING</a>
 																	  <h3>Charis Brown feet</h3>
 																	  <p>Album by <span>Rock star</span></p>
 														 </div>
@@ -188,9 +186,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 															 <img src="images/33.jpg" class="img-responsive" alt="">
 														 </div>
 														<div class="banner-info"> 
-														             <a class="trend" href="single.html">TRENDING</a>
-																	  <h3>Let Your Home</h3>
-																	  <p>Album by <span>Rock star</span></p>
+																	  <h3>ANTI</h3>
+																	  <p>Rihanna <span>  </span></p>
 														 </div>
 
 												 	 <!-- /w3layouts-agileits -->
