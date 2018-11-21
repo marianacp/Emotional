@@ -165,18 +165,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 															 <img src="images/11.jpg" class="img-responsive" alt="">
 														 </div>
 														<div class="banner-info">
-																	  <h3>Sinta o Som</h3>
-																	  <p>Album by <span>Rock star</span></p>
+																	  <h3>  </h3>
+																	  <p>  <span>  </span></p>
 														 </div>
 
 												</li>
 												<li>
 													<div class="banner-img">
-															 <img src="images/22.png" class="img-responsive" alt="">
+															 <img src="images/22.jpg" class="img-responsive" alt="">
 														 </div>
 														<div class="banner-info">
-																	  <h3>Charis Brown feet</h3>
-																	  <p>Album by <span>Rock star</span></p>
+																	  <h3>  </h3>
+																	  <p>  <span>  </span></p>
 														 </div>
 
 
@@ -186,8 +186,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 															 <img src="images/33.png" class="img-responsive" alt="">
 														 </div>
 														<div class="banner-info"> 
-																	  <h3>ANTI</h3>
-																	  <p>Rihanna <span>  </span></p>
+																	  <h3> </h3>
+																	  <p> <span>  </span></p>
 														 </div>
 
 												 	 <!-- /w3layouts-agileits -->
