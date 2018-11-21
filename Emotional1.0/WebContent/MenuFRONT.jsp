@@ -172,7 +172,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												</li>
 												<li>
 													<div class="banner-img">
-															 <img src="images/22.jpg" class="img-responsive" alt="">
+															 <img src="images/22.png" class="img-responsive" alt="">
 														 </div>
 														<div class="banner-info">
 																	  <h3>Charis Brown feet</h3>
@@ -183,7 +183,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												</li>
 												<li>
 												 <div class="banner-img">
-															 <img src="images/33.jpg" class="img-responsive" alt="">
+															 <img src="images/33.png" class="img-responsive" alt="">
 														 </div>
 														<div class="banner-info"> 
 																	  <h3>ANTI</h3>
@@ -242,13 +242,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<!--//pop-up-box -->
 						<div class="albums">
 								<div class="tittle-head">
-									<h3 class="tittle">New Releases <span class="new">New</span></h3>
-									<a href="index.html"><h4 class="tittle">See all</h4></a>
+									<h3 class="tittle">Lançamentos <span class="new">Novo</span></h3>
+									<a href="index.html"><h4 class="tittle">Veja tudo</h4></a>
 									<div class="clearfix"> </div>
 								</div>
 								<div class="col-md-3 content-grid">
 								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="images/v1.jpg" title="allbum-name"></a>
-								<a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Listen now</a>
+								<a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Escute agora</a>
 							</div>
 							<div id="small-dialog" class="mfp-hide">
 								<iframe src="https://player.vimeo.com/video/12985622"></iframe>
@@ -257,22 +257,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<div class="col-md-3 content-grid">
 								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="images/v2.jpg" title="allbum-name"></a>
 
-								<a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Listen now</a>
+								<a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Escute agora</a>
 							</div>
 							<div class="col-md-3 content-grid">
 								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="images/v3.jpg" title="allbum-name"></a>
 
-								<a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Listen now</a>
+								<a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Escute agora</a>
 							</div>
 							<div class="col-md-3 content-grid last-grid">
 								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="images/v4.jpg" title="allbum-name"></a>
 	
-								<a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Listen now</a>
+								<a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Escute agora</a>
 							</div>
 							<div class="col-md-3 content-grid">
 								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="images/v5.jpg" title="allbum-name"></a>
 
-								<a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Listen now</a>
+								<a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Escute agora</a>
 							</div>
 							<div id="small-dialog" class="mfp-hide">
 								<iframe src="https://player.vimeo.com/video/12985622"></iframe>
@@ -281,16 +281,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<div class="col-md-3 content-grid">
 								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="images/v6.jpg" title="allbum-name"></a>
 		
-								<a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Listen now</a>
+								<a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Escute agora</a>
 							</div>
 							<div class="col-md-3 content-grid">
 								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="images/v7.jpg" title="allbum-name"></a>
 
-								<a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Listen now</a>
+								<a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Escute agora</a>
 							</div>
 							<div class="col-md-3 content-grid last-grid">
 								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="images/v8.jpg" title="allbum-name"></a>
-												<a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Listen now</a>
+												<a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Escute agora</a>
 											</div>
 											<div class="clearfix"> </div>
 										</div>
@@ -299,8 +299,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						
 						<div class="albums second">
 										<div class="tittle-head">
-											<h3 class="tittle">Discover <span class="new">View</span></h3>
-											<a href="index.html"><h4 class="tittle two">See all</h4></a>
+											<h3 class="tittle">Novidades <span class="new">Conheça</span></h3>
+											<a href="index.html"><h4 class="tittle two">Veja todos</h4></a>
 											<div class="clearfix"> </div>
 										</div>
 											<div class="col-md-3 content-grid">
@@ -386,8 +386,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 													<ul style="display: block;"><li class="jp-playlist-current"><div><a href="javascript:;" class="jp-playlist-item-remove" style="display: none;">×</a><a href="javascript:;" class="jp-playlist-item jp-playlist-current" tabindex="0">1. Ellie-Goulding <span class="jp-artist">by Pixar</span></a></div></li><li><div><a href="javascript:;" class="jp-playlist-item-remove" style="display: none;">×</a><a href="javascript:;" class="jp-playlist-item" tabindex="0">2. Mark-Ronson-Uptown <span class="jp-artist">by Pixar</span></a></div></li><li><div><a href="javascript:;" class="jp-playlist-item-remove" style="display: none;">×</a><a href="javascript:;" class="jp-playlist-item" tabindex="0">3. Ellie-Goulding <span class="jp-artist">by Pixar</span></a></div></li><li><div><a href="javascript:;" class="jp-playlist-item-remove" style="display: none;">×</a><a href="javascript:;" class="jp-playlist-item" tabindex="0">4. Maroon-Sugar <span class="jp-artist">by Pixar</span></a></div></li><li><div><a href="javascript:;" class="jp-playlist-item-remove" style="display: none;">×</a><a href="javascript:;" class="jp-playlist-item" tabindex="0">5. Pharrell-Williams <span class="jp-artist">by Pixar</span></a></div></li><li><div><a href="javascript:;" class="jp-playlist-item-remove" style="display: none;">×</a><a href="javascript:;" class="jp-playlist-item" tabindex="0">6. Ellie-Goulding <span class="jp-artist">by Pixar</span></a></div></li><li><div><a href="javascript:;" class="jp-playlist-item-remove" style="display: none;">×</a><a href="javascript:;" class="jp-playlist-item" tabindex="0">7. Pharrell-Williams <span class="jp-artist">by Pixar</span></a></div></li></ul>
 												</div>
 												<div class="jp-no-solution" style="display: none;">
-													<span>Update Required</span>
-													To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+													<span>Atualização Requerida</span>
+													Para ouvir esta música você precisará atualizar a versão do seu browser para uma versão mais recente ou baixar o <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
 												</div>
 											</div>
 										</div>
@@ -479,7 +479,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<!--//video-main-->
 								<!--/app_store-->
 									  <div class="apps">
-												<h3 class="hd-tittle">Mosaic now available in</h3>
+												<h3 class="hd-tittle">EM BREVE </h3>
 												<div class="banner-button">
 													<a href="#"><img src="images/1.png" alt=""></a>
 												</div>
@@ -492,35 +492,35 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						         <!--/start-paricing-tables-->
 									<div class="price-section">
 											<div class="pricing-inner">
-												<h3 class="hd-tittle">Upgrade your Plan</h3>
+												<h3 class="hd-tittle">Melhore seu plano</h3>
 												<div class="pricing">
 													<div class="price-top">
-														<h3><span>$20</span></h3>
-														<h4>per year</h4>
+														<h3><span>R$20</span></h3>
+														<h4>por ano</h4>
 													</div>
 													<div class="price-bottom">
 														<ul>
-															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">Download unlimited songs</a><div class="clearfix"></div></li>
-															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">Stream songs in High Definition</a><div class="clearfix"></div></li>
-															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">No ads unlimited Devices</a><div class="clearfix"></div></li>
-															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">Stream songs in High Definition</a><div class="clearfix"></div></li>
+															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">Download de mais músicas </a><div class="clearfix"></div></li>
+															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">Músicas em alta definicção</a><div class="clearfix"></div></li>
+															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">Menos propagandas</a><div class="clearfix"></div></li>
+															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">Playlists com mais de 24H</a><div class="clearfix"></div></li>
 														</ul>
-														<a href="single.html" class="price">Upgrade</a>
+														<a href="single.html" class="price">Dê um up!</a>
 													</div>
 												</div>
 												<div class="pricing two">
 													<div class="price-top">
-														<h3><span>$30</span></h3>
-														<h4>per year</h4>
+														<h3><span>R$30</span></h3>
+														<h4>por ano</h4>
 													</div>
 													<div class="price-bottom">
 														<ul>
-															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">Download unlimited songs</a><div class="clearfix"></div></li>
-															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">Stream songs in High Definition</a><div class="clearfix"></div></li>
-															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">No ads unlimited Devices</a><div class="clearfix"></div></li>
-															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">Stream songs in High Definition</a><div class="clearfix"></div></li>
+															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">Download ilimitado de músicas</a><div class="clearfix"></div></li>
+															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">Músicas em alta definição</a><div class="clearfix"></div></li>
+															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">Sem propagandas</a><div class="clearfix"></div></li>
+															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">Criação de playlists</a><div class="clearfix"></div></li>
 														</ul>
-														<a href="single.html" class="price">Upgrade</a>
+														<a href="single.html" class="price">Dê um up!</a>
 													</div>
 												</div>
 													<div class="clearfix"></div>
@@ -536,7 +536,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						
 						<div class="review-slider">
 								<div class="tittle-head">
-									<h3 class="tittle">Featured Albums <span class="new"> New</span></h3>
+									<h3 class="tittle">Álbuns em destaque <span class="new">Novo</span></h3>
 									<div class="clearfix"> </div>
 								</div>
 								 <ul id="flexiselDemo1">
@@ -546,17 +546,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<div class="date-city">
 										<h5>Jan-02-16</h5>
 										<div class="buy-tickets">
-											<a href="single.html">READ MORE</a>
+											<a href="single.html"> MAIS</a>
 										</div>
 									</div>
 								</li>
 								<li>
 									<a href="single.html"><img src="images/v2.jpg" alt=""/></a>
-									<div class="slide-title"><h4>Adele21</h4></div>
+									<div class="slide-title"><h4>Adele21 </div>
 									<div class="date-city">
 										<h5>Jan-02-16</h5>
 										<div class="buy-tickets">
-											<a href="single.html">READ MORE</a>
+											<a href="single.html">MAIS</a>
 										</div>
 									</div>
 								</li>
@@ -566,7 +566,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<div class="date-city">
 										<h5>Jan-02-16</h5>
 										<div class="buy-tickets">
-											<a href="single.html">READ MORE</a>
+											<a href="single.html">MAIS</a>
 										</div>
 									</div>
 								</li>
@@ -576,7 +576,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<div class="date-city">
 										<h5>Jan-02-16</h5>
 										<div class="buy-tickets">
-											<a href="single.html">READ MORE</a>
+											<a href="single.html">MAIS</a>
 										</div>
 									</div>
 								</li>
@@ -586,7 +586,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<div class="date-city">
 										<h5>Jan-02-16</h5>
 										<div class="buy-tickets">
-											<a href="single.html">READ MORE</a>
+											<a href="single.html">MAIS</a>
 										</div>
 									</div>
 								</li>
@@ -596,7 +596,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<div class="date-city">
 										<h5>Jan-02-16</h5>
 										<div class="buy-tickets">
-											<a href="single.html">READ MORE</a>
+											<a href="single.html">MAIS</a>
 										</div>
 									</div>
 								</li>
@@ -606,7 +606,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<div class="date-city">
 										<h5>Jan-02-16</h5>
 										<div class="buy-tickets">
-											<a href="single.html">READ MORE</a>
+											<a href="single.html">MAIS</a>
 										</div>
 									</div>
 								</li>
@@ -648,55 +648,53 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			  <!--body wrapper end-->
 			     <div class="footer">
 				<div class="footer-grid">
-					<h3>Navigation</h3>
+					<h3>Navegação</h3>
 					<ul class="list1">
-					  <li><a href="index.html">Home</a></li>
-					  <li><a href="radio.html">All Songs</a></li>
-					  <li><a href="browse.html">Albums</a></li>
-					  <li><a href="radio.html">New Collections</a></li>
-					  <li><a href="blog.html">Blog</a></li>
-					  <li><a href="contact.html">Contact</a></li>
+					  <li><a href="Menu.jsp">Inicial</a></li>
+					  <li><a href="Playlist24H.jsp">UmDia</a></li>
+					  <li><a href="Artista.jsp">Artistas</a></li>
+					  <li><a href="Musica.jsp">Músicas</a></li>
+					  <li><a href="Playlist.jsp">Playlists</a></li>
+					  <li><a href="MeusFavoritos.jsp">Meus Favoritos</a></li>
+					  <li><a href="FaleConosco.jsp">Contato</a></li>
 				    </ul>
 				</div>
+							
 				<div class="footer-grid">
-					<h3>Our Account</h3>
+					<h3>Emotional</h3>
 				    <ul class="list1">
-					  <li><a href="#" data-toggle="modal" data-target="#myModal5">Your Account</a></li>
-					  <li><a href="#">Personal information</a></li>
-					  <li><a href="#">Addresses</a></li>
-					  <li><a href="#">Discount</a></li>
-					  <li><a href="#">Orders history</a></li>
-					  <li><a href="#">Addresses</a></li>
-					  <li><a href="#">Search Terms</a></li>
+					  <li><a href="#" data-toggle="modal" data-target="#myModal5">Sua conta</a></li>
+					  <li><a href="#">Informações</a></li>
+					  <li><a href="#">Endereço</a></li>
+					  <li><a href="#">Desconto</a></li>
+					  <li><a href="#">Nossa história</a></li>
+					  <li><a href="#">Termos de segurança</a></li>
 				    </ul>
 				</div>
 				<div class="footer-grid">
-					<h3>Our Support</h3>
+					<h3>Suporte</h3>
 					<ul class="list1">
-					  <li><a href="contact.html">Site Map</a></li>
-					  <li><a href="#">Search Terms</a></li>
-					  <li><a href="#">Advanced Search</a></li>
+					  <li><a href="FaleConosco.jsp">Fale Conosco</a></li>
+					  <li><a href="PerguntasFrequentes.jsp">Perguntas Frequentes</a></li>
+					  <li><a href="Suporte.jsp">Ajuda</a></li>
 					  <li><a href="#">Mobile</a></li>
-					  <li><a href="contact.html">Contact Us</a></li>
-					  <li><a href="#">Mobile</a></li>
-					  <li><a href="#">Addresses</a></li>
 				    </ul>
 				  </div>
 					  <div class="footer-grid">
-						<h3>Newsletter</h3>
-						<p class="footer_desc">Nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat</p>
+						<h3>Novidades</h3>
+						<p class="footer_desc">Cadastre seu e-mail caso queira receber notificações sobre as novidades do site. </p>
 						<div class="search_footer">
 						 <form>
 						   <input type="text" placeholder="Email...." required="">
-						  <input type="submit" value="Submit">
+						  <input type="submit" value="Enviar">
 						  </form>
 						</div>
 					 </div>
 					 <div class="footer-grid footer-grid_last">
-						<h3>About Us</h3>
-						<p class="footer_desc">Diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat enim ad minim veniam,.</p>
-						<p class="f_text">Phone:  &nbsp;&nbsp;&nbsp;00-250-2131</p>
-						<p class="email">Email : &nbsp;<span><a href="mailto:mail@example.com">info(at)mailing.com</a></span></p>	
+						<h3>Sobre nós</h3>
+						<p class="footer_desc">O Emotional é um sistema web com a intenção de gerar playlists personalizadas com base no humor através de um reconhecimento facial do usuário.</p>
+						<p class="f_text">Telefone: +55 21 3843-4015</p>
+						<p class="email">Email : &nbsp;<span><a href="#">info@emotional.com</a></span></p>	
 					 </div>
 					 <div class="clearfix"> </div>
 				</div>

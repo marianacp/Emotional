@@ -509,70 +509,68 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 							<div class="clearfix"></div>
 						<!--body wrapper end-->
- 	 <!-- /w3l-agile-info -->
+ 	<!-- /w3l-agile -->
 					</div>
 			  <!--body wrapper end-->
-			     <div class="footer two">
+			     <div class="footer">
 				<div class="footer-grid">
-					<h3>Navigation</h3>
+					<h3>Navegação</h3>
 					<ul class="list1">
-					  <li><a href="index.html">Home</a></li>
-					  <li><a href="radio.html">All Songs</a></li>
-					  <li><a href="browse.html">Albums</a></li>
-					  <li><a href="radio.html">New Collections</a></li>
-					  <li><a href="blog.html">Blog</a></li>
-					  <li><a href="contact.html">Contact</a></li>
+					  <li><a href="Menu.jsp">Inicial</a></li>
+					  <li><a href="Playlist24H.jsp">UmDia</a></li>
+					  <li><a href="Artista.jsp">Artistas</a></li>
+					  <li><a href="Musica.jsp">Músicas</a></li>
+					  <li><a href="Playlist.jsp">Playlists</a></li>
+					  <li><a href="MeusFavoritos.jsp">Meus Favoritos</a></li>
+					  <li><a href="FaleConosco.jsp">Contato</a></li>
 				    </ul>
 				</div>
+							
 				<div class="footer-grid">
-					<h3>Our Account</h3>
+					<h3>Emotional</h3>
 				    <ul class="list1">
-					  <li><a href="#" data-toggle="modal" data-target="#myModal5">Your Account</a></li>
-					  <li><a href="#">Personal information</a></li>
-					  <li><a href="#">Addresses</a></li>
-					  <li><a href="#">Discount</a></li>
-					  <li><a href="#">Orders history</a></li>
-					  <li><a href="#">Addresses</a></li>
-					  <li><a href="#">Search Terms</a></li>
+					  <li><a href="#" data-toggle="modal" data-target="#myModal5">Sua conta</a></li>
+					  <li><a href="#">Informações</a></li>
+					  <li><a href="#">Endereço</a></li>
+					  <li><a href="#">Desconto</a></li>
+					  <li><a href="#">Nossa história</a></li>
+					  <li><a href="#">Termos de segurança</a></li>
 				    </ul>
 				</div>
 				<div class="footer-grid">
-					<h3>Our Support</h3>
+					<h3>Suporte</h3>
 					<ul class="list1">
-					  <li><a href="contact.html">Site Map</a></li>
-					  <li><a href="#">Search Terms</a></li>
-					  <li><a href="#">Advanced Search</a></li>
+					  <li><a href="FaleConosco.jsp">Fale Conosco</a></li>
+					  <li><a href="PerguntasFrequentes.jsp">Perguntas Frequentes</a></li>
+					  <li><a href="Suporte.jsp">Ajuda</a></li>
 					  <li><a href="#">Mobile</a></li>
-					  <li><a href="contact.html">Contact Us</a></li>
-					  <li><a href="#">Mobile</a></li>
-					  <li><a href="#">Addresses</a></li>
 				    </ul>
 				  </div>
 					  <div class="footer-grid">
-						<h3>Newsletter</h3>
-						<p class="footer_desc">Nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat</p>
+						<h3>Novidades</h3>
+						<p class="footer_desc">Cadastre seu e-mail caso queira receber notificações sobre as novidades do site. </p>
 						<div class="search_footer">
 						 <form>
 						   <input type="text" placeholder="Email...." required="">
-						  <input type="submit" value="Submit">
+						  <input type="submit" value="Enviar">
 						  </form>
 						</div>
 					 </div>
 					 <div class="footer-grid footer-grid_last">
-						<h3>About Us</h3>
-						<p class="footer_desc">Diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat enim ad minim veniam,.</p>
-						<p class="f_text">Phone:  &nbsp;&nbsp;&nbsp;00-250-2131</p>
-						<p class="email">Email : &nbsp;<span><a href="mailto:mail@example.com">info(at)mailing.com</a></span></p>	
+						<h3>Sobre nós</h3>
+						<p class="footer_desc">O Emotional é um sistema web com a intenção de gerar playlists personalizadas com base no humor através de um reconhecimento facial do usuário.</p>
+						<p class="f_text">Telefone: +55 21 3843-4015</p>
+						<p class="email">Email : &nbsp;<span><a href="#">info@emotional.com</a></span></p>	
 					 </div>
 					 <div class="clearfix"> </div>
 				</div>
 			</div>
         <!--footer section start-->
 			<footer>
-			   <p>&copy 2016 Mosaic. All Rights Reserved | Design by <a href="https://w3layouts.com/" target="_blank">w3layouts.</a></p>
+			   <p>Emotional - Música para todos :: Sentimentos para a sua música </a></p>
 			</footer>
         <!--footer section end-->
- 	 <!-- /wthree-agile -->
+ 	 <!-- /w3l-agile -->
       <!-- main content end-->
    </section>
    	 <!-- /wthree-agile -->
