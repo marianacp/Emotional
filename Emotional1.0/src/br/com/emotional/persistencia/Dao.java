@@ -14,7 +14,7 @@ public class Dao {
 	
 	private final String URL = "jdbc:mysql://localhost:3306/Emotional_BD?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC&autoReconnect=true&useSSL=false";
 	private final String USER = "root";
-	private final String PASS = "12345";
+	private final String PASS = "admin";
 	
 	
 	protected void open()throws Exception {

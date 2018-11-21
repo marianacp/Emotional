@@ -16,7 +16,7 @@
             </div>
   <div class="container" >
   <div class="content"> 
-      <!--DETECTAR ROSTO-->
+	  <p>${mensagens.erros}</p>
       <p>Olá, ${sessionScope.usuarioLogado.nome}, vamos enviar uma música??</p>
       <div id="enviarMusica">
         <form name="formMusica" action="enviarMusica" method="get" enctype="text/plain" autocomplete="off"> 
@@ -34,7 +34,7 @@
           
           <p> 
             <label for="estilo">Estilo</label>
-            <select>
+            <select id="estilo" name="estilo">
   			<option value="Sertanejo">Sertanejo</option>
   			<option value="Rock">Rock</option>
   			<option value="Pop">Pop</option>
@@ -47,7 +47,7 @@
 		  
 		  <p> 
             <label for="emocao">Como você definiria esta música?</label>
-            <select>
+            <select id="emocao" name="emocao">
   			<option value="Felicidade">Alegre</option>
   			<option value="Tristeza">Triste</option>
   			<option value="Raiva">Calma</option>

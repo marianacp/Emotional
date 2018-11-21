@@ -4,39 +4,46 @@ import com.mysql.cj.jdbc.Blob;
 
 public class Musica {
 
-	private int mus_id; 
-	private String titulo; 
-	private int emo_id; 
-	private String autor; 
-	private Blob musica;
-	public int getMus_id() {
-		return mus_id;
+	private int id_musica; 
+	private String titulo_musica; 
+	private int id_emocao; 
+	private int id_artista; 
+	private String arquivo_musica;
+	private int id_estilo_musical;
+	public int getId_musica() {
+		return id_musica;
 	}
-	public void setMus_id(int mus_id) {
-		this.mus_id = mus_id;
+	public void setId_musica(int id_musica) {
+		this.id_musica = id_musica;
 	}
-	public String getTitulo() {
-		return titulo;
+	public String getTitulo_musica() {
+		return titulo_musica;
 	}
-	public void setTitulo(String titulo) {
-		this.titulo = titulo;
+	public void setTitulo_musica(String titulo_musica) {
+		this.titulo_musica = titulo_musica;
 	}
-	public int getEmo_id() {
-		return emo_id;
+	public int getId_emocao() {
+		return id_emocao;
 	}
-	public void setEmo_id(int emo_id) {
-		this.emo_id = emo_id;
+	public void setId_emocao(int id_emocao) {
+		this.id_emocao = id_emocao;
 	}
-	public String getAutor() {
-		return autor;
+	public int getId_artista() {
+		return id_artista;
 	}
-	public void setAutor(String autor) {
-		this.autor = autor;
+	public void setId_artista(int id_artista) {
+		this.id_artista = id_artista;
 	}
-	public Blob getMusica() {
-		return musica;
+	public String getArquivo_musica() {
+		return arquivo_musica;
 	}
-	public void setMusica(Blob musica) {
-		this.musica = musica;
+	public void setArquivo_musica(String arquivo_musica) {
+		this.arquivo_musica = arquivo_musica;
+	}
+	public int getId_estilo_musical() {
+		return id_estilo_musical;
+	}
+	public void setId_estilo_musical(int id_estilo_musical) {
+		this.id_estilo_musical = id_estilo_musical;
 	} 
 }
