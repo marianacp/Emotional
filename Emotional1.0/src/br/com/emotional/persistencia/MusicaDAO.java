@@ -3,11 +3,13 @@ package br.com.emotional.persistencia;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
+import java.sql.Blob;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.Calendar;
 
 import br.com.emotional.entidade.Musica;
+import br.com.emotional.entidade.Usuario;
 
 public class MusicaDAO  extends Dao{
 	public void salvarMusica(Musica musica) throws Exception {
@@ -38,5 +40,33 @@ public class MusicaDAO  extends Dao{
 			 e.printStackTrace();			
 		}
 
+	}
+	public Musica getMusicaById(Musica mus) throws Exception {
+		
+		open(); 
+		
+		String sql = "Select arquivo_musica, titulo_musica from musica where id_musica = ?";
+		
+		PreparedStatement pstm = null;
+	
+		
+		try {
+			pstm = con.prepareStatement(sql);
+			
+			pstm.setInt(1, mus.getId_musica());
+			
+			ResultSet rs = pstm.executeQuery(); 
+			
+			//mus.setArquivo_musica(rs.getBlob("arquivo_musica")); 
+			//InputStream binaryStream = musicaBlob.getBinaryStream(0, musicaBlob.length());
+			if(rs.next()) {
+				
+				mus.setTitulo_musica(rs.getString("titulo_musica"));
+			}			
+			return mus; 
+		} catch (Exception e) {
+
+		}
+		return mus; 
 	}
 }
