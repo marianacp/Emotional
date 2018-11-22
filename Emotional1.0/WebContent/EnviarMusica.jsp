@@ -67,7 +67,7 @@
 		  
            
           <p> 
-            <input type="submit" value="Enviar Musica" name="EnviarEnviar"/> 
+            <input type="submit" value="Enviar Musica" name="enviarMusica"/> 
           </p>
            
 
