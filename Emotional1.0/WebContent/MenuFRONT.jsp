@@ -138,7 +138,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											 </ul>	
 											</div>
 											<div class="col-md-4 login-pop">
-												<div id="loginpop"> <a id="loginButton"><span>Olá ${sessionScope.usuarioLogado.nome} <i class="arrow glyphicon glyphicon-chevron-right"></i></span></a><a class="top-sign" href="${pageContext.request.contextPath}/logout.jsp"><i class="fa fa-sign-in"></i></a>
+												<div id="loginpop"> <a id="loginButton"><span> Olá ${sessionScope.usuarioLogado.nome}<i class="arrow glyphicon glyphicon-chevron-right"></i></span></a><a class="top-sign" href="${pageContext.request.contextPath}/logout.jsp"><i class="fa fa-sign-in"></i></a>
 												</div>
 
 											</div>
