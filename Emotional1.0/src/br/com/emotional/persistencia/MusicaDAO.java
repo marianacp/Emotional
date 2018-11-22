@@ -9,7 +9,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import br.com.emotional.entidade.Musica;
-import br.com.emotional.entidade.Usuario;
 
 public class MusicaDAO  extends Dao{
 	public void salvarMusica(Musica musica) throws Exception {
@@ -24,10 +23,11 @@ public class MusicaDAO  extends Dao{
 		try {
 			pstm = con.prepareStatement(sql);
 			
-			String caminho = "C:\\Users\\USER\\Music\\Playlists\\"; 
-			File file = new File(caminho + musica.getArquivo_musica()); 
-			FileInputStream fis = new FileInputStream(file); 
-			pstm.setBinaryStream(1, fis);
+			String caminho = "C:\\Users\\USER\\Music\\Playlists\\" + musica.getArquivo_musica(); 
+			//File file = new File(caminho + musica.getArquivo_musica()); 
+			//FileInputStream fis = new FileInputStream(file); 
+			//pstm.setBinaryStream(1, fis);
+			pstm.setString(1, caminho);
 			pstm.setString(2, musica.getTitulo_musica());
 			pstm.setInt(3, musica.getId_emocao());
 			pstm.setInt(4, musica.getId_estilo_musical());
@@ -41,11 +41,12 @@ public class MusicaDAO  extends Dao{
 		}
 
 	}
-	public Musica getMusicaById(Musica mus) throws Exception {
+	public Musica getMusicaAprovada(Musica mus) throws Exception {
 		
 		open(); 
 		
-		String sql = "Select arquivo_musica, titulo_musica from musica where id_musica = ?";
+		String sql = "Select arquivo_musica, titulo_musica from musica mu "
+				+ "join aprovacao_musica am on am.id_musica = mu.id_musica where id_musica = ?";
 		
 		PreparedStatement pstm = null;
 	
@@ -57,10 +58,9 @@ public class MusicaDAO  extends Dao{
 			
 			ResultSet rs = pstm.executeQuery(); 
 			
-			//mus.setArquivo_musica(rs.getBlob("arquivo_musica")); 
-			//InputStream binaryStream = musicaBlob.getBinaryStream(0, musicaBlob.length());
+
 			if(rs.next()) {
-				
+				mus.setArquivo_musica(rs.getString("arquivo_musica"));
 				mus.setTitulo_musica(rs.getString("titulo_musica"));
 			}			
 			return mus; 
