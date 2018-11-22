@@ -15,7 +15,7 @@
 <body>
   <div class="container" >    
     <div class="content">      
-      <!--FORMULï¿½ï¿½RIO DE LOGIN-->
+      <!--FORMULÁRIO DE LOGIN-->
       <div id="login">
 
 
