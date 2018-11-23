@@ -167,9 +167,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<div class="clearfix"> </div>
 								</div>
 
+<<<<<<< HEAD
   
 	  <h3>${mensagens.erros}</h3>
       <h3>OlÃ¡ ${sessionScope.usuarioLogado.nome}, vamos enviar uma mÃºsica?</h3>
+=======
+            <div class="nav-content hideNav hidden">
+               <ul class="nav-list vcenter">
+                  <li class="nav-item"><a class="item-anchor" href="Menu.jsp">Menu</a></li>
+                  <li class="nav-item"><a class="item-anchor" href="${pageContext.request.contextPath}/logout.jsp">Logout</a></li>
+
+               </ul>
+            </div>
+  <div class="container" >
+  <div class="content"> 
+	  <p>${mensagens.erros}</p>
+      <p>Olá, ${sessionScope.usuarioLogado.nome}, vamos enviar uma música??</p>
+>>>>>>> parent of ea7b262... Update EnviarMusica.jsp
       <div id="enviarMusica">
         <div class="in-left">
         
@@ -224,7 +238,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </select>
          
           
+<<<<<<< HEAD
    		<p class="your-para">Muito bem ${sessionScope.usuarioLogado.nome}, agora envie a sua mÃºsica.</p>
+=======
+   		<label for="musica">Muito bem, ${sessionScope.usuarioLogado.nome}, agora envie a sua música.</label>
+>>>>>>> parent of ea7b262... Update EnviarMusica.jsp
           
           <p class="your-para">NÃ£o esqueÃ§a do formato MP3!</p>
           
