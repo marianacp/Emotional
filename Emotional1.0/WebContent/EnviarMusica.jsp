@@ -176,7 +176,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
   <div class="container" >
   <div class="content"> 
 	  <p>${mensagens.erros}</p>
-      <p>Olá, ${sessionScope.usuarioLogado.nome}vamos enviar uma música??</p>
+      <p>Olá, ${sessionScope.usuarioLogado.nome}, vamos enviar uma música??</p>
       <div id="enviarMusica">
         <form name="formMusica" action="enviarMusica" method="get" enctype="text/plain" autocomplete="off"> 
           <h1>Envio de Música</h1> 
@@ -217,7 +217,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </select>
           </p>
           
-   		<label for="musica">Muito bem, ${sessionScope.usuarioLogado.nome}agora envie a sua música.</label>
+   		<label for="musica">Muito bem, ${sessionScope.usuarioLogado.nome}, agora envie a sua música.</label>
           
           <p>Não esqueça do formato MP3!</p>
           
