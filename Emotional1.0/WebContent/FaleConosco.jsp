@@ -196,9 +196,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<div class="clearfix"> </div>
 									</div>
 													<div class="contact-right1">
-														<h3><span>Quem Somos</span></h3>
-														<h4>:: Sentimentos  para a sua música ::</h4>
-														<p>O Emotional é um sistema web com a intenção de gerar playlist personalizadas com base no humor através do reconhecimento facial de um usuário. O Emotional veio mexer com a sua emoção em forma de expressão corporal para transformá-la em música. Venha ter a experiência de ouvir músicas que refletem suas emoções.</p>
+														<h3><span>Mídias Sociais</span></h3>
+														<h4>Nullam ac urna velit pellentesque in <label>arcu tortor 
+															Pellentesque nec</label></h4>
+														<p>Nullam ac urna velit. Pellentesque in arcu tortor. 
+															Pellentesque nec est et elit varius pulvinar eget vitae sapien. 
+															Aenean vehicula accumsan gravida. Cum sociis natoque penatibus
+															et magnis dis parturient montes, nascetur ridiculus mus. Phasellus 
+															et lectus in urna consequat consectetur ut eget risus.</p>
 															 <ul class=" side-icons con">
 																		<li><a class="fb" href="#"></a></li>
 																		<li><a class="twitt" href="#"></a></li>
