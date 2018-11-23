@@ -87,7 +87,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="profile_details">		
 						  <div class="col-md-4 serch-part">
 								<div id="sb-search" class="sb-search">
-									<form action="#" method="post">
+									<form action="buscarMusica" method="get">
 
 										<input class="sb-search-input" placeholder="Search" type="search" name="search" id="search">
 										<input class="sb-search-submit" type="submit" value="">

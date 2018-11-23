@@ -7,6 +7,8 @@ import java.sql.Blob;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 import br.com.emotional.entidade.Musica;
 
@@ -41,32 +43,35 @@ public class MusicaDAO  extends Dao{
 		}
 
 	}
-	public Musica getMusicaAprovada(Musica mus) throws Exception {
+	public List<Musica> getListaMusicasAprovadas(String busca) throws Exception {
 		
 		open(); 
-		
+		//Status 1 eh aprovado, 2 reprovado
 		String sql = "Select arquivo_musica, titulo_musica from musica mu "
-				+ "join aprovacao_musica am on am.id_musica = mu.id_musica where id_musica = ?";
+				+ "join aprovacao_musica am on am.id_musica = mu.id_musica where UPPER(titulo_musica) like ? "
+				+ "and am.cod_status = 1";
 		
 		PreparedStatement pstm = null;
 	
-		
+		List<Musica> lista = new ArrayList<>(); 
 		try {
 			pstm = con.prepareStatement(sql);
 			
-			pstm.setInt(1, mus.getId_musica());
+			pstm.setString(1, "%" + busca.toUpperCase() + "%");
 			
 			ResultSet rs = pstm.executeQuery(); 
 			
 
 			if(rs.next()) {
-				mus.setArquivo_musica(rs.getString("arquivo_musica"));
-				mus.setTitulo_musica(rs.getString("titulo_musica"));
+				Musica musica = new Musica(); 
+				musica.setArquivo_musica(rs.getString("arquivo_musica"));
+				musica.setTitulo_musica(rs.getString("titulo_musica"));
+				lista.add(musica); 
 			}			
-			return mus; 
+			return lista; 
 		} catch (Exception e) {
-
+			e.printStackTrace();
 		}
-		return mus; 
+		return lista; 
 	}
 }
