@@ -159,41 +159,41 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				      <div class="music-left">
 					      		
 					<!--albums-->
-									
 					
 						
 								<div class="tittle-head">
 									<h3 class="tittle">Detectar Emoção </h3>
 									<div class="clearfix"> </div>
 								</div>
-           
+            <div class="nav-content hideNav hidden">
+               <ul class="nav-list vcenter">
+                  <li class="nav-item"><a class="item-anchor" href="Menu.jsp">Menu</a></li>
+                  <li class="nav-item"><a class="item-anchor" href="${pageContext.request.contextPath}/logout.jsp">Logout</a></li>
+
+               </ul>
+            </div>
+  
       <!--DETECTAR ROSTO-->
-      <h3>E aí! Que tal detectarmos sua emoção hoje ${sessionScope.usuarioLogado.nome}?</h3>
+      <p>E aí, ${sessionScope.usuarioLogado.nome}, que tal detectarmos sua emoção hoje?</p>
       <div id="emocao">
-      <div class="in-left">
         <form name="formEmocao" action="detectarEmocao" method="get" enctype="text/plain" autocomplete="off"> 
+          <h1>Emoção</h1> 
            
-       
-            <p class="your-para">Nome</p>
-            <input id="nome" name="nome" required="required" type="text"  />
-         
+          <p> 
+            <label for="nome">Nome</label>
+            <input id="nome" name="nome" required="required" type="text" placeholder="nome" />
+          </p>
 		  
-		 
-            <p class="your-para">Rosto</p>
-         
+		   <p> 
+            <label for="imagem">Rosto</label>
             <input id="imagem" type="file" name="imagem" required="required" />
-    
-        
-          
-		  </div>
+          </p>
+		  
            
-           <div class="clearfix"> </div>
-           
-           <div class="in-right">
           <p> 
             <input type="submit" value="Detectar" name="Detectar"/> 
           </p>
-           </div>
+           
 
         </form>
       </div>

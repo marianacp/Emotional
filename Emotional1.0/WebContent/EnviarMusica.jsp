@@ -11,7 +11,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 <!-- Custom CSS -->
 <link href="css/style2.css" rel='stylesheet' type='text/css' />
-<link href="css/estilo3.css" rel='stylesheet' type='text/css' />
+<link href="css/estilo2.css" rel='stylesheet' type='text/css' />
 
 <!-- Graph CSS -->
 <link href="css/font-awesome.css" rel="stylesheet"> 
@@ -22,7 +22,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link rel="shortcut icon" type="image/png" href="img/123.png"/>	
  <!-- Meters graphs -->
 <script src="js/jquery-2.1.4.js"></script>
-<script src="js/select.js"></script>
 
 
 </head> 
@@ -100,7 +99,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											 </ul>	
 											</div>
 											<div class="col-md-4 login-pop">
-												<div id="loginpop"> <a id="loginButton"> <span> Olá ${sessionScope.usuarioLogado.nome}<i class="arrow glyphicon glyphicon-chevron-right"></i></span></a><a class="top-sign" href="${pageContext.request.contextPath}/logout.jsp"><i class="fa fa-sign-in"></i></a>
+												<div id="loginpop"> <a id="loginButton"><span> Olá ${sessionScope.usuarioLogado.nome}<i class="arrow glyphicon glyphicon-chevron-right"></i></span></a><a class="top-sign" href="${pageContext.request.contextPath}/logout.jsp"><i class="fa fa-sign-in"></i></a>
 												</div>
 
 											</div>
@@ -167,53 +166,46 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<div class="clearfix"> </div>
 								</div>
 
-  
-	  <h3>${mensagens.erros}</h3>
-      <h3>Olá ${sessionScope.usuarioLogado.nome}, vamos enviar uma música?</h3>
+            <div class="nav-content hideNav hidden">
+               <ul class="nav-list vcenter">
+                  <li class="nav-item"><a class="item-anchor" href="Menu.jsp">Menu</a></li>
+                  <li class="nav-item"><a class="item-anchor" href="${pageContext.request.contextPath}/logout.jsp">Logout</a></li>
+
+               </ul>
+            </div>
+  <div class="container" >
+  <div class="content"> 
+	  <p>${mensagens.erros}</p>
+      <p>Olá, ${sessionScope.usuarioLogado.nome}, vamos enviar uma música??</p>
       <div id="enviarMusica">
-        <div class="in-left">
-        
         <form name="formMusica" action="enviarMusica" method="get" enctype="text/plain" autocomplete="off"> 
-       
+          <h1>Envio de Música</h1> 
            
           <p> 
-            <p class="your-para">Nome da música</p>
-            <input id="nome" name="nome" required="required" type="text" />
+            <label for="nome">Nome da Música</label>
+            <input id="nome" name="nome" required="required" type="text" placeholder="nome" />
           </p>
           
           <p> 
-            <p class="your-para">Autor</p>
-            <input id="autor" name="autor" required="required" type="text" />
+            <label for="autor">Autor</label>
+            <input id="autor" name="autor" required="required" type="text" placeholder="autor" />
           </p>
           
-         
-            <p class="your-para">Estilo</p>
-            <select id="estilo" name="estilo" class="old-select">
+          <p> 
+            <label for="estilo">Estilo</label>
+            <select id="estilo" name="estilo">
   			<option value="Sertanejo">Sertanejo</option>
   			<option value="Rock">Rock</option>
   			<option value="Pop">Pop</option>
   			<option value="Funk">Funk</option>
   			<option value="Mpb">MPB</option>
   			<option value="Outro">Outro</option>
-			</select>
-
-<div class="new-select">
-    <div class="selection">
-        <p>
-            <span></span>
-            <i></i>
-        </p>
-        <span></span>
-    </div>
-</div>
-         
-		<div class="demo">  
-		</div>
-		
+</select>
+          </p>
 		  
-	
-            <p class="your-para">Como você definiria esta música?</p>
-            
+		  
+		  <p> 
+            <label for="emocao">Como você definiria esta música?</label>
             <select id="emocao" name="emocao">
   			<option value="Felicidade">Alegre</option>
   			<option value="Tristeza">Triste</option>
@@ -223,30 +215,25 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <option value="Felicidade">Avassaladora</option>
 			<option value="Surpresa">Outro</option>
 </select>
-
-
+          </p>
           
-   		<p class="your-para">Muito bem ${sessionScope.usuarioLogado.nome}, agora envie a sua música.</p>
+   		<label for="musica">Muito bem, ${sessionScope.usuarioLogado.nome}, agora envie a sua música.</label>
           
-          <p class="your-para">Não esqueça do formato MP3!</p>
+          <p>Não esqueça do formato MP3!</p>
           
 			<input id="musica" name="musica" type="file" accept=".mp3,audio/*">
          
-		  </div>
 		  
-		  <div class="clearfix"> </div>
-		  
-		   <div class="in-right">
            
-     
+          <p> 
             <input type="submit" value="Enviar Musica" name="enviarMusica"/> 
-        
+          </p>
            
-           </div>
 
         </form>
       </div>
-    
+    </div>
+  </div>  
 
   
 <div class="clearfix"> </div>
