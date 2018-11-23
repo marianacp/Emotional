@@ -11,7 +11,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 <!-- Custom CSS -->
 <link href="css/style2.css" rel='stylesheet' type='text/css' />
+<<<<<<< HEAD
 <link href="css/estilo.css" rel='stylesheet' type='text/css' />
+=======
+<link href="css/estilo3.css" rel='stylesheet' type='text/css' />
+>>>>>>> parent of 1b9e8bd... Revert "Atualizações 2.0"
 
 <!-- Graph CSS -->
 <link href="css/font-awesome.css" rel="stylesheet"> 
@@ -100,7 +104,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											 </ul>	
 											</div>
 											<div class="col-md-4 login-pop">
+<<<<<<< HEAD
 												<div id="loginpop"> <a id="loginButton"> <span> Olá ${sessionScope.usuarioLogado.nome}<i class="arrow glyphicon glyphicon-chevron-right"></i></span></a><a class="top-sign" href="${pageContext.request.contextPath}/logout.jsp"><i class="fa fa-sign-in"></i></a>
+=======
+												<div id="loginpop"> <a id="loginButton"> <span> Ol� ${sessionScope.usuarioLogado.nome}<i class="arrow glyphicon glyphicon-chevron-right"></i></span></a><a class="top-sign" href="${pageContext.request.contextPath}/logout.jsp"><i class="fa fa-sign-in"></i></a>
+>>>>>>> parent of 1b9e8bd... Revert "Atualizações 2.0"
 												</div>
 
 											</div>
@@ -169,7 +177,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
   
 	  <h3>${mensagens.erros}</h3>
+<<<<<<< HEAD
       <h3>Olá ${sessionScope.usuarioLogado.nome}, vamos enviar uma música?</h3>
+=======
+      <h3>Ol� ${sessionScope.usuarioLogado.nome}, vamos enviar uma m�sica?</h3>
+>>>>>>> parent of 1b9e8bd... Revert "Atualizações 2.0"
       <div id="enviarMusica">
         <div class="in-left">
         
@@ -177,7 +189,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
        
            
           <p> 
+<<<<<<< HEAD
             <p class="your-para">Nome da Música</p>
+=======
+            <p class="your-para">Nome da m�sica</p>
+>>>>>>> parent of 1b9e8bd... Revert "Atualizações 2.0"
             <input id="nome" name="nome" required="required" type="text" />
           </p>
           
@@ -212,7 +228,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		
 		  
 	
+<<<<<<< HEAD
             <p class="your-para">Como você definiria esta música?</p>
+=======
+            <p class="your-para">Como voc� definiria esta m�sica?</p>
+            
+>>>>>>> parent of 1b9e8bd... Revert "Atualizações 2.0"
             <select id="emocao" name="emocao">
   			<option value="Felicidade">Alegre</option>
   			<option value="Tristeza">Triste</option>
@@ -222,11 +243,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <option value="Felicidade">Avassaladora</option>
 			<option value="Surpresa">Outro</option>
 </select>
+<<<<<<< HEAD
          
           
    		<p class="your-para">Muito bem ${sessionScope.usuarioLogado.nome}, agora envie a sua música.</p>
           
           <p class="your-para">Não esqueça do formato MP3!</p>
+=======
+
+
+          
+   		<p class="your-para">Muito bem ${sessionScope.usuarioLogado.nome}, agora envie a sua m�sica.</p>
+          
+          <p class="your-para">N�o esque�a do formato MP3!</p>
+>>>>>>> parent of 1b9e8bd... Revert "Atualizações 2.0"
           
 			<input id="musica" name="musica" type="file" accept=".mp3,audio/*">
          
