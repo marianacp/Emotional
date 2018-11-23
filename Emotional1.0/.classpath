@@ -13,7 +13,6 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
-
 	<classpathentry kind="lib" path="C:/Program Files (x86)/MySQL/Connector J 8.0/mysql-connector-java-8.0.12.jar"/>
 	<classpathentry kind="lib" path="C:/Users/USER/Downloads/httpclient-4.2.4.jar"/>
 	<classpathentry kind="lib" path="C:/Users/USER/Downloads/json-20170516.jar"/>
@@ -28,5 +27,10 @@
 	<classpathentry kind="lib" path="C:/Users/USER/Documents/Trabalhos - Vinicius/google-api-java-client/libs/jackson-core-2.9.2.jar"/>
 	<classpathentry kind="lib" path="C:/Users/USER/Documents/Trabalhos - Vinicius/google-api-java-client/libs/jackson-core-asl-1.9.11.jar"/>
 	<classpathentry kind="lib" path="C:/Users/USER/Documents/Trabalhos - Vinicius/google-api-java-client/libs/google-http-client-jackson2-1.24.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/USER/Downloads/taglibs-standard-compat-1.2.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/USER/Downloads/taglibs-standard-impl-1.2.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/USER/Downloads/taglibs-standard-jstlel-1.2.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/USER/Downloads/taglibs-standard-spec-1.2.5 (1).jar"/>
+	<classpathentry kind="lib" path="C:/Users/USER/Downloads/jstl-1.2.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

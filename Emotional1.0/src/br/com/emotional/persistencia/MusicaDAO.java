@@ -7,9 +7,10 @@ import java.sql.Blob;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 import br.com.emotional.entidade.Musica;
-import br.com.emotional.entidade.Usuario;
 
 public class MusicaDAO  extends Dao{
 	public void salvarMusica(Musica musica) throws Exception {
@@ -24,10 +25,11 @@ public class MusicaDAO  extends Dao{
 		try {
 			pstm = con.prepareStatement(sql);
 			
-			String caminho = "C:\\Users\\USER\\Music\\Playlists\\"; 
-			File file = new File(caminho + musica.getArquivo_musica()); 
-			FileInputStream fis = new FileInputStream(file); 
-			pstm.setBinaryStream(1, fis);
+			String caminho = "C:\\Users\\USER\\Music\\Playlists\\" + musica.getArquivo_musica(); 
+			//File file = new File(caminho + musica.getArquivo_musica()); 
+			//FileInputStream fis = new FileInputStream(file); 
+			//pstm.setBinaryStream(1, fis);
+			pstm.setString(1, caminho);
 			pstm.setString(2, musica.getTitulo_musica());
 			pstm.setInt(3, musica.getId_emocao());
 			pstm.setInt(4, musica.getId_estilo_musical());
@@ -41,32 +43,35 @@ public class MusicaDAO  extends Dao{
 		}
 
 	}
-	public Musica getMusicaById(Musica mus) throws Exception {
+	public List<Musica> getListaMusicasAprovadas(String busca) throws Exception {
 		
 		open(); 
-		
-		String sql = "Select arquivo_musica, titulo_musica from musica where id_musica = ?";
+		//Status 1 eh aprovado, 2 reprovado
+		String sql = "Select arquivo_musica, titulo_musica from musica mu "
+				+ "join aprovacao_musica am on am.id_musica = mu.id_musica where UPPER(titulo_musica) like ? "
+				+ "and am.cod_status = 1";
 		
 		PreparedStatement pstm = null;
 	
-		
+		List<Musica> lista = new ArrayList<>(); 
 		try {
 			pstm = con.prepareStatement(sql);
 			
-			pstm.setInt(1, mus.getId_musica());
+			pstm.setString(1, "%" + busca.toUpperCase() + "%");
 			
 			ResultSet rs = pstm.executeQuery(); 
 			
-			//mus.setArquivo_musica(rs.getBlob("arquivo_musica")); 
-			//InputStream binaryStream = musicaBlob.getBinaryStream(0, musicaBlob.length());
-			if(rs.next()) {
-				
-				mus.setTitulo_musica(rs.getString("titulo_musica"));
-			}			
-			return mus; 
-		} catch (Exception e) {
 
+			if(rs.next()) {
+				Musica musica = new Musica(); 
+				musica.setArquivo_musica(rs.getString("arquivo_musica"));
+				musica.setTitulo_musica(rs.getString("titulo_musica"));
+				lista.add(musica); 
+			}			
+			return lista; 
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
-		return mus; 
+		return lista; 
 	}
 }
