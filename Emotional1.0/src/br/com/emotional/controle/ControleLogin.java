@@ -39,7 +39,7 @@ public class ControleLogin extends HttpServlet {
                 if (user != null) {
                     if (user.getSenha().equalsIgnoreCase(senha) && user.isAtivo()) {
                         request.getSession().setAttribute("usuarioLogado", user);
-                        response.sendRedirect("Menu.jsp");
+                        response.sendRedirect("MenuFRONT.jsp");
                         return;
                     } else if (!user.getSenha().equalsIgnoreCase(senha)){
                         erros.add("Senha inválida!");
