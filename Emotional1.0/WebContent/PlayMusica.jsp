@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %> 
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
@@ -20,16 +21,14 @@
       <p>Olá, ${sessionScope.usuarioLogado.nome}, essas são as buscas encontradas:</p>
       <div id="buscarMusica">
         <form name="formMusica" action="buscarMusica" method="get" enctype="text/plain" autocomplete="off"> 
-          <c:forEach items="${musicas}" var="musica">
+  <c:forEach items="${musicas}" var="musica">
+   <p>${musica.titulo_musica}</p>
   <audio controls>
-    <p>${musica.titulo_musica}</p>
+   
   	<source src="${musica.arquivo_musica}" type="audio/mp3">
-	Your browser does not support the audio element.
+
 </audio>
-    --------------------
 </c:forEach>
-          
-     
 		  
            
           <p> 

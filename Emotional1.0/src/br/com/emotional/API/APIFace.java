@@ -54,7 +54,7 @@ public class APIFace {
             URIBuilder builder = new URIBuilder(uriBase);
 
             // Request parameters. All of them are optional.
-            builder.setParameter("returnFaceId", "false");
+            builder.setParameter("returnFaceId", "true");
             builder.setParameter("returnFaceLandmarks", "false");
             builder.setParameter("returnFaceAttributes", faceAttributes);
 
@@ -67,7 +67,7 @@ public class APIFace {
             request.setHeader("Ocp-Apim-Subscription-Key", subscriptionKey);
             
             
-            File fi = new File(imageWithFaces);
+            File fi = new File("C:\\Users\\USER\\Pictures\\"+imageWithFaces);
             byte[] fileContent = Files.readAllBytes(fi.toPath());
             
             // Request body.

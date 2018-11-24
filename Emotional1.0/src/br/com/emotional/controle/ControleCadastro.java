@@ -2,7 +2,6 @@ package br.com.emotional.controle;
 
 
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -17,14 +16,14 @@ import javax.servlet.http.HttpServletResponse;
 
 import br.com.emotional.entidade.Usuario;
 import br.com.emotional.persistencia.UsuarioDAO;
+import util.Erro;
 
 @WebServlet({"/cadastroUsuario"})
 public class ControleCadastro extends HttpServlet{
 	protected void service(HttpServletRequest request,
             HttpServletResponse response)
             throws IOException, ServletException {
-		PrintWriter out = response.getWriter();
-		
+		Erro erro = new Erro(); 
 	String nome = request.getParameter("nome"); 
 	String Login = request.getParameter("username");
 	String email = request.getParameter("email");
@@ -43,7 +42,7 @@ public class ControleCadastro extends HttpServlet{
         dataNascimento = Calendar.getInstance();
         dataNascimento.setTime(date);
     } catch (ParseException e) {
-        out.println("Erro de conversão da data");
+        erro.add("Erro de conversão da data");
         return; //para a execução do método
     }
 	
@@ -67,16 +66,19 @@ public class ControleCadastro extends HttpServlet{
 	UsuarioDAO usuariodao = new UsuarioDAO();
 	try {
 		usuariodao.salvarUsuario(usuario);
-		out.println("Cadastro " + usuario.getNome() +
+		erro.add("Cadastro " + usuario.getNome() +
 	            " efetuado com sucesso");
 	} catch (Exception e) {
 		e.printStackTrace();
-		request.setAttribute("msg", 
-		        "Cadastro não Efetuado!"); 
+		erro.add("Cadastro não Efetuado!"); 
 	}
 	
 	
+	request.setAttribute("mensagens", erro);
+	  String URL = "Cadastro.jsp";
+      RequestDispatcher rd = request.getRequestDispatcher(URL);
+      rd.forward(request, response);
 	}
 	
-	
+
 }
