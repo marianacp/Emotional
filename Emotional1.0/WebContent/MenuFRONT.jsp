@@ -1,4 +1,5 @@
 <!DOCTYPE HTML>
+<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %> 
 <html>
 <head>
 <title>Emotional | Home </title>
@@ -45,7 +46,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<li class="active"><a href="Menu.jsp"><i class="lnr lnr-home"></i><span>Inicial</span></a></li>
 						<li><a href="Playlist24H.jsp"><i class="camera"></i> <span>UmDia</span></a></li>
 						<li><a href="${pageContext.request.contextPath}/AdicionarAmigo.jsp"><i class="lnr lnr-users"></i> <span>Adicionar Amigo</span></a></li> 
+						<c:set var="tipo" value="${sessionScope.usuarioLogado.tipoUsuario}"/>
+            
+            <c:if test = "${ tipo == 'M'}">
 						<li><a href="${pageContext.request.contextPath}/EnviarMusica.jsp" data-toggle="modal"><i class="fa fa-th"></i><span>Enviar Música</span></a></li>
+						</c:if>
 						<li><a href="Musica.jsp"><i class="lnr lnr-music-note"></i> <span>Músicas</span></a></li>						
 						<li class="menu-list"><a href="#"><i class="lnr lnr-indent-increase"></i> <span>Playlists</span></a>  
 							<ul class="sub-menu-list">
@@ -654,7 +659,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					  <li><a href="Menu.jsp">Inicial</a></li>
 					  <li><a href="Playlist24H.jsp">UmDia</a></li>
 					  <li><a href="${pageContext.request.contextPath}/AdicionarAmigo.jsp">Adicionar Amigo</a></li>
-					  <li><a href="${pageContext.request.contextPath}/EnviarMusica.jsp">Enviar Música</a></li>
+					   <c:set var="tipo" value="${sessionScope.usuarioLogado.tipoUsuario}"/>
+            
+            <c:if test = "${ tipo == 'M'}">
+             <li>
+            	<a href="${pageContext.request.contextPath}/EnviarMusica.jsp">Enviar Musica</a>
+            	</li>
+            </c:if>
 					  <li><a href="Musica.jsp">Músicas</a></li>
 					  <li><a href="Playlist.jsp">Playlists</a></li>
 					  <li><a href="MeusFavoritos.jsp">Meus Favoritos</a></li>

@@ -89,6 +89,7 @@ public class ControleMusica extends HttpServlet{
 		MusicaDAO musicadao = new MusicaDAO(); 
 		try {
 			musicadao.salvarMusica(musc);
+			erros.add("Música adicionada com sucesso!");
 		} catch (Exception e) {
 			erros.add("Música não pôde ser salva");
 		}
