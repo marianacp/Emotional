@@ -1,6 +1,7 @@
 package br.com.emotional.controle;
 import java.io.IOException;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -21,5 +22,9 @@ public class ControleImagemAPI extends HttpServlet {
 	APIFace apif = new APIFace();
 	apif.insereImagem(imagem);
 	apif.detectar();
+	
+	  String URL = "DetectarEmocao.jsp";
+      RequestDispatcher rd = request.getRequestDispatcher(URL);
+      rd.forward(request, response);
 	}
 }

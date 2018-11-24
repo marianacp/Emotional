@@ -20,6 +20,7 @@
   <div class="content"> 
       <!--FORMULÁRIO DE CADASTRO-->
       <div id="cadastro">
+      <p>${mensagens.erros}</p>
         <form name="formCad" action="cadastroUsuario" method="get" enctype="text/plain" autocomplete="off"> 
           <h1>Cadastro</h1> 
            
