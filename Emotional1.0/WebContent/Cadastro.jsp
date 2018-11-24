@@ -8,14 +8,7 @@
   <link rel="shortcut icon" type="image/png" href="img/123.png"/>
 </head>
 <body>
-            <div class="nav-content hideNav hidden">
-               <ul class="nav-list vcenter">
-                  <li class="nav-item"><a class="item-anchor" href="Login.jsp">Entrar</a></li>
-                  <li class="nav-item"><a class="item-anchor" href="Cadastro.jsp">Inscrever-se</a></li>
-                  <li class="nav-item"><a class="item-anchor" href="PerguntasFrequentes.jsp">Ajuda</a></li>
-                  <li class="nav-item"><a class="item-anchor" href="FaleConosco.jsp">Contato</a></li>
-               </ul>
-            </div>
+            
   <div class="container" >
   <div class="content"> 
       <!--FORMULÁRIO DE CADASTRO-->

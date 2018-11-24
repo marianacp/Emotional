@@ -176,14 +176,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	  <p class="linked">  
             <a href="#">Enviar Solicitação</a>
 			</p>
-        <div class="col-sm-2">
           <img src="https://www.infrascan.net/demo/assets/img/avatar5.png" class="img-circle" width="60px">
         </div>
         <div class="col-sm-8">
           <p><a href="#">Rahul Jain</a></p>
           <h4><a href="#">1 amigos em comum</a></h4>
         </div>
-        </div>
+     
       </div>
       <div class="clearfix"></div>
 	  
@@ -194,14 +193,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	  <p class="linked">  
             <a href="#">Enviar Solicitação</a>
 			</p>
-        <div class="col-sm-2">
+      
           <img src="https://www.infrascan.net/demo/assets/img/avatar5.png" class="img-circle" width="60px">
         </div>
         <div class="col-sm-8">
           <p><a href="#">Rahul Jain</a></p>
           <h4><a href="#">234 amigos em comum</a></h4>
         </div>
-        </div>
       </div>
       <div class="clearfix"></div>
 	  
@@ -212,14 +210,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	  <p class="linked">  
             <a href="#">Enviar Solicitação</a>
 			</p>
-        <div class="col-sm-2">
           <img src="https://www.infrascan.net/demo/assets/img/avatar5.png" class="img-circle" width="60px">
         </div>
         <div class="col-sm-8">
           <p><a href="#">Rahul Jain</a></p>
           <h4><a href="#">5 amigos em comum</a></h4>
         </div>
-        </div>
       </div>
       <div class="clearfix"></div>
 	  
@@ -230,13 +226,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	  <p class="linked">  
             <a href="#">Enviar Solicitação</a>
 			</p>
-        <div class="col-sm-2">
           <img src="https://www.infrascan.net/demo/assets/img/avatar5.png" class="img-circle" width="60px">
         </div>
         <div class="col-sm-8">
           <p><a href="#">Rahul Jain</a></p>
           <h4><a href="#">12 amigos em comum</a></h4>
-        </div>
         </div>
 		  <div class="clearfix"> </div>
 		  
