@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %> 
 <html lang="pt">
 
 <head>
@@ -71,7 +72,7 @@
                             <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
                                 <li>
                                     <a href="index.html">Dashboard 1</a>
->>>>>>> parent of 3ebcc77... AlteraÃ§Ãµes
+
                                 </li>
                                 <li>
                                     <a href="index2.html">Dashboard 2</a>
@@ -336,8 +337,28 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-12">
+                            <p>Olá ${sessionScope.usuarioLogado.nome}</p>
                                 <!-- DATA TABLE -->
                                 <h3 class="title-5 m-b-35">Bloquear / Desbloquear usuÃ¡rio</h3>
+                                
+                        <div id="sb-search" class="sb-search">
+									<form action="buscarUsuario" method="get">
+
+										<input class="sb-search-input" placeholder="Search" type="search" name="search" id="search">
+										<input class="sb-search-submit" type="submit" value="">
+										<span class="sb-icon-search"> </span>
+									</form>
+								</div>
+							</div>
+							  <!-- search-scripts -->
+									<script src="js/classie.js"></script>
+									<script src="js/uisearch.js"></script>
+										<script>
+											new UISearch( document.getElementById( 'sb-search' ) );
+										</script>
+									<!-- //search-scripts -->
+											 <!---->
+									
                                 <div class="table-data__tool">
                                     <div class="table-data__tool-left">
                                         <div class="rs-select2--light rs-select2--md">
@@ -348,56 +369,31 @@
                                             </select>
                                             <div class="dropDownSelect2"></div>
                                         </div>
-                                        <div class="rs-select2--light rs-select2--sm">
-                                            <select class="js-select2" name="time">
-                                                <option selected="selected">Hoje</option>
-                                                <option value="">Até 3 dias atrás</option>
-                                                <option value="">Até 1 semana atrás</option>
-                                            </select>
-                                            <div class="dropDownSelect2"></div>
-                                        </div>
+                                        
                                         
                                     </div>
                                 </div>
                                 <div class="table-responsive table-responsive-data2">
-                                    <table class="table table-data2">
-                                        <thead>
-                                            <tr>
-                                                
-                                                <th>Nome</th>
-                                                <th>email</th>                                             
-                                                <th>status</th>                                                
-                                                <th></th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr class="tr-shadow">
-                                                
-                                                <td>Lori Lynch</td>
-                                                <td>
-                                                    <span class="block-email">lori@example.com</span>
-                                                </td>
-                                                
-                                                <td>
-                                                    <span class="status--process">Processed</span>
-                                                </td>
-                                                
-                                                <td>
-                                                    <div class="table-data-feature">
-                                                        <button class="item" data-toggle="tooltip" data-placement="top" title="Send">
-                                                            <i class="zmdi zmdi-mail-send"></i>
-                                                        </button>
-                                                        <button class="item" data-toggle="tooltip" data-placement="top" title="Edit">
-                                                            <i class="zmdi zmdi-edit"></i>
-                                                        </button>
-                                                        <button class="item" data-toggle="tooltip" data-placement="top" title="Delete">
-                                                            <i class="zmdi zmdi-delete"></i>
-                                                        </button>
-                                                        <button class="item" data-toggle="tooltip" data-placement="top" title="More">
-                                                            <i class="zmdi zmdi-more"></i>
-                                                        </button>
-                                                    </div>
-                                                </td>
+                                    <p>Olá, ${sessionScope.usuarioLogado.nome}, essas são as buscas encontradas:</p>
+      <div id="buscarMusica">
+  <c:forEach items="${usuarios}" var="usuario">
+         <form action = "bloquearUsuario" method="get">
+   <p>${usuario.nome}</p>
+<c:choose>
+    <c:when test="${usuario.ativo == true}">
+							<input type="hidden" name="id_usu" id="id_usu" value="${usuario.id_usu}" >
+						  <input type="submit" value="Bloquear" >
+						
+    </c:when>    
+    <c:otherwise>
+							<input type="hidden" name="id_usu" id="id_usu" value="${usuario.id_usu}" >
+						  <input type="submit" value="Desbloquear">
+
+    </c:otherwise>
+</c:choose>
+     </form>
+   </c:forEach>
+
                                             </tr>
                                             <tr class="spacer"></tr>
                                             <tr class="tr-shadow">

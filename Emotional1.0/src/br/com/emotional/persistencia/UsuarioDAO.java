@@ -2,7 +2,9 @@ package br.com.emotional.persistencia;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.List;
 import java.sql.Date;
 
 import br.com.emotional.entidade.Usuario;
@@ -207,6 +209,37 @@ public class UsuarioDAO extends Dao {
 		return codigo; 
 	}
 	
+	
+	public List<Usuario> getListaBuscaUsuario(String nome) throws Exception {
+		open(); 
+		
+		String sql = "SELECT id_usu, nome, ativo, tipousuario FROM USUARIO WHERE UPPER(nome) like ?"; 
+		
+		PreparedStatement pstm = null;
+		List<Usuario> lista = new ArrayList<>(); 
+		try {
+			pstm = con.prepareStatement(sql);
+			pstm.setString(1, "%" + nome.toUpperCase() + "%");
+			
+			ResultSet rs = pstm.executeQuery(); 
+			while(rs.next()) {
+				
+				Usuario user = new Usuario(); 
+				user.setNome(rs.getString("nome"));
+				user.setid_usu(rs.getInt("id_usu"));
+				user.setAtivo(rs.getBoolean("ativo"));
+				user.setTipoUsuario(rs.getString("tipousuario"));
+				
+				lista.add(user); 
+			}
+			return lista; 
+		}
+
+	 catch (Exception e) {
+		e.printStackTrace();
+	}
+	return lista; 
+	}
 	public void bloquearDesbloquearUsuario(Usuario usuario) throws Exception {
 		open(); 
 		
@@ -282,6 +315,29 @@ public class UsuarioDAO extends Dao {
 		
 	}
 	
+	
+	public boolean estaAtivoporId(int id_usu) throws Exception{
+		open(); 
+		
+		String sql = "Select ativo from usuario where id_usu = ?"; 
+		boolean ativo = false; 
+		PreparedStatement pstm = null;
+		
+		try {
+			pstm = con.prepareStatement(sql);
+			
+			pstm.setInt(1, id_usu);
+			
+			ResultSet rs = pstm.executeQuery();
+			if(rs.next()) {
+			ativo = rs.getBoolean("ativo"); 
+			}
+		} catch (Exception e) {
+			 e.printStackTrace();
+		}
+
+		return ativo; 
+	}
 	public static void main(String[] args) {
 		
 	}
