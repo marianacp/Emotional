@@ -86,6 +86,7 @@
                             </ul>
                         </li>
                         <li>
+                        
                             <a href="chart.html">
                                 <i class="fas fa-chart-bar"></i>Charts</a>
                         </li>
@@ -378,15 +379,16 @@
       <div id="buscarMusica">
   <c:forEach items="${usuarios}" var="usuario">
          <form action = "bloquearUsuario" method="get">
+         
+         			<input type="hidden" name="id_usu" id="id_usu" value="${usuario.id_usu}" >
    <p>${usuario.nome}</p>
 <c:choose>
     <c:when test="${usuario.ativo == true}">
-							<input type="hidden" name="id_usu" id="id_usu" value="${usuario.id_usu}" >
 						  <input type="submit" value="Bloquear" >
 						
     </c:when>    
     <c:otherwise>
-							<input type="hidden" name="id_usu" id="id_usu" value="${usuario.id_usu}" >
+
 						  <input type="submit" value="Desbloquear">
 
     </c:otherwise>

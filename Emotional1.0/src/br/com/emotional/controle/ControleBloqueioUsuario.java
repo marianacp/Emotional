@@ -33,6 +33,7 @@ public class ControleBloqueioUsuario extends HttpServlet{
 		
 		try {
 			ud.bloquearDesbloquearUsuario(us);
+			erros.add("Usuário bloqueado/desbloqueado com sucesso!");
 		} catch (Exception e) {
 			erros.add("Usuário não pôde ser bloqueado/desbloqueado");
 		}
