@@ -43,7 +43,6 @@ public class ControleCadastro extends HttpServlet{
         dataNascimento.setTime(date);
     } catch (ParseException e) {
         erro.add("Erro de conversão da data");
-        return; //para a execução do método
     }
 	
 	Usuario usuario = new Usuario(); 

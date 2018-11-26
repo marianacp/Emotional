@@ -86,8 +86,21 @@ public class APIFace {
 
                 String jsonString = EntityUtils.toString(entity).trim();
                 if (jsonString.charAt(0) == '[') {
-                    JSONArray jsonArray = new JSONArray(jsonString);
-                    System.out.println(jsonArray.toString(2));
+                	JSONArray jsonArray = new JSONArray(jsonString);
+                	for(int i = 0; i < jsonArray.length(); i++) {
+                		JSONObject jsonObject1 = jsonArray.getJSONObject(i); 
+                		JSONObject conteudo = jsonObject1.getJSONObject("faceAttributes").getJSONObject("emotion"); 
+                		double happiness = conteudo.getDouble("happiness"); 
+                		double surprise = conteudo.getDouble("surprise"); 
+                		double neutral = conteudo.getDouble("neutral");
+                		double sadness = conteudo.getDouble("sadness");
+                		double anger = conteudo.getDouble("anger");
+                		
+                	}
+                	
+                    
+                	
+                	//System.out.println(jsonArray.toString(2));
                 }
                 else if (jsonString.charAt(0) == '{') {
                     JSONObject jsonObject = new JSONObject(jsonString);

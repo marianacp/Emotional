@@ -47,7 +47,7 @@ public class MusicaDAO  extends Dao{
 		
 		open(); 
 		//Status 1 eh aprovado, 2 reprovado
-		String sql = "Select arquivo_musica, titulo_musica from musica mu "
+		String sql = "Select mu.id_musica , arquivo_musica, titulo_musica from musica mu "
 				+ "join aprovacao_musica am on am.id_musica = mu.id_musica where UPPER(titulo_musica) like ? "
 				+ "and am.cod_status = 1";
 		
@@ -64,6 +64,7 @@ public class MusicaDAO  extends Dao{
 
 			while(rs.next()) {
 				Musica musica = new Musica(); 
+				musica.setId_musica(rs.getInt("id_musica"));
 				musica.setArquivo_musica(rs.getString("arquivo_musica"));
 				musica.setTitulo_musica(rs.getString("titulo_musica"));
 				lista.add(musica); 
@@ -73,5 +74,30 @@ public class MusicaDAO  extends Dao{
 			e.printStackTrace();
 		}
 		return lista; 
+	}
+	
+	public boolean denunciarMusica(int id_musica) throws Exception{
+		open(); 
+		
+		String sql = "update aprovacao_musica set cod_status = 0 where id_musica = ?"; 
+		
+		boolean denunciado = false; 
+		
+		PreparedStatement pstm = null;
+		
+		try {
+			pstm = con.prepareStatement(sql);
+			
+			pstm.setInt(1, id_musica);
+			
+			pstm.executeUpdate(); 
+			
+			denunciado = true; 
+			return denunciado; 
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return denunciado; 
 	}
 }

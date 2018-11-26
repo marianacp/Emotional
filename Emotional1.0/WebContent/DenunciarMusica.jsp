@@ -18,39 +18,28 @@
   <div class="container" >
   <div class="content"> 
 
-      <p>Olá, ${sessionScope.usuarioLogado.nome}, essas foram as musicas encontradas:</p>
+      <p>Olá, ${sessionScope.usuarioLogado.nome}, descreva a sua denúncia:</p>
       
       <div id="buscarMusica">
 
-  <c:forEach items="${musicas}" var="musica">
-				
-  
-   <p>${musica.titulo_musica}</p>
-  <audio controls>
-   
-  	<source src="${musica.arquivo_musica}" type="audio/mp3">
+<p>${mensagens.erros}</p>
+		
 
-</audio>
 
-<form name="formDenunciaMusica" action="${pageContext.request.contextPath}/DenunciarMusica.jsp"> 
-	<input type="hidden" name="id_musica" value="${musica.id_musica}" >
+
+	<form action = "denunciarMusica">
 	
-	<input type="submit" value="Denunciar" >
-</form>
 
-<form name="formClassificarMusica" action="${pageContext.request.contextPath}/ClassificarMusica.jsp" method="post" enctype="text/plain" autocomplete="off"> 
-	<input type="hidden" name="id_musica" id="id_musica" value="${musica.id_musica}" >
-	
-	<input type="submit" value="Classificar" >
-</form>
-</c:forEach>
-		  
+			<input type="hidden" name="id_musica" value="${param.id_musica}" >
+            <input type="text" id="descricao" name="denunciarMusica"/> 
+         
+           	  
            
           <p> 
-            <input type="submit" value="Buscar Musica" name="buscarMusica"/> 
+            <input type="submit" value="Denunciar" name="denunciarMusica"/> 
           </p>
            
-
+		</form>
        
       </div>
     </div>
