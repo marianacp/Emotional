@@ -10,6 +10,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import br.com.emotional.entidade.Classifica;
 import br.com.emotional.entidade.Musica;
 
 public class MusicaDAO  extends Dao{
@@ -99,5 +100,32 @@ public class MusicaDAO  extends Dao{
 			e.printStackTrace();
 		}
 		return denunciado; 
+	}
+	
+	public boolean classificarMusica(Classifica classi) throws Exception{
+		
+		open(); 
+		
+		String sql = "Insert into classifica(id_usu, id_musica, id_emocao) values(?, ?, ?)"; 
+		
+		PreparedStatement pstm = null;
+		boolean classificado = false; 
+
+		try {
+			pstm = con.prepareStatement(sql);
+			
+			pstm.setInt(1, classi.getId_usu());
+			pstm.setInt(2, classi.getId_musica());
+			pstm.setInt(3, classi.getId_emocao());
+
+			
+			pstm.execute(); 
+			
+			return classificado = true; 
+		}
+		catch(Exception e) {
+			 e.printStackTrace();			
+		}
+		return classificado; 
 	}
 }

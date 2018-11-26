@@ -25,7 +25,7 @@ public class ControleDenunciaMusica extends HttpServlet{
 		MusicaDAO md = new MusicaDAO(); 
 		try {
 			boolean denunciada = md.denunciarMusica(id_musica);
-			if(denunciada = true) {
+			if(denunciada) {
 				erros.add("Denúncia realizada com sucesso!");
 			}
 			else {
