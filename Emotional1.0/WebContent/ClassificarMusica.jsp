@@ -18,39 +18,37 @@
   <div class="container" >
   <div class="content"> 
 
-      <p>Olá, ${sessionScope.usuarioLogado.nome}, essas foram as musicas encontradas:</p>
+      <p>Olá, ${sessionScope.usuarioLogado.nome}, qual classificação você acha que mais se adequa à música?</p>
       
       <div id="buscarMusica">
 
-  <c:forEach items="${musicas}" var="musica">
-				
-  
-   <p>${musica.titulo_musica}</p>
-  <audio controls>
-   
-  	<source src="${musica.arquivo_musica}" type="audio/mp3">
+<p>${mensagens.erros}</p>
+		
 
-</audio>
 
-<form name="formDenunciaMusica" action="${pageContext.request.contextPath}/DenunciarMusica.jsp"> 
-	<input type="hidden" name="id_musica" value="${musica.id_musica}" >
+
+	<form action = "classificarMusica">
 	
-	<input type="submit" value="Denunciar" >
-</form>
 
-<form name="formClassificarMusica" action="${pageContext.request.contextPath}/ClassificarMusica.jsp"> 
-	<input type="hidden" name="id_musica" value="${musica.id_musica}" >
-	
-	<input type="submit" value="Classificar" >
-</form>
-</c:forEach>
-		  
+			<input type="hidden" name="id_musica" value="${param.id_musica}" >
+            
+         <label for="emocao">Como você definiria esta música?</label>
+            <select id="emocao" name="emocao">
+  			<option value="Felicidade">Alegre</option>
+  			<option value="Tristeza">Triste</option>
+  			<option value="Raiva">Calma</option>
+			<option value="Surpresa">Inspiradora</option>
+            <option value="Neutralidade">Normal</option>
+            <option value="Felicidade">Avassaladora</option>
+			<option value="Surpresa">Outro</option>
+</select>
+           	  
            
           <p> 
-            <input type="submit" value="Buscar Musica" name="buscarMusica"/> 
+            <input type="submit" value="Classificar" name="classificarMusica"/> 
           </p>
            
-
+		</form>
        
       </div>
     </div>
