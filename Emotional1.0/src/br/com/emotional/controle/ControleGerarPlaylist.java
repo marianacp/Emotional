@@ -1,7 +1,10 @@
 package br.com.emotional.controle;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -12,6 +15,7 @@ import javax.servlet.http.HttpSession;
 import br.com.emotional.entidade.Emocao;
 import br.com.emotional.entidade.Usuario;
 import br.com.emotional.persistencia.EmocaoDAO;
+import br.com.emotional.persistencia.PlaylistDAO;
 import br.com.emotional.persistencia.UsuarioDAO;
 import util.Erro;
 
@@ -31,7 +35,8 @@ public class ControleGerarPlaylist extends HttpServlet {
         
         Usuario u = (Usuario) session.getAttribute("usuarioLogado");
         String emocao = request.getParameter("sentimento"); 
-        
+        String nome = request.getParameter("nomePlaylist"); 
+
         //Ele busca o id da emocao detectada
         Emocao emo = new Emocao(); 
         emo.setNome(emocao);
@@ -51,6 +56,30 @@ public class ControleGerarPlaylist extends HttpServlet {
 		}
 
         //Insere na tabela Playlist a nova playlist
+        PlaylistDAO pd = new PlaylistDAO(); 
+        boolean inserido = false; 
         
+        try {
+			inserido = pd.inserirPlaylist(nome, u.getid_usu());
+		} catch (Exception e) {
+			erros.add("Playlist nao inserida");
+		} 
+        if (!inserido) {
+        	request.setAttribute("mensagens", erros);
+        	
+            String URL = "GerarPlaylist.jsp";
+            RequestDispatcher rd = request.getRequestDispatcher(URL);
+            rd.forward(request, response);
+		}
+        
+        //Agora, vai trazer as playlists criadas e pertencentes ao usuário.
+        List<Integer> lst = new ArrayList<>(); 
+        try {
+			lst = pd.buscaPlaylistporUs(u.getid_usu());
+		} catch (Exception e) {
+			erros.add("Playlist nao pode ser recuperada");
+		} 
+        
+      
 }
 }

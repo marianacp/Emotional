@@ -35,7 +35,7 @@
 
 			<input type="hidden" name="id_musica" value="${sentimento}" >         
            	  
-           
+           <input type="text" required id="nomePlaylist" name="nomePlaylist"/> 
           <p> 
             <input type="submit" value="Gerar Playlist" name="gerarPlaylist"/> 
           </p>
