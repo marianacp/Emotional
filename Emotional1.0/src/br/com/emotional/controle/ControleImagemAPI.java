@@ -27,7 +27,7 @@ public class ControleImagemAPI extends HttpServlet {
 	
 	
 	if (!sentimento.isEmpty()) {
-		 URL = "DetectarEmocao.jsp";
+		 URL = "GerarPlaylist.jsp";
 		 request.setAttribute("sentimento", sentimento);
 	}
 	else {
