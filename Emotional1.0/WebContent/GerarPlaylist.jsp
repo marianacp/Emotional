@@ -22,21 +22,22 @@
       
       <div id="buscarMusica">
 
-<p>${mensagens.erros}</p>
+
+
+<p>Caso você queira tentar outra imagem, clique em Detectar Emocao. Caso queira gerar playlist baseada no seu humor, clique em Gerar Playlist! </p>
 		
+<form action = "${pageContext.request.contextPath}/DetectarEmocao.jsp">
 
-
-
-	<form action = "denunciarMusica">
+ <input type="submit" value="Detectar Emocao" name="enviarEmocao"/> 
+</form>
+	<form action = "gerarPlaylist">
 	
 
-			<input type="hidden" name="id_musica" value="${param.id_musica}" >
-            <input type="text" id="descricao" name="denunciarMusica"/> 
-         
+			<input type="hidden" name="id_musica" value="${sentimento}" >         
            	  
            
           <p> 
-            <input type="submit" value="Denunciar" name="denunciarMusica"/> 
+            <input type="submit" value="Gerar Playlist" name="gerarPlaylist"/> 
           </p>
            
 		</form>

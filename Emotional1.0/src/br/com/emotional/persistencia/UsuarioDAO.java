@@ -317,6 +317,7 @@ public class UsuarioDAO extends Dao {
 	
 	
 	public boolean estaAtivoporId(int id_usu) throws Exception{
+
 		open(); 
 		
 		String sql = "Select ativo from usuario where id_usu = ?"; 
@@ -337,6 +338,47 @@ public class UsuarioDAO extends Dao {
 		}
 
 		return ativo; 
+	}
+	
+	public void alteraEmocaoUsuario(int id_usu, int id_emo) throws Exception{
+		open(); 
+		
+		String sql = "UPDATE USUARIO U SET U.ID_EMOCAO = ? WHERE U.ID_USU = ?"; 
+		
+PreparedStatement pstm = null;
+		
+		try {
+			pstm = con.prepareStatement(sql);
+			
+			pstm.setInt(1, id_emo);
+			pstm.setInt(2, id_usu);
+
+
+			
+			pstm.executeUpdate(); 
+		}
+		catch(Exception e) {
+			 e.printStackTrace();			
+		}
+		finally{
+			 try{
+				 if(pstm != null){
+				 
+				 pstm.close();
+				 }
+				 
+				 if(con != null){
+				 con.close();
+				 }
+				 
+				 }catch(Exception e){
+				 
+				 e.printStackTrace();
+				 }
+		
+	}
+		
+		
 	}
 	public static void main(String[] args) {
 		
