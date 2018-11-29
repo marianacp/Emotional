@@ -1,7 +1,6 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!DOCTYPE HTML>
+<html>
 <head>
-<<<<<<< HEAD
 <title>Emotional | Enviar MÃºsica </title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -183,62 +182,51 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 =======
       <h3>Olá ${sessionScope.usuarioLogado.nome}, vamos enviar uma música?</h3>
 >>>>>>> parent of 1b9e8bd... Revert "AtualizaÃ§Ãµes 2.0"
-=======
-  <meta charset="UTF-8" />
-  <title>Emotional</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <link rel="stylesheet" type="text/css" href="css/estilo.css" />
-</head>
-<body>
-            <div class="nav-content hideNav hidden">
-               <ul class="nav-list vcenter">
-                  <li class="nav-item"><a class="item-anchor" href="Menu.jsp">Menu</a></li>
-                  <li class="nav-item"><a class="item-anchor" href="${pageContext.request.contextPath}/logout.jsp">Logout</a></li>
-
-               </ul>
-            </div>
-  <div class="container" >
-  <div class="content"> 
-	  <p>${mensagens.erros}</p>
-      <p>Olá, ${sessionScope.usuarioLogado.nome}, vamos enviar uma música??</p>
->>>>>>> parent of 7c66a1a... Update FRONT
       <div id="enviarMusica">
+        <div class="in-left">
+        
         <form name="formMusica" action="enviarMusica" method="get" enctype="text/plain" autocomplete="off"> 
-          <h1>Envio de Música</h1> 
+       
            
           <p> 
-<<<<<<< HEAD
 <<<<<<< HEAD
             <p class="your-para">Nome da MÃºsica</p>
 =======
             <p class="your-para">Nome da música</p>
 >>>>>>> parent of 1b9e8bd... Revert "AtualizaÃ§Ãµes 2.0"
             <input id="nome" name="nome" required="required" type="text" />
-=======
-            <label for="nome">Nome da Música</label>
-            <input id="nome" name="nome" required="required" type="text" placeholder="nome" />
->>>>>>> parent of 7c66a1a... Update FRONT
           </p>
           
           <p> 
-            <label for="autor">Autor</label>
-            <input id="autor" name="autor" required="required" type="text" placeholder="autor" />
+            <p class="your-para">Autor</p>
+            <input id="autor" name="autor" required="required" type="text" />
           </p>
           
-          <p> 
-            <label for="estilo">Estilo</label>
-            <select id="estilo" name="estilo">
+         
+            <p class="your-para">Estilo</p>
+            <select id="estilo" name="estilo" class="old-select">
   			<option value="Sertanejo">Sertanejo</option>
   			<option value="Rock">Rock</option>
   			<option value="Pop">Pop</option>
   			<option value="Funk">Funk</option>
   			<option value="Mpb">MPB</option>
   			<option value="Outro">Outro</option>
-</select>
-          </p>
+			</select>
+
+<div class="new-select">
+    <div class="selection">
+        <p>
+            <span></span>
+            <i></i>
+        </p>
+        <span></span>
+    </div>
+</div>
+         
+		<div class="demo">  
+		</div>
+		
 		  
-		  
-<<<<<<< HEAD
 	
 <<<<<<< HEAD
             <p class="your-para">Como vocÃª definiria esta mÃºsica?</p>
@@ -246,10 +234,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <p class="your-para">Como você definiria esta música?</p>
             
 >>>>>>> parent of 1b9e8bd... Revert "AtualizaÃ§Ãµes 2.0"
-=======
-		  <p> 
-            <label for="emocao">Como você definiria esta música?</label>
->>>>>>> parent of 7c66a1a... Update FRONT
             <select id="emocao" name="emocao">
   			<option value="Felicidade">Alegre</option>
   			<option value="Tristeza">Triste</option>
@@ -259,7 +243,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <option value="Felicidade">Avassaladora</option>
 			<option value="Surpresa">Outro</option>
 </select>
-<<<<<<< HEAD
 <<<<<<< HEAD
          
           
@@ -274,26 +257,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
           
           <p class="your-para">Não esqueça do formato MP3!</p>
 >>>>>>> parent of 1b9e8bd... Revert "AtualizaÃ§Ãµes 2.0"
-=======
-          </p>
-          
-   		<label for="musica">Muito bem, ${sessionScope.usuarioLogado.nome}, agora envie a sua música.</label>
-          
-          <p>Não esqueça do formato MP3!</p>
->>>>>>> parent of 7c66a1a... Update FRONT
           
 			<input id="musica" name="musica" type="file" accept=".mp3,audio/*">
          
+		  </div>
 		  
+		  <div class="clearfix"> </div>
+		  
+		   <div class="in-right">
            
-          <p> 
+     
             <input type="submit" value="Enviar Musica" name="enviarMusica"/> 
-          </p>
+        
            
+           </div>
 
         </form>
       </div>
-<<<<<<< HEAD
     
 
   
@@ -430,9 +410,5 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script src="js/scripts.js"></script>
 <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.js"></script>
-=======
-    </div>
-  </div>  
->>>>>>> parent of 7c66a1a... Update FRONT
 </body>
-</html>
+</html>  
