@@ -55,10 +55,30 @@ public class ControleGerarPlaylist extends HttpServlet {
 			erros.add("Nao foi possivel alterar emocao do usuario");
 		}
 
-        //Insere na tabela Playlist a nova playlist
+        //Insere na tabela Playlist a nova playlist, mas antes verifica se o usuário já tem playlist criada
         PlaylistDAO pd = new PlaylistDAO(); 
         boolean inserido = false; 
         
+        //Agora, vai trazer as playlists criadas e pertencentes ao usuário.
+        List<Integer> lst = new ArrayList<>(); 
+        try {
+			lst = pd.buscaPlaylistDiariaporUs(u.getid_usu());
+		} catch (Exception e) {
+			erros.add("Playlist nao pode ser recuperada");
+		} 
+        
+        if (lst.size() > 0 && u.Premium() == false) {
+        	erros.add("Usuário estourou limite de playlist do dia.");
+        	String URL = "GerarPlaylist.jsp";
+        	
+        	request.setAttribute("mensagens", erros);
+            RequestDispatcher rd = request.getRequestDispatcher(URL);
+            rd.forward(request, response);
+		}
+        
+        if (!erros.isExisteErros()) {
+			
+		
         try {
 			inserido = pd.inserirPlaylist(nome, u.getid_usu());
 		} catch (Exception e) {
@@ -71,14 +91,8 @@ public class ControleGerarPlaylist extends HttpServlet {
             RequestDispatcher rd = request.getRequestDispatcher(URL);
             rd.forward(request, response);
 		}
-        
-        //Agora, vai trazer as playlists criadas e pertencentes ao usuário.
-        List<Integer> lst = new ArrayList<>(); 
-        try {
-			lst = pd.buscaPlaylistporUs(u.getid_usu());
-		} catch (Exception e) {
-			erros.add("Playlist nao pode ser recuperada");
-		} 
+        }
+       
         
       
 }

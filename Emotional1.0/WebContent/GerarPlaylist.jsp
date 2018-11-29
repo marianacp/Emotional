@@ -22,7 +22,7 @@
       
       <div id="buscarMusica">
 
-
+<h3>${mensagens.erros}</h3>
 
 <p>Caso você queira tentar outra imagem, clique em Detectar Emocao. Caso queira gerar playlist baseada no seu humor, clique em Gerar Playlist! </p>
 		
@@ -30,7 +30,7 @@
 
  <input type="submit" value="Detectar Emocao" name="enviarEmocao"/> 
 </form>
-	<form action = "gerarPlaylist">
+	<form name="gerarPlaylist"  action = "gerarPlaylist" method="get" enctype="text/plain" autocomplete="off">
 	
 
 			<input type="hidden" name="id_musica" value="${sentimento}" >         

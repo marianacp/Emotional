@@ -14,16 +14,20 @@ public class PlaylistDAO extends Dao{
 		open(); 
 		boolean inserido = false; 
 		
-		String sql = "INSERT INTO PLAYLIST(NOME_PLAYLIST, ID_USU) VALUES(?, ?)"; 
+		String sql = "INSERT INTO PLAYLIST(NOME_PLAYLIST, ID_USU, DATA_GERACAO) VALUES(?, ?, ?)"; 
 		
 		PreparedStatement pstm = null;
 		
 		try {
 			
+			java.sql.Timestamp date = new java.sql.Timestamp(new java.util.Date().getTime());
+
+			
 			pstm = con.prepareStatement(sql);
 			
 			pstm.setString(1, nome_play);
 			pstm.setInt(2, id_usu);
+			pstm.setTimestamp(3, date);
 			
 			pstm.execute(); 
 			
@@ -34,12 +38,12 @@ public class PlaylistDAO extends Dao{
 			return inserido; 
 		}
 	} 
-		public List<Integer> buscaPlaylistporUs(int id_usu) throws Exception{
+		public List<Integer> buscaPlaylistDiariaporUs(int id_usu) throws Exception{
 			
 			open(); 
 			List<Integer> lista = new ArrayList<>(); 
 			
-			String sql = "SELECT ID_PLAYLIST FROM PLAYLIST WHERE ID_USU = ?"; 
+			String sql = "SELECT ID_PLAYLIST FROM PLAYLIST WHERE ID_USU = ? AND DATA_GERACAO = CURDATE()"; 
 			
 			PreparedStatement pstm = null;
 			
@@ -48,6 +52,7 @@ public class PlaylistDAO extends Dao{
 				pstm = con.prepareStatement(sql);
 				
 				pstm.setInt(1, id_usu);
+
 
 				
 				ResultSet rs =  pstm.executeQuery(); 
