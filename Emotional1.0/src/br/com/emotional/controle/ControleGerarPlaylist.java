@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import br.com.emotional.entidade.Emocao;
+import br.com.emotional.entidade.Musica;
 import br.com.emotional.entidade.Usuario;
 import br.com.emotional.persistencia.EmocaoDAO;
 import br.com.emotional.persistencia.PlaylistDAO;
@@ -91,9 +92,34 @@ public class ControleGerarPlaylist extends HttpServlet {
             RequestDispatcher rd = request.getRequestDispatcher(URL);
             rd.forward(request, response);
 		}
-        }
        
-        
-      
+        else {
+        	
+        	List<Musica> listaMusicas = new ArrayList<>(); 
+        	try {
+				listaMusicas = pd.gerarPlaylist(emo.getId_emocao());
+			} catch (Exception e) {
+				erros.add("Erro ao gerar playlist");
+			}
+        	
+        	if (listaMusicas.size() == 12) {
+				
+        		request.setAttribute("musicas", listaMusicas);
+            	
+                String URL = "Playlist24H.jsp";
+                RequestDispatcher rd = request.getRequestDispatcher(URL);
+                rd.forward(request, response);
+        		
+			}
+        	else {
+        		erros.add("A lista não retornou as 12 musicas esperadas");
+        		request.setAttribute("mensagens", erros);
+            	
+                String URL = "GerarPlaylist.jsp";
+                RequestDispatcher rd = request.getRequestDispatcher(URL);
+                rd.forward(request, response);
+        	}
+        }
+        }
 }
 }

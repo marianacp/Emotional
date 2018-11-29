@@ -5,6 +5,7 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
+import br.com.emotional.entidade.Musica;
 import br.com.emotional.entidade.Usuario;
 
 public class PlaylistDAO extends Dao{
@@ -69,5 +70,40 @@ public class PlaylistDAO extends Dao{
 				return lista; 
 			}
 
+		}
+		
+		public List<Musica> gerarPlaylist(int id_emo) throws Exception{
+			open(); 
+			
+			String sql = "select id_musica, arquivo_musica, id_estilo_musical, id_artista from musica where id_emocao = ? order by rand() limit 12"; 
+			List<Musica> lista = new ArrayList<>(); 
+			PreparedStatement pstm = null;
+			
+try {
+				
+				pstm = con.prepareStatement(sql);
+				
+				pstm.setInt(1, id_emo);
+
+
+				
+				ResultSet rs =  pstm.executeQuery(); 
+				
+				while(rs.next()) {
+					Musica mus = new Musica(); 
+					mus.setId_musica(rs.getInt("ID_MUSICA"));
+					mus.setArquivo_musica(rs.getString("ARQUIVO_MUSICA"));
+					mus.setId_estilo_musical(rs.getInt("ID_ESTILO_MUSICAL"));
+					mus.setId_artista(rs.getInt("ID_ARTISTA"));
+					lista.add(mus); 
+				}
+			
+				return lista; 
+			} catch (Exception e) {
+				e.printStackTrace();	
+				return lista; 
+			}
+					
+			
 		}
 }

@@ -33,7 +33,7 @@
 	<form name="gerarPlaylist"  action = "gerarPlaylist" method="get" enctype="text/plain" autocomplete="off">
 	
 
-			<input type="hidden" name="id_musica" value="${sentimento}" >         
+			<input type="hidden" id="sentimento" name="sentimento" value="${sentimento}" >         
            	  
            <input type="text" required id="nomePlaylist" name="nomePlaylist"/> 
           <p> 
