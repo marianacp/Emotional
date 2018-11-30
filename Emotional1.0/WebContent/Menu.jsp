@@ -51,6 +51,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<li><a href="Playlist24H.jsp"><i class="camera"></i> <span>UmDia</span></a></li>
 						<li><a href="${pageContext.request.contextPath}/AdicionarAmigo.jsp"><i class="lnr lnr-users"></i> <span>Adicionar Amigo</span></a></li> 
 						<c:set var="tipo" value="${sessionScope.usuarioLogado.tipoUsuario}"/>
+						
+						<li><a href="${pageContext.request.contextPath}/DetectarEmocao.jsp" data-toggle="modal"><i class="fa fa-th"></i><span>Detectar Emoção</span></a></li>
             
             <c:if test = "${ tipo == 'M'}">
 						<li><a href="${pageContext.request.contextPath}/EnviarMusica.jsp" data-toggle="modal"><i class="fa fa-th"></i><span>Enviar Música</span></a></li>
