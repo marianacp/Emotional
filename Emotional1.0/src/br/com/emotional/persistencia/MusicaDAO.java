@@ -62,7 +62,7 @@ public class MusicaDAO  extends Dao{
 			ResultSet rs = pstm.executeQuery(); 
 			
 
-			if(rs.next()) {
+			while(rs.next()) {
 				Musica musica = new Musica(); 
 				musica.setArquivo_musica(rs.getString("arquivo_musica"));
 				musica.setTitulo_musica(rs.getString("titulo_musica"));
