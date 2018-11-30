@@ -18,39 +18,29 @@
   <div class="container" >
   <div class="content"> 
 
-      <p>Olá, ${sessionScope.usuarioLogado.nome}, essas foram as musicas encontradas:</p>
+      <p>Olá, ${sessionScope.usuarioLogado.nome}, a emoção detectada para a sua foto foi: ${sentimento} </p>
       
       <div id="buscarMusica">
 
-  <c:forEach items="${musicas}" var="musica">
-				
-  
-   <p>${musica.titulo_musica}</p>
-  <audio controls>
-   
-  	<source src="${musica.arquivo_musica}" type="audio/mp3">
+<h3>${mensagens.erros}</h3>
 
-</audio>
+<p>Caso você queira tentar outra imagem, clique em Detectar Emocao. Caso queira gerar playlist baseada no seu humor, clique em Gerar Playlist! </p>
+		
+<form action = "${pageContext.request.contextPath}/DetectarEmocao.jsp">
 
-<form name="formDenunciaMusica" action="${pageContext.request.contextPath}/DenunciarMusica.jsp"> 
-	<input type="hidden" name="id_musica" value="${musica.id_musica}" >
-	
-	<input type="submit" value="Denunciar" >
+ <input type="submit" value="Detectar Emocao" name="enviarEmocao"/> 
 </form>
-
-<form name="formClassificarMusica" action="${pageContext.request.contextPath}/ClassificarMusica.jsp"> 
-	<input type="hidden" name="id_musica" value="${musica.id_musica}" >
+	<form name="gerarPlaylist"  action = "gerarPlaylist" method="get" enctype="text/plain" autocomplete="off">
 	
-	<input type="submit" value="Classificar" >
-</form>
-</c:forEach>
-		  
-           
+
+			<input type="hidden" id="sentimento" name="sentimento" value="${sentimento}" >         
+           	  
+           <input type="text" required id="nomePlaylist" name="nomePlaylist"/> 
           <p> 
-            <input type="submit" value="Buscar Musica" name="buscarMusica"/> 
+            <input type="submit" value="Gerar Playlist" name="gerarPlaylist"/> 
           </p>
            
-
+		</form>
        
       </div>
     </div>

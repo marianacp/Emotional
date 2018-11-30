@@ -168,6 +168,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
            
       <!--DETECTAR ROSTO-->
+      <p>${mensagens.erros}</p>
+      <p>${sentimento}</p>
       <h3>E aí! Que tal detectarmos sua emoção hoje ${sessionScope.usuarioLogado.nome}?</h3>
       <div id="emocao">
       <div class="in-left">
