@@ -223,6 +223,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                </ul>
             </div>
   
+<<<<<<< HEAD
+>>>>>>> parent of 3bc1d81... Merge branch 'Front' of https://github.com/marianacp/Emotional into Front
+=======
 >>>>>>> parent of 3bc1d81... Merge branch 'Front' of https://github.com/marianacp/Emotional into Front
       <!--DETECTAR ROSTO-->
       <p>E aí, ${sessionScope.usuarioLogado.nome}, que tal detectarmos sua emoção hoje?</p>

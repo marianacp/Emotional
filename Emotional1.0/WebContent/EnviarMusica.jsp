@@ -101,7 +101,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											</div>
 											<div class="col-md-4 login-pop">
 <<<<<<< HEAD
+<<<<<<< HEAD
 												<div id="loginpop"> <a id="loginButton"> <span> Olá ${sessionScope.usuarioLogado.nome}<i class="arrow glyphicon glyphicon-chevron-right"></i></span></a><a class="top-sign" href="${pageContext.request.contextPath}/logout.jsp"><i class="fa fa-sign-in"></i></a>
+=======
+												<div id="loginpop"> <a id="loginButton"> <span> OlÃ¡ ${sessionScope.usuarioLogado.nome}<i class="arrow glyphicon glyphicon-chevron-right"></i></span></a><a class="top-sign" href="${pageContext.request.contextPath}/logout.jsp"><i class="fa fa-sign-in"></i></a>
+>>>>>>> parent of 3bc1d81... Merge branch 'Front' of https://github.com/marianacp/Emotional into Front
 =======
 												<div id="loginpop"> <a id="loginButton"> <span> OlÃ¡ ${sessionScope.usuarioLogado.nome}<i class="arrow glyphicon glyphicon-chevron-right"></i></span></a><a class="top-sign" href="${pageContext.request.contextPath}/logout.jsp"><i class="fa fa-sign-in"></i></a>
 >>>>>>> parent of 3bc1d81... Merge branch 'Front' of https://github.com/marianacp/Emotional into Front
@@ -174,7 +178,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
   
 	  <h3>${mensagens.erros}</h3>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <h3>Olá ${sessionScope.usuarioLogado.nome}, vamos enviar uma música?</h3>
+=======
+      <h3>OlÃ¡ ${sessionScope.usuarioLogado.nome}, vamos enviar uma mÃºsica?</h3>
+>>>>>>> parent of 3bc1d81... Merge branch 'Front' of https://github.com/marianacp/Emotional into Front
 =======
       <h3>OlÃ¡ ${sessionScope.usuarioLogado.nome}, vamos enviar uma mÃºsica?</h3>
 >>>>>>> parent of 3bc1d81... Merge branch 'Front' of https://github.com/marianacp/Emotional into Front
@@ -186,7 +194,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
            
           <p> 
 <<<<<<< HEAD
+<<<<<<< HEAD
             <p class="your-para">Nome da Música</p>
+=======
+            <p class="your-para">Nome da MÃºsica</p>
+>>>>>>> parent of 3bc1d81... Merge branch 'Front' of https://github.com/marianacp/Emotional into Front
 =======
             <p class="your-para">Nome da MÃºsica</p>
 >>>>>>> parent of 3bc1d81... Merge branch 'Front' of https://github.com/marianacp/Emotional into Front
@@ -225,7 +237,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		  
 	
 <<<<<<< HEAD
+<<<<<<< HEAD
             <p class="your-para">Como você definiria esta música?</p>
+=======
+            <p class="your-para">Como vocÃª definiria esta mÃºsica?</p>
+>>>>>>> parent of 3bc1d81... Merge branch 'Front' of https://github.com/marianacp/Emotional into Front
 =======
             <p class="your-para">Como vocÃª definiria esta mÃºsica?</p>
 >>>>>>> parent of 3bc1d81... Merge branch 'Front' of https://github.com/marianacp/Emotional into Front
@@ -241,9 +257,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
          
           
 <<<<<<< HEAD
+<<<<<<< HEAD
    		<p class="your-para">Muito bem ${sessionScope.usuarioLogado.nome}, agora envie a sua música.</p>
           
           <p class="your-para">Não esqueça do formato MP3!</p>
+=======
+   		<p class="your-para">Muito bem ${sessionScope.usuarioLogado.nome}, agora envie a sua mÃºsica.</p>
+          
+          <p class="your-para">NÃ£o esqueÃ§a do formato MP3!</p>
+>>>>>>> parent of 3bc1d81... Merge branch 'Front' of https://github.com/marianacp/Emotional into Front
 =======
    		<p class="your-para">Muito bem ${sessionScope.usuarioLogado.nome}, agora envie a sua mÃºsica.</p>
           
