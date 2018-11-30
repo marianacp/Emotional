@@ -159,10 +159,71 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                   <li class="nav-item"><a class="item-anchor" href="Menu.jsp">Menu</a></li>
                   <li class="nav-item"><a class="item-anchor" href="${pageContext.request.contextPath}/logout.jsp">Logout</a></li>
 
+<<<<<<< HEAD
                </ul>
             </div>
   <div class="container" >
   <div class="content"> 
+=======
+				<!--sidebar nav start-->
+					<ul class="nav nav-pills nav-stacked custom-nav">
+						<li class="active"><a href="Menu.jsp"><i class="lnr lnr-home"></i><span>Inicial</span></a></li>
+						<li><a href="Playlist24H.jsp"><i class="camera"></i> <span>UmDia</span></a></li>
+						<li><a href="${pageContext.request.contextPath}/AdicionarAmigo.jsp"><i class="lnr lnr-users"></i> <span>Adicionar Amigo</span></a></li> 
+						<li><a href="${pageContext.request.contextPath}/DetectarEmocao.jsp" data-toggle="modal"><i class="fa fa-th"></i><span>Detectar Emoção</span></a></li>
+						<li><a href="${pageContext.request.contextPath}/EnviarMusica.jsp"><i class="lnr lnr-music-note"></i> <span>Enviar Música</span></a></li>						
+						<li class="menu-list"><a href="#"><i class="lnr lnr-indent-increase"></i> <span>Playlists</span></a>  
+							<ul class="sub-menu-list">
+							    <li><a href="Playlist.jsp">Todas</a> </li>
+								<li><a href="Playlist.jsp">Felicidade</a> </li>
+								<li><a href="Playlist.jsp">Tristeza</a> </li>
+								<li><a href="Playlist.jsp">Raiva</a> </li>
+								<li><a href="Playlist.jsp">Neutralidade</a> </li>
+								<li><a href="Playlist.jsp">Surpresa</a> </li>
+							</ul>
+						</li>
+						<li class="menu-list"><a href="#"><i class="lnr lnr-heart"></i>  <span>Meus Favoritos</span></a> 
+							<ul class="sub-menu-list">
+								<li><a href="MeusFavoritos.jsp">Playlists</a></li>
+							</ul>
+						</li>
+						<li class="menu-list"><a href="#"><i class="fa fa-thumb-tack"></i><span>Contato</span></a>
+							<ul class="sub-menu-list">
+							    <li><a href="FaleConosco.jsp">Fale Conosco</a> </li>
+							    <li><a href="PerguntasFrequentes.jsp">Perguntas Frequentes</a> </li>
+								<li><a href="Suporte.jsp">Suporte</a> </li>
+							</ul>
+						</li>     
+					</ul>
+				<!--sidebar nav end-->
+			</div>
+		</div>
+ 	 <!-- /w3l-agile -->
+		<!-- left side end-->
+		<!-- main content start-->
+		<div class="main-content">
+		
+			<div id="page-wrapper">
+				<div class="inner-content">
+				
+				      <div class="music-left">
+					      		
+					<!--albums-->
+					
+						
+								<div class="tittle-head">
+									<h3 class="tittle">Detectar Emoção </h3>
+									<div class="clearfix"> </div>
+								</div>
+            <div class="nav-content hideNav hidden">
+               <ul class="nav-list vcenter">
+                  <li class="nav-item"><a class="item-anchor" href="Menu.jsp">Menu</a></li>
+                  <li class="nav-item"><a class="item-anchor" href="${pageContext.request.contextPath}/logout.jsp">Logout</a></li>
+
+               </ul>
+            </div>
+  
+>>>>>>> parent of 3bc1d81... Merge branch 'Front' of https://github.com/marianacp/Emotional into Front
       <!--DETECTAR ROSTO-->
       <p>E aí, ${sessionScope.usuarioLogado.nome}, que tal detectarmos sua emoção hoje?</p>
       <div id="emocao">
