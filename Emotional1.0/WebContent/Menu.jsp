@@ -172,7 +172,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<ul class="rslides callbacks callbacks1" id="slider4">
 											   	<li>
 														<div class="banner-img">
-															 <img src="images/11.jpg" class="img-responsive" alt="">
+															 <img src="images/11.jpg" class="img-responsive" alt="" >
 														 </div>
 														<div class="banner-info">
 																	  <h3>  </h3>
@@ -182,7 +182,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												</li>
 												<li>
 													<div class="banner-img">
-															 <img src="images/22.jpg" class="img-responsive" alt="">
+															 <img src="images/lauren.jpg" class="img-responsive" alt="" >
 														 </div>
 														<div class="banner-info">
 																	  <h3>  </h3>
@@ -193,7 +193,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												</li>
 												<li>
 												 <div class="banner-img">
-															 <img src="images/33.png" class="img-responsive" alt="">
+															 <img src="images/little.jpg" class="img-responsive" alt="" height="50" >
 														 </div>
 														<div class="banner-info"> 
 																	  <h3> </h3>
@@ -257,7 +257,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<div class="clearfix"> </div>
 								</div>
 								<div class="col-md-3 content-grid">
-								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="images/v1.jpg" title="allbum-name"></a>
+								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="images/anitta.png" title="allbum-name"></a>
 								<a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Escute agora</a>
 							</div>
 							<div id="small-dialog" class="mfp-hide">
@@ -265,22 +265,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								
 							</div>
 							<div class="col-md-3 content-grid">
-								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="images/v2.jpg" title="allbum-name"></a>
+								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="images/lm5.jpg" title="allbum-name"></a>
 
 								<a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Escute agora</a>
 							</div>
 							<div class="col-md-3 content-grid">
-								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="images/v3.jpg" title="allbum-name"></a>
+								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="images/zara.jpg" title="allbum-name"></a>
 
 								<a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Escute agora</a>
 							</div>
 							<div class="col-md-3 content-grid last-grid">
-								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="images/v4.jpg" title="allbum-name"></a>
+								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="images/bey.jpg" title="allbum-name"></a>
 	
 								<a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Escute agora</a>
 							</div>
 							<div class="col-md-3 content-grid">
-								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="images/v5.jpg" title="allbum-name"></a>
+								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="images/dua.jpg" title="allbum-name"></a>
 
 								<a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Escute agora</a>
 							</div>
@@ -289,17 +289,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								
 							</div>
 							<div class="col-md-3 content-grid">
-								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="images/v6.jpg" title="allbum-name"></a>
+								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="images/janele.png" title="allbum-name"></a>
 		
 								<a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Escute agora</a>
 							</div>
 							<div class="col-md-3 content-grid">
-								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="images/v7.jpg" title="allbum-name"></a>
+								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="images/twknd.jpg" title="allbum-name"></a>
 
 								<a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Escute agora</a>
 							</div>
 							<div class="col-md-3 content-grid last-grid">
-								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="images/v8.jpg" title="allbum-name"></a>
+								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="images/panic.jpg" title="allbum-name"></a>
 												<a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Escute agora</a>
 											</div>
 											<div class="clearfix"> </div>
@@ -314,35 +314,35 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											<div class="clearfix"> </div>
 										</div>
 											<div class="col-md-3 content-grid">
-												<a href="single.html"><img src="images/v11.jpg" title="allbum-name"></a>
+												<a href="single.html"><img src="images/drake.jpg" title="allbum-name"></a>
 												<div class="inner-info"><a href="single.html"><h5>Pop</h5></a></div>
 											</div>
 											<div class="col-md-3 content-grid">
-													<a href="single.html"><img src="images/v22.jpg" title="allbum-name"></a>
+													<a href="single.html"><img src="images/lm5.jpg" title="allbum-name"></a>
 													<div class="inner-info"><a href="single.html"><h5>Pop</h5></a></div>
 												</div>
 											<div class="col-md-3 content-grid">
-													<a href="single.html"><img src="images/v33.jpg" title="allbum-name"></a>
+													<a href="single.html"><img src="images/anitta.png" title="allbum-name"></a>
 													<div class="inner-info"><a href="single.html"><h5>Pop</h5></a></div>
 												</div>
 											<div class="col-md-3 content-grid last-grid">
-													<a href="single.html"><img src="images/v44.jpg" title="allbum-name"></a>
+													<a href="single.html"><img src="images/giaw.png" title="allbum-name"></a>
 													<div class="inner-info"><a href="single.html"><h5>Pop</h5></a></div>
 											</div>
 											<div class="col-md-3 content-grid">
-													<a href="single.html"><img src="images/v55.jpg" title="allbum-name"></a>
+													<a href="single.html"><img src="images/zara.jpg" title="allbum-name"></a>
 													<div class="inner-info"><a href="single.html"><h5>Pop</h5></a></div>
 											</div>
 											<div class="col-md-3 content-grid">
-												<a href="single.html"><img src="images/v66.jpg" title="allbum-name"></a>
+												<a href="single.html"><img src="images/dinah.jpg" title="allbum-name"></a>
 												<div class="inner-info"><a href="single.html"><h5>Pop</h5></a></div>
 											</div>
 											<div class="col-md-3 content-grid">
-													<a href="single.html"><img src="images/v11.jpg" title="allbum-name"></a>
+													<a href="single.html"><img src="images/dua.jpg" title="allbum-name"></a>
 													<div class="inner-info"><a href="single.html"><h5>Pop</h5></a></div>
 											</div>
 											<div class="col-md-3 content-grid last-grid">
-													<a href="single.html"><img src="images/v22.jpg" title="allbum-name"></a>
+													<a href="single.html"><img src="images/better.jpg" title="allbum-name"></a>
 													<div class="inner-info"><a href="single.html"><h5>Pop</h5></a></div>
 											</div>
 											<div class="clearfix"> </div>
@@ -551,70 +551,70 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 								 <ul id="flexiselDemo1">
 								<li>
-									<a href="single.html"><img src="images/v1.jpg" alt=""/></a>
-									<div class="slide-title"><h4>Adele21 </div>
+									<a href="single.html"><img src="images/janele.png" alt=""/></a>
+									<div class="slide-title"><h4>Dirty Computer </div>
 									<div class="date-city">
-										<h5>Jan-02-16</h5>
+										<h5>27-Abril-2018</h5>
 										<div class="buy-tickets">
 											<a href="single.html"> MAIS</a>
 										</div>
 									</div>
 								</li>
 								<li>
-									<a href="single.html"><img src="images/v2.jpg" alt=""/></a>
-									<div class="slide-title"><h4>Adele21 </div>
+									<a href="single.html"><img src="images/cardb.jpeg" alt=""/></a>
+									<div class="slide-title"><h4>Card B </div>
 									<div class="date-city">
-										<h5>Jan-02-16</h5>
+										<h5>05-Abril-2018</h5>
 										<div class="buy-tickets">
 											<a href="single.html">MAIS</a>
 										</div>
 									</div>
 								</li>
 								<li>
-									<a href="single.html"><img src="images/v3.jpg" alt=""/></a>
-									<div class="slide-title"><h4>Shomlock</h4></div>
+									<a href="single.html"><img src="images/arct.jpg" alt=""/></a>
+									<div class="slide-title"><h4>Tranquility Base Hotel & Casino</h4></div>
 									<div class="date-city">
-										<h5>Jan-02-16</h5>
+										<h5>11-Maio-2018</h5>
 										<div class="buy-tickets">
 											<a href="single.html">MAIS</a>
 										</div>
 									</div>
 								</li>
 								<li>
-									<a href="single.html"><img src="images/v4.jpg" alt=""/></a>
-									<div class="slide-title"><h4>Stuck on a feeling</h4></div>
+									<a href="single.html"><img src="images/twknd.jpg" alt=""/></a>
+									<div class="slide-title"><h4>My Dear Melancholy</h4></div>
 									<div class="date-city">
-										<h5>Jan-02-16</h5>
+										<h5>30-Março-2018</h5>
 										<div class="buy-tickets">
 											<a href="single.html">MAIS</a>
 										</div>
 									</div>
 								</li>
 								<li>
-									<a href="single.html"><img src="images/v5.jpg" alt=""/></a>
-									<div class="slide-title"><h4>Ricky Martine </h4></div>
+									<a href="single.html"><img src="images/justin.jpeg" alt=""/></a>
+									<div class="slide-title"><h4>Man of the Woods</h4></div>
 									<div class="date-city">
-										<h5>Jan-02-16</h5>
+										<h5>02-Fevereiro-2018</h5>
 										<div class="buy-tickets">
 											<a href="single.html">MAIS</a>
 										</div>
 									</div>
 								</li>
 								<li>
-									<a href="single.html"><img src="images/v6.jpg" alt=""/></a>
-									<div class="slide-title"><h4>Ellie Goluding </h4></div>
+									<a href="single.html"><img src="images/bey.jpg" alt=""/></a>
+									<div class="slide-title"><h4>Everything Is Love</h4></div>
 									<div class="date-city">
-										<h5>Jan-02-16</h5>
+										<h5>16-Junho-2018</h5>
 										<div class="buy-tickets">
 											<a href="single.html">MAIS</a>
 										</div>
 									</div>
 								</li>
 								<li>
-									<a href="single.html"><img src="images/v6.jpeg" alt=""/></a>
-									<div class="slide-title"><h4>Fifty Shades </h4></div>
+									<a href="single.html"><img src="images/drake.jpg" alt=""/></a>
+									<div class="slide-title"><h4>Scorpion</h4></div>
 									<div class="date-city">
-										<h5>Jan-02-16</h5>
+										<h5>29-Junho-2018</h5>
 										<div class="buy-tickets">
 											<a href="single.html">MAIS</a>
 										</div>
