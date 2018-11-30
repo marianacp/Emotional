@@ -3,6 +3,8 @@ package br.com.emotional.API;
 import java.io.File;
 import java.net.URI;
 import java.nio.file.Files;
+import java.util.ArrayList;
+import java.util.List;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -45,7 +47,7 @@ public class APIFace {
     	APIFace.imageWithFaces = imagem; 
     }
     
-    public void detectar()
+    public String detectar()
     {
         HttpClient httpclient = new DefaultHttpClient();
 
@@ -67,7 +69,7 @@ public class APIFace {
             request.setHeader("Ocp-Apim-Subscription-Key", subscriptionKey);
             
             
-            File fi = new File("C:\\Users\\USER\\Pictures\\"+imageWithFaces);
+            File fi = new File(imageWithFaces);
             byte[] fileContent = Files.readAllBytes(fi.toPath());
             
             // Request body.
@@ -83,24 +85,70 @@ public class APIFace {
             {
                 // Format and display the JSON response.
                 System.out.println("REST Response:\n");
+                
+                double[] lista = new double[5]; 
+                double happiness = 0; 
+                double surprise = 0; 
+                double anger = 0; 
+                double neutral = 0; 
+                double sadness = 0; 
+                
 
                 String jsonString = EntityUtils.toString(entity).trim();
                 if (jsonString.charAt(0) == '[') {
-                    JSONArray jsonArray = new JSONArray(jsonString);
-                    System.out.println(jsonArray.toString(2));
+                	JSONArray jsonArray = new JSONArray(jsonString);
+                	for(int i = 0; i < jsonArray.length(); i++) {
+                		JSONObject jsonObject1 = jsonArray.getJSONObject(i); 
+                		JSONObject conteudo = jsonObject1.getJSONObject("faceAttributes").getJSONObject("emotion"); 
+                		happiness = conteudo.getDouble("happiness"); 
+                		surprise = conteudo.getDouble("surprise"); 
+                		neutral = conteudo.getDouble("neutral");
+                		sadness = conteudo.getDouble("sadness");
+                		anger = conteudo.getDouble("anger");
+                		
+                		lista[0] = happiness;                 		lista[0] = happiness; 
+                		lista[1] = surprise; 
+                		lista[2] = neutral; 
+                		lista[3] = sadness; 
+                		lista[4] = anger; 
+
+
+                		
+                	}
+                	double max = 0; 
+                    for (int i = 0; i < lista.length; i++) {
+						if (lista[i] > max) {
+							max = lista[i];
+						}
+					}
+                	
+                	if (max == happiness) {
+						return "FELICIDADE"; 
+					} else if(max == surprise){
+						return "SURPRESA"; 
+					}
+					 else if(max == neutral){
+							return "NEUTRALIDADE"; 
+						}
+					 else if(max == sadness){
+							return "TRISTEZA"; 
+						}
+					 else if(max == anger){
+							return "RAIVA"; 
+						}
                 }
                 else if (jsonString.charAt(0) == '{') {
-                    JSONObject jsonObject = new JSONObject(jsonString);
-                    System.out.println(jsonObject.toString(2));
+                    return "";
                 } else {
-                    System.out.println(jsonString);
+                    return ""; 
                 }
             }
+            return ""; 
         }
         catch (Exception e)
         {
             // Display error message.
-            System.out.println(e.getMessage());
+            return ""; 
         }
     }
 }

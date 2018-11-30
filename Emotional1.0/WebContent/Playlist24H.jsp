@@ -1,79 +1,56 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %> 
+<html lang="pt-BR">
 <head>
-<title>Emotional | Um Dia</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Mosaic Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
- <!-- Bootstrap Core CSS -->
-<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-<!-- Custom CSS -->
-<link href="css/style2.css" rel='stylesheet' type='text/css' />
-<!-- Graph CSS -->
-<link href="css/font-awesome.css" rel="stylesheet"> 
-<!-- jQuery -->
-<!-- lined-icons -->
-<link rel="stylesheet" href="css/icon-font.css" type='text/css' />
-<!-- //lined-favicon -->
-<link rel="shortcut icon" type="image/png" href="img/123.png"/>	
- <!-- Meters graphs -->
-<script src="js/jquery-2.1.4.js"></script>
+  <meta charset="UTF-8" />
+  <title>Emotional</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+</head>
+<body>
+            <div class="nav-content hideNav hidden">
+               <ul class="nav-list vcenter">
+                  <li class="nav-item"><a class="item-anchor" href="Menu.jsp">Menu</a></li>
+                  <li class="nav-item"><a class="item-anchor" href="${pageContext.request.contextPath}/logout.jsp">Logout</a></li>
 
+               </ul>
+            </div>
+  <div class="container" >
+  <div class="content"> 
 
-</head> 
-    	 <!-- /w3layouts-agile -->
- <body class="sticky-header left-side-collapsed"  onload="initMap()">
-    <section>
-      <!-- left side start-->
-		<div class="left-side sticky-left-side">
+      <p>Olá, ${sessionScope.usuarioLogado.nome}, essas foram as musicas geradas:</p>
+      
+      <div id="buscarMusica">
 
-			<!--logo and iconic logo start-->
-			<div class="logo">
-				<h1><a href="Menu.jsp">Emotion<span>al</span></a></h1>
-			</div>
-			<div class="logo-icon text-center">
-				<a href="Menu.jsp">E </a>
-			</div>
- 	 <!-- /w3l-agile -->
-			<!--logo and iconic logo end-->
-			<div class="left-side-inner">
-
-				<!--sidebar nav start-->
-					<ul class="nav nav-pills nav-stacked custom-nav">
-						<li class="active"><a href="Menu.jsp"><i class="lnr lnr-home"></i><span>Inicial</span></a></li>
-						<li><a href="Playlist24H"><i class="camera"></i> <span>UmDia</span></a></li>
-						<li><a href="Artista.jsp"><i class="lnr lnr-users"></i> <span>Artistas</span></a></li> 
-						<li><a href="Musica.jsp"><i class="lnr lnr-music-note"></i> <span>Músicas</span></a></li>						
-						<li class="menu-list"><a href="#"><i class="lnr lnr-indent-increase"></i> <span>Playlists</span></a>  
-							<ul class="sub-menu-list">
-							    <li><a href="Playlist.jsp">Todas</a> </li>
-								<li><a href="Playlist.jsp">Felicidade</a> </li>
-								<li><a href="Playlist.jsp">Tristeza</a> </li>
-								<li><a href="Playlist.jsp">Raiva</a> </li>
-								<li><a href="Playlist.jsp">Neutralidade</a> </li>
-								<li><a href="Playlist.jsp">Surpresa</a> </li>
-							</ul>
-						</li>
-						<li class="menu-list"><a href="#"><i class="lnr lnr-heart"></i>  <span>Meus Favoritos</span></a> 
-							<ul class="sub-menu-list">
-								<li><a href="MeusFavoritos.jsp">Playlists</a></li>
-							</ul>
-						</li>
-						<li class="menu-list"><a href="#"><i class="fa fa-thumb-tack"></i><span>Contato</span></a>
-							<ul class="sub-menu-list">
-							    <li><a href="FaleConosco.jsp">Fale Conosco</a> </li>
-							    <li><a href="PerguntasFrequentes.jsp">Perguntas Frequentes</a> </li>
-								<li><a href="Suporte.jsp">Suporte</a> </li>
-							</ul>
-						</li>     
-					</ul>
-				<!--sidebar nav end-->
-				</div>
-				</div>
-				</section>
-				</body>
-				</html>
+  <c:forEach items="${musicas}" var="musica">
 				
-				
+  
+   <p>${musica.titulo_musica}</p>
+  <audio controls>
+   
+  	<source src="${musica.arquivo_musica}" type="audio/mp3">
+
+</audio>
+
+<form name="formDenunciaMusica" action="${pageContext.request.contextPath}/DenunciarMusica.jsp"> 
+	<input type="hidden" name="id_musica" value="${musica.id_musica}" >
+	
+	<input type="submit" value="Denunciar" >
+</form>
+
+<form name="formClassificarMusica" action="${pageContext.request.contextPath}/ClassificarMusica.jsp"> 
+	<input type="hidden" name="id_musica" value="${musica.id_musica}" >
+	
+	<input type="submit" value="Classificar" >
+</form>
+</c:forEach>
+		  
+           
+           
+
+       
+      </div>
+    </div>
+  </div>  
+</body>
+</html>

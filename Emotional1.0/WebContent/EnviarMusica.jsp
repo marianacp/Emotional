@@ -188,7 +188,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
           
          
             <p class="your-para">Estilo</p>
-            <select id="estilo" name="estilo" class="old-select">
+            <select id="estilo" name="estilo" >
   			<option value="Sertanejo">Sertanejo</option>
   			<option value="Rock">Rock</option>
   			<option value="Pop">Pop</option>
