@@ -1,8 +1,7 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!DOCTYPE HTML>
+<html>
 <head>
-<<<<<<< HEAD
-<title>Emotional | Enviar MÃºsica </title>
+<title>Emotional | Enviar Música </title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Mosaic Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -12,11 +11,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 <!-- Custom CSS -->
 <link href="css/style2.css" rel='stylesheet' type='text/css' />
-<<<<<<< HEAD
 <link href="css/estilo.css" rel='stylesheet' type='text/css' />
-=======
-<link href="css/estilo3.css" rel='stylesheet' type='text/css' />
->>>>>>> parent of 1b9e8bd... Revert "AtualizaÃ§Ãµes 2.0"
 
 <!-- Graph CSS -->
 <link href="css/font-awesome.css" rel="stylesheet"> 
@@ -105,11 +100,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											 </ul>	
 											</div>
 											<div class="col-md-4 login-pop">
-<<<<<<< HEAD
-												<div id="loginpop"> <a id="loginButton"> <span> OlÃ¡ ${sessionScope.usuarioLogado.nome}<i class="arrow glyphicon glyphicon-chevron-right"></i></span></a><a class="top-sign" href="${pageContext.request.contextPath}/logout.jsp"><i class="fa fa-sign-in"></i></a>
-=======
 												<div id="loginpop"> <a id="loginButton"> <span> Olá ${sessionScope.usuarioLogado.nome}<i class="arrow glyphicon glyphicon-chevron-right"></i></span></a><a class="top-sign" href="${pageContext.request.contextPath}/logout.jsp"><i class="fa fa-sign-in"></i></a>
->>>>>>> parent of 1b9e8bd... Revert "AtualizaÃ§Ãµes 2.0"
 												</div>
 
 											</div>
@@ -130,8 +121,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<li class="active"><a href="Menu.jsp"><i class="lnr lnr-home"></i><span>Inicial</span></a></li>
 						<li><a href="Playlist24H.jsp"><i class="camera"></i> <span>UmDia</span></a></li>
 						<li><a href="${pageContext.request.contextPath}/AdicionarAmigo.jsp"><i class="lnr lnr-users"></i> <span>Adicionar Amigo</span></a></li> 
-						<li><a href="${pageContext.request.contextPath}/DetectarEmocao.jsp" data-toggle="modal"><i class="fa fa-th"></i><span>Detectar EmoÃ§Ã£o</span></a></li>
-						<li><a href="${pageContext.request.contextPath}/EnviarMusica.jsp"><i class="lnr lnr-music-note"></i> <span>Enviar MÃºsica</span></a></li>						
+						<li><a href="${pageContext.request.contextPath}/DetectarEmocao.jsp" data-toggle="modal"><i class="fa fa-th"></i><span>Detectar Emoção</span></a></li>
+						<li><a href="${pageContext.request.contextPath}/EnviarMusica.jsp"><i class="lnr lnr-music-note"></i> <span>Enviar Música</span></a></li>						
 						<li class="menu-list"><a href="#"><i class="lnr lnr-indent-increase"></i> <span>Playlists</span></a>  
 							<ul class="sub-menu-list">
 							    <li><a href="Playlist.jsp">Todas</a> </li>
@@ -172,84 +163,56 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					
 						
 								<div class="tittle-head">
-									<h3 class="tittle">Enviar MÃºsica </h3>
+									<h3 class="tittle">Enviar Música </h3>
 									<div class="clearfix"> </div>
 								</div>
 
   
 	  <h3>${mensagens.erros}</h3>
-<<<<<<< HEAD
-      <h3>OlÃ¡ ${sessionScope.usuarioLogado.nome}, vamos enviar uma mÃºsica?</h3>
-=======
       <h3>Olá ${sessionScope.usuarioLogado.nome}, vamos enviar uma música?</h3>
->>>>>>> parent of 1b9e8bd... Revert "AtualizaÃ§Ãµes 2.0"
-=======
-  <meta charset="UTF-8" />
-  <title>Emotional</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <link rel="stylesheet" type="text/css" href="css/estilo.css" />
-</head>
-<body>
-            <div class="nav-content hideNav hidden">
-               <ul class="nav-list vcenter">
-                  <li class="nav-item"><a class="item-anchor" href="Menu.jsp">Menu</a></li>
-                  <li class="nav-item"><a class="item-anchor" href="${pageContext.request.contextPath}/logout.jsp">Logout</a></li>
-
-               </ul>
-            </div>
-  <div class="container" >
-  <div class="content"> 
-	  <p>${mensagens.erros}</p>
-      <p>Olá, ${sessionScope.usuarioLogado.nome}, vamos enviar uma música??</p>
->>>>>>> parent of 7c66a1a... Update FRONT
       <div id="enviarMusica">
+        <div class="in-left">
+        
         <form name="formMusica" action="enviarMusica" method="get" enctype="text/plain" autocomplete="off"> 
-          <h1>Envio de Música</h1> 
+       
            
           <p> 
-<<<<<<< HEAD
-<<<<<<< HEAD
-            <p class="your-para">Nome da MÃºsica</p>
-=======
-            <p class="your-para">Nome da música</p>
->>>>>>> parent of 1b9e8bd... Revert "AtualizaÃ§Ãµes 2.0"
+            <p class="your-para">Nome da Música</p>
             <input id="nome" name="nome" required="required" type="text" />
-=======
-            <label for="nome">Nome da Música</label>
-            <input id="nome" name="nome" required="required" type="text" placeholder="nome" />
->>>>>>> parent of 7c66a1a... Update FRONT
           </p>
           
           <p> 
-            <label for="autor">Autor</label>
-            <input id="autor" name="autor" required="required" type="text" placeholder="autor" />
+            <p class="your-para">Autor</p>
+            <input id="autor" name="autor" required="required" type="text" />
           </p>
           
-          <p> 
-            <label for="estilo">Estilo</label>
-            <select id="estilo" name="estilo">
+         
+            <p class="your-para">Estilo</p>
+            <select id="estilo" name="estilo" class="old-select">
   			<option value="Sertanejo">Sertanejo</option>
   			<option value="Rock">Rock</option>
   			<option value="Pop">Pop</option>
   			<option value="Funk">Funk</option>
   			<option value="Mpb">MPB</option>
   			<option value="Outro">Outro</option>
-</select>
-          </p>
+			</select>
+
+<div class="new-select">
+    <div class="selection">
+        <p>
+            <span></span>
+            <i></i>
+        </p>
+        <span></span>
+    </div>
+</div>
+         
+		<div class="demo">  
+		</div>
+		
 		  
-		  
-<<<<<<< HEAD
 	
-<<<<<<< HEAD
-            <p class="your-para">Como vocÃª definiria esta mÃºsica?</p>
-=======
             <p class="your-para">Como você definiria esta música?</p>
-            
->>>>>>> parent of 1b9e8bd... Revert "AtualizaÃ§Ãµes 2.0"
-=======
-		  <p> 
-            <label for="emocao">Como você definiria esta música?</label>
->>>>>>> parent of 7c66a1a... Update FRONT
             <select id="emocao" name="emocao">
   			<option value="Felicidade">Alegre</option>
   			<option value="Tristeza">Triste</option>
@@ -259,41 +222,28 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <option value="Felicidade">Avassaladora</option>
 			<option value="Surpresa">Outro</option>
 </select>
-<<<<<<< HEAD
-<<<<<<< HEAD
          
-          
-   		<p class="your-para">Muito bem ${sessionScope.usuarioLogado.nome}, agora envie a sua mÃºsica.</p>
-          
-          <p class="your-para">NÃ£o esqueÃ§a do formato MP3!</p>
-=======
-
-
           
    		<p class="your-para">Muito bem ${sessionScope.usuarioLogado.nome}, agora envie a sua música.</p>
           
           <p class="your-para">Não esqueça do formato MP3!</p>
->>>>>>> parent of 1b9e8bd... Revert "AtualizaÃ§Ãµes 2.0"
-=======
-          </p>
-          
-   		<label for="musica">Muito bem, ${sessionScope.usuarioLogado.nome}, agora envie a sua música.</label>
-          
-          <p>Não esqueça do formato MP3!</p>
->>>>>>> parent of 7c66a1a... Update FRONT
           
 			<input id="musica" name="musica" type="file" accept=".mp3,audio/*">
          
+		  </div>
 		  
+		  <div class="clearfix"> </div>
+		  
+		   <div class="in-right">
            
-          <p> 
+     
             <input type="submit" value="Enviar Musica" name="enviarMusica"/> 
-          </p>
+        
            
+           </div>
 
         </form>
       </div>
-<<<<<<< HEAD
     
 
   
@@ -327,12 +277,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 													</div>
 													<div class="price-bottom">
 														<ul>
-															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">Download de mais mÃºsicas </a><div class="clearfix"></div></li>
-															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">MÃºsicas em alta definicÃ§Ã£o</a><div class="clearfix"></div></li>
+															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">Download de mais músicas </a><div class="clearfix"></div></li>
+															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">Músicas em alta definicção</a><div class="clearfix"></div></li>
 															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">Menos propagandas</a><div class="clearfix"></div></li>
 															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">Playlists com mais de 24H</a><div class="clearfix"></div></li>
 														</ul>
-														<a href="single.html" class="price">DÃª um up!</a>
+														<a href="single.html" class="price">Dê um up!</a>
 													</div>
 												</div>
 												<div class="pricing two">
@@ -342,12 +292,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 													</div>
 													<div class="price-bottom">
 														<ul>
-															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">Download ilimitado de mÃºsicas</a><div class="clearfix"></div></li>
-															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">MÃºsicas em alta definiÃ§Ã£o</a><div class="clearfix"></div></li>
+															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">Download ilimitado de músicas</a><div class="clearfix"></div></li>
+															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">Músicas em alta definição</a><div class="clearfix"></div></li>
 															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">Sem propagandas</a><div class="clearfix"></div></li>
-															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">CriaÃ§Ã£o de playlists</a><div class="clearfix"></div></li>
+															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">Criação de playlists</a><div class="clearfix"></div></li>
 														</ul>
-														<a href="single.html" class="price">DÃª um up!</a>
+														<a href="single.html" class="price">Dê um up!</a>
 													</div>
 												</div>
 													<div class="clearfix"></div>
@@ -365,13 +315,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			  <!--body wrapper end-->
 			     <div class="footer">
 				<div class="footer-grid">
-					<h3>NavegaÃ§Ã£o</h3>
+					<h3>Navegação</h3>
 					<ul class="list1">
 					  <li><a href="Menu.jsp">Inicial</a></li>
 					  <li><a href="Playlist24H.jsp">UmDia</a></li>
 					  <li><a href="${pageContext.request.contextPath}/AdicionarAmigo.jsp">Adicionar Amigo</a></li>
-					  <li><a href="${pageContext.request.contextPath}/EnviarMusica.jsp">Enviar MÃºsica</a></li>
-					  <li><a href="Musica.jsp">MÃºsicas</a></li>
+					  <li><a href="${pageContext.request.contextPath}/EnviarMusica.jsp">Enviar Música</a></li>
+					  <li><a href="Musica.jsp">Músicas</a></li>
 					  <li><a href="Playlist.jsp">Playlists</a></li>
 					  <li><a href="MeusFavoritos.jsp">Meus Favoritos</a></li>
 					  <li><a href="FaleConosco.jsp">Contato</a></li>
@@ -382,11 +332,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<h3>Emotional</h3>
 				    <ul class="list1">
 					  <li><a href="#" data-toggle="modal" data-target="#myModal5">Sua conta</a></li>
-					  <li><a href="#">InformaÃ§Ãµes</a></li>
-					  <li><a href="#">EndereÃ§o</a></li>
+					  <li><a href="#">Informações</a></li>
+					  <li><a href="#">Endereço</a></li>
 					  <li><a href="#">Desconto</a></li>
-					  <li><a href="#">Nossa histÃ³ria</a></li>
-					  <li><a href="#">Termos de seguranÃ§a</a></li>
+					  <li><a href="#">Nossa história</a></li>
+					  <li><a href="#">Termos de segurança</a></li>
 				    </ul>
 				</div>
 				<div class="footer-grid">
@@ -400,7 +350,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				  </div>
 					  <div class="footer-grid">
 						<h3>Novidades</h3>
-						<p class="footer_desc">Cadastre seu e-mail caso queira receber notificaÃ§Ãµes sobre as novidades do site. </p>
+						<p class="footer_desc">Cadastre seu e-mail caso queira receber notificações sobre as novidades do site. </p>
 						<div class="search_footer">
 						 <form>
 						   <input type="text" placeholder="Email...." required="">
@@ -409,8 +359,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</div>
 					 </div>
 					 <div class="footer-grid footer-grid_last">
-						<h3>Sobre nÃ³s</h3>
-						<p class="footer_desc">O Emotional Ã© um sistema web com a intenÃ§Ã£o de gerar playlists personalizadas com base no humor atravÃ©s de um reconhecimento facial do usuÃ¡rio.</p>
+						<h3>Sobre nós</h3>
+						<p class="footer_desc">O Emotional é um sistema web com a intenção de gerar playlists personalizadas com base no humor através de um reconhecimento facial do usuário.</p>
 						<p class="f_text">Telefone: +55 21 3843-4015</p>
 						<p class="email">Email : &nbsp;<span><a href="#">info@emotional.com</a></span></p>	
 					 </div>
@@ -419,7 +369,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
         <!--footer section start-->
 			<footer>
-			   <p>Emotional - MÃºsica para todos :: Sentimentos para a sua mÃºsica </a></p>
+			   <p>Emotional - Música para todos :: Sentimentos para a sua música </a></p>
 			</footer>
         <!--footer section end-->
  	 <!-- /w3l-agile -->
@@ -430,9 +380,5 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script src="js/scripts.js"></script>
 <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.js"></script>
-=======
-    </div>
-  </div>  
->>>>>>> parent of 7c66a1a... Update FRONT
 </body>
-</html>
+</html>  
