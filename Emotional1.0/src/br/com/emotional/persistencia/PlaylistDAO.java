@@ -75,7 +75,7 @@ public class PlaylistDAO extends Dao{
 		public List<Musica> gerarPlaylist(int id_emo) throws Exception{
 			open(); 
 			
-			String sql = "select id_musica, arquivo_musica, id_estilo_musical, id_artista from musica where id_emocao = ? order by rand() limit 12"; 
+			String sql = "select id_musica, arquivo_musica, id_estilo_musical, id_artista, titulo_musica from musica where id_emocao = ? order by rand() limit 12"; 
 			List<Musica> lista = new ArrayList<>(); 
 			PreparedStatement pstm = null;
 			
@@ -95,6 +95,7 @@ try {
 					mus.setArquivo_musica(rs.getString("ARQUIVO_MUSICA"));
 					mus.setId_estilo_musical(rs.getInt("ID_ESTILO_MUSICAL"));
 					mus.setId_artista(rs.getInt("ID_ARTISTA"));
+					mus.setTitulo_musica(rs.getString("TITULO_MUSICA"));
 					lista.add(mus); 
 				}
 			

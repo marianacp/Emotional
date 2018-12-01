@@ -193,11 +193,11 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="active">
+                        <li>
                             <a href="HomeAdm.jsp">
                                 <i class="fas fa-chart-bar"></i>Bloqueio e Desbloqueio de Usuario</a>
-                        </li> 
-                        <li>                       
+                        </li >  
+                        <li class="active">                      
                             <a href="AprovacaoMusica.jsp">
                                 <i class="fas fa-table"></i>Aprovacao de Música</a>
                         </li>
@@ -335,12 +335,12 @@
                             <div class="col-md-12">
                             <p>Olá ${sessionScope.usuarioLogado.nome}</p>
                                 <!-- DATA TABLE -->
-                                <h3 class="title-5 m-b-35">Bloquear / Desbloquear usuÃ¡rio</h3>
+                                <h3 class="title-5 m-b-35">Pesquise musicas denunciadas:</h3>
                                 
                         <div id="sb-search" class="sb-search">
-									<form action="buscarUsuario" method="get">
+									<form action="buscarMusicaNaoAprovada" method="get">
 
-										<input class="sb-search-input" placeholder="Search" type="search" name="busca" id="search">
+										<input class="sb-search-input" placeholder="Search" type="search" name="search" id="search">
 										<input class="sb-search-submit" type="submit" value="">
 										<span class="sb-icon-search"> </span>
 									</form>
