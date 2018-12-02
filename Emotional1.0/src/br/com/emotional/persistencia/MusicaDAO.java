@@ -210,7 +210,32 @@ public void requererAprovacao(int id_musica) throws Exception{
 		pstm.execute(); 
 		
 	} catch (Exception e) {
-		e.printStackTrace();	}
+		e.printStackTrace();	
+		}
 	
+}
+
+public void excluirMusica(int musica_id) throws Exception {
+	open(); 
+	
+	String sql = "DELETE FROM APROVACAO_MUSICA WHERE ID_MUSICA = ? ";
+	String sql2 = "DELETE FROM MUSICA WHERE ID_MUSICA = ?"; 
+	
+	PreparedStatement pstm = null;
+	
+	try {
+		pstm = con.prepareStatement(sql);
+		
+		pstm.setInt(1, musica_id);
+		pstm.execute();
+		
+		pstm = con.prepareStatement(sql2);
+		pstm.setInt(1, musica_id);
+		
+		pstm.execute();
+		
+	} catch (Exception e) {
+		e.printStackTrace();	
+	}
 }
 }

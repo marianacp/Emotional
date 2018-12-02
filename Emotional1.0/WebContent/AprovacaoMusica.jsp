@@ -382,7 +382,7 @@
 
 </audio>
 
-<form name="formDenunciaMusica" action="/excluirMusica"> 
+<form name="formDenunciaMusica" action="excluirMusica" method="get" enctype="text/plain" autocomplete="off"> 
 	<input type="hidden" name="id_musica" value="${musica.id_musica}" >
 	
 	<input type="submit" value="Excluir" >
