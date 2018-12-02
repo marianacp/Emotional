@@ -47,7 +47,7 @@ public class MusicaDAO  extends Dao{
 	public List<Musica> getListaMusicasAprovadas(String busca) throws Exception {
 		
 		open(); 
-		//Status 1 eh aprovado, 2 reprovado
+		//Status 1 eh aprovado, 0 reprovado
 		String sql = "Select mu.id_musica , arquivo_musica, titulo_musica from musica mu "
 				+ "join aprovacao_musica am on am.id_musica = mu.id_musica where UPPER(titulo_musica) like ? "
 				+ "and am.cod_status = 1";
@@ -127,5 +127,42 @@ public class MusicaDAO  extends Dao{
 			 e.printStackTrace();			
 		}
 		return classificado; 
+	}
+	
+public List<Musica> getListaMusicasNaoAprovadas(String busca) throws Exception {
+
+		open(); 
+	 
+		//Status 1 eh aprovado, 0 reprovado
+		String sql = "Select mu.id_musica , arquivo_musica, titulo_musica from musica mu "
+				+ "join aprovacao_musica am on am.id_musica = mu.id_musica where"
+				+ "am.cod_status = 2";
+		if(!busca.isEmpty()) {
+			sql +=  "AND UPPER(titulo_musica) like ? "; 
+		}
+		
+		PreparedStatement pstm = null;
+	
+		List<Musica> lista = new ArrayList<>(); 
+		try {
+			pstm = con.prepareStatement(sql);
+			
+			pstm.setString(1, "%" + busca.toUpperCase() + "%");
+			
+			ResultSet rs = pstm.executeQuery(); 
+			
+
+			while(rs.next()) {
+				Musica musica = new Musica(); 
+				musica.setId_musica(rs.getInt("id_musica"));
+				musica.setArquivo_musica(rs.getString("arquivo_musica"));
+				musica.setTitulo_musica(rs.getString("titulo_musica"));
+				lista.add(musica); 
+			}			
+			return lista; 
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return lista; 
 	}
 }

@@ -341,7 +341,7 @@
 									<form action="buscarMusicaNaoAprovada" method="get">
 
 										<input class="sb-search-input" placeholder="Search" type="search" name="search" id="search">
-										<input class="sb-search-submit" type="submit" value="">
+										<input class="sb-search-submit" type="submit" value="buscar">
 										<span class="sb-icon-search"> </span>
 									</form>
 								</div>
@@ -372,23 +372,16 @@
                                 <div class="table-responsive table-responsive-data2">
                                     <p>Olá, ${sessionScope.usuarioLogado.nome}, essas são as buscas encontradas:</p>
       <div id="buscarMusica">
-  <c:forEach items="${usuarios}" var="usuario">
-         <form action = "bloquearUsuario" method="get">
-         
-         			<input type="hidden" name="id_usu" id="id_usu" value="${usuario.id_usu}" >
-   <p>${usuario.nome}</p>
-<c:choose>
-    <c:when test="${usuario.ativo == true}">
-						  <input type="submit" value="Bloquear" >
-						
-    </c:when>    
-    <c:otherwise>
+  <c:forEach items="${musicas}" var="musica">
+				
+  
+   <p>${musica.titulo_musica}</p>
+  <audio controls>
+   
+  	<source src="${musica.arquivo_musica}" type="audio/mp3">
 
-						  <input type="submit" value="Desbloquear">
+</audio>
 
-    </c:otherwise>
-</c:choose>
-     </form>
    </c:forEach>
 
                                             </tr>
