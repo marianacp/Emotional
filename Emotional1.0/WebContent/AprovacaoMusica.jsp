@@ -371,7 +371,7 @@
                                 </div>
                                 <div class="table-responsive table-responsive-data2">
                                     <p>Olá, ${sessionScope.usuarioLogado.nome}, essas são as buscas encontradas:</p>
-      <div id="buscarMusica">
+      <div id="buscarMusicaNaoAprovada">
   <c:forEach items="${musicas}" var="musica">
 				
   

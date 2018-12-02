@@ -14,7 +14,7 @@ import br.com.emotional.entidade.Musica;
 import util.Erro;
 
 
-@WebServlet({"/buscarUsuario"})
+@WebServlet({"/buscarMusicaNaoAprovada"})
 public class ControleBuscaMusicaNaoAprovadas extends HttpServlet {
 	protected void service(HttpServletRequest request,
             HttpServletResponse response)
