@@ -78,20 +78,34 @@ public class ControleMusica extends HttpServlet{
 			// TODO Auto-generated catch block
 			erros.add("Erro ao buscar identificador do artista");
 		} 
-		
+		if(!erros.isExisteErros()){
 		Musica musc = new Musica(); 
 		musc.setArquivo_musica(musica);
 		musc.setId_artista(id_artista);
 		musc.setId_emocao(emo.getId_emocao());
 		musc.setId_estilo_musical(esti.getId_estilo_musical());
 		musc.setTitulo_musica(nome);
-		
+		//Insere a musica na tabela musica
 		MusicaDAO musicadao = new MusicaDAO(); 
 		try {
 			musicadao.salvarMusica(musc);
 			erros.add("Música adicionada com sucesso!");
 		} catch (Exception e) {
 			erros.add("Música não pôde ser salva");
+		}
+		int id_mus = 0; 
+		//Insere na tabela de aprovacao para ser aprovada por um administrador
+		 try {
+			 id_mus = musicadao.getIdporNomeArtista(musc);
+		} catch (Exception e) {
+			erros.add("Musica nao encontrada");
+		} 
+		 
+		 try {
+			musicadao.requererAprovacao(id_mus);
+		} catch (Exception e) {
+			erros.add("Nao foi possivel requerer aprovacao");
+		}
 		}
 		
 		request.setAttribute("mensagens", erros);

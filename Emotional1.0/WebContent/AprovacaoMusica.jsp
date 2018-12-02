@@ -382,6 +382,12 @@
 
 </audio>
 
+<form name="formDenunciaMusica" action="/excluirMusica"> 
+	<input type="hidden" name="id_musica" value="${musica.id_musica}" >
+	
+	<input type="submit" value="Excluir" >
+</form>
+
    </c:forEach>
 
                                             </tr>
