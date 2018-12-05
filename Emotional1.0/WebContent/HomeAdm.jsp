@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %> 
+<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
 <html lang="pt">
 
 <head>
@@ -33,7 +33,7 @@
 
     <!-- Main CSS-->
     <link href="css/theme.css" rel="stylesheet" media="all">
-    
+
     <!-- FavIcon-->
     <link rel="shortcut icon" type="image/png" href="img/123.png"/>
 
@@ -67,7 +67,7 @@
                             <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
                                 <li>
                                     <a href="index.html">MÃºsicas</a>
-=======
+
                                 <i class="fas fa-tachometer-alt"></i>Dashboard</a>
                             <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
                                 <li>
@@ -87,7 +87,7 @@
                         </li>
                         <li>
                             <a href="AprovacaoMusica.jsp">
-                                <i class="fas fa-table"></i>Aprovações</a>
+                                <i class="fas fa-table"></i>Aprovaï¿½ï¿½es</a>
                         </li>
                         <li>
                             <a href="form.html">
@@ -196,10 +196,10 @@
                         <li class="active">
                             <a href="HomeAdm.jsp">
                                 <i class="fas fa-chart-bar"></i>Bloqueio e Desbloqueio de Usuario</a>
-                        </li> 
-                        <li>                       
+                        </li>
+                        <li>
                             <a href="AprovacaoMusica.jsp">
-                                <i class="fas fa-table"></i>Aprovacao de Música</a>
+                                <i class="fas fa-table"></i>Aprovacao de Mï¿½sica</a>
                         </li>
                         <li>
                             <a href="form.html">
@@ -279,7 +279,7 @@
           <header class="header-desktop">
                 <div class="section__content section__content--p30">
                     <div class="container-fluid">
-                        <div class="header-wrap">                            
+                        <div class="header-wrap">
                             <div class="header-button">
                                 <div class="account-wrap">
                                     <div class="account-item clearfix js-item-menu">
@@ -333,10 +333,10 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-12">
-                            <p>Olá ${sessionScope.usuarioLogado.nome}</p>
+                            <p>Olï¿½ ${sessionScope.usuarioLogado.nome}</p>
                                 <!-- DATA TABLE -->
                                 <h3 class="title-5 m-b-35">Bloquear / Desbloquear usuÃ¡rio</h3>
-                                
+
                         <div id="sb-search" class="sb-search">
 									<form action="buscarUsuario" method="get">
 
@@ -354,34 +354,34 @@
 										</script>
 									<!-- //search-scripts -->
 											 <!---->
-									
+
                                 <div class="table-data__tool">
                                     <div class="table-data__tool-left">
                                         <div class="rs-select2--light rs-select2--md">
                                             <select class="js-select2" name="property">
                                                 <option selected="selected">Todos</option>
                                                 <option value="">Bloqueados</option>
-                                                <option value="">Em Análise</option>
+                                                <option value="">Em Anï¿½lise</option>
                                             </select>
                                             <div class="dropDownSelect2"></div>
                                         </div>
-                                        
-                                        
+
+
                                     </div>
                                 </div>
                                 <div class="table-responsive table-responsive-data2">
-                                    <p>Olá, ${sessionScope.usuarioLogado.nome}, essas são as buscas encontradas:</p>
+                                    <p>Olï¿½, ${sessionScope.usuarioLogado.nome}, essas sï¿½o as buscas encontradas:</p>
       <div id="buscarMusica">
   <c:forEach items="${usuarios}" var="usuario">
          <form action = "bloquearUsuario" method="get">
-         
+
          			<input type="hidden" name="id_usu" id="id_usu" value="${usuario.id_usu}" >
    <p>${usuario.nome}</p>
 <c:choose>
     <c:when test="${usuario.ativo == true}">
 						  <input type="submit" value="Bloquear" >
-						
-    </c:when>    
+
+    </c:when>
     <c:otherwise>
 
 						  <input type="submit" value="Desbloquear">
@@ -391,7 +391,7 @@
      </form>
    </c:forEach>
 
-                               
+
                         <div class="row m-t-30">
                             <div class="col-md-12">
                                 <!-- DATA TABLE-->
@@ -472,7 +472,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="copyright">
-                                    <p>Copyright © 2018 Colorlib. All rights reserved. Template by <a href="https://colorlib.com">Colorlib</a>.</p>
+                                    <p>Copyright ï¿½ 2018 Colorlib. All rights reserved. Template by <a href="https://colorlib.com">Colorlib</a>.</p>
                                 </div>
                             </div>
                         </div>
