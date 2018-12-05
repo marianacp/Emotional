@@ -193,11 +193,11 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="active">
+                        <li>
                             <a href="HomeAdm.jsp">
                                 <i class="fas fa-chart-bar"></i>Bloqueio e Desbloqueio de Usuario</a>
-                        </li> 
-                        <li>                       
+                        </li >  
+                        <li class="active">                      
                             <a href="AprovacaoMusica.jsp">
                                 <i class="fas fa-table"></i>Aprovacao de Música</a>
                         </li>
@@ -335,13 +335,13 @@
                             <div class="col-md-12">
                             <p>Olá ${sessionScope.usuarioLogado.nome}</p>
                                 <!-- DATA TABLE -->
-                                <h3 class="title-5 m-b-35">Bloquear / Desbloquear usuÃ¡rio</h3>
+                                <h3 class="title-5 m-b-35">Pesquise musicas denunciadas:</h3>
                                 
                         <div id="sb-search" class="sb-search">
-									<form action="buscarUsuario" method="get">
+									<form action="buscarMusicaNaoAprovada" method="get">
 
 										<input class="sb-search-input" placeholder="Search" type="search" name="search" id="search">
-										<input class="sb-search-submit" type="submit" value="search">
+										<input class="sb-search-submit" type="submit" value="buscar">
 										<span class="sb-icon-search"> </span>
 									</form>
 								</div>
@@ -371,27 +371,137 @@
                                 </div>
                                 <div class="table-responsive table-responsive-data2">
                                     <p>Olá, ${sessionScope.usuarioLogado.nome}, essas são as buscas encontradas:</p>
-      <div id="buscarMusica">
-  <c:forEach items="${usuarios}" var="usuario">
-         <form action = "bloquearUsuario" method="get">
-         
-         			<input type="hidden" name="id_usu" id="id_usu" value="${usuario.id_usu}" >
-   <p>${usuario.nome}</p>
-<c:choose>
-    <c:when test="${usuario.ativo == true}">
-						  <input type="submit" value="Bloquear" >
-						
-    </c:when>    
-    <c:otherwise>
+      <div id="buscarMusicaNaoAprovada">
+  <c:forEach items="${musicas}" var="musica">
+				
+  
+   <p>${musica.titulo_musica}</p>
+  <audio controls>
+   
+  	<source src="${musica.arquivo_musica}" type="audio/mp3">
 
-						  <input type="submit" value="Desbloquear">
+</audio>
 
-    </c:otherwise>
-</c:choose>
-     </form>
+<form name="formDenunciaMusica" action="excluirMusica" method="get" enctype="text/plain" autocomplete="off"> 
+	<input type="hidden" name="id_musica" value="${musica.id_musica}" >
+	
+	<input type="submit" value="Excluir" >
+</form>
+
    </c:forEach>
 
-                               
+                                            </tr>
+                                            <tr class="spacer"></tr>
+                                            <tr class="tr-shadow">
+                                                <td>
+                                                    <label class="au-checkbox">
+                                                        <input type="checkbox">
+                                                        <span class="au-checkmark"></span>
+                                                    </label>
+                                                </td>
+                                                <td>Lori Lynch</td>
+                                                <td>
+                                                    <span class="block-email">john@example.com</span>
+                                                </td>
+                                                <td class="desc">iPhone X 64Gb Grey</td>
+                                                <td>2018-09-29 05:57</td>
+                                                <td>
+                                                    <span class="status--process">Processed</span>
+                                                </td>
+                                                <td>$999.00</td>
+                                                <td>
+                                                    <div class="table-data-feature">
+                                                        <button class="item" data-toggle="tooltip" data-placement="top" title="Send">
+                                                            <i class="zmdi zmdi-mail-send"></i>
+                                                        </button>
+                                                        <button class="item" data-toggle="tooltip" data-placement="top" title="Edit">
+                                                            <i class="zmdi zmdi-edit"></i>
+                                                        </button>
+                                                        <button class="item" data-toggle="tooltip" data-placement="top" title="Delete">
+                                                            <i class="zmdi zmdi-delete"></i>
+                                                        </button>
+                                                        <button class="item" data-toggle="tooltip" data-placement="top" title="More">
+                                                            <i class="zmdi zmdi-more"></i>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="spacer"></tr>
+                                            <tr class="tr-shadow">
+                                                <td>
+                                                    <label class="au-checkbox">
+                                                        <input type="checkbox">
+                                                        <span class="au-checkmark"></span>
+                                                    </label>
+                                                </td>
+                                                <td>Lori Lynch</td>
+                                                <td>
+                                                    <span class="block-email">lyn@example.com</span>
+                                                </td>
+                                                <td class="desc">iPhone X 256Gb Black</td>
+                                                <td>2018-09-25 19:03</td>
+                                                <td>
+                                                    <span class="status--denied">Denied</span>
+                                                </td>
+                                                <td>$1199.00</td>
+                                                <td>
+                                                    <div class="table-data-feature">
+                                                        <button class="item" data-toggle="tooltip" data-placement="top" title="Send">
+                                                            <i class="zmdi zmdi-mail-send"></i>
+                                                        </button>
+                                                        <button class="item" data-toggle="tooltip" data-placement="top" title="Edit">
+                                                            <i class="zmdi zmdi-edit"></i>
+                                                        </button>
+                                                        <button class="item" data-toggle="tooltip" data-placement="top" title="Delete">
+                                                            <i class="zmdi zmdi-delete"></i>
+                                                        </button>
+                                                        <button class="item" data-toggle="tooltip" data-placement="top" title="More">
+                                                            <i class="zmdi zmdi-more"></i>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="spacer"></tr>
+                                            <tr class="tr-shadow">
+                                                <td>
+                                                    <label class="au-checkbox">
+                                                        <input type="checkbox">
+                                                        <span class="au-checkmark"></span>
+                                                    </label>
+                                                </td>
+                                                <td>Lori Lynch</td>
+                                                <td>
+                                                    <span class="block-email">doe@example.com</span>
+                                                </td>
+                                                <td class="desc">Camera C430W 4k</td>
+                                                <td>2018-09-24 19:10</td>
+                                                <td>
+                                                    <span class="status--process">Processed</span>
+                                                </td>
+                                                <td>$699.00</td>
+                                                <td>
+                                                    <div class="table-data-feature">
+                                                        <button class="item" data-toggle="tooltip" data-placement="top" title="Send">
+                                                            <i class="zmdi zmdi-mail-send"></i>
+                                                        </button>
+                                                        <button class="item" data-toggle="tooltip" data-placement="top" title="Edit">
+                                                            <i class="zmdi zmdi-edit"></i>
+                                                        </button>
+                                                        <button class="item" data-toggle="tooltip" data-placement="top" title="Delete">
+                                                            <i class="zmdi zmdi-delete"></i>
+                                                        </button>
+                                                        <button class="item" data-toggle="tooltip" data-placement="top" title="More">
+                                                            <i class="zmdi zmdi-more"></i>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- END DATA TABLE -->
+                            </div>
+                        </div>
                         <div class="row m-t-30">
                             <div class="col-md-12">
                                 <!-- DATA TABLE-->

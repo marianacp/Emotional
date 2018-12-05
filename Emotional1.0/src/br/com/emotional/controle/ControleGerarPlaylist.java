@@ -103,7 +103,9 @@ public class ControleGerarPlaylist extends HttpServlet {
 			}
         	
         	if (listaMusicas.size() == 12) {
-				
+        		
+        		
+				request.setAttribute("playlist", nome);
         		request.setAttribute("musicas", listaMusicas);
             	
                 String URL = "Playlist24H.jsp";

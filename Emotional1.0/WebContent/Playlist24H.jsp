@@ -20,6 +20,8 @@
 
       <p>Olá, ${sessionScope.usuarioLogado.nome}, essas foram as musicas geradas:</p>
       
+      
+      <p>Playlist Nome: ${playlist} } </p>
       <div id="buscarMusica">
 
   <c:forEach items="${musicas}" var="musica">
