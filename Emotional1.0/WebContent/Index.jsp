@@ -51,7 +51,7 @@
 					 <div class="item">
                         <img src="img/download6.jpg" alt="Slide">
                      </div>
-					  <div class="item">
+					 <div class="item">
                         <img src="img/download2.jpg" alt="Slide">
                      </div>
                      <div class="item">
@@ -63,9 +63,6 @@
                      <div class="item">
                         <img src="img/download5.jpg" alt="Slide">
 					 </div>
-                     <div class="item">
-                        <img src="img/download6.jpg" alt="Slide">
-                     </div>
                   </div>
                </div>
             </div>
