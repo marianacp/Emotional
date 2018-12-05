@@ -13,6 +13,9 @@ import br.com.emotional.persistencia.MusicaDAO;
 import util.Erro;
 
 @WebServlet({"/excluirMusica"})
+/**
+ * Classe para o controle de musicas que podem ser excluidas do sistema
+ */
 public class ControleExcluirMusica extends HttpServlet{
 	protected void service(HttpServletRequest request,
             HttpServletResponse response)

@@ -18,10 +18,9 @@ import org.apache.http.util.EntityUtils;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-
-
-
-
+/**
+ * Classe para a geracao da classificacao do humor da imagem
+ */
 public class APIFace {
 	
 	private static final String subscriptionKey = "8e860f62a1cc40ed8bc41dcc4c63db39";
@@ -42,11 +41,20 @@ public class APIFace {
     private static final String faceAttributes =
         "emotion";
 
+    /**
+     * Função void que recebe a imagem para fazer a classificacao
+     * @param imagem - diretorio da imagem 
+     */
     public void insereImagem(String imagem) {
     	
     	APIFace.imageWithFaces = imagem; 
     }
     
+    /**
+     * Funcao para detectar o "humor" na imagem recebida. Atraves da API ela reconhece e classifica os
+     * humores da imagem 
+     * @return a classificacao da imagem ou mensagem de erro. 
+     */
     public String detectar()
     {
         HttpClient httpclient = new DefaultHttpClient();

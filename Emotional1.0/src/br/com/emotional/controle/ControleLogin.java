@@ -14,6 +14,9 @@ import javax.servlet.http.HttpServletResponse;
   
 
 @WebServlet(name = "Login", urlPatterns = {"/index.jsp", "/logout.jsp"})
+/**
+ * Classe para o controle de acesso do sistema
+ */
 public class ControleLogin extends HttpServlet {
 	protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {

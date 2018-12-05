@@ -12,6 +12,9 @@ import br.com.emotional.API.APIFace;
 import util.Erro;
 
 @WebServlet({"/detectarEmocao"})
+/**
+ * Classe para o controle da deteccao de emocao das playlists/musicas do sistema. 
+ */
 public class ControleImagemAPI extends HttpServlet {
 	protected void service(HttpServletRequest request,
             HttpServletResponse response)

@@ -19,6 +19,9 @@ import br.com.emotional.persistencia.UsuarioDAO;
 import util.Erro;
 
 @WebServlet({"/cadastroUsuario"})
+/**
+ * Classe para o controle de cadastro de usuario no sistema
+ */
 public class ControleCadastro extends HttpServlet{
 	protected void service(HttpServletRequest request,
             HttpServletResponse response)

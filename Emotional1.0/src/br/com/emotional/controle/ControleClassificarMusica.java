@@ -19,6 +19,9 @@ import util.Erro;
 
 
 @WebServlet({"/classificarMusica"})
+/**
+ * Classe para o controle da classificacao das musicas no sistema
+ */
 public class ControleClassificarMusica extends HttpServlet{
 	protected void service(HttpServletRequest request,
             HttpServletResponse response)

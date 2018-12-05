@@ -14,6 +14,9 @@ import br.com.emotional.persistencia.MusicaDAO;
 import util.Erro;
 
 @WebServlet({"/denunciarMusica"})
+/**
+ * Classe para o controle de denuncias de musicas no sistema
+ */
 public class ControleDenunciaMusica extends HttpServlet{
 	protected void service(HttpServletRequest request,
             HttpServletResponse response)

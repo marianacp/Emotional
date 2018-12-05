@@ -22,6 +22,9 @@ import util.Erro;
 
 
 @WebServlet({"/gerarPlaylist"})
+/**
+ * Classe para o controle da geracao de playlist no sistema
+ */
 public class ControleGerarPlaylist extends HttpServlet {
 	protected void service(HttpServletRequest request,
             HttpServletResponse response)

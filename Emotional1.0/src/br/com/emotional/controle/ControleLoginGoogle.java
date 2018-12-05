@@ -14,6 +14,9 @@ import com.google.api.client.googleapis.auth.oauth2.GoogleIdToken;
 import br.com.GoogleAut.IdTokenVerifierAndParser;
 
 @WebServlet(urlPatterns = {"/login"})
+/**
+ * Classe para o controle de acesso atravez do google
+ */
 public class ControleLoginGoogle extends HttpServlet{
 	@Override
     protected void doPost (HttpServletRequest req,

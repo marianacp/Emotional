@@ -13,6 +13,9 @@ import br.com.emotional.entidade.FaleConosco;
 import br.com.emotional.persistencia.FaleConoscoDAO;
 
 @WebServlet({"/faleConosco"})
+/**
+ * Classe para o controle do Fale Conosco
+ */
 public class ControleFaleConosco extends HttpServlet{
 	protected void service(HttpServletRequest request,
             HttpServletResponse response)

@@ -22,6 +22,9 @@ import br.com.emotional.persistencia.MusicaDAO;
 import util.Erro;
 
 @WebServlet({"/enviarMusica"})
+/**
+ * Classe para o controle do envio de musica para o sistema
+ */
 public class ControleMusica extends HttpServlet{
 	protected void service(HttpServletRequest request,
             HttpServletResponse response)

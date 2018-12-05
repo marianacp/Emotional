@@ -16,6 +16,9 @@ import util.Erro;
 
 
 @WebServlet({"/buscarUsuario"})
+/**
+ * Classe para o controle de busca de usuarios no sistema
+ */
 public class ControleBuscaUsuario  extends HttpServlet{
 	protected void service(HttpServletRequest request,
             HttpServletResponse response)

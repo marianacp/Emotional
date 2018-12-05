@@ -14,6 +14,9 @@ import br.com.emotional.persistencia.UsuarioDAO;
 import util.Erro;
 
 @WebServlet({"/bloquearUsuario"})
+/**
+ * Classe para o controle de bloqueio e desbloqueio do usuario no sistema
+ */
 public class ControleBloqueioUsuario extends HttpServlet{
 	protected void service(HttpServletRequest request,
             HttpServletResponse response)
