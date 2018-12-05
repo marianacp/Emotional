@@ -1,73 +1,4 @@
-/* CSS reset */
-*, *:before, *:after { 
-  margin:0;
-  padding:0;
-  font-family: Arial,sans-serif;
-}
- 
-/* remove a linha dos links */
-a{
-  text-decoration: none;
-}
- 
-/* esconde as ancoras da tela */
-a.links{
-  display: none;
-}
 
-.content{
-  width: 500px;
-  min-height: 560px;    
-  margin: 0px auto;
-  position: relative;   
-}
-
-.question {
-  border-bottom: 1px solid #ccc;
-  padding: 10px 0
-}
-
-.question input,
-.question .answer { display: none }
-
-.question label {
-  display: inline-block;
-  font-weight: bold;
-  margin-bottom: 5px;
-  width: 100%
-}
-
-.question input:checked ~ .answer {
-  display: block
-}
-
-h1{
-  font-size: 48px;
-  color: #066a75;
-  padding: 2px 0 10px 0;
-  font-family: Arial,sans-serif;
-  font-weight: bold;
-  text-align: center;
-  padding-bottom: 30px;
-}
-
-h1:after{
-  content: ' ';
-  display: block;
-  width: 100%;
-  height: 2px;
-  margin-top: 10px;
-  background: -webkit-linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%); 
-  background: linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%); 
-}
-
-p{
-  margin-bottom:15px;
-}
- 
-.content p:first-child{
-  margin: 0px;
-}
  
 label,h4{
   color: #405c60;
@@ -93,8 +24,8 @@ input {
   outline: none;
 }
  
-/*estilo dos input,  menos o checkbox */
-input:not([type="checkbox"]){
+/*estilo dos input,  menos o radio */
+input:not([type="radio"]){
   width: 95%;
   margin-top: 4px;
   padding: 10px;    
@@ -110,7 +41,7 @@ input:not([type="checkbox"]){
   transition: all 0.2s linear;
 }
  
-/*estilo do bot√É¬£o submit */
+/*estilo do bot„o submit */
 input[type="submit"]{
   width: 100%!important;
   cursor: pointer;  
@@ -145,7 +76,7 @@ h4{
   transition: all 0.2s linear;
 }
  
-/*estilo do bot√£o submit no hover */
+/*estilo do bot„o submit no hover */
 input[type="submit"]:hover{
   background: #4ab3c6;
 }
@@ -260,7 +191,7 @@ input[type="submit"]:hover{
   animation-delay: .1s;
 }
  
-/* Efeito ao clicar no bot√É¬£o ( Cadastre-se ) */
+/* Efeito ao clicar no bot„o ( Cadastre-se ) */
 #registro:target ~ .content #login,
 #paralogin:target ~ .content #cadastro{
   -webkit-animation-name: fadeOutLeft;
