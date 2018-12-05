@@ -47,8 +47,11 @@
 </form>
 </c:forEach>
 		  
-           
-           
+           <form name="formDenunciaMusica" action="${pageContext.request.contextPath}/EnviarFeedback.jsp">    
+          <p> 
+            <input type="submit" value="Enviar Feedback" name="enviarFeedback"/> 
+          </p>
+           </form>
 
        
       </div>
