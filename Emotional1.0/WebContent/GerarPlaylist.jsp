@@ -162,9 +162,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
   <div class="container" >
   <div class="content"> 
 
-      <p>Olá, ${sessionScope.usuarioLogado.nome}, a emoção detectada para a sua foto foi: ${sentimento} </p>
+     
       
       <div id="buscarMusica">
+      
+       <p>Olá, ${sessionScope.usuarioLogado.nome}, a emoção detectada para a sua foto foi: ${sentimento} </p>
 
 <h3>${mensagens.erros}</h3>
 
