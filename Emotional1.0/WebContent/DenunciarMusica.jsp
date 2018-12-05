@@ -176,7 +176,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
 
-	<form action = "denunciarMusica">
+	<form action = "denunciarMusica" name="formSup">
 	
 	     <div class="in-left">
 	
