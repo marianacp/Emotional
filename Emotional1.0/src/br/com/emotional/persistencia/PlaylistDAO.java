@@ -107,4 +107,27 @@ try {
 					
 			
 		}
+		
+		public void salvarEmocaoPlaylist(String nomePlaylist, int id_usuario, int id_emocao) throws Exception {
+			open(); 
+			
+			String sql = "UPDATE PLAYLIST SET EMOCAO = ? WHERE NOME_PLAYLIST = ? AND ID_USU = ?"; 
+			
+			PreparedStatement pstm = null;
+			
+			try {
+				pstm = con.prepareStatement(sql);
+
+				
+				pstm.setString(1, nomePlaylist);
+				pstm.setInt(2, id_usuario);
+				pstm.setInt(3, id_emocao);
+				
+				pstm.executeUpdate(); 
+				
+				
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
 }

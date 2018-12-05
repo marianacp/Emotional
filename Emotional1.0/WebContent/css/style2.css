@@ -2743,7 +2743,7 @@ p.lom{
 	float:left;
 	width:45%;
 	}
-.in-left input[type="text"],.in-right textarea{
+.in-left input[type="text"],.in-right textarea, .in-left textarea{
 	outline:none;
 	background:none;
 	color:#777;
@@ -2771,7 +2771,7 @@ p.lom{
 	float:right;
 	width:50%;
 	}
-.in-right textarea{
+.in-right textarea, .in-left textarea{
 	    resize: none;
     min-height: 257px;
     margin: 0;
@@ -3577,7 +3577,7 @@ text-decoration:none;
 		float: right;
 		width: 100%;
 	}
-	.in-right textarea {
+	.in-right textarea, .in-left textarea {
 		resize: none;
 		min-height: 165px;
 		margin: 0;
@@ -3978,7 +3978,7 @@ text-decoration:none;
 	img#jp_poster_0 {
 		width: 363px!important;
 	}
-	.in-left input[type="text"], .in-right textarea {
+	.in-left input[type="text"], .in-right textarea, .in-left textarea {
 		font-size: 12px;
 		padding: 10px 10px;
 	}
@@ -4229,12 +4229,12 @@ text-decoration:none;
 		padding: 9px 0px;
 		width: 39%;
 	}
-	.in-left input[type="text"], .in-right textarea {
+	.in-left input[type="text"], .in-right textarea, .in-left textarea {
 		font-size: 12px;
 		padding: 10px 10px;
 		
 	}
-	.in-right textarea {
+	.in-right textarea, .in-left textarea {
 	min-height: 127px;
 	}
 	.contact-right1 h3 {
