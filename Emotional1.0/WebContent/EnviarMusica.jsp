@@ -11,7 +11,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 <!-- Custom CSS -->
 <link href="css/style2.css" rel='stylesheet' type='text/css' />
-
+<link href="css/estilo2.css" rel='stylesheet' type='text/css' />
 
 <!-- Graph CSS -->
 <link href="css/font-awesome.css" rel="stylesheet"> 
@@ -164,7 +164,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						
 								<div class="tittle-head">
 									<h3 class="tittle">Enviar Música </h3>
-									<div class="clearfix"> </div>
+			                      <div class="clearfix"> </div>
 								</div>
 
   
@@ -186,7 +186,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <input id="autor" name="autor" required="required" type="text" />
           </p>
           
-         
+          
+   		
+   		 <p>
+   		  <p class="your-para">Enviar Música</p>
+			<input id="musica" name="musica" type="file" accept=".mp3,audio/*">
+			  </p>
+	
+			
+			 <p class="your-para" color="red">Não esqueça do formato MP3!</p>
+          
+             <p>
             <p class="your-para">Estilo</p>
           
             <select id="estilo" name="estilo" >
@@ -198,11 +208,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
   			<option value="Outro">Outro</option>
 			</select>
 			
+			   </p>
+			   
+			 <p>   
 	
             <p class="your-para">Como você definiria esta música?</p>
             
-           <p>
-             
+       
+            
             <select id="emocao" name="emocao">
   			<option value="Felicidade">Alegre</option>
   			<option value="Tristeza">Triste</option>
@@ -212,21 +225,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <option value="Felicidade">Avassaladora</option>
 			<option value="Surpresa">Outro</option>
 </select>
-
-            
-   		<p class="your-para">Muito bem ${sessionScope.usuarioLogado.nome}, agora envie a sua música.</p>
-   		
-   		 <p>
-			<input id="musica" name="musica" type="file" accept=".mp3,audio/*">
-			
-			 <p class="your-para">Não esqueça do formato MP3!</p>
+  
+          </p>
+    </div>
          
-		  </div>
-		  
-		  <div class="clearfix"> </div>
-		  
-		   <div class="in-right">
-           
+		 <div class="clearfix"> </div>
+            <div class="in-right">
      
             <input type="submit" value="Enviar Musica" name="enviarMusica"/> 
         
