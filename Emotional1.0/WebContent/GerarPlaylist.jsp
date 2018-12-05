@@ -1,12 +1,8 @@
-<<<<<<< HEAD
-!DOCTYPE HTML>
-=======
 <!DOCTYPE HTML>
 <%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %> 
->>>>>>> Desenvolvimento-Branch
 <html>
 <head>
-<title>Emotional | Home </title>
+<title>Emotional | Gerar Playlist </title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Mosaic Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
