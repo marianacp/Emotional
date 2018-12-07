@@ -272,7 +272,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Escute agora</a>
 							</div>
 							<div class="col-md-3 content-grid">
-								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="images/better.jpg" title="allbum-name"></a>
+								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="images/dinah.jpg" title="allbum-name"></a>
 
 								<a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Escute agora</a>
 							</div>
