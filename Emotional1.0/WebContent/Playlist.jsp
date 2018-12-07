@@ -214,14 +214,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 													<div class="clearfix"></div>
 										</div>
 								  <!--//app_store-->
-						         <!--/start-paricing-tables-->
+						          <!--/start-paricing-tables-->
 									<div class="price-section">
 											<div class="pricing-inner">
 												<h3 class="hd-tittle">Melhore seu plano</h3>
 												<div class="pricing">
 													<div class="price-top">
-														<h3><span>SEM</span></h3>
-														<h4>custo</h4>
+														<h3><span>R$0</span></h3>
+														<h4>por ano</h4>
 													</div>
 													<div class="price-bottom">
 														<ul>

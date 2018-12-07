@@ -29,7 +29,7 @@
 		  
             <p> 
             <label for="cpf">CPF</label>
-            <input id="cpf" name="cpf" required="required" type="text" placeholder="Insira somente nÃºmeros"/> 
+            <input id="cpf" name="cpf" required="required" type="text" placeholder="Insira somente números"/> 
           </p>
           
           <p> 
@@ -71,7 +71,7 @@
           </p>
            
           <p class="link">  
-            J&aacute; tem conta?
+            Já tem conta?
             <a href=Login.jsp> Ir para Login </a>
           </p>
         </form>
