@@ -185,7 +185,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												</li>
 												<li>
 												 <div class="banner-img">
-															 <img src="images/33.png" class="img-responsive" alt="">
+															 <img src="images/33.jpg" class="img-responsive" alt="">
 														 </div>
 														<div class="banner-info"> 
 																	  <h3> </h3>
@@ -249,7 +249,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<div class="clearfix"> </div>
 								</div>
 								<div class="col-md-3 content-grid">
-								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="images/v1.jpg" title="allbum-name"></a>
+								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="images/better.jpg" title="allbum-name"></a>
 								<a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Escute agora</a>
 							</div>
 							<div id="small-dialog" class="mfp-hide">
@@ -257,22 +257,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								
 							</div>
 							<div class="col-md-3 content-grid">
-								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="images/v2.jpg" title="allbum-name"></a>
+								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="images/anitta.png" title="allbum-name"></a>
 
 								<a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Escute agora</a>
 							</div>
 							<div class="col-md-3 content-grid">
-								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="images/v3.jpg" title="allbum-name"></a>
+								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="images/arct.jpg" title="allbum-name"></a>
 
 								<a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Escute agora</a>
 							</div>
 							<div class="col-md-3 content-grid last-grid">
-								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="images/v4.jpg" title="allbum-name"></a>
+								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="images/bey.jpg" title="allbum-name"></a>
 	
 								<a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Escute agora</a>
 							</div>
 							<div class="col-md-3 content-grid">
-								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="images/v5.jpg" title="allbum-name"></a>
+								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="images/better.jpg" title="allbum-name"></a>
 
 								<a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Escute agora</a>
 							</div>
