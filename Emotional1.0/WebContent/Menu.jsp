@@ -281,17 +281,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								
 							</div>
 							<div class="col-md-3 content-grid">
-								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="images/v6.jpg" title="allbum-name"></a>
+								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="images/cardb.jpeg" title="allbum-name"></a>
 		
 								<a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Escute agora</a>
 							</div>
 							<div class="col-md-3 content-grid">
-								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="images/v7.jpg" title="allbum-name"></a>
+								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="images/dua.jpg" title="allbum-name"></a>
 
 								<a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Escute agora</a>
 							</div>
 							<div class="col-md-3 content-grid last-grid">
-								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="images/v8.jpg" title="allbum-name"></a>
+								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="images/drake.jpg" title="allbum-name"></a>
 												<a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Escute agora</a>
 											</div>
 											<div class="clearfix"> </div>
@@ -306,35 +306,35 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											<div class="clearfix"> </div>
 										</div>
 											<div class="col-md-3 content-grid">
-												<a href="single.html"><img src="images/v11.jpg" title="allbum-name"></a>
+												<a href="single.html"><img src="images/LM.jpg" title="allbum-name"></a>
 												<div class="inner-info"><a href="single.html"><h5>Pop</h5></a></div>
 											</div>
 											<div class="col-md-3 content-grid">
-													<a href="single.html"><img src="images/v22.jpg" title="allbum-name"></a>
+													<a href="single.html"><img src="images/giaw.png" title="allbum-name"></a>
 													<div class="inner-info"><a href="single.html"><h5>Pop</h5></a></div>
 												</div>
 											<div class="col-md-3 content-grid">
-													<a href="single.html"><img src="images/v33.jpg" title="allbum-name"></a>
+													<a href="single.html"><img src="images/janele.jpg.png" title="allbum-name"></a>
 													<div class="inner-info"><a href="single.html"><h5>Pop</h5></a></div>
 												</div>
 											<div class="col-md-3 content-grid last-grid">
-													<a href="single.html"><img src="images/v44.jpg" title="allbum-name"></a>
+													<a href="single.html"><img src="images/anitta.png" title="allbum-name"></a>
 													<div class="inner-info"><a href="single.html"><h5>Pop</h5></a></div>
 											</div>
 											<div class="col-md-3 content-grid">
-													<a href="single.html"><img src="images/v55.jpg" title="allbum-name"></a>
+													<a href="single.html"><img src="images/justin.jpeg" title="allbum-name"></a>
 													<div class="inner-info"><a href="single.html"><h5>Pop</h5></a></div>
 											</div>
 											<div class="col-md-3 content-grid">
-												<a href="single.html"><img src="images/v66.jpg" title="allbum-name"></a>
+												<a href="single.html"><img src="images/zara.jpg" title="allbum-name"></a>
 												<div class="inner-info"><a href="single.html"><h5>Pop</h5></a></div>
 											</div>
 											<div class="col-md-3 content-grid">
-													<a href="single.html"><img src="images/v11.jpg" title="allbum-name"></a>
+													<a href="single.html"><img src="images/panic.jpg" title="allbum-name"></a>
 													<div class="inner-info"><a href="single.html"><h5>Pop</h5></a></div>
 											</div>
 											<div class="col-md-3 content-grid last-grid">
-													<a href="single.html"><img src="images/v22.jpg" title="allbum-name"></a>
+													<a href="single.html"><img src="images/twknd.jpg" title="allbum-name"></a>
 													<div class="inner-info"><a href="single.html"><h5>Pop</h5></a></div>
 											</div>
 											<div class="clearfix"> </div>
