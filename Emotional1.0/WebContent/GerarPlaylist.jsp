@@ -170,7 +170,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
   <div id="buscarMusica">
       
-       <h3>Olá, ${sessionScope.usuarioLogado.nome}, a emoção detectada para a sua foto foi: ${sentimento} </h3>
+       <h3>Olá ${sessionScope.usuarioLogado.nome},a emoção detectada para a sua foto foi: ${sentimento} </h3>
 
 <h3>${mensagens.erros}</h3>
 

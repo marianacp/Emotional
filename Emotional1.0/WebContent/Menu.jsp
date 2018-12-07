@@ -174,7 +174,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												</li>
 												<li>
 													<div class="banner-img">
-															 <img src="images/22.jpg" class="img-responsive" alt="">
+															 <img src="images/lauren.png" class="img-responsive" alt="">
 														 </div>
 														<div class="banner-info">
 																	  <h3>  </h3>
