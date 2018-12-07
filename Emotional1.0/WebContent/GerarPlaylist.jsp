@@ -164,11 +164,55 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					
 						
 								<div class="tittle-head">
-									<h3 class="tittle">Enviar Música </h3>
+									<h3 class="tittle">Gerar Playlist </h3>
 									<div class="clearfix"> </div>
 								</div>
 
-  
+  <div id="buscarMusica">
+      
+       <h3>Olá, ${sessionScope.usuarioLogado.nome}, a emoção detectada para a sua foto foi: ${sentimento} </h3>
+
+<h3>${mensagens.erros}</h3>
+
+	
+
+<h4>Caso você queira tentar outra imagem, clique em Nova Emoção. Caso queira gerar playlist baseada no seu humor, clique em Gerar Playlist! </h4>
+		
+<div class="clearfix"> </div>
+
+	<form name="gerarPlaylist"  action = "gerarPlaylist" method="get" enctype="text/plain" autocomplete="off">
+	
+            <p class="your-para"> Digite aqui o sentimento que está sentido: </p>
+			<input type="hidden" id="sentimento" name="sentimento" value="${sentimento}" >         
+           	  
+           <input type="text" required id="nomePlaylist" name="nomePlaylist"/> 
+           
+           <div class="clearfix"> </div>
+           <h1> </h1>
+           
+           <div class="in-right">
+           
+         
+            <input type="submit" value="Gerar Playlist" name="gerarPlaylist"/> 
+          </p>
+       
+           
+		</form>
+		
+         <div class="clearfix"> </div>
+         
+         <h1></h1>
+          
+		
+		<form action = "${pageContext.request.contextPath}/DetectarEmocao.jsp">
+
+ <input type="submit" value="Nova Emoção" name="enviarEmocao"/> 
+       
+        </form>
+
+   </div>
+       
+      </div>
     
 
   
