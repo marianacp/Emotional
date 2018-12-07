@@ -177,7 +177,7 @@
 												<td><span class="block-email">${sessionScope.usuarioLogado.email}</span>
 												</td>
 
-												<td><span class="status--process">Processed</span></td>
+												<td><span class="status--process">Processada</span></td>
 
 												<td>
 													<div class="table-data-feature">
