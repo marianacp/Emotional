@@ -164,12 +164,49 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					
 						
 								<div class="tittle-head">
-									<h3 class="tittle">Enviar Música </h3>
+									<h3 class="tittle">Classificar Música </h3>
 									<div class="clearfix"> </div>
 								</div>
 
   
-    
+     <h3>Olá, ${sessionScope.usuarioLogado.nome}, qual classificação você acha que mais se adequa à música?</h3>
+      
+      <div id="buscarMusica">
+
+<p>${mensagens.erros}</p>
+		
+
+
+
+	<form action = "classificarMusica">
+	
+
+			<input type="hidden" name="id_musica" value="${param.id_musica}" >
+            
+         <label class="your-para" for="emocao">Escolha:</label>
+            <select id="emocao" name="emocao">
+  			<option value="Felicidade">Alegre</option>
+  			<option value="Tristeza">Triste</option>
+  			<option value="Raiva">Calma</option>
+			<option value="Surpresa">Inspiradora</option>
+            <option value="Neutralidade">Normal</option>
+            <option value="Felicidade">Avassaladora</option>
+			<option value="Surpresa">Outro</option>
+</select>
+           	  
+           <div class="clearfix"> </div>
+           <h1> </h1>
+           
+           <div class="in-right">
+          <p> 
+            <input type="submit" value="Classificar" name="classificarMusica"/> 
+          </p>
+          
+          </div>
+           
+		</form>
+       
+      </div>
 
   
 <div class="clearfix"> </div>

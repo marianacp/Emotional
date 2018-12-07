@@ -164,12 +164,50 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					
 						
 								<div class="tittle-head">
-									<h3 class="tittle">Enviar Música </h3>
+									<h3 class="tittle">Play Música </h3>
 									<div class="clearfix"> </div>
 								</div>
 
   
-    
+    <h3>Olá, ${sessionScope.usuarioLogado.nome}, essas foram as musicas encontradas:</h3>
+      
+      <div id="buscarMusica">
+
+  <c:forEach items="${musicas}" var="musica">
+				
+  
+   <p>${musica.titulo_musica}</p>
+  <audio controls>
+   
+  	<source src="${musica.arquivo_musica}" type="audio/mp3">
+
+</audio>
+
+<form name="formDenunciaMusica" action="${pageContext.request.contextPath}/DenunciarMusica.jsp"> 
+	<input type="hidden" name="id_musica" value="${musica.id_musica}" >
+	
+	<input type="submit" value="Denunciar" >
+</form>
+
+<form name="formClassificarMusica" action="${pageContext.request.contextPath}/ClassificarMusica.jsp"> 
+	<input type="hidden" name="id_musica" value="${musica.id_musica}" >
+	
+	<input type="submit" value="Classificar" >
+</form>
+</c:forEach>
+		  
+		  <div class="clearfix"> </div>
+           <h1> </h1>
+           
+           <div class="in-right">
+           
+          <p> 
+            <input type="submit" value="Buscar Musica" name="buscarMusica"/> 
+          </p>
+           
+          </div>
+       
+      </div>
 
   
 <div class="clearfix"> </div>
