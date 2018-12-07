@@ -4,7 +4,9 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
 import br.com.emotional.entidade.Artista;
-
+/*
+ * Classe que aplica lógica de inserir, remover e atualizar artista no banco
+ */
 public class ArtistaDAO extends Dao{
 	public void salvarArtista(Artista artista) throws Exception {
 		open(); 
