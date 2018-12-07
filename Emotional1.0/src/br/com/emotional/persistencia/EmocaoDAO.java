@@ -5,6 +5,10 @@ import java.sql.ResultSet;
 
 import br.com.emotional.entidade.Emocao;
 
+/*
+ * Classe que aplica lógica de inserir, remover e atualizar na tabela emoção no banco de dados 
+ */
+
 public class EmocaoDAO extends Dao{
 	public void salvarEmocao(Emocao emocao) throws Exception{
 		open();

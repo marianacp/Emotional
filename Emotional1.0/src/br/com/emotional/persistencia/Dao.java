@@ -5,6 +5,10 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
+/*
+ * Classe que se conecta com o banco 
+ */
+
 public class Dao {
 	
 	Connection con;
