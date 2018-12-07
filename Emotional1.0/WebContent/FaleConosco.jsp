@@ -182,15 +182,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								
 														<p class="your-para">Seu e-mail :</p>
 														<input id="email" name="email" required="required" type="text" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" >
+													
+													</div>
+													<div class="in-right">
 														
 													<textarea placeholder="" onfocus="this.value='';" onblur="if (this.value == '') {this.value = '';}" required=""></textarea>
 												<input type="submit" value="Enviar" name="Enviar">
-
+</div>
 											</form>
-										</div>
-										<div class="in-right">
-											
-										</div>
+										
+										
 										<div class="clearfix"> </div>
 									</div>
 													<div class="contact-right1">
