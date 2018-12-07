@@ -1,7 +1,8 @@
 <!DOCTYPE HTML>
+<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %> 
 <html>
 <head>
-<title>Emotional | Enviar Música </title>
+<title>Emotional | Enviar Feedback </title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Mosaic Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -163,12 +164,51 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					
 						
 								<div class="tittle-head">
-									<h3 class="tittle">Enviar Música </h3>
+									<h3 class="tittle">Enviar Feedback </h3>
 									<div class="clearfix"> </div>
 								</div>
 
   
-    
+    <h3>${sessionScope.usuarioLogado.nome}, o que achou da classificacao desta Playlist?</h3>
+      
+      <div id="buscarMusica">
+
+
+		<div class="clearfix"> </div>
+
+
+
+	<form action = "enviarFeedback">
+	
+
+			<input type="hidden" name="id_musica" value="${param.id_musica}" >
+            
+         <label for="emocao" class="your-para">Como você definiria esta Playlist?</label>
+         <p> </p> 
+            <select id="emocao" name="emocao">
+  			<option value="Felicidade">Alegre</option>
+  			<option value="Tristeza">Triste</option>
+  			<option value="Raiva">Calma</option>
+			<option value="Surpresa">Inspiradora</option>
+            <option value="Neutralidade">Normal</option>
+            <option value="Felicidade">Avassaladora</option>
+			<option value="Surpresa">Outro</option>
+</select>
+
+		<input type="hidden" value="${playlist}" name="nome"/>
+           	  
+           
+          <div class="clearfix"> </div>
+           
+           <div class="in-right">
+          <p> 
+            <input type="submit" value="Classificar" name="classificarPlaylist"/> 
+          </p>
+          </div>
+           
+		</form>
+       
+      </div>
 
   
 <div class="clearfix"> </div>
