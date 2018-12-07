@@ -2,6 +2,9 @@ package br.com.emotional.entidade;
 
 import com.mysql.cj.jdbc.Blob;
 
+/*
+ * Classe responsável por criar instância de musica
+ */
 public class Musica {
 
 	private int id_musica; 

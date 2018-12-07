@@ -1,5 +1,8 @@
 package br.com.emotional.entidade;
 
+/*
+ * Classe responsável por criar instância de playlist
+ */
 public class Playlist {
 	int id_playlist; 
 	String nome_playlist; 

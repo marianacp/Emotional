@@ -1,5 +1,9 @@
 package br.com.emotional.entidade;
 
+
+/*
+ * Classe responsável por criar instância de faleconosco
+ */
 public class FaleConosco {
 	private int id_fale_conosco; 
 	private String email; 
