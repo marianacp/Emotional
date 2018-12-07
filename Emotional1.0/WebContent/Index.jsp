@@ -30,8 +30,8 @@
                <ul class="nav-list vcenter">
                   <li class="nav-item"><a class="item-anchor" href="Login.jsp">Entrar</a></li>
                   <li class="nav-item"><a class="item-anchor" href="Cadastro.jsp">Inscrever-se</a></li>
-                  <li class="nav-item"><a class="item-anchor" href="PerguntasFrequentes.jsp">Ajuda</a></li>
-                  <li class="nav-item"><a class="item-anchor" href="FaleConosco.jsp">Contato</a></li>
+                  <li class="nav-item"><a class="item-anchor" href="PerguntasFrequentesOUT.jsp">Ajuda</a></li>
+                  <li class="nav-item"><a class="item-anchor" href="FaleConoscoOUT.jsp">Contato</a></li>
                </ul>
             </div>
          </div>

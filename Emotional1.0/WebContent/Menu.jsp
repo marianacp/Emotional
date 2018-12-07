@@ -497,28 +497,28 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												<h3 class="hd-tittle">Melhore seu plano</h3>
 												<div class="pricing">
 													<div class="price-top">
+														<h3><span>R$0</span></h3>
+														<h4>por ano</h4>
+													</div>
+													<div class="price-bottom">
+														<ul>
+															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">Sem download de músicas, apenas execução </a><div class="clearfix"></div></li>
+															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">Músicas com qualidade mediada</a><div class="clearfix"></div></li>
+															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">Com propagandas</a><div class="clearfix"></div></li>
+															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">Playlists com duração de 24H</a><div class="clearfix"></div></li>
+														</ul>
+														<a href="single.html" class="price">Free</a>
+													</div>
+												</div>
+												<div class="pricing two">
+													<div class="price-top">
 														<h3><span>R$20</span></h3>
 														<h4>por ano</h4>
 													</div>
 													<div class="price-bottom">
 														<ul>
-															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">Download de mais músicas </a><div class="clearfix"></div></li>
-															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">Músicas em alta definicção</a><div class="clearfix"></div></li>
-															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">Menos propagandas</a><div class="clearfix"></div></li>
-															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">Playlists com mais de 24H</a><div class="clearfix"></div></li>
-														</ul>
-														<a href="single.html" class="price">Dê um up!</a>
-													</div>
-												</div>
-												<div class="pricing two">
-													<div class="price-top">
-														<h3><span>R$30</span></h3>
-														<h4>por ano</h4>
-													</div>
-													<div class="price-bottom">
-														<ul>
 															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">Download ilimitado de músicas</a><div class="clearfix"></div></li>
-															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">Músicas em alta definição</a><div class="clearfix"></div></li>
+															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">Músicas em alta qualidade</a><div class="clearfix"></div></li>
 															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">Sem propagandas</a><div class="clearfix"></div></li>
 															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">Criação de playlists</a><div class="clearfix"></div></li>
 														</ul>
