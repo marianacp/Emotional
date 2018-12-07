@@ -1,9 +1,5 @@
-<<<<<<< HEAD
-!DOCTYPE HTML>
-=======
 <!DOCTYPE HTML>
 <%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %> 
->>>>>>> Desenvolvimento-Branch
 <html>
 <head>
 <title>Emotional | Home </title>
