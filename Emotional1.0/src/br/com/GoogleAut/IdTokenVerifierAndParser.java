@@ -5,7 +5,9 @@ import com.google.api.client.http.javanet.NetHttpTransport;
 import com.google.api.client.googleapis.auth.oauth2.GoogleIdTokenVerifier;
 import com.google.api.client.googleapis.auth.oauth2.GoogleIdToken;
 
-
+/*
+ * Classe de integração de api google 
+ */
 public class IdTokenVerifierAndParser {
 	private static final String GOOGLE_CLIENT_ID = "900025801880-uodctlul1qu1m0qh28a8uov9k4pcmj6n.apps.googleusercontent.com";
 

@@ -10,6 +10,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
+/*
+ * Classe responsável por menu de usuário logado
+ */
+
 @WebServlet(name = "Menu", urlPatterns = {"/logado/Menu.jsp"})
 public class menu extends HttpServlet{
 	  protected void processRequest(HttpServletRequest request, HttpServletResponse response)

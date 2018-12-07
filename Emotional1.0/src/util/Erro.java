@@ -4,6 +4,9 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
   
+/*Classe responsavel por mensagens dde erros
+ * 
+ */
 public final class Erro
         implements Serializable {
   
