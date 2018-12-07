@@ -1,5 +1,9 @@
 package br.com.emotional.entidade;
 
+/*
+ * Classe responsável por criar instância de artista
+ */
+
 public class Artista extends Usuario {
 
 	private int cod_artista; 

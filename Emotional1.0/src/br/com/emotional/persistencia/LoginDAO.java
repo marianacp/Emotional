@@ -1,7 +1,7 @@
 package br.com.emotional.persistencia;
 
 /*
- * Classe que aplica lógica de inserir, remover e atualizar na tabela usuario no banco de dados 
+ * Classe que aplica lógica de procurar na tabela usuario no banco de dados 
  */
 
 import java.sql.PreparedStatement;

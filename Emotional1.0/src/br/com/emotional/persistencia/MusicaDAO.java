@@ -13,6 +13,11 @@ import java.util.List;
 import br.com.emotional.entidade.Classifica;
 import br.com.emotional.entidade.Musica;
 
+
+/*
+ * Classe que aplica lógica de inserir, remover e atualizar na tabela musica no banco de dados 
+ */
+
 public class MusicaDAO  extends Dao{
 	public void salvarMusica(Musica musica) throws Exception {
 		

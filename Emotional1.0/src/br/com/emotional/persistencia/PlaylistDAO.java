@@ -8,6 +8,10 @@ import java.util.List;
 import br.com.emotional.entidade.Musica;
 import br.com.emotional.entidade.Usuario;
 
+/*
+ * Classe que aplica lógica de inserir, remover e atualizar na tabela playlist no banco de dados 
+ */
+
 public class PlaylistDAO extends Dao{
 	
 	public boolean inserirPlaylist(String nome_play, int id_usu) throws Exception {

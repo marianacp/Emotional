@@ -1,5 +1,9 @@
 package br.com.emotional.entidade;
 
+/*
+ * Classe responsável por criar instância de amigo do usuario
+ */
+
 public class AmigoUsuario {
 	private boolean confirmacao; 
 	private int id_solicitante;

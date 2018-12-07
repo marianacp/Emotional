@@ -5,6 +5,9 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Objects;
 
+/*
+ * Classe responsável por criar instância de usuario
+ */
 public class Usuario {
 	private int id_usu; 
 	private String nome;

@@ -10,6 +10,10 @@ import java.sql.Date;
 import br.com.emotional.entidade.Usuario;
 
 
+/*
+ * Classe que aplica lógica de inserir, remover e atualizar na tabela usuario no banco de dados 
+ */
+
 public class UsuarioDAO extends Dao {
 	public void salvarUsuario(Usuario usuario) throws Exception {
 		open(); 

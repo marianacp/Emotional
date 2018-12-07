@@ -1,5 +1,9 @@
 package br.com.emotional.entidade;
 
+/*
+ * Classe responsável por criar instância de classifica
+ */
+
 public class Classifica {
 	private int id_class; 
 	private int id_usu; 
