@@ -8,7 +8,7 @@ import java.util.Calendar;
 import br.com.emotional.entidade.AmigoUsuario;
 import br.com.emotional.entidade.Usuario;
 /*
- * Classe que aplica lógica de adicionar amigo no banco de dados
+ * Classe que aplica lógica de adicionar amigo no banco de dados 
  */
 public class AmigoUsuarioDAO extends Dao{
 	public void salvarSolicAmizade(AmigoUsuario amigo) throws Exception {
