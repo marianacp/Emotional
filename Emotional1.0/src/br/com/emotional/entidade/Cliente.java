@@ -1,5 +1,9 @@
 package br.com.emotional.entidade;
 
+/*
+ * Classe responsável por criar instância de cliente
+ */
+
 public class Cliente extends Usuario{
 	private int cod_ouvinte;
 

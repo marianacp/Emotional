@@ -1,5 +1,8 @@
 package br.com.emotional.entidade;
 
+/*
+ * Classe responsável por criar instância de estilo musical
+ */
 public class EstiloMusical {
 	private int id_estilo_musical; 
 	private String nome_estilo_musical;

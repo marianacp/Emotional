@@ -1,5 +1,9 @@
 package br.com.emotional.entidade;
 
+
+/*
+ * Classe responsável por criar instância de emocao
+ */
 public class Emocao {
 
 	private int id_emocao; 
