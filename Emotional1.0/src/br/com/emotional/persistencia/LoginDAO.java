@@ -1,5 +1,9 @@
 package br.com.emotional.persistencia;
 
+/*
+ * Classe que aplica lógica de inserir, remover e atualizar na tabela usuario no banco de dados 
+ */
+
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
