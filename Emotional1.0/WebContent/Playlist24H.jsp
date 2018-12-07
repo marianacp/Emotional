@@ -1,4 +1,5 @@
 <!DOCTYPE HTML>
+<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %> 
 <html>
 <head>
 <title>Emotional | Playlist 24H </title>
@@ -163,7 +164,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					
 						
 								<div class="tittle-head">
-									<h3 class="tittle">Enviar Música </h3>
+									<h3 class="tittle">Playlist 24h </h3>
 									<div class="clearfix"> </div>
 								</div>
 
