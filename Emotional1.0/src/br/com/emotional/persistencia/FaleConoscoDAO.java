@@ -5,6 +5,11 @@ import java.sql.PreparedStatement;
 
 import br.com.emotional.entidade.FaleConosco;
 
+
+/*
+ * Classe que aplica lógica de inserir, remover e atualizar na FaleConosco no banco de dados 
+ */
+
 public class FaleConoscoDAO extends Dao{
 
 	public void salvarDuvida(FaleConosco fc) throws Exception {

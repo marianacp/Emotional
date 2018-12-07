@@ -5,6 +5,10 @@ import java.sql.ResultSet;
 
 import br.com.emotional.entidade.EstiloMusical;
 
+/*
+ * Classe que aplica lógica de inserir, remover e atualizar na tabela estilo musical no banco de dados 
+ */
+
 public class EstiloMusicalDAO extends Dao{
 	public void salvarEstilo(EstiloMusical estilo) throws Exception{
 		open();
