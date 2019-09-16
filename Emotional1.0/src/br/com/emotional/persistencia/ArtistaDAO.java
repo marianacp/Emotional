@@ -33,29 +33,50 @@ public class ArtistaDAO extends Dao{
 	
 	public int getIdArtistabyUsu(int id_usu) throws Exception {
 open(); 
+		int id_ar = 0;
 		
 		String sql = "select id_artista from artista where id_usu = ? ";
 		
 		PreparedStatement pstm = null;
+		//ResultSet rs = null; 
+		pstm = con.prepareStatement(sql);
+		
+		pstm.setInt(1, id_usu);
 		try {
-			pstm = con.prepareStatement(sql);
+ 
+			rs = pstm.executeQuery(); 
 			
-			pstm.setInt(1, id_usu);
-
+			while(rs.next()) {
+				id_ar = rs.getInt("id_artista"); 
+				
+			}
+			
+			return id_ar; 
 			
 			}
 		catch (Exception e) {
 			e.printStackTrace();
 		}
-		int id_ar = 0; 
-		ResultSet rs = pstm.executeQuery(); 
-		
-		if(rs.next()) {
-			id_ar = rs.getInt("id_artista"); 
-						
+		finally {
+			try{
+				 if(pstm != null){
+				 
+				 pstm.close();
+				 }
+				 
+				 if(con != null){
+				 con.close();
+				 }
+				 
+				 if(rs != null) {
+					 rs.close(); 
+				 }
+				 
+				 }catch(Exception e){
+				 
+				 e.printStackTrace();
+				 }
 		}
-		
 		return id_ar; 
-		
 	}
 }

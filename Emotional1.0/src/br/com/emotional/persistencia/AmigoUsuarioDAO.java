@@ -92,7 +92,8 @@ public class AmigoUsuarioDAO extends Dao{
 	
 	public ArrayList<AmigoUsuario> listarAmigos(Usuario usuario) throws Exception {
 		
-		open(); 
+		open();
+		ArrayList<AmigoUsuario> lista = new ArrayList<AmigoUsuario>(); 
 		
 		String sql = "SELECT * FROM lista_amigos WHERE ID_SOLICITANTE = ?"; 
 		
@@ -103,22 +104,26 @@ public class AmigoUsuarioDAO extends Dao{
 			
 			pstm.setInt(1, usuario.getid_usu());
 
-
 			
-			ResultSet rs = pstm.executeQuery(); 
-			
-			ArrayList<AmigoUsuario> lista = new ArrayList<AmigoUsuario>(); 
-			
-			while(rs.next()) {
-				
-				AmigoUsuario amigo = new AmigoUsuario(); 
-				amigo.setid_solicitado(rs.getInt("ID_SOLICITADO"));
-				amigo.setid_solicitante(rs.getInt("ID_SOLICITANTE"));
-				amigo.setConfirmacao(rs.getBoolean("CONFIRMACAO"));
-				
-				lista.add(amigo); 
+			try {
+				 rs = pstm.executeQuery(); 
+					
+					while(rs.next()) {
+						
+						AmigoUsuario amigo = new AmigoUsuario(); 
+						amigo.setid_solicitado(rs.getInt("ID_SOLICITADO"));
+						amigo.setid_solicitante(rs.getInt("ID_SOLICITANTE"));
+						amigo.setConfirmacao(rs.getBoolean("CONFIRMACAO"));
+						
+						lista.add(amigo); 
+					}
+					return lista; 
+			} catch(Exception e) {
+				e.printStackTrace();
 			}
+
 			return lista; 
+			
 	}
 	
 	public static void main(String[] args) {

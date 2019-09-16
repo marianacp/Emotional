@@ -65,7 +65,7 @@ public class MusicaDAO  extends Dao{
 			
 			pstm.setString(1, "%" + busca.toUpperCase() + "%");
 			
-			ResultSet rs = pstm.executeQuery(); 
+			 rs = pstm.executeQuery(); 
 			
 
 			while(rs.next()) {
@@ -154,7 +154,7 @@ public List<Musica> getListaMusicasNaoAprovadas(String busca) throws Exception {
 			
 			pstm.setString(1, "%" + busca.toUpperCase() + "%");
 			
-			ResultSet rs = pstm.executeQuery(); 
+			 rs = pstm.executeQuery(); 
 			
 
 			while(rs.next()) {
@@ -187,7 +187,7 @@ public int getIdporNomeArtista(Musica mus) throws Exception{
 		
 	
 		
-		ResultSet rs = pstm.executeQuery(); 
+		 rs = pstm.executeQuery(); 
 
 		if (rs.next()) {
 			id_mus = rs.getInt("ID_MUSICA"); 

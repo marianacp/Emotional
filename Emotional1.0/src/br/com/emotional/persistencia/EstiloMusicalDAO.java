@@ -57,7 +57,7 @@ public class EstiloMusicalDAO extends Dao{
 		
 		pstm.setString(1, estilo.getNome_estilo_musical().toUpperCase());
 		
-		ResultSet rs =  pstm.executeQuery();
+		 rs =  pstm.executeQuery();
 		
 		int est_id = 0; 
 		

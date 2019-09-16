@@ -166,7 +166,7 @@ public class UsuarioDAO extends Dao {
 			
 			pstm.setInt(1, usuario.getid_usu());
 			
-			ResultSet rs =  pstm.executeQuery(); 
+			 rs =  pstm.executeQuery(); 
 		
 			Usuario us = null; 
 			if(rs.next()) {
@@ -200,17 +200,18 @@ public class UsuarioDAO extends Dao {
 			pstm = con.prepareStatement(sql);
 			pstm.setString(1, email);
 			
-			ResultSet rs = pstm.executeQuery(); 
+			 rs = pstm.executeQuery(); 
+			pstm.close();
+	        con.close();
+			int codigo = rs.getInt("id_usu"); 
+			return codigo; 
 		}
 
 	catch(Exception e){
    e.printStackTrace();
    
 }
-		pstm.close();
-        con.close();
-		int codigo = rs.getInt("id_usu"); 
-		return codigo; 
+		return 0; 
 	}
 	
 	
@@ -225,7 +226,7 @@ public class UsuarioDAO extends Dao {
 			pstm = con.prepareStatement(sql);
 			pstm.setString(1, "%" + nome.toUpperCase() + "%");
 			
-			ResultSet rs = pstm.executeQuery(); 
+			 rs = pstm.executeQuery(); 
 			while(rs.next()) {
 				
 				Usuario user = new Usuario(); 
@@ -333,7 +334,7 @@ public class UsuarioDAO extends Dao {
 			
 			pstm.setInt(1, id_usu);
 			
-			ResultSet rs = pstm.executeQuery();
+			 rs = pstm.executeQuery();
 			if(rs.next()) {
 			ativo = rs.getBoolean("ativo"); 
 			}

@@ -60,7 +60,7 @@ public class PlaylistDAO extends Dao{
 
 
 				
-				ResultSet rs =  pstm.executeQuery(); 
+				 rs =  pstm.executeQuery(); 
 				
 				while(rs.next()) {
 					
@@ -91,7 +91,7 @@ try {
 
 
 				
-				ResultSet rs =  pstm.executeQuery(); 
+				 rs =  pstm.executeQuery(); 
 				
 				while(rs.next()) {
 					Musica mus = new Musica(); 

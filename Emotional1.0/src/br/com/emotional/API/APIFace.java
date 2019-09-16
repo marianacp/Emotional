@@ -114,7 +114,7 @@ public class APIFace {
                 		sadness = conteudo.getDouble("sadness");
                 		anger = conteudo.getDouble("anger");
                 		
-                		lista[0] = happiness;                 		lista[0] = happiness; 
+                		lista[0] = happiness;                 		 
                 		lista[1] = surprise; 
                 		lista[2] = neutral; 
                 		lista[3] = sadness; 

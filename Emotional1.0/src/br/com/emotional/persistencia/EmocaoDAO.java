@@ -57,7 +57,7 @@ public class EmocaoDAO extends Dao{
 			
 			pstm.setString(1, emocao.getNome().toUpperCase());
 			
-			ResultSet rs =  pstm.executeQuery();
+			 rs =  pstm.executeQuery();
 			
 			int emo_id = 0; 
 			

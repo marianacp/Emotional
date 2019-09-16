@@ -22,7 +22,7 @@ public class LoginDAO  extends Dao implements iDAO<Usuario>{
 		
         
         PreparedStatement ps = null;
-        ResultSet rs = null;
+        //ResultSet rs = null;
 
         	String sql = "select id_usu, nome, email, Login, senha, id_emocao, Premium, foto, ativo, cpf, tipoUsuario from usuario where email = ?";
         	ps = con.prepareStatement(sql); 
@@ -57,7 +57,6 @@ public class LoginDAO  extends Dao implements iDAO<Usuario>{
             if (chave[0] instanceof Integer) {
 
                 PreparedStatement ps = null;
-                ResultSet rs = null;
                 try {
                     ps = con.prepareStatement("select id_usu, nome, email, Login, senha, id_emocao, Premium, foto, ativo, cpf, tipoUsuario from usuario where email = ?");
                     ps.setInt(1, (Integer) chave[0]);
@@ -105,7 +104,6 @@ public class LoginDAO  extends Dao implements iDAO<Usuario>{
             List<Usuario> lista = null;
 
             Statement ps = null;
-            ResultSet rs = null;
             try {
                 ps = con.createStatement();
                 rs = ps.executeQuery("select id_usu, nome, email, Login, senha, id_emocao, Premium, foto, ativo, cpf, tipoUsuario from usuario where email = ?");

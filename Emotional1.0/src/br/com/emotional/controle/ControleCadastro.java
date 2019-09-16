@@ -6,13 +6,15 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
-
+import java.util.logging.*; 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import com.sun.media.jfxmedia.logging.Logger;
 
 import br.com.emotional.entidade.Usuario;
 import br.com.emotional.persistencia.UsuarioDAO;
@@ -71,7 +73,8 @@ public class ControleCadastro extends HttpServlet{
 		erro.add("Cadastro " + usuario.getNome() +
 	            " efetuado com sucesso");
 	} catch (Exception e) {
-		e.printStackTrace();
+		Logger.logMsg(1, "Cadastro nao efetuado");
+		//LOGGER.log("context", e);
 		erro.add("Cadastro não Efetuado!"); 
 	}
 	
