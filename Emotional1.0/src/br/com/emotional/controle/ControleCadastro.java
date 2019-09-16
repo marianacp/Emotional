@@ -30,7 +30,7 @@ public class ControleCadastro extends HttpServlet{
             throws IOException, ServletException {
 		Erro erro = new Erro(); 
 	String nome = request.getParameter("nome"); 
-	String Login = request.getParameter("username");
+	String login = request.getParameter("username");
 	String email = request.getParameter("email");
 	String senha = request.getParameter("senha");
 	String dataEmTexto = request.getParameter("dataNascimento");
@@ -53,12 +53,12 @@ public class ControleCadastro extends HttpServlet{
 	Usuario usuario = new Usuario(); 
 	
 	usuario.setNome(nome);
-	usuario.setLogin(Login);
+	usuario.setLogin(login);
 	usuario.setCpf(cpf);
 	usuario.setEmail(email);
 	usuario.setSenha(senha);
 	usuario.setImagem(imagem);
-	usuario.setdata_nascimento(dataNascimento); 
+	usuario.setDataNascimento(dataNascimento); 
 	//Aqui ele verifica se o usuário é artista, caso seja, recebe M de músico, se não, O de ouvinte
 	if(tipoUsuario.equals("artista")) {
 		usuario.setTipoUsuario("M");
@@ -80,8 +80,8 @@ public class ControleCadastro extends HttpServlet{
 	
 	
 	request.setAttribute("mensagens", erro);
-	  String URL = "Cadastro.jsp";
-      RequestDispatcher rd = request.getRequestDispatcher(URL);
+	  String url = "Cadastro.jsp";
+      RequestDispatcher rd = request.getRequestDispatcher(url);
       rd.forward(request, response);
 	}
 	

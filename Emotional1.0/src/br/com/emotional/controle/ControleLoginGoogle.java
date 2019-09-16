@@ -39,7 +39,7 @@ public class ControleLoginGoogle extends HttpServlet{
                .getRequestDispatcher("/Menu.jsp").forward(req, resp);
 
         } catch (Exception e) {
-            throw new RuntimeException(e);
+        	e.printStackTrace();
         }
     }
 }

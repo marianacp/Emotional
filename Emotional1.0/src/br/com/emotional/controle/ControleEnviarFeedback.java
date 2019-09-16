@@ -57,8 +57,8 @@ Erro erros = new Erro();
 		request.setAttribute("mensagens", erros);
 
 		
-		 String URL = "Playlist24H.jsp";
-	        RequestDispatcher rd = request.getRequestDispatcher(URL);
+		 String url = "Playlist24H.jsp";
+	        RequestDispatcher rd = request.getRequestDispatcher(url);
 	        rd.forward(request, response);
 
 }

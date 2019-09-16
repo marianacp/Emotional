@@ -23,11 +23,11 @@ public class ControleDenunciaMusica extends HttpServlet{
             throws IOException, ServletException  {
 		
 		Erro erros = new Erro();
-		int id_musica = Integer.parseInt(request.getParameter("id_musica")); 
+		int idMusica = Integer.parseInt(request.getParameter("id_musica")); 
 		
 		MusicaDAO md = new MusicaDAO(); 
 		try {
-			boolean denunciada = md.denunciarMusica(id_musica);
+			boolean denunciada = md.denunciarMusica(idMusica);
 			if(denunciada) {
 				erros.add("Denúncia realizada com sucesso!");
 			}
@@ -36,15 +36,14 @@ public class ControleDenunciaMusica extends HttpServlet{
 			}
 			
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 			erros.add("Musica não pôde ser denunciada");
 		} 
 		
 request.setAttribute("mensagens", erros);
 		
-		String URL = "DenunciarMusica.jsp";
-        RequestDispatcher rd = request.getRequestDispatcher(URL);
+		String url = "DenunciarMusica.jsp";
+        RequestDispatcher rd = request.getRequestDispatcher(url);
         rd.forward(request, response);
 }
 }

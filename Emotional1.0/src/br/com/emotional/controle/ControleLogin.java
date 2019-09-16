@@ -3,7 +3,6 @@ package br.com.emotional.controle;
 import br.com.emotional.persistencia.LoginDAO;
 import util.Erro;
 import br.com.emotional.entidade.Usuario;
-//import util.Erro;
 import java.io.IOException;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -36,7 +35,6 @@ public class ControleLogin extends HttpServlet {
 				try {
 					user = dao.getSingle(login);
 				} catch (Exception e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
                 if (user != null) {
@@ -66,8 +64,8 @@ public class ControleLogin extends HttpServlet {
         
         request.setAttribute("mensagens", erros);
         
-        String URL = "Login.jsp";
-        RequestDispatcher rd = request.getRequestDispatcher(URL);
+        String url = "Login.jsp";
+        RequestDispatcher rd = request.getRequestDispatcher(url);
         rd.forward(request, response);
 	}
 	@Override

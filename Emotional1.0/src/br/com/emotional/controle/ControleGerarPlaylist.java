@@ -71,12 +71,12 @@ public class ControleGerarPlaylist extends HttpServlet {
 			erros.add("Playlist nao pode ser recuperada");
 		} 
         
-        if (lst.size() > 0 && u.Premium() == false) {
+        if (lst.isEmpty() && !u.premium()) {
         	erros.add("Usuário estourou limite de playlist do dia.");
-        	String URL = "GerarPlaylist.jsp";
+        	String url = "GerarPlaylist.jsp";
         	
         	request.setAttribute("mensagens", erros);
-            RequestDispatcher rd = request.getRequestDispatcher(URL);
+            RequestDispatcher rd = request.getRequestDispatcher(url);
             rd.forward(request, response);
 		}
         
@@ -91,8 +91,8 @@ public class ControleGerarPlaylist extends HttpServlet {
         if (!inserido) {
         	request.setAttribute("mensagens", erros);
         	
-            String URL = "GerarPlaylist.jsp";
-            RequestDispatcher rd = request.getRequestDispatcher(URL);
+            String url = "GerarPlaylist.jsp";
+            RequestDispatcher rd = request.getRequestDispatcher(url);
             rd.forward(request, response);
 		}
        
@@ -111,8 +111,8 @@ public class ControleGerarPlaylist extends HttpServlet {
 				request.setAttribute("playlist", nome);
         		request.setAttribute("musicas", listaMusicas);
             	
-                String URL = "Playlist24H.jsp";
-                RequestDispatcher rd = request.getRequestDispatcher(URL);
+                String url = "Playlist24H.jsp";
+                RequestDispatcher rd = request.getRequestDispatcher(url);
                 rd.forward(request, response);
         		
 			}
@@ -120,8 +120,8 @@ public class ControleGerarPlaylist extends HttpServlet {
         		erros.add("A lista não retornou as 12 musicas esperadas");
         		request.setAttribute("mensagens", erros);
             	
-                String URL = "GerarPlaylist.jsp";
-                RequestDispatcher rd = request.getRequestDispatcher(URL);
+                String url = "GerarPlaylist.jsp";
+                RequestDispatcher rd = request.getRequestDispatcher(url);
                 rd.forward(request, response);
         	}
         }

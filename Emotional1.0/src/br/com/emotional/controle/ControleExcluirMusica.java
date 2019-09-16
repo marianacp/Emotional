@@ -23,22 +23,21 @@ public class ControleExcluirMusica extends HttpServlet{
 
 		Erro erros = new Erro();
 		
-		int id_musica = Integer.parseInt(request.getParameter("id_musica"));
+		int idMusica = Integer.parseInt(request.getParameter("id_musica"));
 
 		MusicaDAO md = new MusicaDAO(); 
 		
 		try {
-			md.excluirMusica(id_musica);
+			md.excluirMusica(idMusica);
 			erros.add("Musica excluída com sucesso");
 
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			erros.add("Musica nao pode ser excluída");
 		}
 		
 		request.setAttribute("mensagens", erros);
-        String URL = "AprovacaoMusica.jsp";
-        RequestDispatcher rd = request.getRequestDispatcher(URL);
+        String url = "AprovacaoMusica.jsp";
+        RequestDispatcher rd = request.getRequestDispatcher(url);
         rd.forward(request, response);
 }
 }

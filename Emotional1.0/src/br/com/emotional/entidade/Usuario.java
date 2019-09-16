@@ -1,7 +1,6 @@
 package br.com.emotional.entidade;
 
 import java.util.Calendar;
-//import java.io.FileInputStream;
 import java.util.Date;
 import java.util.Objects;
 
@@ -9,24 +8,24 @@ import java.util.Objects;
  * Classe responsável por criar instância de usuario
  */
 public class Usuario {
-	private int id_usu; 
+	private int idUsu; 
 	private String nome;
 	private String login; 
 	private String email; 
 	private String senha; 
 	private String imagem; 
 	private String cpf; 
-	private int id_emocao; 
-	private Calendar data_nascimento; 
-	private boolean Premium;
+	private int idEmocao; 
+	private Calendar dataNascimento; 
+	private boolean premium;
 	private boolean ativo;
 	private String tipoUsuario; 
 	
 	public int getid_usu() {
-		return id_usu;
+		return idUsu;
 	}
-	public void setid_usu(int id_usu) {
-		this.id_usu = id_usu;
+	public void setid_usu(int idUsu) {
+		this.idUsu = idUsu;
 	}
 	public String getNome() {
 		return nome;
@@ -52,11 +51,11 @@ public class Usuario {
 	public void setImagem(String imagem) {
 		this.imagem = imagem;
 	}
-	public int getid_emocao() {
-		return id_emocao;
+	public int getidEmocao() {
+		return idEmocao;
 	}
-	public void setid_emocao(int id_emocao) {
-		this.id_emocao = id_emocao;
+	public void setidEmocao(int idEmocao) {
+		this.idEmocao = idEmocao;
 	}
 	public String getCpf() {
 		return cpf;
@@ -65,17 +64,17 @@ public class Usuario {
 		this.cpf = cpf;
 	}
 
-	public Calendar getdata_nascimento () {
-		return data_nascimento ;
+	public Calendar getDataNascimento () {
+		return dataNascimento ;
 	}
-	public void setdata_nascimento(Calendar data_nascimento ) {
-		this.data_nascimento  = data_nascimento;
+	public void setDataNascimento(Calendar dataNascimento ) {
+		this.dataNascimento  = dataNascimento;
 	}
-	public boolean Premium() {
-		return Premium;
+	public boolean premium() {
+		return premium;
 	}
-	public void setPremium(boolean Premium) {
-		this.Premium = Premium;
+	public void setPremium(boolean premium) {
+		this.premium = premium;
 	}
 	public boolean isAtivo() {
 		return ativo;
@@ -92,14 +91,14 @@ public class Usuario {
 	
 	@Override
 	public String toString() {
-		String saida = id_usu + " " + nome; 
+		String saida = idUsu + " " + nome; 
 		return saida;
 	}
 	
 	 @Override
 	    public int hashCode() {
 	        int hash = 7;
-	        hash = 89 * hash + Objects.hashCode(this.id_usu);
+	        hash = 89 * hash + Objects.hashCode(this.idUsu);
 	        return hash;
 	    }
 	public String getTipoUsuario() {

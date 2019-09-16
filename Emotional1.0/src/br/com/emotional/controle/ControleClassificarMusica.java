@@ -30,7 +30,7 @@ public class ControleClassificarMusica extends HttpServlet{
         HttpServletRequest req = (HttpServletRequest) request;
         HttpSession session = req.getSession();
 		Erro erros = new Erro();
-		int id_musica = Integer.parseInt(request.getParameter("id_musica")); 
+		int idMusica = Integer.parseInt(request.getParameter("id_musica")); 
         Usuario u = (Usuario) session.getAttribute("usuarioLogado");
         String emocao = request.getParameter("emocao"); 
         
@@ -45,7 +45,7 @@ public class ControleClassificarMusica extends HttpServlet{
 		
 		Classifica classi = new Classifica(); 
 		classi.setId_emocao(emo.getId_emocao());
-		classi.setId_musica(id_musica);
+		classi.setId_musica(idMusica);
 		classi.setId_usu(u.getid_usu());
 		
 		MusicaDAO md = new MusicaDAO(); 
@@ -62,8 +62,8 @@ public class ControleClassificarMusica extends HttpServlet{
 		} 
 request.setAttribute("mensagens", erros);
 		
-		String URL = "ClassificarMusica.jsp";
-        RequestDispatcher rd = request.getRequestDispatcher(URL);
+		String url = "ClassificarMusica.jsp";
+        RequestDispatcher rd = request.getRequestDispatcher(url);
         rd.forward(request, response);
 }
 }
