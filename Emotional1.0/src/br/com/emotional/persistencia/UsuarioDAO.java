@@ -1,7 +1,5 @@
 package br.com.emotional.persistencia;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
@@ -21,7 +19,6 @@ public class UsuarioDAO extends Dao {
 		String sql = "INSERT INTO Usuario (nome, login, email, senha, foto, data_nascimento, Premium, ativo, cpf, tipoUsuario)" +
 				 " VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 		
-		//Connection conn = null; 
 		PreparedStatement pstm = null;
 		
 		try {
@@ -34,7 +31,7 @@ public class UsuarioDAO extends Dao {
 			pstm.setString(5, usuario.getImagem());
 			pstm.setDate(6, new java.sql.Date(
                     Calendar.getInstance().getTimeInMillis()));
-			pstm.setBoolean(7, usuario.Premium());
+			pstm.setBoolean(7, usuario.premium());
 			pstm.setBoolean(8, true);
 			pstm.setString(9, usuario.getCpf());
 			pstm.setString(10, usuario.getTipoUsuario()); 
@@ -82,7 +79,7 @@ public class UsuarioDAO extends Dao {
 			pstm.setString(5, usuario.getImagem());
 			pstm.setDate(6, new java.sql.Date(
                     Calendar.getInstance().getTimeInMillis()));
-			pstm.setBoolean(7, usuario.Premium());
+			pstm.setBoolean(7, usuario.premium());
 			pstm.setBoolean(8, usuario.isAtivo());
 			pstm.setString(9, usuario.getCpf());
 			pstm.setString(10, usuario.getTipoUsuario());
@@ -175,11 +172,11 @@ public class UsuarioDAO extends Dao {
 				us.setAtivo(rs.getBoolean("ATIVO"));
 				//us.setdata_nascimento(rs.getDate("data_nascimento");
 				us.setEmail(rs.getString("EMAIL"));
-				us.setid_emocao(rs.getInt("id_emocao"));
+				us.setidEmocao(rs.getInt("idEmocao"));
 				us.setImagem(rs.getString("FOTO"));
 				us.setNome(rs.getString("NOME"));
 				us.setPremium(rs.getBoolean("Premium"));
-				us.setid_usu(rs.getInt("id_usu"));
+				us.setid_usu(rs.getInt("idUsu"));
 				us.setCpf(rs.getString("CPF"));
 				us.setCpf(rs.getString("CPF"));
 				us.setTipoUsuario(rs.getString("tipoUsuario"));
@@ -203,7 +200,7 @@ public class UsuarioDAO extends Dao {
 			 rs = pstm.executeQuery(); 
 			pstm.close();
 	        con.close();
-			int codigo = rs.getInt("id_usu"); 
+			int codigo = rs.getInt("idUsu"); 
 			return codigo; 
 		}
 
@@ -385,7 +382,5 @@ PreparedStatement pstm = null;
 		
 		
 	}
-	public static void main(String[] args) {
-		
-	}
+
 }
