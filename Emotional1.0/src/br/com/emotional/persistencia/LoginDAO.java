@@ -5,12 +5,10 @@ package br.com.emotional.persistencia;
  */
 
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
-import java.io.PrintWriter;
 
 import javax.servlet.annotation.WebServlet;
 
@@ -22,7 +20,6 @@ public class LoginDAO  extends Dao implements iDAO<Usuario>{
 		
         
         PreparedStatement ps = null;
-        //ResultSet rs = null;
 
         	String sql = "select id_usu, nome, email, Login, senha, id_emocao, Premium, foto, ativo, cpf, tipoUsuario from usuario where email = ?";
         	ps = con.prepareStatement(sql); 
@@ -32,12 +29,12 @@ public class LoginDAO  extends Dao implements iDAO<Usuario>{
             if (rs.next()) {
                Usuario us = new Usuario(); 
                us = new Usuario(); 
-				us.setLogin(rs.getString("Login"));
+				us.setLogin(rs.getString("login"));
 				us.setAtivo(rs.getBoolean("ATIVO"));
 				//us.setdata_nascimento(rs.getDate("data_nascimento");
-				us.setEmail(rs.getString("EMAIL"));
-				us.setSenha(rs.getString("SENHA"));
-				us.setid_emocao(rs.getInt("id_emocao"));
+				us.setEmail(rs.getString("email"));
+				us.setSenha(rs.getString("senha"));
+				us.setidEmocao(rs.getInt("idEmocao"));
 				us.setImagem(rs.getString("FOTO"));
 				us.setNome(rs.getString("NOME"));
 				us.setPremium(rs.getBoolean("Premium"));
@@ -69,10 +66,10 @@ public class LoginDAO  extends Dao implements iDAO<Usuario>{
           				//us.setdata_nascimento(rs.getDate("data_nascimento");
           				us.setEmail(rs.getString("EMAIL"));
           				us.setSenha(rs.getString("SENHA"));
-          				us.setid_emocao(rs.getInt("id_emocao"));
+          				us.setidEmocao(rs.getInt("idEmocao"));
           				us.setImagem(rs.getString("FOTO"));
           				us.setNome(rs.getString("NOME"));
-          				us.setPremium(rs.getBoolean("Premium"));
+          				us.setPremium(rs.getBoolean("premium"));
           				us.setid_usu(rs.getInt("id_usu"));
           				us.setCpf(rs.getString("CPF"));
           				us.setTipoUsuario(rs.getString("tipoUsuario"));
@@ -84,7 +81,6 @@ public class LoginDAO  extends Dao implements iDAO<Usuario>{
                     try {
                     	con.close();
 					} catch (SQLException e) {
-						// TODO Auto-generated catch block
 						e.printStackTrace();
 					} 
                 }
@@ -106,7 +102,7 @@ public class LoginDAO  extends Dao implements iDAO<Usuario>{
             Statement ps = null;
             try {
                 ps = con.createStatement();
-                rs = ps.executeQuery("select id_usu, nome, email, Login, senha, id_emocao, Premium, foto, ativo, cpf, tipoUsuario from usuario where email = ?");
+                rs = ps.executeQuery("select id_usu, nome, email, Login, senha, id_emocao, premium, foto, ativo, cpf, tipoUsuario from usuario where email = ?");
                 lista = new ArrayList<>();
                 while (rs.next()) {
                 	 Usuario us = new Usuario(); 
@@ -116,11 +112,11 @@ public class LoginDAO  extends Dao implements iDAO<Usuario>{
       				//us.setdata_nascimento(rs.getDate("data_nascimento");
       				us.setEmail(rs.getString("EMAIL"));
       				us.setSenha(rs.getString("SENHA"));
-      				us.setid_emocao(rs.getInt("id_emocao"));
+      				us.setidEmocao(rs.getInt("idEmocao"));
       				us.setImagem(rs.getString("FOTO"));
       				us.setNome(rs.getString("NOME"));
-      				us.setPremium(rs.getBoolean("Premium"));
-      				us.setid_usu(rs.getInt("id_usu"));
+      				us.setPremium(rs.getBoolean("premium"));
+      				us.setid_usu(rs.getInt("idUsu"));
       				us.setCpf(rs.getString("CPF"));
       				us.setTipoUsuario(rs.getString("tipoUsuario"));
       				
@@ -131,7 +127,6 @@ public class LoginDAO  extends Dao implements iDAO<Usuario>{
                 try {
 					con.close();
 				} catch (SQLException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
             }

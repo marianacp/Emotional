@@ -1,7 +1,6 @@
 package br.com.emotional.persistencia;
 
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 
 import br.com.emotional.entidade.Artista;
 /*
@@ -38,7 +37,6 @@ open();
 		String sql = "select id_artista from artista where id_usu = ? ";
 		
 		PreparedStatement pstm = null;
-		//ResultSet rs = null; 
 		pstm = con.prepareStatement(sql);
 		
 		pstm.setInt(1, id_usu);

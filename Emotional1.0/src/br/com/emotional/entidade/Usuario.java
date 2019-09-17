@@ -95,12 +95,6 @@ public class Usuario {
 		return saida;
 	}
 	
-	 @Override
-	    public int hashCode() {
-	        int hash = 7;
-	        hash = 89 * hash + Objects.hashCode(this.idUsu);
-	        return hash;
-	    }
 	public String getTipoUsuario() {
 		return tipoUsuario;
 	}

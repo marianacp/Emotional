@@ -1,9 +1,5 @@
 package br.com.emotional.persistencia;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.InputStream;
-import java.sql.Blob;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -32,9 +28,6 @@ public class MusicaDAO  extends Dao{
 			pstm = con.prepareStatement(sql);
 			
 			String caminho = musica.getArquivo_musica(); 
-			//File file = new File(caminho + musica.getArquivo_musica()); 
-			//FileInputStream fis = new FileInputStream(file); 
-			//pstm.setBinaryStream(1, fis);
 			pstm.setString(1, caminho);
 			pstm.setString(2, musica.getTitulo_musica());
 			pstm.setInt(3, musica.getId_emocao());
