@@ -31,7 +31,8 @@ public class FaleConoscoDAO extends Dao{
 			pstm.execute(); 
 		}
 		catch(Exception e) {
-			 e.printStackTrace();			
+			// e.printStackTrace();	
+			 Logger.log("erro", e);
 		}
 		finally{
 			 try{
@@ -46,7 +47,8 @@ public class FaleConoscoDAO extends Dao{
 				 
 				 }catch(Exception e){
 				 
-				 e.printStackTrace();
+				// e.printStackTrace();
+				 Logger.log("erro", e);
 				 }
 		
 	}

@@ -77,7 +77,8 @@ public class MusicaDAO  extends Dao{
 			}			
 			return lista; 
 		} catch (Exception e) {
-			e.printStackTrace();
+			//e.printStackTrace();
+			Logger.log("erro", e);
 		}
 		return lista; 
 	}
@@ -102,7 +103,8 @@ public class MusicaDAO  extends Dao{
 			return denunciado; 
 			
 		} catch (Exception e) {
-			e.printStackTrace();
+			//e.printStackTrace();
+			Logger.log("erro", e);
 		}
 		return denunciado; 
 	}
@@ -129,7 +131,8 @@ public class MusicaDAO  extends Dao{
 			return classificado = true; 
 		}
 		catch(Exception e) {
-			 e.printStackTrace();			
+			// e.printStackTrace();	
+			 Logger.log("erro", e);
 		}
 		return classificado; 
 	}
@@ -166,7 +169,9 @@ public List<Musica> getListaMusicasNaoAprovadas(String busca) throws Exception {
 			}			
 			return lista; 
 		} catch (Exception e) {
-			e.printStackTrace();
+			//e.printStackTrace();
+			Logger.log("erro", e);
+			
 		}
 		return lista; 
 	}
@@ -195,7 +200,8 @@ public int getIdporNomeArtista(Musica mus) throws Exception{
 		
 		return id_mus; 
 	} catch (Exception e) {
-		e.printStackTrace();
+		//e.printStackTrace();
+		Logger.log("erro", e);
 	}
  return id_mus; 
 }
@@ -215,7 +221,8 @@ public void requererAprovacao(int id_musica) throws Exception{
 		pstm.execute(); 
 		
 	} catch (Exception e) {
-		e.printStackTrace();	
+		//e.printStackTrace();	
+		Logger.log("erro", e);
 		}
 	
 }
@@ -240,7 +247,8 @@ public void excluirMusica(int musica_id) throws Exception {
 		pstm.execute();
 		
 	} catch (Exception e) {
-		e.printStackTrace();	
+		//e.printStackTrace();
+		Logger.log("erro", e);
 	}
 }
 }

@@ -39,7 +39,7 @@ public class ControleFaleConosco extends HttpServlet{
 			out.println( fc.getNome() +
 		            ", sua duvida foi enviada com sucesso!");
 		} catch (Exception e) {
-			e.printStackTrace();
+			//e.printStackTrace();
 			request.setAttribute("msg", 
 			        "Duvida não Registrada!"); 
 		}

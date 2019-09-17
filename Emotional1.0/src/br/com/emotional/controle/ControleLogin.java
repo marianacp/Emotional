@@ -35,7 +35,8 @@ public class ControleLogin extends HttpServlet {
 				try {
 					user = dao.getSingle(login);
 				} catch (Exception e) {
-					e.printStackTrace();
+					//e.printStackTrace();
+					Logger.log("Erro!", e);
 				}
                 if (user != null) {
                     if (user.getSenha().equalsIgnoreCase(senha) && user.isAtivo()) {

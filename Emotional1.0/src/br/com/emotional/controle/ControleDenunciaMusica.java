@@ -36,8 +36,8 @@ public class ControleDenunciaMusica extends HttpServlet{
 			}
 			
 		} catch (Exception e) {
-			e.printStackTrace();
-			erros.add("Musica não pôde ser denunciada");
+		//	e.printStackTrace();
+			Logger.log("Musica não pôde ser denunciada", e);
 		} 
 		
 request.setAttribute("mensagens", erros);

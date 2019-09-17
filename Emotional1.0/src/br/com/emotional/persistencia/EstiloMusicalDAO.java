@@ -25,7 +25,8 @@ public class EstiloMusicalDAO extends Dao{
 			pstm.execute(); 
 			
 		} catch (Exception e) {
-			e.printStackTrace();	
+			//e.printStackTrace();	
+			Logger.log("erro", e);
 			}
 		finally{
 			 try{
@@ -40,7 +41,8 @@ public class EstiloMusicalDAO extends Dao{
 				 
 				 }catch(Exception e){
 				 
-				 e.printStackTrace();
+				 //e.printStackTrace();
+				 Logger.log("erro", e);
 				 }
 		
 	}

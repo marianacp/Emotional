@@ -1,0 +1,6 @@
+projectKey=Emotional1.0
+serverUrl=http://localhost:9000
+serverVersion=7.8.0.26217
+dashboardUrl=http://localhost:9000/dashboard?id=Emotional1.0
+ceTaskId=AW09ZXQGA2jwF2sq-qhk
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AW09ZXQGA2jwF2sq-qhk
