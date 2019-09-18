@@ -15,7 +15,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
 
-<!-- Graph CSS -->
+/**
+/ cometÃ¡rios css
+**/ 	
 <link href="css/font-awesome.css" rel="stylesheet"> 
 <!-- jQuery -->
 <!-- lined-icons -->
@@ -102,7 +104,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											 </ul>	
 											</div>
 											<div class="col-md-4 login-pop">
-												<div id="loginpop"> <a id="loginButton"> <span> Olá ${sessionScope.usuarioLogado.nome}<i class="arrow glyphicon glyphicon-chevron-right"></i></span></a><a class="top-sign" href="${pageContext.request.contextPath}/logout.jsp"><i class="fa fa-sign-in"></i></a>
+												<div id="loginpop"> <a id="loginButton"> <span> OlÃ¡ ${sessionScope.usuarioLogado.nome}<i class="arrow glyphicon glyphicon-chevron-right"></i></span></a><a class="top-sign" href="${pageContext.request.contextPath}/logout.jsp"><i class="fa fa-sign-in"></i></a>
 												</div>
 
 											</div>
@@ -123,8 +125,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<li class="active"><a href="Menu.jsp"><i class="lnr lnr-home"></i><span>Inicial</span></a></li>
 						<li><a href="Playlist24H.jsp"><i class="camera"></i> <span>UmDia</span></a></li>
 						<li><a href="${pageContext.request.contextPath}/AdicionarAmigo.jsp"><i class="lnr lnr-users"></i> <span>Adicionar Amigo</span></a></li> 
-						<li><a href="${pageContext.request.contextPath}/DetectarEmocao.jsp" data-toggle="modal"><i class="fa fa-th"></i><span>Detectar Emoção</span></a></li>
-						<li><a href="${pageContext.request.contextPath}/EnviarMusica.jsp"><i class="lnr lnr-music-note"></i> <span>Enviar Música</span></a></li>						
+						<li><a href="${pageContext.request.contextPath}/DetectarEmocao.jsp" data-toggle="modal"><i class="fa fa-th"></i><span>Detectar EmoÃ§Ã£o</span></a></li>
+						<li><a href="${pageContext.request.contextPath}/EnviarMusica.jsp"><i class="lnr lnr-music-note"></i> <span>Enviar MÃºsica</span></a></li>						
 						<li class="menu-list"><a href="#"><i class="lnr lnr-indent-increase"></i> <span>Playlists</span></a>  
 							<ul class="sub-menu-list">
 							    <li><a href="Playlist.jsp">Todas</a> </li>
@@ -173,13 +175,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <div class="shadow">
       <div class="col-sm-12">
 	  <p class="linked">  
-            <a href="#">Enviar Solicitação</a>
+            <a href="#">Enviar SolicitaÃ§Ã£o</a>
 			</p>
         <div class="col-sm-2">
           <img src="images/avatar1.png" class="img-circle" width="60px">
         </div>
         <div class="col-sm-8">
-          <p><a href="#">Ana Vitória</a></p>
+          <p><a href="#">Ana VitÃ³ria</a></p>
           <h4><a href="#">1 amigos em comum</a></h4>
         </div>
         </div>
@@ -191,7 +193,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	 <div class="shadow">
       <div class="col-sm-12">
 	  <p class="linked">  
-            <a href="#">Enviar Solicitação</a>
+            <a href="#">Enviar SolicitaÃ§Ã£o</a>
 			</p>
         <div class="col-sm-2">
           <img src="images/avatar2.png" class="img-circle" width="60px">
@@ -209,7 +211,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	  <div class="shadow">
       <div class="col-sm-12">
 	  <p class="linked">  
-            <a href="#">Enviar Solicitação</a>
+            <a href="#">Enviar SolicitaÃ§Ã£o</a>
 			</p>
         <div class="col-sm-2">
           <img src="images/avatar3.png" class="img-circle" width="60px">
@@ -227,7 +229,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	  <div class="shadow">
       <div class="col-sm-12">
 	  <p class="linked">  
-            <a href="#">Enviar Solicitação</a>
+            <a href="#">Enviar SolicitaÃ§Ã£o</a>
 			</p>
         <div class="col-sm-2">
           <img src="images/avatar4.png" class="img-circle" width="60px">
@@ -276,10 +278,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 													</div>
 													<div class="price-bottom">
 														<ul>
-															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">Sem download de músicas, apenas execução </a><div class="clearfix"></div></li>
-															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">Músicas com qualidade mediada</a><div class="clearfix"></div></li>
+															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">Sem download de mÃºsicas, apenas execuÃ§Ã£o </a><div class="clearfix"></div></li>
+															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">MÃºsicas com qualidade mediada</a><div class="clearfix"></div></li>
 															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">Com propagandas</a><div class="clearfix"></div></li>
-															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">Playlists com duração de 24H</a><div class="clearfix"></div></li>
+															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">Playlists com duraÃ§Ã£o de 24H</a><div class="clearfix"></div></li>
 														</ul>
 														<a href="single.html" class="price">Free</a>
 													</div>
@@ -291,12 +293,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 													</div>
 													<div class="price-bottom">
 														<ul>
-															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">Download ilimitado de músicas</a><div class="clearfix"></div></li>
-															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">Músicas em alta qualidade</a><div class="clearfix"></div></li>
+															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">Download ilimitado de mÃºsicas</a><div class="clearfix"></div></li>
+															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">MÃºsicas em alta qualidade</a><div class="clearfix"></div></li>
 															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">Sem propagandas</a><div class="clearfix"></div></li>
-															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">Criação de playlists</a><div class="clearfix"></div></li>
+															<li><a class="icon" href="#"><i class="glyphicon glyphicon-ok"></i></a><a class="text" href="#">CriaÃ§Ã£o de playlists</a><div class="clearfix"></div></li>
 														</ul>
-														<a href="single.html" class="price">Dê um up!</a>
+														<a href="single.html" class="price">DÃª um up!</a>
 													</div>
 												</div>
 													<div class="clearfix"></div>
@@ -314,13 +316,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			  <!--body wrapper end-->
 			     <div class="footer">
 				<div class="footer-grid">
-					<h3>Navegação</h3>
+					<h3>NavegaÃ§Ã£o</h3>
 					<ul class="list1">
 					  <li><a href="Menu.jsp">Inicial</a></li>
 					  <li><a href="Playlist24H.jsp">UmDia</a></li>
 					  <li><a href="${pageContext.request.contextPath}/AdicionarAmigo.jsp">Adicionar Amigo</a></li>
-					  <li><a href="${pageContext.request.contextPath}/EnviarMusica.jsp">Enviar Música</a></li>
-					  <li><a href="Musica.jsp">Músicas</a></li>
+					  <li><a href="${pageContext.request.contextPath}/EnviarMusica.jsp">Enviar MÃºsica</a></li>
+					  <li><a href="Musica.jsp">MÃºsicas</a></li>
 					  <li><a href="Playlist.jsp">Playlists</a></li>
 					  <li><a href="MeusFavoritos.jsp">Meus Favoritos</a></li>
 					  <li><a href="FaleConosco.jsp">Contato</a></li>
@@ -331,11 +333,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<h3>Emotional</h3>
 				    <ul class="list1">
 					  <li><a href="#" data-toggle="modal" data-target="#myModal5">Sua conta</a></li>
-					  <li><a href="#">Informações</a></li>
-					  <li><a href="#">Endereço</a></li>
+					  <li><a href="#">InformaÃ§Ãµes</a></li>
+					  <li><a href="#">EndereÃ§o</a></li>
 					  <li><a href="#">Desconto</a></li>
-					  <li><a href="#">Nossa história</a></li>
-					  <li><a href="#">Termos de segurança</a></li>
+					  <li><a href="#">Nossa histÃ³ria</a></li>
+					  <li><a href="#">Termos de seguranÃ§a</a></li>
 				    </ul>
 				</div>
 				<div class="footer-grid">
@@ -349,7 +351,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				  </div>
 					  <div class="footer-grid">
 						<h3>Novidades</h3>
-						<p class="footer_desc">Cadastre seu e-mail caso queira receber notificações sobre as novidades do site. </p>
+						<p class="footer_desc">Cadastre seu e-mail caso queira receber notificaÃ§Ãµes sobre as novidades do site. </p>
 						<div class="search_footer">
 						 <form>
 						   <input type="text" placeholder="Email...." required="">
@@ -358,8 +360,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</div>
 					 </div>
 					 <div class="footer-grid footer-grid_last">
-						<h3>Sobre nós</h3>
-						<p class="footer_desc">O Emotional é um sistema web com a intenção de gerar playlists personalizadas com base no humor através de um reconhecimento facial do usuário.</p>
+						<h3>Sobre nÃ³s</h3>
+						<p class="footer_desc">O Emotional Ã© um sistema web com a intenÃ§Ã£o de gerar playlists personalizadas com base no humor atravÃ©s de um reconhecimento facial do usuÃ¡rio.</p>
 						<p class="f_text">Telefone: +55 21 3843-4015</p>
 						<p class="email">Email : &nbsp;<span><a href="#">info@emotional.com</a></span></p>	
 					 </div>
@@ -368,7 +370,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
         <!--footer section start-->
 			<footer>
-			   <p>Emotional - Música para todos :: Sentimentos para a sua música </a></p>
+			   <p>Emotional - MÃºsica para todos :: Sentimentos para a sua mÃºsica </a></p>
 			</footer>
         <!--footer section end-->
  	 <!-- /w3l-agile -->
