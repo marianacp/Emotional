@@ -1,8 +1,7 @@
 package br.com.emotional.entidade;
 
 import java.util.Calendar;
-import java.util.Date;
-import java.util.Objects;
+
 
 /*
  * Classe responsável por criar instância de usuario
@@ -21,10 +20,10 @@ public class Usuario {
 	private boolean ativo;
 	private String tipoUsuario; 
 	
-	public int getid_usu() {
+	public int getidUsu() {
 		return idUsu;
 	}
-	public void setid_usu(int idUsu) {
+	public void setidUsu(int idUsu) {
 		this.idUsu = idUsu;
 	}
 	public String getNome() {

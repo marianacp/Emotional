@@ -1,4 +1,4 @@
-package br.com.GoogleAut;
+package br.com.googleAut;
 
 import com.google.api.client.json.jackson2.JacksonFactory;
 import com.google.api.client.http.javanet.NetHttpTransport;

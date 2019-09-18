@@ -81,13 +81,10 @@ public class LoginDAO  extends Dao implements iDAO<Usuario>{
                     try {
                     	con.close();
 					} catch (SQLException e) {
-<<<<<<< HEAD
 						// TODO Auto-generated catch block
 						//e.printStackTrace();
 						Logger.log("erro", e);
-=======
-						e.printStackTrace();
->>>>>>> 81ca0b58d3fc4098bdde62eb65c0304d580eab79
+					//	e.printStackTrace();
 					} 
                 }
             }

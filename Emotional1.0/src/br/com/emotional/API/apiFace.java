@@ -19,7 +19,7 @@ import org.json.JSONObject;
  */
 public class APIFace {
 	
-	private static final String subscriptionKey = "8e860f62a1cc40ed8bc41dcc4c63db39";
+	private static final String SUBSCRIPTIONKEY = "8e860f62a1cc40ed8bc41dcc4c63db39";
 
     // NOTE: You must use the same region in your REST call as you used to
     // obtain your subscription keys. For example, if you obtained your
@@ -70,7 +70,7 @@ public class APIFace {
 
             // Request headers.
             request.setHeader("Content-Type", "application/octet-stream");
-            request.setHeader("Ocp-Apim-Subscription-Key", subscriptionKey);
+            request.setHeader("Ocp-Apim-Subscription-Key", SUBSCRIPTIONKEY);
             
             
             File fi = new File(imageWithFaces);
@@ -78,7 +78,7 @@ public class APIFace {
             
             // Request body.
             ByteArrayEntity reqEntity = new ByteArrayEntity(fileContent); 
-            //StringEntity reqEntity = new StringEntity(fileContent);
+          
             request.setEntity(reqEntity);
 
             // Execute the REST API call and get the response entity.
@@ -87,9 +87,7 @@ public class APIFace {
 
             if (entity != null)
             {
-                // Format and display the JSON response.
-                System.out.println("REST Response:\n");
-                
+                            
                 double[] lista = new double[5]; 
                 double happiness = 0; 
                 double surprise = 0; 

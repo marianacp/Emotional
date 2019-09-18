@@ -5,11 +5,11 @@ package br.com.emotional.entidade;
  * Classe responsável por criar instância de faleconosco
  */
 public class FaleConosco {
-	private int id_fale_conosco; 
+	private int idFaleConosco; 
 	private String email; 
 	private String pergunta; 
 	private String resposta; 
-	private int id_adm;
+	private int idAdm;
 	private String nome; 
 	
 	public String getNome() {
@@ -19,10 +19,10 @@ public class FaleConosco {
 		this.nome = nome;
 	}
 	public int getId_fale_conosco() {
-		return id_fale_conosco;
+		return idFaleConosco;
 	}
-	public void setId_fale_conosco(int id_fale_conosco) {
-		this.id_fale_conosco = id_fale_conosco;
+	public void setId_fale_conosco(int idFaleConosco) {
+		this.idFaleConosco = idFaleConosco;
 	}
 	public String getEmail() {
 		return email;
@@ -43,9 +43,9 @@ public class FaleConosco {
 		this.resposta = resposta;
 	}
 	public int getId_adm() {
-		return id_adm;
+		return idAdm;
 	}
-	public void setId_adm(int id_adm) {
-		this.id_adm = id_adm;
+	public void setId_adm(int idAdm) {
+		this.id_adm = idAdm;
 	} 
 }
