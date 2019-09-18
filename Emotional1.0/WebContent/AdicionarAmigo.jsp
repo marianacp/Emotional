@@ -15,9 +15,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
 
-/**
-/ cometários css
-**/ 	
+/*
+* chamada css
+*/ 	
 <link href="css/font-awesome.css" rel="stylesheet"> 
 <!-- jQuery -->
 <!-- lined-icons -->
