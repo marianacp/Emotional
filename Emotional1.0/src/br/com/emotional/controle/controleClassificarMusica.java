@@ -46,7 +46,7 @@ public class ControleClassificarMusica extends HttpServlet{
 		Classifica classi = new Classifica(); 
 		classi.setId_emocao(emo.getId_emocao());
 		classi.setId_musica(idMusica);
-		classi.setId_usu(u.getid_usu());
+		classi.setId_usu(u.getidUsu());
 		
 		MusicaDAO md = new MusicaDAO(); 
 		try {

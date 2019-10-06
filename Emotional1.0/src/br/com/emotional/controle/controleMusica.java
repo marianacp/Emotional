@@ -53,7 +53,7 @@ public class ControleMusica extends HttpServlet{
 		String estilo = request.getParameter("estilo"); 
 		String emocao = request.getParameter("emocao"); 
 		String musica = request.getParameter("musica");
-		int usuario_id = u.getid_usu(); 
+		int usuario_id = u.getidUsu(); 
 		
 		Emocao emo = new Emocao(); 
 		emo.setNome(emocao);

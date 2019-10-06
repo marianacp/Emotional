@@ -54,7 +54,7 @@ public class ControleGerarPlaylist extends HttpServlet {
         //Ele muda a emocao do usuario para a última emocao detectada
         UsuarioDAO ud = new UsuarioDAO(); 
         try {
-			ud.alteraEmocaoUsuario(u.getid_usu(), emo.getId_emocao());
+			ud.alteraEmocaoUsuario(u.getidUsu(), emo.getId_emocao());
 		} catch (Exception e) {
 			erros.add("Nao foi possivel alterar emocao do usuario");
 		}
@@ -66,7 +66,7 @@ public class ControleGerarPlaylist extends HttpServlet {
         //Agora, vai trazer as playlists criadas e pertencentes ao usuário.
         List<Integer> lst = new ArrayList<>(); 
         try {
-			lst = pd.buscaPlaylistDiariaporUs(u.getid_usu());
+			lst = pd.buscaPlaylistDiariaporUs(u.getidUsu());
 		} catch (Exception e) {
 			erros.add("Playlist nao pode ser recuperada");
 		} 
@@ -84,7 +84,7 @@ public class ControleGerarPlaylist extends HttpServlet {
 			
 		
         try {
-			inserido = pd.inserirPlaylist(nome, u.getid_usu());
+			inserido = pd.inserirPlaylist(nome, u.getidUsu());
 		} catch (Exception e) {
 			erros.add("Playlist nao inserida");
 		} 

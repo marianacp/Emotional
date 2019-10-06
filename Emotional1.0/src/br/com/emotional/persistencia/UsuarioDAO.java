@@ -176,7 +176,7 @@ public class UsuarioDAO extends Dao {
 				us.setImagem(rs.getString("FOTO"));
 				us.setNome(rs.getString("NOME"));
 				us.setPremium(rs.getBoolean("Premium"));
-				us.setid_usu(rs.getInt("idUsu"));
+				us.setidUsu(rs.getInt("idUsu"));
 				us.setCpf(rs.getString("CPF"));
 				us.setCpf(rs.getString("CPF"));
 				us.setTipoUsuario(rs.getString("tipoUsuario"));

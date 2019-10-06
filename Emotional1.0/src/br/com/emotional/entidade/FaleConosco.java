@@ -46,6 +46,6 @@ public class FaleConosco {
 		return idAdm;
 	}
 	public void setId_adm(int idAdm) {
-		this.id_adm = idAdm;
+		this.idAdm = idAdm;
 	} 
 }
