@@ -18,7 +18,7 @@
           <h1>Cadastro</h1> 
            
           <p> 
-            <label for="nome">Nome</label>
+            <label for="nome">Nome</label>    
             <input id="nome" name="nome" required="required" type="text" placeholder="nome" />
           </p>
 		  
