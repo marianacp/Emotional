@@ -16,7 +16,7 @@ import br.com.emotional.persistencia.FaleConoscoDAO;
 /**
  * Classe para o controle do Fale Conosco
  */
-public class ControleFaleConosco extends HttpServlet{
+public class controleFaleConosco extends HttpServlet{
 	protected void service(HttpServletRequest request,
             HttpServletResponse response)
             throws IOException, ServletException {

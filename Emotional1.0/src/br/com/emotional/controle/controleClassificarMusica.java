@@ -22,7 +22,7 @@ import util.Erro;
 /**
  * Classe para o controle da classificacao das musicas no sistema
  */
-public class ControleClassificarMusica extends HttpServlet{
+public class controleClassificarMusica extends HttpServlet{
 	protected void service(HttpServletRequest request,
             HttpServletResponse response)
             throws IOException, ServletException {

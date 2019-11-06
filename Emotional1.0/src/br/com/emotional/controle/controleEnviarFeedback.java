@@ -17,7 +17,7 @@ import br.com.emotional.persistencia.PlaylistDAO;
 import util.Erro;
 
 @WebServlet({"/enviarFeedback"})
-public class ControleEnviarFeedback extends HttpServlet {
+public class controleEnviarFeedback extends HttpServlet {
 	protected void service(HttpServletRequest request,
             HttpServletResponse response)
             throws IOException, ServletException{
@@ -46,7 +46,7 @@ Erro erros = new Erro();
 		PlaylistDAO pd = new PlaylistDAO(); 
 		
 		try {
-			pd.salvarEmocaoPlaylist(nome, u.getid_usu(), emo.getId_emocao()); 
+			pd.salvarEmocaoPlaylist(nome, u.getidUsu(), emo.getId_emocao()); 
 				
 			erros.add("Feedback enviado com sucesso!");	
 			

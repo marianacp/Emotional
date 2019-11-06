@@ -17,7 +17,7 @@ import br.com.GoogleAut.IdTokenVerifierAndParser;
 /**
  * Classe para o controle de acesso atravez do google
  */
-public class ControleLoginGoogle extends HttpServlet{
+public class controleLoginGoogle extends HttpServlet{
 	@Override
     protected void doPost (HttpServletRequest req,
                         HttpServletResponse resp)

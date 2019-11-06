@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Classe para o controle de acesso do sistema
  */
-public class ControleLogin extends HttpServlet {
+public class controleLogin extends HttpServlet {
 	protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         Erro erros = new Erro();

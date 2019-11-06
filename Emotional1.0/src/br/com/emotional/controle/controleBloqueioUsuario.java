@@ -17,7 +17,7 @@ import util.Erro;
 /**
  * Classe para o controle de bloqueio e desbloqueio do usuario no sistema
  */
-public class ControleBloqueioUsuario extends HttpServlet{
+public class controleBloqueioUsuario extends HttpServlet{
 	protected void service(HttpServletRequest request,
             HttpServletResponse response)
             throws IOException, ServletException{
@@ -26,10 +26,10 @@ public class ControleBloqueioUsuario extends HttpServlet{
 		
 		Usuario us = new Usuario(); 
 		UsuarioDAO ud = new UsuarioDAO(); 
-		us.setid_usu(id_usuario);
+		us.setidUsu(id_usuario);
 		
 		try {
-			us.setAtivo(ud.estaAtivoporId(us.getid_usu())); 
+			us.setAtivo(ud.estaAtivoporId(us.getidUsu())); 
 		} catch (Exception e1) {
 			erros.add("Nao é possivel verificar se usuario esta ativo");
 		} 

@@ -12,6 +12,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import br.com.emotional.Pattern.OrdenadorPorNome;
+import br.com.emotional.Pattern.OrdernadorTemplate;
 import br.com.emotional.entidade.Emocao;
 import br.com.emotional.entidade.Musica;
 import br.com.emotional.entidade.Usuario;
@@ -25,12 +27,13 @@ import util.Erro;
 /**
  * Classe para o controle da geracao de playlist no sistema
  */
-public class ControleGerarPlaylist extends HttpServlet {
+public class controleGerarPlaylist extends HttpServlet {
 	protected void service(HttpServletRequest request,
             HttpServletResponse response)
             throws IOException, ServletException{
 		
 		Erro erros = new Erro();
+		OrdernadorTemplate ordenador = new OrdenadorPorNome(); 
  
 		
 		HttpServletResponse res = (HttpServletResponse) response;
@@ -105,8 +108,11 @@ public class ControleGerarPlaylist extends HttpServlet {
 				erros.add("Erro ao gerar playlist");
 			}
         	
+        	
+        	
         	if (listaMusicas.size() == 12) {
-        		
+        		ArrayList<Musica> novaLista = new ArrayList<Musica>();
+        		novaLista = (ArrayList<Musica>) ordenador.ordenarMusica(listaMusicas);
         		
 				request.setAttribute("playlist", nome);
         		request.setAttribute("musicas", listaMusicas);

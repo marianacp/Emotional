@@ -15,7 +15,7 @@ import util.Erro;
 /**
  * Classe para o controle da deteccao de emocao das playlists/musicas do sistema. 
  */
-public class ControleImagemAPI extends HttpServlet {
+public class controleImagemAPI extends HttpServlet {
 	protected void service(HttpServletRequest request,
             HttpServletResponse response)
             throws IOException, ServletException {

@@ -19,7 +19,7 @@ import util.Erro;
 /**
  * Classe para o controle de busca de usuarios no sistema
  */
-public class ControleBuscaUsuario  extends HttpServlet{
+public class controleBuscaUsuario  extends HttpServlet{
 	protected void service(HttpServletRequest request,
             HttpServletResponse response)
             throws IOException, ServletException {

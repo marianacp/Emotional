@@ -24,7 +24,7 @@ import util.Erro;
 /**
  * Classe para o controle de cadastro de usuario no sistema
  */
-public class ControleCadastro extends HttpServlet{
+public class controleCadastro extends HttpServlet{
 	protected void service(HttpServletRequest request,
             HttpServletResponse response)
             throws IOException, ServletException {

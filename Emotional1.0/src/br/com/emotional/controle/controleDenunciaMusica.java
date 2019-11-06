@@ -17,7 +17,7 @@ import util.Erro;
 /**
  * Classe para o controle de denuncias de musicas no sistema
  */
-public class ControleDenunciaMusica extends HttpServlet{
+public class controleDenunciaMusica extends HttpServlet{
 	protected void service(HttpServletRequest request,
             HttpServletResponse response)
             throws IOException, ServletException  {

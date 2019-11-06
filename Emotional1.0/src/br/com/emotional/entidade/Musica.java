@@ -12,6 +12,17 @@ public class Musica {
 	private String arquivoMusica;
 	private int idEstiloMusical;
 	
+	public Musica(int idMusica, String tituloMusica, int idEmocao, int idArtista, String arquivoMusica, 
+			int idEstiloMusical) {
+		
+		this.idMusica = idMusica; 
+		this.tituloMusica = tituloMusica; 
+		this.idEmocao = idEmocao; 
+		this.idArtista = idArtista; 
+		this.arquivoMusica = arquivoMusica; 
+		this.idEstiloMusical = idEstiloMusical; 
+	}
+	
 	public int getIdMusica() {
 		return idMusica;
 	}

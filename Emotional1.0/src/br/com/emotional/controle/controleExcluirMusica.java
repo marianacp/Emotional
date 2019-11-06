@@ -16,7 +16,7 @@ import util.Erro;
 /**
  * Classe para o controle de musicas que podem ser excluidas do sistema
  */
-public class ControleExcluirMusica extends HttpServlet{
+public class controleExcluirMusica extends HttpServlet{
 	protected void service(HttpServletRequest request,
             HttpServletResponse response)
             throws IOException, ServletException {

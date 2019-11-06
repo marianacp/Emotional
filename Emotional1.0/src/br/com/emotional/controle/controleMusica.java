@@ -25,7 +25,7 @@ import util.Erro;
 /**
  * Classe para o controle do envio de musica para o sistema
  */
-public class ControleMusica extends HttpServlet{
+public class controleMusica extends HttpServlet{
 	protected void service(HttpServletRequest request,
             HttpServletResponse response)
             throws IOException, ServletException {
@@ -76,18 +76,18 @@ public class ControleMusica extends HttpServlet{
 		
 		ArtistaDAO ad = new ArtistaDAO(); 
 		try {
-			id_artista = ad.getIdArtistabyUsu(u.getid_usu());
+			id_artista = ad.getIdArtistabyUsu(u.getidUsu());
 		} catch (Exception e1) {
 			// TODO Auto-generated catch block
 			erros.add("Erro ao buscar identificador do artista");
 		} 
 		if(!erros.isExisteErros()){
 		Musica musc = new Musica(); 
-		musc.setArquivo_musica(musica);
-		musc.setId_artista(id_artista);
-		musc.setId_emocao(emo.getId_emocao());
-		musc.setId_estilo_musical(esti.getId_estilo_musical());
-		musc.setTitulo_musica(nome);
+		musc.setArquivoMusica(musica);
+		musc.setIdArtista(id_artista);
+		musc.setIdEmocao(emo.getId_emocao());
+		musc.setId_estiloMusical(esti.getId_estilo_musical());
+		musc.setTituloMusica(nome);
 		//Insere a musica na tabela musica
 		MusicaDAO musicadao = new MusicaDAO(); 
 		try {
