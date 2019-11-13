@@ -25,10 +25,10 @@ public class Dao {
 		Class.forName("com.mysql.jdbc.Driver");
 		con = DriverManager.getConnection(URL,USER,PASS);
 	}
-	/*O mÈtodo de fechar ao ser chamado, verificar· se a variavel rs que È
-	 * respons·vel por receber dados do banco esta aberta, aqui a express„o 
-	 * È diferente de nula... se estivel ele fecha, caso ela esteja fechada
-	 * ele n„o faz nada...*/
+	/*O m√©todo de fechar ao ser chamado, verificar√° se a variavel rs que √©
+	 * respons√°vel por receber dados do banco esta aberta, aqui a express√£o 
+	 * √© diferente de nula... se estivel ele fecha, caso ela esteja fechada
+	 * ele n√£o faz nada...*/
 	protected void close()throws Exception {
 		
 		if(rs != null)
@@ -48,8 +48,6 @@ public class Dao {
 			System.out.println("Conectado...");
 			d.close();
 		} catch (Exception e) {
-			System.out.println("N„o Conectado....");
+			System.out.println("N√£o Conectado....");
 			e.printStackTrace();
 		}
-}
-}
